@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sem Arts Intranet — clickable wireframe (light console)</title>
+<style>
+  :root{
+    --blue:#005A7D; --blue-deep:#032C3D; --blue-2:#045B7B;
+    --gray:#808080; --orange:#C84A2B; --olive:#8C9E38; --link:#1E70B0;
+    --gold:#D4A83A; --teal:#E0EEF2; --ink:#2B2B2B; --body:#4A4A4A;
+    --rule:#d7e0e6; --white:#fff; --page:#eef3f6; --panel:#fff;
+    --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --r:4px; --shadow:0 1px 2px rgba(3,44,61,.05);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--sans);font-size:14px;line-height:1.55;color:var(--body);background:var(--page)}
+  a{color:inherit;text-decoration:none;cursor:pointer}
+  .mono{font-family:var(--mono)}
+  .kick{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
+  .anno{font-size:11px;color:var(--gray);font-style:italic}
+  .chip{font-family:var(--mono);font-size:10px;color:var(--blue);background:var(--teal);border:1px solid #cfe4ec;border-radius:3px;padding:1px 6px;white-space:nowrap}
+
+  /* top bar */
+  header.top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:16px;height:54px;padding:0 18px;
+    background:linear-gradient(90deg,var(--blue-deep),var(--blue) 60%,var(--blue-2));border-bottom:2px solid var(--olive)}
+  .logo{height:30px;display:block}
+  .cmd{flex:1;max-width:440px;display:flex;align-items:center;gap:8px;height:32px;padding:0 10px;
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);color:rgba(255,255,255,.62);font-family:var(--mono);font-size:12px}
+  .cmd kbd{margin-left:auto;font-size:10px;background:rgba(255,255,255,.14);border-radius:3px;padding:1px 5px;color:#cfe4ec}
+  .top .right{margin-left:auto;display:flex;align-items:center;gap:12px}
+  .envchip{font-family:var(--mono);font-size:10px;color:#04303f;background:var(--olive);border-radius:3px;padding:2px 7px;font-weight:700}
+  .bell{width:32px;height:32px;border-radius:var(--r);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);display:grid;place-items:center;position:relative;color:#fff;font-size:13px}
+  .bell::after{content:"3";position:absolute;top:-6px;right:-6px;background:var(--orange);color:#fff;font-size:9px;font-weight:700;border-radius:8px;padding:0 4px;font-family:var(--mono)}
+  .me{display:flex;align-items:center;gap:8px}
+  .avatar{width:30px;height:30px;border-radius:50%;background:var(--olive);color:#04303f;display:grid;place-items:center;font-weight:800;font-size:12px}
+  .me .nm{color:#fff;font-weight:700;font-size:12px;line-height:1.1}.me .role{font-family:var(--mono);font-size:9px;color:#cfe4ec}
+
+  /* status strip */
+  .strip{display:flex;align-items:center;gap:16px;height:30px;padding:0 18px;background:var(--blue-deep);color:#bcd3dc;font-family:var(--mono);font-size:11px;border-bottom:1px solid #0a4a63;overflow-x:auto;white-space:nowrap}
+  .strip .led{width:8px;height:8px;border-radius:50%;background:var(--olive);box-shadow:0 0 0 3px rgba(140,158,56,.25);display:inline-block;margin-right:6px}
+  .strip b{color:#fff}.strip .sep{color:#3f6b7d}
+
+  /* app shell */
+  .app{display:grid;grid-template-columns:210px 1fr;gap:14px;max-width:1340px;margin:14px auto;padding:0 18px;align-items:start}
+  @media (max-width:1000px){.app{grid-template-columns:1fr}.side{order:0}}
+  .panel{background:var(--panel);border:1px solid var(--rule);border-radius:var(--r);box-shadow:var(--shadow)}
+  .phead{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid var(--rule);background:#f7fafb;border-radius:var(--r) var(--r) 0 0}
+  .phead .t{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--blue)}
+  .phead .n{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--gray);background:var(--teal);border-radius:3px;padding:0 6px}
+  .phead .barbtn{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--link)}
+  .pbody{padding:12px}
+
+  /* left rail */
+  .side .grp{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);padding:12px 12px 3px}
+  .side a{display:flex;align-items:center;gap:9px;padding:6px 12px;color:var(--body);font-weight:600;font-size:13px}
+  .side a .ic{width:15px;text-align:center;color:var(--blue);font-size:12px}
+  .side a.on{background:var(--teal);color:var(--ink);box-shadow:inset 3px 0 0 var(--olive)}
+  .side a:hover{background:#f2f7f9}
+  .side a .lk{margin-left:auto;font-size:9px;color:var(--gray)}
+  .clickable-hint{font-family:var(--mono);color:var(--olive)}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:12px;padding:7px 13px;border-radius:var(--r);cursor:pointer;border:1px solid transparent}
+  .btn-cta{background:var(--orange);color:#fff;text-transform:uppercase;letter-spacing:.04em}
+  .btn-blue{background:var(--blue);color:#fff}.btn-outline{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+  .readmore{color:var(--link);font-weight:700}.readmore::after{content:" →"}
+
+  /* home stage */
+  .homegrid{display:grid;grid-template-columns:1fr 292px;gap:14px}
+  @media (max-width:900px){.homegrid{grid-template-columns:1fr}}
+  .spot .pbody{display:flex;gap:13px;align-items:flex-start;background:linear-gradient(180deg,#fff,#fbfdfe)}
+  .spot .glyph{flex:none;width:50px;height:50px;border-radius:var(--r);background:var(--blue-deep);display:grid;place-items:center;color:var(--olive);font-size:22px;border:1px solid #0a4a63}
+  .spot h3{margin:3px 0 0;font-size:15px;color:var(--ink)}
+  .news{display:flex;gap:11px;padding:11px 0;border-top:1px solid #eef2f5}.news:first-of-type{border-top:0}
+  .thumb{width:58px;height:58px;flex:none;border-radius:var(--r);background:var(--teal);border:1px solid #cfe4ec;display:grid;place-items:center;color:var(--blue);font-family:var(--mono);font-size:9px}
+  .news h3{margin:3px 0 2px;font-size:14px;color:var(--ink)}
+  .badge{font-family:var(--mono);font-size:9px;font-weight:700;text-transform:uppercase;padding:1px 5px;border-radius:3px}
+  .b-ann{color:var(--blue);background:var(--teal)}.b-ppl{color:#5b4a12;background:rgba(212,168,58,.18)}.b-win{color:#3f5016;background:rgba(140,158,56,.16)}
+  .news .meta{font-family:var(--mono);font-size:10.5px;color:var(--gray);margin:2px 0 3px}
+  .course{padding:10px 0;border-top:1px solid #eef2f5}.course:first-of-type{border-top:0}
+  .course h3{margin:0;font-size:14px;color:var(--ink)}
+  .bar{height:6px;border-radius:4px;background:#e7edf1;overflow:hidden;margin-top:6px}.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--olive))}
+  .pct{font-family:var(--mono);font-size:11px;color:var(--gray)}
+  .ev{display:flex;gap:10px;padding:7px 0;border-top:1px solid #eef2f5;font-size:13px}.ev:first-of-type{border-top:0}.ev b{color:var(--blue);font-family:var(--mono)}
+  .tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .tile{border:1px solid var(--rule);border-radius:var(--r);padding:10px;display:flex;flex-direction:column;gap:4px;min-height:66px}.tile:hover{border-color:var(--blue)}
+  .tile .em{font-size:17px;color:var(--blue)}.tile b{font-size:12.5px;color:var(--ink)}.tile small{color:var(--gray);font-size:10px;font-family:var(--mono)}
+  .qlink{display:flex;align-items:center;gap:8px;padding:7px 0;border-top:1px solid #eef2f5;font-weight:600;font-size:13px;color:var(--ink)}.qlink:first-of-type{border-top:0}.qlink .ic{color:var(--blue)}
+  .metric{display:flex;justify-content:space-between;padding:5px 0;font-size:12px}.metric b{font-family:var(--mono);color:var(--ink)}
+
+  /* breadcrumb */
+  .crumb{font-family:var(--mono);font-size:11px;color:var(--gray);margin-bottom:10px}
+  .crumb a{color:var(--link)}.crumb .sep{margin:0 6px;color:var(--rule)}
+  .pagetitle{font-size:22px;font-weight:800;color:var(--ink);margin:0 0 3px}
+  .pagesub{color:var(--body);margin:0 0 14px}
+
+  /* training catalog */
+  .cat{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media (max-width:900px){.cat{grid-template-columns:1fr 1fr}}
+  .ccard{border:1px solid var(--rule);border-radius:var(--r);background:#fff;overflow:hidden;box-shadow:var(--shadow);transition:.12s;cursor:pointer}
+  .ccard:hover{border-color:var(--blue);transform:translateY(-2px)}
+  .ccard .top{height:6px;background:var(--blue)}
+  .ccard.sec .top{background:var(--olive)}.ccard.gold .top{background:var(--gold)}
+  .ccard .cb{padding:12px}
+  .ccard .ck{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
+  .ccard h3{margin:4px 0 6px;font-size:14.5px;color:var(--ink)}
+  .ccard p{margin:0 0 10px;font-size:12.5px;color:var(--body)}
+  .ccard .foot{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--gray)}
+
+  /* lesson + doc split */
+  .split{display:grid;grid-template-columns:1fr 250px;gap:14px}
+  @media (max-width:900px){.split{grid-template-columns:1fr}}
+  .doc h1{font-size:22px;color:var(--ink);margin:0 0 8px}
+  .doc h2{font-size:16px;color:var(--blue);margin:20px 0 6px}
+  .doc p{margin:0 0 11px}
+  .doc code.blk{display:block;background:var(--blue-deep);color:#d7ecf2;font-family:var(--mono);font-size:12px;line-height:1.55;padding:12px 14px;border-radius:var(--r);border-left:3px solid var(--olive);overflow-x:auto;white-space:pre;margin:0 0 12px}
+  .doc .tag{color:#8fd0e0}.doc .kw{color:var(--gold)}
+  .lessonnav{display:flex;justify-content:space-between;margin-top:16px;border-top:1px solid var(--rule);padding-top:12px}
+  .toc a{display:block;padding:6px 0;border-top:1px solid #eef2f5;font-size:12.5px;color:var(--body)}.toc a:first-child{border-top:0}
+  .toc a.done{color:var(--gray)}.toc a.cur{color:var(--blue);font-weight:700}
+  .toc a .m{font-family:var(--mono);font-size:10px;margin-right:6px}
+
+  /* ops doc tree */
+  .tree a{display:block;padding:5px 8px;border-radius:3px;font-size:12.5px;color:var(--body)}
+  .tree a:hover{background:#f2f7f9}.tree a.cur{background:var(--teal);color:var(--ink);font-weight:700}
+  .tree .b{padding:8px 8px 3px;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--gray)}
+
+  .foot{background:var(--blue-deep);color:#9fc0cc;text-align:center;padding:12px;font-family:var(--mono);font-size:10.5px}.foot .o{color:var(--olive)}
+  .stage{min-width:0}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<header class="top">
+  <a class="logo" onclick="go('home')" title="Home">
+    <!-- Full-logo lockup: circle field + connected-node cluster (evokes the real SA mark) + wordmark. White variant for the blue bar. -->
+    <svg height="30" viewBox="0 0 226 34" role="img" aria-label="semantic arts.">
+      <g fill="none" stroke="#ffffff" stroke-width="1.1" opacity=".55">
+        <circle cx="5" cy="9" r="2.1"/><circle cx="12" cy="9" r="2.1"/><circle cx="19" cy="9" r="2.1"/><circle cx="26" cy="9" r="2.1"/><circle cx="40" cy="9" r="2.1"/>
+        <circle cx="5" cy="17" r="2.1"/><circle cx="12" cy="17" r="2.1"/><circle cx="19" cy="17" r="2.1"/><circle cx="26" cy="17" r="2.1"/><circle cx="33" cy="17" r="2.1"/><circle cx="40" cy="17" r="2.1"/>
+        <circle cx="5" cy="25" r="2.1"/><circle cx="12" cy="25" r="2.1"/><circle cx="19" cy="25" r="2.1"/><circle cx="26" cy="25" r="2.1"/><circle cx="33" cy="25" r="2.1"/><circle cx="40" cy="25" r="2.1"/>
+      </g>
+      <!-- connected-node constellation (olive for visibility on blue) -->
+      <g stroke="#8C9E38" stroke-width="2.4" stroke-linecap="round">
+        <line x1="33" y1="9" x2="40" y2="9"/><line x1="33" y1="9" x2="30" y2="17"/><line x1="30" y1="17" x2="36" y2="25"/>
+      </g>
+      <g fill="#8C9E38"><circle cx="33" cy="9" r="2.9"/><circle cx="40" cy="9" r="2.9"/><circle cx="30" cy="17" r="2.9"/><circle cx="36" cy="25" r="2.9"/></g>
+      <text x="54" y="23" font-family="Open Sans,Segoe UI,Helvetica,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="-.3" fill="#fff">semantic arts<tspan fill="#8C9E38">.</tspan></text>
+    </svg>
+  </a>
+  <span class="mono" style="color:#7fb0c0;font-size:11px">/ intranet</span>
+  <div class="cmd">⌘ &nbsp;search… <kbd>⌘K</kbd></div>
+  <div class="right">
+    <span class="envchip">EXEC · ALL ACCESS</span>
+    <div class="bell">🔔</div>
+    <div class="me"><span class="avatar">JT</span><div><div class="nm">JT Metcalf</div><div class="role">chief operating officer</div></div></div>
+  </div>
+</header>
+
+<div class="strip">
+  <span><span class="led"></span><b>all systems ok</b></span><span class="sep">|</span>
+  <span>tasks_today: <b>7</b></span><span class="sep">·</span><span>trainings: <b>2</b></span><span class="sep">·</span>
+  <span>mfa: <b>98%</b></span><span class="sep">·</span><span>last_sync: <b>2026-08-03 08:41 MT</b></span>
+  <span class="sep">|</span><span class="clickable-hint">▸ try: click “Training / LMS” or “Operations Manual”, or a course card</span>
+</div>
+
+<div class="app">
+  <!-- ===== PERSISTENT LEFT RAIL ===== -->
+  <aside class="side">
+    <div class="panel" style="padding-bottom:8px">
+      <div class="grp">// workspace</div>
+      <a data-v="home" class="on" onclick="go('home')"><span class="ic">◆</span> Home</a>
+      <a onclick="go('home')"><span class="ic">▣</span> Company News</a>
+      <a data-v="ops" onclick="go('ops')"><span class="ic">▥</span> Operations Manual</a>
+      <a data-v="training" onclick="go('training')"><span class="ic">◈</span> Training / LMS</a>
+      <a onclick="go('home')"><span class="ic">▤</span> Handbook &amp; HR</a>
+      <div class="grp">// teams</div>
+      <a onclick="go('home')"><span class="ic">⚙</span> Operations <span class="lk">🔒</span></a>
+      <a onclick="go('home')"><span class="ic">◔</span> Marketing <span class="lk">🔒</span></a>
+      <a onclick="go('home')"><span class="ic">⌘</span> Engineering <span class="lk">🔒</span></a>
+      <div class="grp">// apps</div>
+      <a onclick="go('home')"><span class="ic">◉</span> COO OS <span class="lk">🔒</span></a>
+      <a onclick="go('home')"><span class="ic">◎</span> Hiring · ATS <span class="lk">🔒</span></a>
+      <a onclick="go('home')"><span class="ic">▚</span> Web Analytics <span class="lk">🔒</span></a>
+      <p class="anno" style="margin:10px 12px 4px">Identity-aware — Entra groups drive what renders. 🔒 = gated.</p>
+    </div>
+  </aside>
+
+  <!-- ===== STAGE (swaps) ===== -->
+  <div style="min-width:0">
+
+    <!-- HOME -->
+    <section class="stage" id="v-home">
+      <div class="homegrid">
+        <div>
+          <div class="panel spot" style="margin-bottom:14px">
+            <div class="phead"><span class="t">🛡 security · this week</span><span class="chip" style="margin-left:auto">src: it-security-brief</span></div>
+            <div class="pbody">
+              <div class="glyph">🛡</div>
+              <div style="flex:1">
+                <div class="kick">Concept of the week</div>
+                <h3>“Consent is the new perimeter” — spot OAuth-consent phishing</h3>
+                <p style="margin:6px 0 0">Attackers skip fake login pages and get you to <b>approve a real Microsoft permission prompt</b>. Check which app is asking, and why. 90-sec read.</p>
+                <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+                  <a class="btn btn-cta" onclick="go('lesson')">Learn more</a>
+                  <a class="btn btn-outline" onclick="go('lesson')">Take the 2-min quiz</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" style="margin-bottom:14px">
+            <div class="phead"><span class="t">📣 company news</span><span class="n">3 new</span></div>
+            <div class="pbody" style="padding-top:4px">
+              <div class="news"><div class="thumb">IMG</div><div style="flex:1"><span class="badge b-ann">Announcement</span><h3>We're moving payroll to Paylocity</h3><div class="meta">amanda.r · 2026-08-01 · 2 min</div><div>What's changing and what to do first. <a class="readmore">Read</a></div></div></div>
+              <div class="news"><div class="thumb">IMG</div><div style="flex:1"><span class="badge b-ppl">People</span><h3>Welcome — 2 new hires this month</h3><div class="meta">hr · 2026-07-30 · 1 min</div><div>Meet our newest colleagues. <a class="readmore">Read</a></div></div></div>
+              <div class="news"><div class="thumb">IMG</div><div style="flex:1"><span class="badge b-win">Firm</span><h3>Strategic planning offsite — Oct 12–13</h3><div class="meta">exec-team · 2026-07-28 · 1 min</div><div>Save the date; submit agenda topics. <a class="readmore">Read</a></div></div></div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="phead"><span class="t">🎓 continue training</span><span class="barbtn" onclick="go('training')">view all ▸</span></div>
+            <div class="pbody">
+              <div class="course"><div style="display:flex;justify-content:space-between"><h3>New Ontologist Orientation</h3><span class="pct">60%</span></div><div class="bar"><i style="width:60%"></i></div><div style="margin-top:9px"><a class="btn btn-blue" onclick="go('lesson')">Resume ▸ L6 · SPARQL basics</a></div></div>
+              <div class="course"><div style="display:flex;justify-content:space-between"><h3>Security Awareness 2026</h3><span class="pct">25%</span></div><div class="bar"><i style="width:25%"></i></div><div style="margin-top:9px"><a class="btn btn-outline" onclick="go('lesson')">Resume ▸ Phishing &amp; consent</a></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel" style="margin-bottom:14px"><div class="phead"><span class="t">📅 your day</span><span class="n mono">3</span></div><div class="pbody" style="padding-top:6px">
+            <div class="ev"><b>09:30</b><div>Exec team sync</div></div><div class="ev"><b>11:00</b><div>Paylocity implementation call</div></div><div class="ev"><b>14:00</b><div>1:1 with Rebecca</div></div></div></div>
+          <div class="panel" style="margin-bottom:14px"><div class="phead"><span class="t">🚀 your apps</span></div><div class="pbody" style="padding-top:10px">
+            <div class="tiles"><a class="tile"><span class="em">◉</span><b>COO OS</b><small>ops dashboard</small></a><a class="tile"><span class="em">◎</span><b>Hiring</b><small>ATS</small></a><a class="tile"><span class="em">▚</span><b>Analytics</b><small>web visitors</small></a><a class="tile" onclick="go('ops')"><span class="em">▥</span><b>Ops Manual</b><small>wiki</small></a></div></div></div>
+          <div class="panel"><div class="phead"><span class="t">🛡 your posture</span></div><div class="pbody" style="padding-top:6px">
+            <div class="metric"><span>MFA</span><b style="color:var(--olive)">enrolled ✓</b></div><div class="metric"><span>Security training</span><b style="color:var(--orange)">25% · due</b></div><div class="metric"><span>Device compliance</span><b style="color:var(--olive)">ok ✓</b></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING CATALOG -->
+    <section class="stage" id="v-training" style="display:none">
+      <div class="crumb"><a onclick="go('home')">Home</a><span class="sep">/</span>Training / LMS</div>
+      <h1 class="pagetitle">Training / LMS</h1>
+      <p class="pagesub">Learning paths built from the migrated training content — click a course to open a lesson.</p>
+
+      <div class="panel" style="margin-bottom:14px"><div class="pbody" style="display:flex;align-items:center;gap:14px">
+        <div style="flex:1"><div class="kick">Pick up where you left off</div><h3 style="margin:3px 0 0;color:var(--ink)">New Ontologist Orientation · Lesson 6</h3><div class="bar" style="max-width:320px"><i style="width:60%"></i></div></div>
+        <a class="btn btn-cta" onclick="go('lesson')">Resume</a>
+      </div></div>
+
+      <div class="kick" style="margin:4px 0 8px">Learning paths</div>
+      <div class="cat">
+        <div class="ccard" onclick="go('lesson')"><div class="top"></div><div class="cb"><div class="ck">Foundations · 8 lessons</div><h3>New Ontologist Orientation</h3><p>Start here. What data-centric means, gist, and your first knowledge graph.</p><div class="foot"><span>◆ 60% complete</span><span class="readmore" style="color:var(--link)">Open</span></div></div></div>
+        <div class="ccard" onclick="go('lesson')"><div class="top"></div><div class="cb"><div class="ck">Query · 6 lessons</div><h3>SPARQL Fundamentals</h3><p>Triple patterns, FILTER, OPTIONAL, aggregation — query the graph by meaning.</p><div class="foot"><span>◆ not started</span><span class="readmore" style="color:var(--link)">Open</span></div></div></div>
+        <div class="ccard" onclick="go('lesson')"><div class="top"></div><div class="cb"><div class="ck">Modeling · 7 lessons</div><h3>gist Modeling Patterns</h3><p>Reuse the upper ontology; model categories, events, and magnitudes cleanly.</p><div class="foot"><span>◆ not started</span><span class="readmore" style="color:var(--link)">Open</span></div></div></div>
+        <div class="ccard sec" onclick="go('lesson')"><div class="top"></div><div class="cb"><div class="ck">Compliance · 4 lessons</div><h3>Security Awareness 2026</h3><p>Phishing, OAuth consent, MFA, and reporting. Required annually.</p><div class="foot"><span>◆ 25% complete</span><span class="readmore" style="color:var(--link)">Open</span></div></div></div>
+        <div class="ccard" onclick="go('lesson')"><div class="top"></div><div class="cb"><div class="ck">Tools · 5 lessons</div><h3>Ontology Tooling</h3><p>Protégé, TopBraid, and the SA toolchain for building and validating models.</p><div class="foot"><span>◆ not started</span><span class="readmore" style="color:var(--link)">Open</span></div></div></div>
+        <div class="ccard gold" onclick="go('lesson')"><div class="top"></div><div class="cb"><div class="ck">Delivery · 6 lessons</div><h3>Client Engagement Playbook</h3><p>How SA runs a data-centric engagement end to end, with no lock-in.</p><div class="foot"><span>◆ not started</span><span class="readmore" style="color:var(--link)">Open</span></div></div></div>
+      </div>
+      <p class="anno" style="margin:12px 2px">Catalog = the migrated <span class="chip">SA-Training-Materials</span> content, grouped into paths; progress per-user via Access ID + D1.</p>
+    </section>
+
+    <!-- LESSON -->
+    <section class="stage" id="v-lesson" style="display:none">
+      <div class="crumb"><a onclick="go('home')">Home</a><span class="sep">/</span><a onclick="go('training')">Training</a><span class="sep">/</span>New Ontologist Orientation<span class="sep">/</span>L6 · SPARQL basics</div>
+      <div class="split">
+        <div class="panel"><div class="pbody doc">
+          <div class="kick">Lesson 6 of 8</div>
+          <h1>SPARQL basics: asking the graph questions</h1>
+          <p>SPARQL is how you query a knowledge graph. Instead of joining tables, you describe a <b>pattern of triples</b> — subject, predicate, object — and the engine finds every match. Because the graph already encodes meaning, you ask in business terms, not schema trivia.</p>
+          <h2>Your first query</h2>
+          <p>This returns every customer and the city they're located in:</p>
+          <code class="blk"><span class="kw">PREFIX</span> gist: &lt;https://ontologies.semanticarts.com/gist/&gt;
+<span class="kw">SELECT</span> ?customer ?city <span class="kw">WHERE</span> {
+  ?customer a <span class="tag">gist:Organization</span> ;
+            gist:isLocatedAt ?place .
+  ?place    gist:name ?city .
+}</code>
+          <p>Swap the pattern and you've asked a different question — no remodeling, because <em>connect once, ask many times</em> is the whole point of the data-centric approach.</p>
+          <h2>Why this matters</h2>
+          <p>An AI agent can introspect this same graph and answer in plain language — which is exactly the “semantic layer as the agent's interface” pattern from the trends brief.</p>
+          <div class="lessonnav"><a class="btn btn-outline" onclick="go('lesson')">◂ Prev · L5</a><a class="btn btn-cta">Mark complete ✓</a><a class="btn btn-blue" onclick="go('lesson')">Next · L7 ▸</a></div>
+        </div></div>
+        <div>
+          <div class="panel" style="margin-bottom:14px"><div class="phead"><span class="t">in this course</span><span class="n mono">6/8</span></div><div class="pbody toc" style="padding-top:6px">
+            <a class="done"><span class="m">✓</span>1 · What is data-centric</a><a class="done"><span class="m">✓</span>2 · Meet gist</a><a class="done"><span class="m">✓</span>3 · Entities & relationships</a><a class="done"><span class="m">✓</span>4 · Your first graph</a><a class="done"><span class="m">✓</span>5 · Identity & IRIs</a><a class="cur"><span class="m">▸</span>6 · SPARQL basics</a><a><span class="m">○</span>7 · FILTER & OPTIONAL</a><a><span class="m">○</span>8 · Putting it together</a>
+          </div></div>
+          <div class="panel"><div class="phead"><span class="t">related</span></div><div class="pbody" style="padding-top:6px">
+            <a class="qlink" onclick="go('training')"><span class="ic">◈</span> SPARQL Fundamentals</a><a class="qlink" onclick="go('ops')"><span class="ic">▥</span> Ops Manual: data standards</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPS MANUAL -->
+    <section class="stage" id="v-ops" style="display:none">
+      <div class="crumb"><a onclick="go('home')">Home</a><span class="sep">/</span>Operations Manual<span class="sep">/</span>Onboarding<span class="sep">/</span>New-hire setup</div>
+      <div class="split" style="grid-template-columns:230px 1fr">
+        <div class="panel"><div class="phead"><span class="t">▥ ops manual</span></div><div class="pbody tree" style="padding:8px">
+          <div class="b">// getting started</div><a>Read this first</a><a>Company overview</a>
+          <div class="b">// people & hr</div><a class="cur">New-hire setup</a><a>PTO &amp; leave</a><a>Expenses</a>
+          <div class="b">// delivery</div><a>Project setup</a><a>Invoicing</a><a>Data standards</a>
+          <div class="b">// it</div><a>Accounts &amp; access</a><a>Security policy</a>
+        </div></div>
+        <div class="panel"><div class="pbody doc">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px"><div class="kick" style="flex:1">People &amp; HR</div><a class="btn btn-outline">✎ Edit</a></div>
+          <h1>New-hire setup</h1>
+          <p class="mono" style="font-size:11px;color:var(--gray);margin:0 0 12px">last updated 2026-07-22 · amanda.r · <span class="chip">source: SA-Operations-Manual/people/new-hire-setup.md</span></p>
+          <p>This checklist covers everything needed before a new team member's first day. Owner: Operations. If anything's unclear, ping <span style="color:var(--link)">#ops</span>.</p>
+          <h2>Before Day 1</h2>
+          <p>1. Create the Microsoft 365 account and add to the right Entra groups (all-staff + team + any project).<br>2. Order equipment and ship to arrive 2 days early.<br>3. Assign an onboarding buddy and add to the Week-1 calendar.</p>
+          <h2>Day 1</h2>
+          <p>Walk through accounts &amp; MFA enrollment, the handbook, and the security-awareness training (linked in the LMS). Confirm payroll details in Paylocity.</p>
+          <div class="lessonnav"><span class="anno">Editing commits back to GitHub via the bot route — no personal GitHub account needed.</span><a class="btn btn-blue" onclick="go('training')">Open the linked training ▸</a></div>
+        </div></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="foot">© Semantic Arts, Inc. &nbsp;|&nbsp; semanticarts<span class="o">.</span>com &nbsp;|&nbsp; internal intranet · clickable wireframe · light-console v3</div>
+
+<script>
+  function go(v){
+    document.querySelectorAll('.stage').forEach(s=>s.style.display='none');
+    var el=document.getElementById('v-'+v); if(el) el.style.display='';
+    document.querySelectorAll('.side a[data-v]').forEach(a=>a.classList.toggle('on', a.getAttribute('data-v')===v));
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+</script>
+</body>
+</html>
