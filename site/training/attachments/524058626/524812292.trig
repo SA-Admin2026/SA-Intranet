@@ -1,0 +1,35 @@
+@prefix : <http://ontologies.semanticarts.com/o/dcaoSH#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix prov:<http://www.w3.org/ns/prov#> .
+@prefix sa:<http://ontologies.semanticarts.com/SemArts#> .
+@prefix bp:<http://ontologies.semanticarts.com/backplane#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcao: <http://ontologies.semanticarts.com/dcao/> .
+@prefix gist: <http://ontologies.semanticarts.com/gist/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ontologies.semanticarts.com/o/dcaoSH> .
+
+<http://ontologies.semanticarts.com/o/dcaoSH> rdf:type owl:Ontology .
+
+dcao:_ng_1 
+{
+
+dcao:_ng_1 prov:wasAttributedTo bp:_person6 .
+dcao:_ng_1 prov:wasGeneratedBy "Hand written"^^xsd:string .
+dcao:_ng_1 prov:used "no config file"^^xsd:string .
+dcao:_ng_1 prov:wasDerivedFrom "No app"^^xsd:string .
+dcao:_ng_1 prov:actualDate "2018-08-28T21:55:00Z"^^xsd:dateTime .
+
+dcao:_NodeShape_001a rdf:type sh:NodeShape .
+dcao:_NodeShape_001a sh:targetClass gist:Person .
+dcao:_NodeShape_001a sh:property dcao:_DTPShape_002 .
+
+dcao:_DTPShape_002a rdf:type dcao:DatatypePropertyConstraint .
+dcao:_DTPShape_002a sh:path gist:name .
+dcao:_DTPShape_002a sh:datatype xsd:string . 
+dcao:_DTPShape_002a sh:maxLength '100'^^xsd:integer .
+
+}

@@ -1,0 +1,23 @@
+# Build Aggregate Turn Transition RDF from a CSV.  
+
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> 
+prefix xsd:     <http://www.w3.org/2001/XMLSchema#> 
+prefix owl:     <http://www.w3.org/2002/07/owl#> 
+prefix dc:      <http://purl.org/dc/elements/1.1/> 
+prefix skos:    <http://www.w3.org/2004/02/skos/core#> 
+prefix gist:    <http://ontologies.semanticarts.com/gist/> 
+ 
+
+CONSTRUCT { 
+  ?CONCEPTURI a skos:Concept ; skos:prefLabel ?LABEL; skos:altLabel ?SYNONYM; skos:hiddenLabel ?ACRONYM; skos:inScheme ?DOMAINURI; skos:definition ?DEFINITION; 
+  skos:example ?EXAMPLE; skos:note ?NOTE; skos:related ?RELATEDCONCEPT . 
+  ?DOMAINURI a skos:ConceptScheme; skos:prefLabel ?DOMAIN  .
+
+  
+} 
+WHERE {
+  BIND (URI(CONCAT('http://www.semanticarts.com/vocab/_Concept_', REPLACE(?CONCEPT, '[ (/)]','') ))  AS ?CONCEPTURI)
+  BIND (URI(CONCAT('http://www.semanticarts.com/vocab/_Domain_', REPLACE(?DOMAIN, '[ (/)]','') ))  AS ?DOMAINURI)
+}
+
