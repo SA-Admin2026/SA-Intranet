@@ -1,0 +1,186 @@
+@prefix : <http://ontologies.broadridge.net/convertedFromSkos#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix nd: <http://franz.com/ns/allegrograph/5.0/geo/nd#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix egu: <http://example.com/UnicornWorkingModel#> .
+@prefix err: <http://www.w3.org/2005/xqt-errors#> .
+@prefix fti: <http://franz.com/ns/allegrograph/2.2/textindex/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tag: <http://example.com/WealthManagementTaggedCopy#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix brcm: <https://ontologies.broadridge.net/BRCM/> .
+@prefix brfs: <https://ontologies.broadridge.net/BRFS/> .
+@prefix brwm: <https://ontologies.broadridge.net/BRWM/> .
+@prefix bugs: <http://ontologies.semanticarts.com/BuggyOntologyForTesting/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gist: <https://ontologies.semanticarts.com/gist/> .
+@prefix isoc: <https://www.iso.org/iso-3166-country-codes#> .
+@prefix ndfn: <http://franz.com/ns/allegrograph/5.0/geo/nd/fn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sfor: <http://www.smartlogic.com/2014/08/semaphore-core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix isocur: <http://example.com/CurrencyCodesISO4217#> .
+@prefix metaml: <https://ontologies.broadridge.net/meta/marklogic/> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix keyword: <http://franz.com/ns/keyword#> .
+@prefix tbcteam: <http://topbraid.org/teamwork#> .
+@base <http://ontologies.semanticarts.com/BuggyOntologyForTesting> .
+
+<http://ontologies.semanticarts.com/BuggyOntologyForTesting> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/iAmMyOwnInverse
+
+bugs:iAmMyOwnInverse rdf:type owl:ObjectProperty ;
+                     
+                     owl:inverseOf bugs:iAmMyOwnInverse .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/iAmSymmetric
+
+bugs:iAmSymmetric rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  
+                  rdfs:domain bugs:ClassOne ;
+                  
+                  rdfs:range bugs:ClassTwo .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/iAmSymmetricWithDifferentDomainAndRange
+
+bugs:iAmSymmetricWithDifferentDomainAndRange rdf:type owl:ObjectProperty ;
+                                             
+                                             rdfs:domain bugs:ClassOne ;
+                                             
+                                             rdfs:range bugs:ClassTwo .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/iAmTransitive
+
+bugs:iAmTransitive rdf:type owl:ObjectProperty ,
+                            owl:TransitiveProperty ;
+                   
+                   rdfs:domain bugs:ClassOne ;
+                   
+                   rdfs:range bugs:ClassTwo .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/iHaveTwoDistinctInverses
+
+bugs:iHaveTwoDistinctInverses rdf:type owl:ObjectProperty ;
+                              
+                              owl:inverseOf bugs:inverseOne ,
+                                            bugs:inverseTwo .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/inverseOne
+
+bugs:inverseOne rdf:type owl:ObjectProperty .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/inverseTwo
+
+bugs:inverseTwo rdf:type owl:ObjectProperty .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/pCrossedDomain
+
+bugs:pCrossedDomain rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:domain bugs:SubSubC .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/pCrossedRange
+
+bugs:pCrossedRange rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:range bugs:SubSubC .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/subPCrossedDomain
+
+bugs:subPCrossedDomain rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain bugs:C ;
+                       
+                       rdfs:subPropertyOf bugs:pCrossedDomain .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/subPCrossedRange
+
+bugs:subPCrossedRange rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:range bugs:SubC ;
+                      
+                      rdfs:subPropertyOf bugs:pCrossedRange .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/C
+
+bugs:C rdf:type owl:Class .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/ClassOne
+
+bugs:ClassOne rdf:type owl:Class .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/ClassTwo
+
+bugs:ClassTwo rdf:type owl:Class .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/SubC
+
+bugs:SubC rdf:type owl:Class ;
+          
+          rdfs:subClassOf bugs:C .
+
+
+
+###  http://ontologies.semanticarts.com/BuggyOntologyForTesting/SubSubC
+
+bugs:SubSubC rdf:type owl:Class ;
+             
+             rdfs:subClassOf bugs:SubC .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

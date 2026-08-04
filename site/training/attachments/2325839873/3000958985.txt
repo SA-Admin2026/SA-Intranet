@@ -1,0 +1,55 @@
+
+The Qs:
+
+Q: SKOS vs GIST for Taxo
+
+Q: Category vs. Taxonomy (sub  classes
+    / Concept Scheme
+ gist:hasBroader / hasDirectBroader
+ skos:broaderTransitive / skos:broader
+ 
+   If we keep Gist:Taxo, we should clarify need for hierarchy; 
+    Collection > ControlledVocab > Taxonomy
+
+ Sugg: (DC)
+   Use Categories the way we 'usually' do 
+   A Taxo is a named thing and may have other Metadata round it
+    (DMc: Is the above a dataset?)
+ 
+ Sugg: (DMc from last week)
+ 
+ 
+ Sugg: (RY)
+  Separating members of Category subclass into multiple Taxos
+  E.g. Color, some instances in a taxo of (Chevy colors)?
+
+Q: When to use 1 or the other?
+
+Q: What have people been doing at Clients already?
+
+ MW: what are we doing on MSMAP?
+   use: Cat & SKOS; (non hierarchy)
+    msRpc used categories, hierarchy
+   When use SKOS?
+    when data in SL
+	when the FIrm already had a taxo (that we didn't ontologize)
+   Naming
+   how to type
+   use a limited SKOS
+    broader; skos:CS , C. isScheme, topConceptOf
+	related, *match (between CS), metadata & versios on the CS.
+   how to get at "type";  sometimes typed the SC as a instance of a subclass Category subcl;  could define subcl of Concept
+ DB: Starts w/ Category, sameAs to SKOS Concepts 
+ 
+ IndentifierTypes - often distributed across multi ontos
+
+Commentary:
+- SKOS: is a nest of stuff: Collection, SKOS-XL, etc.
+ [] We may want to identify guidance for handling those
+- 'broader' (not for whole/part)
+- in case of using a term to define concepts, would best be categories
+- re Tooling: many tools support SKOS; how does this incline us? 
+ - Consider VocBench as a possible vocabulary tool (allows not just Taxo, but Onto editing)
+
+Next Steps: 
+ 
