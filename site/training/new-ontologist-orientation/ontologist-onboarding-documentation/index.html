@@ -1,0 +1,1505 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-vdxcvpsm"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Ontologist Onboarding Documentation | Semantic Arts training</title><link rel="canonical" href="http://localhost:4321/training/new-ontologist-orientation/ontologist-onboarding-documentation/"/><link rel="sitemap" href="/training/sitemap-index.xml"/><link rel="shortcut icon" href="/training/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v7.1.6"/><meta name="generator" content="Starlight v0.41.5"/><meta property="og:title" content="Ontologist Onboarding Documentation"/><meta property="og:type" content="article"/><meta property="og:url" content="http://localhost:4321/training/new-ontologist-orientation/ontologist-onboarding-documentation/"/><meta property="og:locale" content="en"/><meta property="og:description" content="Technical &amp; research training — ontologies, RDF/SPARQL, tooling, and methodology."/><meta property="og:site_name" content="Semantic Arts training"/><meta name="twitter:card" content="summary_large_image"/><meta name="description" content="Technical &amp; research training — ontologies, RDF/SPARQL, tooling, and methodology."/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/training/_astro/print.ehPL0gv-.css" media="print"><link rel="stylesheet" href="/training/_astro/middleware.VNxz7h1_.css"><style>@layer starlight.components{.card:where(.astro-zts4jgjd){--sl-card-border:var(--sl-color-purple);--sl-card-bg:var(--sl-color-purple-low);border:1px solid var(--sl-color-gray-5);background-color:var(--sl-color-black);flex-direction:column;gap:clamp(.5rem,.125rem + 1vw,1rem);padding:clamp(1rem,.125rem + 3vw,2.5rem)}.card:where(.astro-zts4jgjd):nth-child(4n+1){--sl-card-border:var(--sl-color-orange);--sl-card-bg:var(--sl-color-orange-low)}.card:where(.astro-zts4jgjd):nth-child(4n+3){--sl-card-border:var(--sl-color-green);--sl-card-bg:var(--sl-color-green-low)}.card:where(.astro-zts4jgjd):nth-child(4n+4){--sl-card-border:var(--sl-color-red);--sl-card-bg:var(--sl-color-red-low)}.card:where(.astro-zts4jgjd):nth-child(4n+5){--sl-card-border:var(--sl-color-blue);--sl-card-bg:var(--sl-color-blue-low)}.title:where(.astro-zts4jgjd){font-weight:600;font-size:var(--sl-text-h4);color:var(--sl-color-white);line-height:var(--sl-line-height-headings);align-items:center;gap:1rem}.card:where(.astro-zts4jgjd) .icon:where(.astro-zts4jgjd){border:1px solid var(--sl-card-border);background-color:var(--sl-card-bg);border-radius:.25rem;flex-shrink:0;padding:.2em}.card:where(.astro-zts4jgjd) .body:where(.astro-zts4jgjd){font-size:clamp(var(--sl-text-sm), calc(.5rem + 1vw), var(--sl-text-body));margin:0}.card-grid:where(.astro-lmor3ela){grid-template-columns:100%;gap:1rem;display:grid}.card-grid:where(.astro-lmor3ela)>*{margin-top:0!important}@media (width>=50rem){.card-grid:where(.astro-lmor3ela){grid-template-columns:1fr 1fr;gap:1.5rem}.stagger:where(.astro-lmor3ela){--stagger-height:5rem;padding-bottom:var(--stagger-height)}.stagger:where(.astro-lmor3ela)>:nth-child(2n){transform:translateY(var(--stagger-height))}}.sl-link-card:where(.astro-vodiqeol){border:1px solid var(--sl-color-gray-5);box-shadow:var(--sl-shadow-sm);border-radius:.5rem;grid-template-columns:1fr auto;gap:.5rem;padding:1rem;display:grid;position:relative}a:where(.astro-vodiqeol){line-height:var(--sl-line-height-headings);text-decoration:none}a:where(.astro-vodiqeol):before{content:"";position:absolute;inset:0}.stack:where(.astro-vodiqeol){flex-direction:column;gap:.5rem}.title:where(.astro-vodiqeol){color:var(--sl-color-white);font-weight:600;font-size:var(--sl-text-lg)}.description:where(.astro-vodiqeol){color:var(--sl-color-gray-3);line-height:1.5}.icon:where(.astro-vodiqeol){color:var(--sl-color-gray-3)}.sl-link-card:where(.astro-vodiqeol):hover{background:var(--sl-color-gray-7,var(--sl-color-gray-6));border-color:var(--sl-color-gray-2)}.sl-link-card:where(.astro-vodiqeol):hover .icon:where(.astro-vodiqeol){color:var(--sl-color-white)}}
+@layer starlight.components{svg:where(.astro-n5k4ipy7){color:var(--sl-icon-color);font-size:var(--sl-icon-size,1em);width:1em;height:1em}}
+</style><script type="module" src="/training/_astro/page.LAbJoB63.js"></script></head><body class="astro-vdxcvpsm"><a class="sl-skip-link astro-vxeigawq" href="#_top">Skip to content</a><div class="page sl-flex astro-gqpr5s5a"><header class="header astro-gqpr5s5a"><div class="header astro-nczgtkxc"><div class="title-wrapper sl-flex astro-nczgtkxc"><a href="/training/" class="site-title sl-flex astro-clw6ags5"><img class="astro-clw6ags5" alt src="/training/_astro/logo.lZDfLvZr.svg" width="32" height="32"><span class="astro-clw6ags5" translate="no">Semantic Arts training</span></a></div><div class="sl-flex print:hidden astro-nczgtkxc"><site-search class="astro-nczgtkxc astro-r5ar4xm7" data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-r5ar4xm7"><svg aria-hidden="true" class="astro-r5ar4xm7 astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block astro-r5ar4xm7" aria-hidden="true">Search</span><kbd class="sl-hidden md:sl-flex astro-r5ar4xm7" style="display: none;"><kbd class="astro-r5ar4xm7">Ctrl</kbd><kbd class="astro-r5ar4xm7">K</kbd></kbd></button><dialog style="padding:0" aria-label="Search" class="astro-r5ar4xm7"><div class="dialog-frame sl-flex astro-r5ar4xm7"><button data-close-modal class="sl-flex md:sl-hidden astro-r5ar4xm7">Cancel</button><div class="search-container astro-r5ar4xm7"><div id="starlight__search" class="astro-r5ar4xm7"></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/training/_astro/Search.astro_astro_type_script_index_0_lang.D7TbHt1H.js"></script></div><div class="sl-hidden md:sl-flex print:hidden right-group astro-nczgtkxc"><div class="sl-flex social-icons astro-nczgtkxc"></div><starlight-theme-select><label style="--sl-select-width: 6.25em" class="astro-r2p65idu"><span class="sr-only astro-r2p65idu">Select theme</span><svg aria-hidden="true" class="icon label-icon astro-r2p65idu astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><select autocomplete="off" class="astro-r2p65idu"><option value="dark" class="astro-r2p65idu">Dark</option><option value="light" class="astro-r2p65idu">Light</option><option value="auto" selected class="astro-r2p65idu">Auto</option></select><svg aria-hidden="true" class="icon caret astro-r2p65idu astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>
+	StarlightThemeProvider.updatePickers();
+</script><script type="module">var e=`starlight-theme`,t=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,n=()=>t(typeof localStorage<`u`&&localStorage.getItem(e));function r(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var i=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function a(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e===`auto`?i():e,r(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{n()===`auto`&&a(`auto`)});var o=class extends HTMLElement{constructor(){super(),a(n()),this.querySelector(`select`)?.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&a(t(e.currentTarget.value))})}};customElements.define(`starlight-theme-select`,o);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script></div></div></header><nav class="sidebar print:hidden astro-gqpr5s5a" aria-label="Main"><starlight-menu-button class="print:hidden astro-vvx7mffu"><button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-vvx7mffu"><svg aria-hidden="true" class="open-menu astro-vvx7mffu astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg aria-hidden="true" class="close-menu astro-vvx7mffu astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg></button></starlight-menu-button><script type="module">var e=class extends HTMLElement{btn=this.querySelector(`button`);constructor(){super(),this.btn.addEventListener(`click`,()=>this.toggleExpanded());let e=this.closest(`nav`);e&&e.addEventListener(`keyup`,e=>this.closeOnEscape(e)),matchMedia(`(min-width: 50em)`).addEventListener(`change`,()=>this.setExpanded(!1))}setExpanded(e){this.setAttribute(`aria-expanded`,String(e)),document.body.toggleAttribute(`data-mobile-menu-expanded`,e),document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}toggleExpanded(){this.setExpanded(this.getAttribute(`aria-expanded`)!==`true`)}closeOnEscape(e){e.code===`Escape`&&(this.setExpanded(!1),this.btn.focus())}};customElements.define(`starlight-menu-button`,e);</script><div id="starlight__sidebar" class="sidebar-pane astro-gqpr5s5a"><div class="sidebar-content sl-flex astro-gqpr5s5a"><sl-sidebar-state-persist data-hash="17jig4h" class="astro-f5yvicm7"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/map/" class="large astro-ojxuodky"><span class="astro-ojxuodky">Knowledge map</span><span class="sl-badge success small  astro-ojxuodky astro-7hkzaclv">new</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Start here</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">New ontologist orientation</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/new-ontologist-orientation/" class="astro-ojxuodky"><span class="astro-ojxuodky">New Ontologist Orientation</span></a></li><li class="astro-ojxuodky"><a href="/training/new-ontologist-orientation/knowledge-graph---training-materials/" class="astro-ojxuodky"><span class="astro-ojxuodky">Knowledge Graph - Training Materials</span></a></li><li class="astro-ojxuodky"><a href="/training/new-ontologist-orientation/learning-owl-reasoning/" class="astro-ojxuodky"><span class="astro-ojxuodky">Learning OWL Reasoning</span></a></li><li class="astro-ojxuodky"><a href="/training/new-ontologist-orientation/ontologist-onboarding-documentation/" aria-current="page" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontologist Onboarding Documentation</span></a></li><li class="astro-ojxuodky"><a href="/training/new-ontologist-orientation/proposed-improvements-to-ontologist-onboarding/" class="astro-ojxuodky"><span class="astro-ojxuodky">Proposed Improvements to Ontologist Onboarding</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Foundations</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="2"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Data-centricity</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="3"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/data-centricity/" class="astro-ojxuodky"><span class="astro-ojxuodky">Data centricity</span></a></li><li class="astro-ojxuodky"><a href="/training/data-centricity/data-centric-architecture-for-2022-internally/" class="astro-ojxuodky"><span class="astro-ojxuodky">Data-Centric Architecture for 2022 Internally</span></a></li><li class="astro-ojxuodky"><a href="/training/data-centricity/ideas-for-data-centricity-track/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ideas for data-centricity track</span></a></li><li class="astro-ojxuodky"><a href="/training/data-centricity/metaphacts-metaphactory/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metaphacts / Metaphactory</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Data-centric methodology</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="4"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/data-centric-methodology---documenting-our-approach/" class="astro-ojxuodky"><span class="astro-ojxuodky">Data-centric Methodology - documenting our approach</span></a></li><li class="astro-ojxuodky"><a href="/training/data-centric-methodology---documenting-our-approach/extract-load-transform/" class="astro-ojxuodky"><span class="astro-ojxuodky">Extract-Load-Transform</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Knowledge graphs &amp; knowledge bases</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="5"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/knowlege-graphs-knowledge-bases/" class="astro-ojxuodky"><span class="astro-ojxuodky">Knowlege Graphs, Knowledge Bases</span></a></li><li class="astro-ojxuodky"><a href="/training/knowlege-graphs-knowledge-bases/graphql/" class="astro-ojxuodky"><span class="astro-ojxuodky">GraphQL</span></a></li><li class="astro-ojxuodky"><a href="/training/knowlege-graphs-knowledge-bases/neo4j/" class="astro-ojxuodky"><span class="astro-ojxuodky">Neo4j</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">URIs</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="6"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/uris-uniform-resource-identifiers/" class="astro-ojxuodky"><span class="astro-ojxuodky">URIs (Uniform Resource Identifiers)</span></a></li><li class="astro-ojxuodky"><a href="/training/uris-uniform-resource-identifiers/ideas-for-a-uri-generation-pre--or-post-processor/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ideas for a URI Generation Pre- or Post-Processor</span></a></li><li class="astro-ojxuodky"><a href="/training/uris-uniform-resource-identifiers/uris-hashes-v-slashes/" class="astro-ojxuodky"><span class="astro-ojxuodky">URIs: Hashes v Slashes</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Semantic slums</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="7"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/semantic-slums/" class="astro-ojxuodky"><span class="astro-ojxuodky">Semantic Slums</span></a></li><li class="astro-ojxuodky"><a href="/training/semantic-slums/protege-fact/" class="astro-ojxuodky"><span class="astro-ojxuodky">Protege Fact++</span></a></li><li class="astro-ojxuodky"><a href="/training/semantic-slums/smart-logic/" class="astro-ojxuodky"><span class="astro-ojxuodky">Smart Logic</span></a></li><li class="astro-ojxuodky"><a href="/training/semantic-slums/so-you-want-to-deploy-your-first-knowledge-graph/" class="astro-ojxuodky"><span class="astro-ojxuodky">So you want to deploy your first knowledge graph?</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Modeling &amp; ontologies</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="8"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Ontology</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="9"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/distinctionary/" class="astro-ojxuodky"><span class="astro-ojxuodky">Distinctionary</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/evaluating-ontologies/" class="astro-ojxuodky"><span class="astro-ojxuodky">Evaluating Ontologies</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/external-non-semantic-arts-ontologies/" class="astro-ojxuodky"><span class="astro-ojxuodky">External (non-Semantic-Arts) Ontologies</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/finservices-ontology-discussion/" class="astro-ojxuodky"><span class="astro-ojxuodky">FinServices Ontology Discussion</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/gist-ufo/" class="astro-ojxuodky"><span class="astro-ojxuodky">gist &amp; UFO</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/gistified-pizza-ontology/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistified Pizza Ontology</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/historical-data/" class="astro-ojxuodky"><span class="astro-ojxuodky">Historical Data</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/interoperability-with-classonomies/" class="astro-ojxuodky"><span class="astro-ojxuodky">Interoperability with Classonomies</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">modeling-guidance</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="10"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/" class="astro-ojxuodky"><span class="astro-ojxuodky">Modeling Guidance</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">common-design-patterns-in-ontologies</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="11"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/common-design-patterns-in-ontologies/" class="astro-ojxuodky"><span class="astro-ojxuodky">Common Design Patterns in Ontologies</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/common-design-patterns-in-ontologies/representing-text-and-other-content-fields/" class="astro-ojxuodky"><span class="astro-ojxuodky">Representing Text and Other Content Fields</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/modeling-characteristics-and-their-values/" class="astro-ojxuodky"><span class="astro-ojxuodky">Modeling Characteristics and Their Values</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/modeling-ids/" class="astro-ojxuodky"><span class="astro-ojxuodky">Modeling IDs</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/modeling-time-in-gist/" class="astro-ojxuodky"><span class="astro-ojxuodky">Modeling Time in Gist</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/parti/" class="astro-ojxuodky"><span class="astro-ojxuodky">Parti</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/modeling-guidance/the-cbox/" class="astro-ojxuodky"><span class="astro-ojxuodky">The CBox</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology/naming-and-resolving-ontologies/" class="astro-ojxuodky"><span class="astro-ojxuodky">Naming and Resolving Ontologies</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/notes-on-creating-triples/" class="astro-ojxuodky"><span class="astro-ojxuodky">Notes on creating triples</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-checklist/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Checklist</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">ontology-design-patterns-and-best-practices</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="12"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Design Patterns and Best Practices</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/categories-design-patterns-and-best-practices/" class="astro-ojxuodky"><span class="astro-ojxuodky">Categories: Design Patterns and Best Practices</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/class-instance-mirror-pattern---to-avoid-punning/" class="astro-ojxuodky"><span class="astro-ojxuodky">Class-Instance Mirror pattern - to avoid punning</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/namespace-and-ontology-iris/" class="astro-ojxuodky"><span class="astro-ojxuodky">Namespace and Ontology IRIs</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/ontology-engineering-best-practices/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Engineering Best Practices</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/owl-restrictions-best-practices-and-design-patterns/" class="astro-ojxuodky"><span class="astro-ojxuodky">OWL Restrictions: Best Practices and Design Patterns</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/property-definitions/" class="astro-ojxuodky"><span class="astro-ojxuodky">Property Definitions</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-design-patterns-and-best-practices/when-owl-dl-is-too-restrictive/" class="astro-ojxuodky"><span class="astro-ojxuodky">When OWL-DL is too restrictive</span></a></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">ontology-knowledge-exchange-oke</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="13"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Knowledge Exchange (OKE)</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-05-23---collaboration-using-github/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-05-23 - Collaboration using GitHub</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-05-30---modeling-addresses/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-05-30 - Modeling Addresses</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-06-13---rename-gistsw/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-06-13 - Rename gistSW</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-06-20---remove-o-from-ontology-iris/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-06-20 - Remove /o from ontology IRIs ?</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-06-27---rdf-scribe/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-06-27 - rdf-scribe</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-07-18---system-class-and-gistcomputing-feat-network-component/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-07-18 - System Class and gistComputing feat. Network, Component</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/2023-07-25---cardinality-and-value-restrictions/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-07-25 - Cardinality and Value Restrictions</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/ontology-knowledge-exchange-meeting-gistcontent/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Knowledge Exchange Meeting: gist:Content</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/usage-patterns-and-examples-for-gist/" class="astro-ojxuodky"><span class="astro-ojxuodky">Usage Patterns and Examples for gist</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">what-is-a-knowledge-graph</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="14"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/what-is-a-knowledge-graph/" class="astro-ojxuodky"><span class="astro-ojxuodky">What is a Knowledge Graph?</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/ontology-knowledge-exchange-oke/what-is-a-knowledge-graph/what-are-people-talking-about-when-they-talk-about-knowledge-graphs/" class="astro-ojxuodky"><span class="astro-ojxuodky">What are People Talking About When They Talk About Knowledge Graphs?</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology/owl-2-rl-reasoning/" class="astro-ojxuodky"><span class="astro-ojxuodky">OWL 2 RL Reasoning</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/proposal-to-abandon-use-of-tbox-and-abox/" class="astro-ojxuodky"><span class="astro-ojxuodky">Proposal to abandon use of &#39;TBox&#39; and &#39;ABox&#39;</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/prov-o-trig/" class="astro-ojxuodky"><span class="astro-ojxuodky">PROV-O &amp; TriG</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/publishing-an-ontology-on-the-web/" class="astro-ojxuodky"><span class="astro-ojxuodky">Publishing an Ontology on the Web</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/rdf-reification-vs-mscorecomplexrelationship-gisttemporalrelation/" class="astro-ojxuodky"><span class="astro-ojxuodky">RDF Reification vs. mscore:ComplexRelationship &amp; gist:TemporalRelation</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/redundancy-and-maximal-inference/" class="astro-ojxuodky"><span class="astro-ojxuodky">Redundancy and Maximal Inference</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/reference-data/" class="astro-ojxuodky"><span class="astro-ojxuodky">Reference data</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">semantic-arts-offerings-documentation</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="15"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/" class="astro-ojxuodky"><span class="astro-ojxuodky">Semantic Arts Offerings Documentation</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">gistcyber-documentation</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="16"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistCyber Documentation</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">a-gistcyber-use-cases---think-big-start-small</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="17"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/a-gistcyber-use-cases---think-big-start-small/" class="astro-ojxuodky"><span class="astro-ojxuodky">A gistCyber Use Cases - Think Big, start Small</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/a-gistcyber-use-cases---think-big-start-small/cybersecurity-problems-and-responsibilities/" class="astro-ojxuodky"><span class="astro-ojxuodky">Cybersecurity Problems and Responsibilities</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/a-gistcyber-use-cases---think-big-start-small/detection-collection-and-sense-making/" class="astro-ojxuodky"><span class="astro-ojxuodky">Detection, Collection, and Sense Making</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/a-gistcyber-use-cases---think-big-start-small/use-case-reference-implementations/" class="astro-ojxuodky"><span class="astro-ojxuodky">Use Case Reference Implementations</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/big-picture-elements-of-gistcyber/" class="astro-ojxuodky"><span class="astro-ojxuodky">Big Picture Elements of gistCyber</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">cybersecurity-reference-graph-project-plan</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="18"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/cybersecurity-reference-graph-project-plan/" class="astro-ojxuodky"><span class="astro-ojxuodky">Cybersecurity Reference Graph Project Plan</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">semantic-arts-franz-demonstration-use-case</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="19"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/cybersecurity-reference-graph-project-plan/semantic-arts-franz-demonstration-use-case/" class="astro-ojxuodky"><span class="astro-ojxuodky">Semantic Arts &amp; Franz Demonstration Use Case</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/cybersecurity-reference-graph-project-plan/semantic-arts-franz-demonstration-use-case/defining-attributes-of-threatactor-subclasses/" class="astro-ojxuodky"><span class="astro-ojxuodky">Defining Attributes of ThreatActor subclasses</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/cybersecurity-reference-graph-project-plan/semantic-arts-franz-demonstration-use-case/messaging-queue-and-messaging-broker/" class="astro-ojxuodky"><span class="astro-ojxuodky">Messaging Queue and Messaging Broker</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/cybersecurity-reference-graph-project-plan/semantic-arts-franz-demonstration-use-case/proposed-demo-sequence-diagram/" class="astro-ojxuodky"><span class="astro-ojxuodky">Proposed Demo Sequence Diagram</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">gistbfo-mapping-notes</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="20"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/gistbfo-mapping-notes/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistBFO Mapping Notes</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">gistcomputing-gistbfo-mapping</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="21"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/gistbfo-mapping-notes/gistcomputing-gistbfo-mapping/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistComputing / gistBFO Mapping</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/gistbfo-mapping-notes/gistcomputing-gistbfo-mapping/stix-cyber-observable-objects/" class="astro-ojxuodky"><span class="astro-ojxuodky">STIX Cyber Observable objects</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">gistcyber-ontology-development-meetings</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="22"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/gistcyber-ontology-development-meetings/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistCyber Ontology Development Meetings</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/gistcyber-documentation/gistcyber-ontology-development-meetings/2025-05-15-initial-meeting/" class="astro-ojxuodky"><span class="astro-ojxuodky">2025-05-15 Initial Meeting</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">new-concept-development</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="23"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/new-concept-development/" class="astro-ojxuodky"><span class="astro-ojxuodky">New Concept Development</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/new-concept-development/hypothesis/" class="astro-ojxuodky"><span class="astro-ojxuodky">Hypothesis</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/semantic-arts-offerings-documentation/new-concept-development/plan-sub-class-of-tasktemplate/" class="astro-ojxuodky"><span class="astro-ojxuodky">Plan (sub-class of TaskTemplate??)</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">triple-patterns</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="24"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology/triple-patterns/" class="astro-ojxuodky"><span class="astro-ojxuodky">Triple Patterns</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology/triple-patterns/the-lookup-table-pattern/" class="astro-ojxuodky"><span class="astro-ojxuodky">The Lookup Table Pattern</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology/what-is-left-behind-from-a-data-schema/" class="astro-ojxuodky"><span class="astro-ojxuodky">What is left behind from a data schema?</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Ontology quality metrics</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="25"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Quality Metrics</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-accuracy/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Accuracy</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-adaptability/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Adaptability</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-completeness/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Completeness</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-complexity-reduction/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Complexity Reduction</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-conciseness/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Conciseness</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">metric-consistency</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="26"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-consistency/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Consistency</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-consistency/metric-consistency---assessment-checklist/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Consistency - Assessment Checklist</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-consistency/metric-consistency---previous-work/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Consistency - Previous Work</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-consistency/metricconsistency---automated-tests/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric:Consistency - Automated Tests</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/metric-understandability/" class="astro-ojxuodky"><span class="astro-ojxuodky">Metric: Understandability</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-quality-metrics/sampling-of-concepts-from-ontologies/" class="astro-ojxuodky"><span class="astro-ojxuodky">Sampling of Concepts from Ontologies</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Languages (RDF, OWL, SHACL, SPARQL)</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="27"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/languages/" class="astro-ojxuodky"><span class="astro-ojxuodky">Languages</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/owl-vs-shacl/" class="astro-ojxuodky"><span class="astro-ojxuodky">OWL vs. SHACL</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">python-cookbook</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="28"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/languages/python-cookbook/" class="astro-ojxuodky"><span class="astro-ojxuodky">Python Cookbook</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/python-cookbook/python-for-rookies/" class="astro-ojxuodky"><span class="astro-ojxuodky">Python for rookies</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/languages/regular-expressions-regex/" class="astro-ojxuodky"><span class="astro-ojxuodky">Regular Expressions (RegEx)</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">shacl-shapes-constraint-language</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="29"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/languages/shacl-shapes-constraint-language/" class="astro-ojxuodky"><span class="astro-ojxuodky">SHACL (Shapes Constraint Language)</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/shacl-shapes-constraint-language/shacl-via-sparql-query/" class="astro-ojxuodky"><span class="astro-ojxuodky">SHACL via SPARQL Query</span></a></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">sparql</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="30"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/languages/sparql/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/beware-strings-with-vs-without-explicit-datatype/" class="astro-ojxuodky"><span class="astro-ojxuodky">BEWARE: strings with vs. without explicit datatype</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/computing-taxonomy-levels/" class="astro-ojxuodky"><span class="astro-ojxuodky">Computing Taxonomy Levels</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/language-tag-fall-backs/" class="astro-ojxuodky"><span class="astro-ojxuodky">Language Tag Fall-backs</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/retrieving-order-from-gistdirectlyprecedes/" class="astro-ojxuodky"><span class="astro-ojxuodky">Retrieving order from gist:directlyPrecedes</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">sparql-examples</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="31"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-examples/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL Examples</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-examples/sparql-fibo-queries/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL FIBO Queries</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-examples/sparql-for-analyzing-data-sets/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL for Analyzing Data Sets</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-examples/string-conversions-for-tarql-sparql-anything/" class="astro-ojxuodky"><span class="astro-ojxuodky">String Conversions for TARQL / SPARQL Anything</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-examples/updating-a-use-case-and-its-data-in-place/" class="astro-ojxuodky"><span class="astro-ojxuodky">Updating a Use Case and its Data in Place</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-generic-queries-applicable-to-any-store/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL: Generic queries applicable to any store</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-gotchas/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL Gotchas</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-inference/" class="astro-ojxuodky"><span class="astro-ojxuodky">Sparql inference</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-jupyter-notebook/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL Jupyter Notebook</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-sort-tip/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL sort tip</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-string-functions/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL string functions</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-to-discover-as-used-kg-schema/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL to Discover as-used KG schema</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/sparql-useful-info-tips-tricks/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL useful info: Tips &amp; Tricks</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/subqueries/" class="astro-ojxuodky"><span class="astro-ojxuodky">Subqueries</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/tarql-federated-sparql-proteins/" class="astro-ojxuodky"><span class="astro-ojxuodky">tarql + Federated SPARQL (+ proteins!)</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">tarql-sparql-for-tables</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="32"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/languages/sparql/tarql-sparql-for-tables/" class="astro-ojxuodky"><span class="astro-ojxuodky">TARQL: SPARQL for Tables</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/tarql-sparql-for-tables/installing-tarql/" class="astro-ojxuodky"><span class="astro-ojxuodky">Installing Tarql</span></a></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/tarql-sparql-for-tables/tarql-string-splitting-coolness/" class="astro-ojxuodky"><span class="astro-ojxuodky">Tarql String Splitting Coolness</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/languages/sparql/values-keyword-sometimes-better-than-unions/" class="astro-ojxuodky"><span class="astro-ojxuodky">VALUES Keyword sometimes better than UNIONs</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/languages/special-characters-unicode-html/" class="astro-ojxuodky"><span class="astro-ojxuodky">Special Characters, Unicode &amp; HTML</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Tools &amp; technology</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="33"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Ontology tools</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="34"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-tools/" class="astro-ojxuodky"><span class="astro-ojxuodky">Ontology Tools</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">2025-ontology-tooling-development-project</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="35"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/" class="astro-ojxuodky"><span class="astro-ojxuodky">2025 Ontology Tooling Development Project</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/favourite-editor-and-packages/" class="astro-ojxuodky"><span class="astro-ojxuodky">Favourite Editor and Packages</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/file-structure-decisions/" class="astro-ojxuodky"><span class="astro-ojxuodky">File Structure Decisions</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/git---templates-submodules-and-worktrees/" class="astro-ojxuodky"><span class="astro-ojxuodky">Git - Templates, Submodules and Worktrees</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/new-project-setup-tools---diagram/" class="astro-ojxuodky"><span class="astro-ojxuodky">New Project Setup Tools - Diagram</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">using-github-to-template-and-supply-projects</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="36"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/using-github-to-template-and-supply-projects/" class="astro-ojxuodky"><span class="astro-ojxuodky">Using GitHub to template and supply projects</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/2025-ontology-tooling-development-project/using-github-to-template-and-supply-projects/semantic-operations-repository-template-sort/" class="astro-ojxuodky"><span class="astro-ojxuodky">Semantic Operations Repository Template (SORT)</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">etl---loading-accessing-rdf</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="37"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-tools/etl---loading-accessing-rdf/" class="astro-ojxuodky"><span class="astro-ojxuodky">ETL - Loading / Accessing RDF</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/etl---loading-accessing-rdf/exploration-of-semantic-arts-etl-tool/" class="astro-ojxuodky"><span class="astro-ojxuodky">Exploration of Semantic Arts ETL Tool</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/etl---loading-accessing-rdf/maplib-data-treehouse/" class="astro-ojxuodky"><span class="astro-ojxuodky">maplib (Data Treehouse)</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/etl---loading-accessing-rdf/production-grade-etl-approach---ideas/" class="astro-ojxuodky"><span class="astro-ojxuodky">Production-grade ETL Approach - ideas</span></a></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">protege</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="38"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/" class="astro-ojxuodky"><span class="astro-ojxuodky">Protege</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/catalog-file/" class="astro-ojxuodky"><span class="astro-ojxuodky">Catalog File</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/custom-protege-tabs/" class="astro-ojxuodky"><span class="astro-ojxuodky">Custom Protege Tabs</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/display-of-inferred-classes/" class="astro-ojxuodky"><span class="astro-ojxuodky">Display of Inferred Classes</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/giving-protege-more-memory/" class="astro-ojxuodky"><span class="astro-ojxuodky">Giving Protege more memory</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/importing-tricks-with-protg/" class="astro-ojxuodky"><span class="astro-ojxuodky">Importing Tricks with Protégé</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/materializing-triples/" class="astro-ojxuodky"><span class="astro-ojxuodky">Materializing Triples</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/protege-5x-nested-turtle-import-bug/" class="astro-ojxuodky"><span class="astro-ojxuodky">Protege 5.x Nested Turtle Import Bug</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/protege-user-mailing-list/" class="astro-ojxuodky"><span class="astro-ojxuodky">Protege User Mailing List</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/protege/protg-vs-tobpraid-composer-tbc/" class="astro-ojxuodky"><span class="astro-ojxuodky">Protégé vs. Tobpraid Composer (TBC)</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/r2rml/" class="astro-ojxuodky"><span class="astro-ojxuodky">R2RML</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/rdf-serializer/" class="astro-ojxuodky"><span class="astro-ojxuodky">RDF Serializer</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/sparql-anything/" class="astro-ojxuodky"><span class="astro-ojxuodky">SPARQL Anything</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">visualization</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="39"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ontology-tools/visualization/" class="astro-ojxuodky"><span class="astro-ojxuodky">Visualization</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/visualization/tom-sawyer-software/" class="astro-ojxuodky"><span class="astro-ojxuodky">Tom Sawyer Software</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/visualization/tools-for-visualization-of-rdf/" class="astro-ojxuodky"><span class="astro-ojxuodky">Tools for Visualization of RDF</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/visualization-tools/" class="astro-ojxuodky"><span class="astro-ojxuodky">Visualization Tools</span></a></li><li class="astro-ojxuodky"><a href="/training/ontology-tools/vocbench/" class="astro-ojxuodky"><span class="astro-ojxuodky">VocBench</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Graph technology</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="40"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/graph-technology/" class="astro-ojxuodky"><span class="astro-ojxuodky">Graph technology</span></a></li><li class="astro-ojxuodky"><a href="/training/graph-technology/graph-technology-analysis-reports/" class="astro-ojxuodky"><span class="astro-ojxuodky">Graph technology analysis reports</span></a></li><li class="astro-ojxuodky"><a href="/training/graph-technology/labeled-property-graph-databases-lpg/" class="astro-ojxuodky"><span class="astro-ojxuodky">Labeled Property Graph Databases (LPG)</span></a></li><li class="astro-ojxuodky"><a href="/training/graph-technology/rdf-graph-databases-triple-storesquad-stores/" class="astro-ojxuodky"><span class="astro-ojxuodky">RDF Graph Databases (Triple stores/Quad stores)</span></a></li><li class="astro-ojxuodky"><a href="/training/graph-technology/triple-store-key-features/" class="astro-ojxuodky"><span class="astro-ojxuodky">Triple Store Key Features</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Triple stores</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="41"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/triple-stores---maintenance-and-evolution/" class="astro-ojxuodky"><span class="astro-ojxuodky">Triple Stores - maintenance and evolution</span></a></li><li class="astro-ojxuodky"><a href="/training/triple-stores---maintenance-and-evolution/beware-removing-dupes-across-all-graphs/" class="astro-ojxuodky"><span class="astro-ojxuodky">BEWARE: removing dupes across all graphs</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Software &amp; dev tools</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="42"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/software/" class="astro-ojxuodky"><span class="astro-ojxuodky">Software</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">allegrograph</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="43"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/software/allegrograph/" class="astro-ojxuodky"><span class="astro-ojxuodky">AllegroGraph</span></a></li><li class="astro-ojxuodky"><a href="/training/software/allegrograph/index-optimization-in-allegrograph/" class="astro-ojxuodky"><span class="astro-ojxuodky">Index Optimization in Allegrograph</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/software/collibra/" class="astro-ojxuodky"><span class="astro-ojxuodky">Collibra</span></a></li><li class="astro-ojxuodky"><a href="/training/software/command-line-utilities/" class="astro-ojxuodky"><span class="astro-ojxuodky">Command Line Utilities</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">docker</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="44"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/software/docker/" class="astro-ojxuodky"><span class="astro-ojxuodky">Docker</span></a></li><li class="astro-ojxuodky"><a href="/training/software/docker/docker-compose/" class="astro-ojxuodky"><span class="astro-ojxuodky">Docker compose</span></a></li><li class="astro-ojxuodky"><a href="/training/software/docker/docker-for-nginx/" class="astro-ojxuodky"><span class="astro-ojxuodky">Docker for nginx</span></a></li><li class="astro-ojxuodky"><a href="/training/software/docker/docker-for-windows-10-pro/" class="astro-ojxuodky"><span class="astro-ojxuodky">Docker for Windows 10 Pro</span></a></li><li class="astro-ojxuodky"><a href="/training/software/docker/running-docker/" class="astro-ojxuodky"><span class="astro-ojxuodky">Running Docker</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/software/java/" class="astro-ojxuodky"><span class="astro-ojxuodky">Java</span></a></li><li class="astro-ojxuodky"><a href="/training/software/poolparty-semantic-suite/" class="astro-ojxuodky"><span class="astro-ojxuodky">PoolParty Semantic Suite</span></a></li><li class="astro-ojxuodky"><a href="/training/software/rdfox-resources/" class="astro-ojxuodky"><span class="astro-ojxuodky">RDFox Resources</span></a></li><li class="astro-ojxuodky"><a href="/training/software/semaphore/" class="astro-ojxuodky"><span class="astro-ojxuodky">Semaphore</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">stardog</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="45"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/software/stardog/" class="astro-ojxuodky"><span class="astro-ojxuodky">StarDog</span></a></li><li class="astro-ojxuodky"><a href="/training/software/stardog/getting-started-with-stardog/" class="astro-ojxuodky"><span class="astro-ojxuodky">Getting Started with Stardog</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/software/topbraid-products-composer-evn-edg/" class="astro-ojxuodky"><span class="astro-ojxuodky">TopBraid Products (Composer, EVN, EDG)</span></a></li><li class="astro-ojxuodky"><a href="/training/software/vpn/" class="astro-ojxuodky"><span class="astro-ojxuodky">VPN</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Data sources</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="46"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/data-sources/" class="astro-ojxuodky"><span class="astro-ojxuodky">Data Sources</span></a></li><li class="astro-ojxuodky"><a href="/training/data-sources/google-bigquery/" class="astro-ojxuodky"><span class="astro-ojxuodky">Google BigQuery</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Practice &amp; team</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="47"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Squads</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="48"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/" class="astro-ojxuodky"><span class="astro-ojxuodky">Squads</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">cybersecurity-squad</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="49"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/cybersecurity-squad/" class="astro-ojxuodky"><span class="astro-ojxuodky">Cybersecurity Squad</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">development</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="50"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/cybersecurity-squad/development/" class="astro-ojxuodky"><span class="astro-ojxuodky">Development</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/cybersecurity-squad/development/gistcyber-hypothesis/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistCyber Hypothesis</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/cybersecurity-squad/development/gistcyber-plan/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistCyber Plan</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/squads/finance-squad/" class="astro-ojxuodky"><span class="astro-ojxuodky">Finance Squad</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">healthcare-and-life-science-squad</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="51"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/" class="astro-ojxuodky"><span class="astro-ojxuodky">Healthcare and Life Science Squad</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">gistpharma-general-development</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="52"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/gistpharma-general-development/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistPharma general development</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/gistpharma-general-development/gistpharma-release-steps/" class="astro-ojxuodky"><span class="astro-ojxuodky">gistPharma release steps</span></a></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">sa-pharma-offerings</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="53"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/" class="astro-ojxuodky"><span class="astro-ojxuodky">SA Pharma Offerings</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/brand-manifesto-draft/" class="astro-ojxuodky"><span class="astro-ojxuodky">Brand Manifesto [Draft]</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">cmc-use-cases</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="54"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/cmc-use-cases/" class="astro-ojxuodky"><span class="astro-ojxuodky">CMC Use Cases</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/cmc-use-cases/notes/" class="astro-ojxuodky"><span class="astro-ojxuodky">Notes</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/general-notes-and-vocabulary/" class="astro-ojxuodky"><span class="astro-ojxuodky">General Notes and Vocabulary</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/notes-on-competitive-analysis/" class="astro-ojxuodky"><span class="astro-ojxuodky">Notes on Competitive Analysis</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/notes-on-disease-target-identification/" class="astro-ojxuodky"><span class="astro-ojxuodky">Notes on Disease Target Identification</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/notes-on-webinar-cmc-process-ontology-community-of-interest/" class="astro-ojxuodky"><span class="astro-ojxuodky">Notes on Webinar: CMC Process Ontology Community of Interest</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/offering-brainstorming/" class="astro-ojxuodky"><span class="astro-ojxuodky">Offering brainstorming</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/prior-client-work/" class="astro-ojxuodky"><span class="astro-ojxuodky">Prior client work</span></a></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/sa-pharma-offerings/weekly-goals-and-deliverables-tracker/" class="astro-ojxuodky"><span class="astro-ojxuodky">Weekly goals and deliverables tracker</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/squads/healthcare-and-life-science-squad/safluree-ectd-offering/" class="astro-ojxuodky"><span class="astro-ojxuodky">SA+Fluree eCTD offering</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Dialog mapping</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="55"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/dialog-mapping/" class="astro-ojxuodky"><span class="astro-ojxuodky">Dialog Mapping</span></a></li><li class="astro-ojxuodky"><a href="/training/dialog-mapping/dialog-mapping-prompts-for-chatgpt/" class="astro-ojxuodky"><span class="astro-ojxuodky">Dialog Mapping Prompts for ChatGPT</span></a></li><li class="astro-ojxuodky"><a href="/training/dialog-mapping/dialog-mapping-tool---command-language/" class="astro-ojxuodky"><span class="astro-ojxuodky">Dialog Mapping Tool - Command Language</span></a></li><li class="astro-ojxuodky"><a href="/training/dialog-mapping/dialog-mapping-tool-ideas/" class="astro-ojxuodky"><span class="astro-ojxuodky">Dialog Mapping Tool Ideas</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">AI usage</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="56"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ai-usage/" class="astro-ojxuodky"><span class="astro-ojxuodky">AI Usage</span></a></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">llms-and-knowledge-graphs</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="57"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/ai-usage/llms-and-knowledge-graphs/" class="astro-ojxuodky"><span class="astro-ojxuodky">LLMs and Knowledge Graphs</span></a></li><li class="astro-ojxuodky"><a href="/training/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22/" class="astro-ojxuodky"><span class="astro-ojxuodky">Untitled whiteboard 2026-05-22</span></a></li><li class="astro-ojxuodky"><a href="/training/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22-2/" class="astro-ojxuodky"><span class="astro-ojxuodky">Untitled whiteboard 2026-05-22 (2)</span></a></li><li class="astro-ojxuodky"><a href="/training/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22-3/" class="astro-ojxuodky"><span class="astro-ojxuodky">Untitled whiteboard 2026-05-22 (3)</span></a></li></ul></details></li><li class="astro-ojxuodky"><a href="/training/ai-usage/sa-claude-container-quick-start/" class="astro-ojxuodky"><span class="astro-ojxuodky">SA Claude Container Quick Start</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Encryption &amp; security</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="58"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/encryption-security/" class="astro-ojxuodky"><span class="astro-ojxuodky">Encryption &amp; Security</span></a></li><li class="astro-ojxuodky"><a href="/training/encryption-security/encryption-datanova/" class="astro-ojxuodky"><span class="astro-ojxuodky">Encryption: Datanova</span></a></li><li class="astro-ojxuodky"><a href="/training/encryption-security/security-concerns-for-cloud-storage/" class="astro-ojxuodky"><span class="astro-ojxuodky">Security concerns for cloud storage</span></a></li><li class="astro-ojxuodky"><a href="/training/encryption-security/vendortool-security-overview/" class="astro-ojxuodky"><span class="astro-ojxuodky">Vendor/Tool security overview</span></a></li></ul></details></li><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Conferences &amp; workshops</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="59"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/conferences-and-workshops/" class="astro-ojxuodky"><span class="astro-ojxuodky">Conferences and Workshops</span></a></li><li class="astro-ojxuodky"><a href="/training/conferences-and-workshops/2023-10-01-dagstuhl-research-meeting-23403-defining-a-core-metadata-framework-for-cross-domain-data-sharing-and-reuse/" class="astro-ojxuodky"><span class="astro-ojxuodky">2023-10-01 Dagstuhl Research Meeting 23403</span></a></li><li class="astro-ojxuodky"><a href="/training/conferences-and-workshops/semic-2023/" class="astro-ojxuodky"><span class="astro-ojxuodky">SEMIC 2023</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Reference</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="60"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">Reference</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="61"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><a href="/training/reference/" class="astro-ojxuodky"><span class="astro-ojxuodky">Reference</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/all-about-ssh/" class="astro-ojxuodky"><span class="astro-ojxuodky">All about SSH</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/basic-shell-usage/" class="astro-ojxuodky"><span class="astro-ojxuodky">Basic Shell Usage</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/handy-utilities/" class="astro-ojxuodky"><span class="astro-ojxuodky">Handy Utilities</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/linked-open-data/" class="astro-ojxuodky"><span class="astro-ojxuodky">Linked Open Data</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/natural-language-processing/" class="astro-ojxuodky"><span class="astro-ojxuodky">Natural Language Processing</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/rdf-12/" class="astro-ojxuodky"><span class="astro-ojxuodky">RDF 1.2</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/taxonomies---draft/" class="astro-ojxuodky"><span class="astro-ojxuodky">Taxonomies - DRAFT</span></a></li><li class="astro-ojxuodky"><a href="/training/reference/versioning-of-rdf-data/" class="astro-ojxuodky"><span class="astro-ojxuodky">Versioning of RDF data</span></a></li></ul></details></li></ul></details></li><li class="astro-ojxuodky"><details open class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">More</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="62"></sl-sidebar-restore><ul class="astro-ojxuodky"><li class="astro-ojxuodky"><details class="astro-ojxuodky"><summary class="astro-ojxuodky"><span class="group-label astro-ojxuodky"><span class="large astro-ojxuodky">.Claude</span></span><svg aria-hidden="true" class="caret astro-ojxuodky astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="63"></sl-sidebar-restore><ul class="astro-ojxuodky"></ul></details></li></ul></details></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex astro-b5gddk54"><div class="social-icons astro-b5gddk54"></div><starlight-theme-select><label style="--sl-select-width: 6.25em" class="astro-r2p65idu"><span class="sr-only astro-r2p65idu">Select theme</span><svg aria-hidden="true" class="icon label-icon astro-r2p65idu astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><select autocomplete="off" class="astro-r2p65idu"><option value="dark" class="astro-r2p65idu">Dark</option><option value="light" class="astro-r2p65idu">Light</option><option value="auto" selected class="astro-r2p65idu">Auto</option></select><svg aria-hidden="true" class="icon caret astro-r2p65idu astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg></label></starlight-theme-select><script>
+	StarlightThemeProvider.updatePickers();
+</script></div></div></div></div></nav><div class="main-frame astro-gqpr5s5a"><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex astro-abfeecmu"><aside class="right-sidebar-container print:hidden astro-abfeecmu"><div class="right-sidebar astro-abfeecmu"><div class="lg:sl-hidden astro-q5mffni3"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-5ulgm6bh"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-5ulgm6bh"><details id="starlight__mobile-toc" class="astro-5ulgm6bh"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-5ulgm6bh"><span class="toggle sl-flex astro-5ulgm6bh">On this page<svg aria-hidden="true" class="caret astro-5ulgm6bh astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-5ulgm6bh"></span></summary><div class="dropdown astro-5ulgm6bh"><ul class="isMobile astro-cxyftcne" style="--depth: 0;"><li style="--depth: 0;" class="astro-cxyftcne"><a href="#_top" style="--depth: 0;" class="astro-cxyftcne"><span style="--depth: 0;" class="astro-cxyftcne">Overview</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/training/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.BcSo_yiZ.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-q5mffni3"><div class="sl-container astro-q5mffni3"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-cxyftcne" style="--depth: 0;"><li style="--depth: 0;" class="astro-cxyftcne"><a href="#_top" style="--depth: 0;" class="astro-cxyftcne"><span style="--depth: 0;" class="astro-cxyftcne">Overview</span></a></li></ul></nav></starlight-toc><script type="module" src="/training/_astro/TableOfContents.astro_astro_type_script_index_0_lang.Csloo1VZ.js"></script></div></div></div></aside><div class="main-pane astro-abfeecmu"><main data-pagefind-body class="astro-vdxcvpsm" lang="en" dir="ltr"><div class="content-panel astro-oil7k7jf"><div class="sl-container astro-oil7k7jf"><h1 id="_top" class="astro-2sm4b3ln">Ontologist Onboarding Documentation</h1></div></div><div class="content-panel astro-oil7k7jf"><div class="sl-container astro-oil7k7jf"><div class="sl-markdown-content"><p><strong>Terms to Know</strong>:</p>
+<ul>
+<li>
+<p><em>Ontology</em> - Some debate on precise definition but it is a means to describe not only what something is but how it relates to something else. It is machine and human readable. “A model built in OWL.” “A branch in metaphysics dealing with the state of being.” “a model that represents some subject matter that you care about. It communicates what kinds of things there are and how they are related to each other in a way that supports automated reasoning.” “Triples representing the subject matter.”</p>
+<ul>
+<li>
+<p>“An OWL construct is analogous to a word. OWL constructs are combined to make OWL expressions. A triple is an assertion, and corresponds to a typical sentence in English.</p>
+</li>
+<li>
+<p>“An ontology is an explicit, formal specification of a shared conceptualization. The terms is borrowed from philosophy, where an Ontology is a systematic account of Existence. For AI systems, what ‘exists’ is that which can be represented.” - Thomas R. Gruber</p>
+<ul>
+<li>
+<p>Conceptualization - abstract model (domain, identified relevant concepts, relations)</p>
+</li>
+<li>
+<p>Explicit - meaning of all concepts must be defined</p>
+</li>
+<li>
+<p>Formal - Machine understandable</p>
+</li>
+<li>
+<p>Shared - consensus about ontology</p>
+</li>
+<li>
+<p>Ontologies comprise of three entities and are expressed in the following fashion:</p>
+<ul>
+<li>Classes: upper camel case (e.g., LegalEntity)</li>
+<li>Properties: lower camel case (e.g., isSubsidiaryOf)</li>
+<li>Individuals: leading underscore (e.g. _Google)</li>
+</ul>
+</li>
+<li>
+<p>These entities form triples (subject-predicate-object). Some of them are used to define the subject matter (rdf:type + refs:subClassOf</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Types of Ontologies:</p>
+<ul>
+<li>Top-Level Ontology (Upper Ontology, Foundation Ontology) - general, cross domain ontologies (represent very general concepts as e.g., Time, Space, Event independent of a specific domain or problem)</li>
+<li>Task Ontology - fundamental concepts according to a general activity or task.</li>
+<li>Domain Ontology - fundamental concepts according to a generic domain.</li>
+<li>Application Ontology - specialized ontology focused on a specific task and domain.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/training/attachments/2172321793/2213117957.png" alt=""><img src="/training/attachments/2172321793/2213412865.png" alt=""></p>
+<ul>
+<li>
+<p><em>Taxonomy</em> - A means to organize controlled terms <em><strong>maybe</strong></em> into a hierarchy. It is not as rich in metadata as an ontology or thesaurus.</p>
+<ul>
+<li>
+<p>Definition of a hierarchical system of groups.</p>
+<ul>
+<li>
+<p>Also classification schema, nomenclature, …</p>
+</li>
+<li>
+<p>In science most times classification into (mono-)hierarchical sets (classes, subclasses, …)</p>
+</li>
+<li>
+<p>(also) subject of biology:</p>
+<ul>
+<li>The arrangement of organisms into a classification according to similarities.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>informal IS-A-Hierarchy: explicit hierarchy of classes, subclass relations are not strict (e.g. index of a library)</p>
+</li>
+<li>
+<p>formal IS-A-Hierarchy: explicit hierarchy of classes, subclass relations are strict</p>
+</li>
+<li>
+<p>formal instance: explicit class hierarchy, besides strict subclass relations also instance-of relations are allowed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Thesaurus</em> - A thesaurus stores more metadata than a taxonomy (i.e. preferred or alternate terms, opposite terms, “use for” relationship). The line between a thesaurus and an ontology becomes blurred as more metadata is added to the thesaurus.</p>
+<ul>
+<li>
+<p>Controlled vocabulary, concepts are connected via relations.</p>
+<ul>
+<li>Equivalency (synonyms)</li>
+<li>Hierarchies (subclasses, superclasses)</li>
+<li>Homographs (Homonyms)</li>
+<li>Associations (similar concepts)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Controlled Vocabulary / Data Dictionary</em> - A set of governed terms that just have labels and definitions. Finite list of terms (e.g. catalogue)</p>
+</li>
+<li>
+<p><em>Glossary</em> - finite list of terms including an informal definition of their semantics in natural language.</p>
+</li>
+<li>
+<p><em>Knowledge Graph</em> - A method of visualizing a ontology, or part of an ontology. “A set of triples make a directed graph” - a web of connected nodes with predicates as its edges.</p>
+</li>
+<li>
+<p><em>Graph Database (DB)</em> - Rather than storing data in tables or documents, ‘di-graphs’ or a ‘directed’ (with an arrow) graph is used to store data as a triple. “Directed labelled graph” or “Directed graph”</p>
+</li>
+</ul>
+<p>Foundations of Logic</p>
+<ul>
+<li>
+<p>Logic - “the art and the science to distinguish between truth or lie with the help of reason, to accept truth and to reject lie.” - Ramon Lull. Logic is the study of how to make formal correct deductions and inferences. Why? → Automation. Want to construct a calculator machine for logic.</p>
+<ul>
+<li>
+<p>Syntax: symbols without meaning. Defines rules, how to construct well-formed and valid sequences of symbols (strings)</p>
+</li>
+<li>
+<p>Semantic: meaning of syntax. Defines rules how the meaning of complex sequences of symbols can be derived from atomic sequences of symbols.</p>
+<ul>
+<li>
+<p>e.g. if (i&#x3C;0) then display (“negative account!”) → print the message “negative account!”, if the account balance is negative, this is the assignment of meaning.</p>
+</li>
+<li>
+<p>Intentional semantics (e.g. programming languages.</p>
+<ul>
+<li>“The meaning intended by the user”</li>
+<li>Restricts the set of all possible models (meanings) to the meaning intended by the (human) user.</li>
+<li>e.g. code function that computes a factorial of an input</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Propositional Logic</em> - The world consists simply of facts and nothing else (statements of assertions), If/Then statements. I.e. If it rains, then the road will be wet.</p>
+<ul>
+<li>The world consists of objects and properties that distinguish one object from another.</li>
+<li>Between objects are relations. Some relations are unique, i.e. functions.</li>
+<li><strong>Note:</strong> You can only make statements and assertions about single objects, not a class of objects.</li>
+</ul>
+</li>
+<li>
+<p><em>First Order Logic</em> - In First Order Logic (FOL) quantifiers allow assertions about sets of objects, without naming the objects explicitly. I.e. All humans are mortal. Socrates is a human. Socrates is a human. Socrates is mortal.</p>
+<ul>
+<li>
+<p>FOL is perfectly suited for the description of ontologies, but…</p>
+<ul>
+<li>FOL is pretty expressive therefore bulky for modelling and it is difficult to achieve consensus in modelling and complex to prove (correctness and completeness of assertions).</li>
+<li>Therefore look for some well suited fragment of FOL!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Description Logics</em> - Are a family of languages for knowledge representation. Most description logics are a subset of First Order Logic, but unlike FOL, most description logics are decidable (computeable). Therefore, it is possible to make logical deductions based on description logics, i.e to create new knowledge from existing knowledge.</p>
+<ul>
+<li>
+<p>Concepts (unary predicates) represent entities/classes. e.g., Person, course, student, lecture, seminar… → Student: { x | Student (x) }</p>
+</li>
+<li>
+<p>Roles (binary predicates, properties) represent properties / relations, e.g. participatesAt, givesLecture, isGivenByLecturer… → participatesAt” { (x,y) |participatesAt(x,y) }</p>
+</li>
+<li>
+<p>Individuals (constants, individual entities, concept assertion) e.g., Alice, Bob, SemanticWeb. Syntax: Student(Alice)</p>
+</li>
+<li>
+<p>Operators/Constructors (to construct representations of concepts/roles). Expressivity is limited: Satisfiably and Subsumption is decidable and (preferably) of low complexity. Syntax: participatesAt (Alice, SemanticWeb)</p>
+</li>
+<li>
+<p>Fundamental operators: Conjunction (⊓), Disjunction (⊔), Negation (¬), Restricted form of Quantification (Ɐ, Ǝ) represents Basic Description Logic → ALC (Attributed Language with Complement) [C - class, D - domain, A - individual, R - role, property]</p>
+<ul>
+<li>Atomic Types: concept names A, B, …, special concepts (⊤ - Top (universal concept), ⊥ Bottom Concepts), Role names R, S, …</li>
+<li>Constructors: Negation( ¬C), Conjunction (C ⊓ D), Disjunction (C ⊔ D), External Quantifier (ƎR.C), Universal Quantifier (ⱯR.C)</li>
+<li>e.g., Ǝ(a person)attends(property/role).Lecture(range restriction)</li>
+</ul>
+</li>
+<li>
+<p>Class relations:</p>
+<ul>
+<li>Inclusion C ⊆ D, e.g. Man ⊆ Human</li>
+<li>Equality C ≡ D, e.g. Frau ≡ Woman</li>
+</ul>
+</li>
+<li>
+<p>Class Constructors, e.g. Seminarist ≡ Person ⊓ (ƎparticipatesAt.Seminar ⊔ Ǝmanages.Seminar)</p>
+</li>
+<li>
+<p>Terminological Knowledge (Tbox):</p>
+<ul>
+<li>
+<p>Axioms describing the structure of the represented domain (conceptual schema)</p>
+<ul>
+<li>
+<p>i.e., Human ⊆ ƎhasParents.Human</p>
+<ul>
+<li>Orphan ≡ Human ⊓ ¬ƎhasParents.Alive</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Assertional Knowledge (ABox)</p>
+<ul>
+<li>
+<p>Axioms describing specific situations (data)</p>
+<ul>
+<li>
+<p>i.e., Orphan(harrypotter)</p>
+<ul>
+<li>hasParent(harrypotter, jamespotter)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/training/attachments/2172321793/2212757505.png" alt=""></p>
+<ul>
+<li>
+<p>Semantics of Description Logics</p>
+<ul>
+<li>
+<p>Semantics is determined via interpretation ΔI, I)</p>
+</li>
+<li>
+<p>ΔI … Domain of Discourse, ΔI <strong>≠</strong> ∅</p>
+</li>
+<li>
+<p>Interpretation Function:</p>
+<ul>
+<li>I :A → AI ⊆ ΔI , A … atomic concept</li>
+<li>I :R → RI ⊆ ΔI x ⊆ ΔI , R … atomic role/property</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/training/attachments/2172321793/2213183489.png" alt=""></p>
+<ul>
+<li>
+<p><em>Triple or Triple Store</em> - A triple, when in regards to ontologies, is comprised of a subject, predicate and object and is a way that ontologies can describe and store data. A triple store is a database that stores all these triples (in RDF) that can be queried later on. “The key to flexible data structures.” “Facts that are asserted as small sentences.” “Triples represent data and metadata…since the data schema and data are triples they can be stored in the same data store - a Triple Store.”</p>
+<ul>
+<li>
+<p>Nodes - are either the subject or the object of a triple.</p>
+</li>
+<li>
+<p>Triples are also called ‘assertions’. (Representation of an assertion)</p>
+</li>
+<li>
+<p>Two kinds of triples:</p>
+<ul>
+<li>
+<p>Triples involving data:</p>
+<ul>
+<li>An individual is linked to another individual. I.e. A particular Doctor is linked to a particular Person receiving care.</li>
+<li>An individual is linked to a literal value. i.e. A particular Person has a First Name.</li>
+</ul>
+</li>
+<li>
+<p>Triples involving metadata: (“The metadata tells you about the data - in owl the metadata gives meaning to the data and supports inferences that can help find bugs as well as draw new conclusions.”)</p>
+<ul>
+<li>Linking an individual to its Class</li>
+<li>Specify a Class as a subclass of another class</li>
+<li>Linking a Class to its OWL construct</li>
+<li>Linking a property to its OWL construct</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Types of Triple Stores:</p>
+<ul>
+<li>
+<p>Giant Triple Stores</p>
+<ul>
+<li>
+<p>Store all RDF triples in a single table</p>
+</li>
+<li>
+<p>Performance depends on efficient indexing</p>
+</li>
+<li>
+<p>Pros:</p>
+<ul>
+<li>easy to implement</li>
+<li>works for huge numbers of properties if indexes are chosen with care.</li>
+</ul>
+</li>
+<li>
+<p>Cons:</p>
+<ul>
+<li>many self joins</li>
+</ul>
+</li>
+<li>
+<p>Ways to make this more efficient:</p>
+<ul>
+<li>
+<p>ID Based Triple Storage</p>
+<ul>
+<li>Use numerical identifier for each RDF term in the dataset</li>
+<li>Saves space and enhances efficiency</li>
+<li>Needs a translation table</li>
+</ul>
+</li>
+<li>
+<p>Quad Tables</p>
+<ul>
+<li>Storing multiple RDF graphs (g, s, p, o) → which triples came from which graph.</li>
+<li>used for provenance, versioning, contexts, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Property Tables</p>
+<ul>
+<li>
+<p>Combing all (or some) properties of similar subjects in n-ary tables</p>
+</li>
+<li>
+<p>Use ID based encoding for efficiency.</p>
+</li>
+<li>
+<p>Pros:</p>
+<ul>
+<li>Fewer joins</li>
+<li>If the data is structured, we have a relational DB</li>
+</ul>
+</li>
+<li>
+<p>Cons:</p>
+<ul>
+<li>Potentially a lot of NULLs</li>
+<li>Clustering is not trivial (complicated and often have to perform by hand)</li>
+<li>Multi-value properties are complicated</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Vertically Partitioned Tables (Binary Tables)</p>
+<ul>
+<li>
+<p>For each unique property a two column table is created → can be done by machine</p>
+</li>
+<li>
+<p>Use ID based encoding for efficiency</p>
+</li>
+<li>
+<p>Different physical storage models for relational DBs</p>
+<ul>
+<li>
+<p>Row Based Storage</p>
+<ul>
+<li>Tuples (i.e. DB records) are stored consecutively</li>
+<li>Entire row needs to be read even if few attributes are projected</li>
+</ul>
+</li>
+<li>
+<p>Column Based Storage</p>
+<ul>
+<li>Read column relevant to the query → projection is free</li>
+<li>Inserts are expensive</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Pros:</p>
+<ul>
+<li>Supports multi-value properties</li>
+<li>No NULLs</li>
+<li>Read only needed attributes (i.e less I/O)</li>
+<li>No clustering</li>
+<li>Excellent performance (if number of properties is small, queries with bounded properties)</li>
+</ul>
+</li>
+<li>
+<p>Cons:</p>
+<ul>
+<li>Expensive inserts</li>
+<li>Bad performance (large number of properties, queries with unbounded properties)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Hexastores</p>
+<ul>
+<li>
+<p>Create an index for every possible combination to enable efficient processing</p>
+<ul>
+<li>
+<p>spo, pos, osp, sop, pso, ops</p>
+</li>
+<li>
+<p>Pros:</p>
+<ul>
+<li>Fast joins (in the beginning)</li>
+</ul>
+</li>
+<li>
+<p>Cons:</p>
+<ul>
+<li>5 times more storage</li>
+<li>Weak performance, when disk access is necessary</li>
+</ul>
+</li>
+<li>
+<p>The <strong>spo</strong> index:</p>
+<ul>
+<li>Subject key Si points to sorted vector of ni property keys, {pi1, pi2, … pin}. Each property key pij is linked to a sorted list of object keys. The object key lists are shared with the <strong>pso</strong> index.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="/training/attachments/2172321793/2201714691.png" alt=""></p>
+<ul>
+<li>
+<p><em>TBox &#x26; ABox Statements</em>: These statements make up a knowledge graph</p>
+<ul>
+<li>
+<p>ABox (Assertional Box) - these are assertions made from the vocabulary defined by the TBox statements. Assertional knowledge. Knowledge about instances/entities.</p>
+<ul>
+<li>
+<p>i.e. A is an instance of B, John is a Person</p>
+<ul>
+<li>“of Type”</li>
+<li>“Member of”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tbox (Terminological Box) - statements that create the conceptual model, or ontology. Terminological knowledge. Knowledge about concepts of a domain (classes, attributes, relations)</p>
+<ul>
+<li>i.e. All Students are Persons or Students and Teachers are types of Persons</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>CBox (Categorical Box) Statements</em>: A combination of TBox and ABox statements that are used for categorization. Can be used to simplify models by reducing number of classes. See <a href="https://www.youtube.com/watch?v=0-j9nWFVoYc">here</a> for further explanation. “This is where taxonomies and enumerated lists are defined and managed.” - Dave (from Data Centric Revolution)</p>
+</li>
+<li>
+<p><em>Logical Model</em> - Describes the structure of data for a specific application or purpose. Ideally, logical models are derivatives of an upper ontology.</p>
+</li>
+<li>
+<p><em>FAIR Data</em> - Data that upholds these four principles: Findability, Accessibility, Interoperability, and Reusability.</p>
+</li>
+<li>
+<p><em>Semantics</em> - “is the study of meaning”. In this case, the semantics are written in OWL, which is a W3C standard, that allows for meaning to be assigned to something that can be understood by both humans and machines. “Branch of linguistics and logic concerned with meaning.”</p>
+<ul>
+<li>Formal Semantics - “The study of logical aspects of meaning, i.e. sense, reference, implication, and logical form.</li>
+<li><em>Lexical Semantics</em> - “The study of word meaning and word relations.”</li>
+<li><em>Conceptual Semantics</em> - “The study of the cognitive structure of meaning.”</li>
+</ul>
+</li>
+<li>
+<p><em>URI</em> - Uniform Resource Identifier, “a string that refers to something that exists in the world” (a referent). US ASCII</p>
+<ul>
+<li>IRI - International Resource Identifier. “International allow for a broader range of character sets.” Like an accent over a character.</li>
+</ul>
+</li>
+<li>
+<p><em>Instance</em> - “Things with independent existence”, they “typically have complex relationships”.</p>
+</li>
+<li>
+<p><em>Relation/Property</em> - “Connects two instances or associates an instance with a value”.</p>
+<ul>
+<li>Object Property - “Relates an individual to another individual.”</li>
+<li>Datatype Property - “Relates an individual to a literal.”</li>
+</ul>
+</li>
+<li>
+<p><em>Value/Literal</em> - “Descriptive text, number or date”. “Literals can be thought of as pure values; they don’t have properties or attributes of their own. i.e., Strings, dates, numbers (integers, decimals). You cannot say anything about them. <em><strong>A literal cannot be the subject of a triple.</strong></em></p>
+<ul>
+<li><em>Attributes</em> are relationships that connect individuals to literals.</li>
+</ul>
+</li>
+<li>
+<p><em>Class</em> - “A set of things with similar properties. All of the instances of a class have the same properties just different values.”</p>
+<ul>
+<li>A <em>subclass</em> is a subset with different properties.</li>
+</ul>
+</li>
+<li>
+<p>Schema - basic relationship between objects.</p>
+</li>
+<li>
+<p>Reification - when a property is assigned to a triple.</p>
+</li>
+<li>
+<p><em>ETL</em> - Extract, Transform, Load.</p>
+</li>
+<li>
+<p><em>ERP</em> - Enterprise, Resource, Planning.</p>
+</li>
+<li>
+<p>Property Graph</p>
+<ul>
+<li>
+<p>Supports edge properties</p>
+</li>
+<li>
+<p>Does not require IRIs</p>
+</li>
+<li>
+<p>Does not support blank nodes.</p>
+</li>
+<li>
+<p>Adds structure to the graph</p>
+<ul>
+<li>Provides semantic context for nodes</li>
+</ul>
+</li>
+<li>
+<p>Synonym: edge</p>
+</li>
+<li>
+<p>Has one type</p>
+</li>
+<li>
+<p>Has zero or more properties</p>
+<ul>
+<li>These may differ across relationships with the same type</li>
+</ul>
+</li>
+<li>
+<p>Relates nodes by type and direction</p>
+</li>
+<li>
+<p>must have a start and end node</p>
+</li>
+</ul>
+</li>
+<li>
+<p><em>LPG</em> - Labelled Property Graph. A graph that has no schema, just a label. Knowledge graphs are much richer than property graphs since they a standardized schema.</p>
+</li>
+<li>
+<p><em>Relational database</em> - a way to store data as it relates to other data. Much more rigid than a knowledge graph since all relationships need to be defined first.</p>
+</li>
+<li>
+<p>SOA - Service-Oriented Architecture, message-based integration</p>
+</li>
+<li>
+<p>SAP - “SAP ERP consists of several modules, including Financial Accounting (FI), Controlling (CO), Asset Accounting (AA), Sales &#x26; Distribution (SD), Material Management (MM), Production Planning (PP), Quality Management (QM), Project System (PS), Plant Maintenance (PM), Human Resources (HR), Warehouse Management (WM).”</p>
+<ul>
+<li>SAAP?</li>
+</ul>
+</li>
+<li>
+<p>Parti - Initial sketch of the design. Can be in powerpoint other visualization tools. Word comes from architectural design.</p>
+</li>
+</ul>
+<p><strong>Ontology Summary:</strong></p>
+<ul>
+<li>
+<p><strong>Axioms</strong> describe knowledge that can’t be expressed simply with the help of other existing components.</p>
+</li>
+<li>
+<p>Logical Inconsistency: Google is an instance of Person (legally) and Corporation. Creates an error within the lines of reasoning.</p>
+</li>
+<li>
+<p>Non-Overlapping Kinds (aka Disjoint): an instance of one cannot be an instance of the other</p>
+</li>
+<li>
+<p>Metadata: the ontology that defines the vocabulary of the subject matter.</p>
+</li>
+<li>
+<p>Data: Use that vocabulary to create and say things about the individual.</p>
+</li>
+<li>
+<p>Properties</p>
+<ul>
+<li>
+<p>Datatype:</p>
+<ul>
+<li>Dates (xsd:dateTime)</li>
+<li>Numbers (xsd:integer)</li>
+<li>Strings (xsd:string)</li>
+</ul>
+</li>
+<li>
+<p>Object:</p>
+<ul>
+<li>Arrows in a knowledge graph</li>
+</ul>
+</li>
+<li>
+<p>Characteristics:</p>
+<ul>
+<li>Functional - to have no more than one value. Inverse Functional - same thing just reversed.</li>
+<li>Transitive - “jump over” —> If x = y and y=z, then x=z</li>
+<li>Symmetric - “if Canada borders the US then the US must border Canada”.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Domain + Range</p>
+<ul>
+<li>
+<p>What kinds of things you can link</p>
+</li>
+<li>
+<p>Applicability with respect to Subject</p>
+<ul>
+<li>A property only applies to instances of class C, i.e. the Domain</li>
+<li>careRecipient only applies to PatientVisits</li>
+</ul>
+</li>
+<li>
+<p>Applicability of things with respect to Object</p>
+<ul>
+<li>The range of possible values that a property can have must be instances of class C, i.e. the Range</li>
+<li>the careRecipient is always of type Person</li>
+</ul>
+</li>
+<li>
+<p>“What kind of thing must the Subject be, in a triple using a particular property?” (Domain)</p>
+<ul>
+<li>“ ‘domain’ translates informally to ‘only applies to’ “</li>
+</ul>
+</li>
+<li>
+<p>“What kind of thing must an Object be, in a triple using a particular property?” (Range)</p>
+<ul>
+<li>“range of possible values”</li>
+</ul>
+</li>
+<li>
+<p>Domain and range are not constraints! They provide more clarity on how a property is used.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Property Restrictions: A property restriction is a class expression that specifies what and how many properties a member may, must, or must not have. i.e. a two-wheeled vehicle has two different wheels as parts. This is another important way to ascribe meaning to a class, in addition to the Boolean expressions.</p>
+<ul>
+<li>
+<p>A restriction is a class, and thus may be used anywhere that a class is expected, e.g. in a domain or range or part of a Boolean expression. The most common usage scenarios specify the meaning of a class.</p>
+<ul>
+<li>Make an existing class <strong>equivalent</strong> to a restriction</li>
+<li>Make an existing class the <strong>subclass</strong> of a restriction</li>
+</ul>
+</li>
+<li>
+<p>In each case it entails:</p>
+<ul>
+<li>Create a class</li>
+<li>Create a property restriction</li>
+<li>Relate the class to the restriction using equivalentClass or subClassOf</li>
+</ul>
+</li>
+<li>
+<p>Exact Cardinality Restriction</p>
+<ul>
+<li>
+<p>The set of individuals that are subjects of exactly two triples using the <em>hasPart</em> property where the objects of the triples are different wheels. TwoWheeledThing = (hasPart exactly 2 Wheel)</p>
+<ul>
+<li>In Protege you have to add it as a class expression.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Existential Restriction</p>
+<ul>
+<li>
+<p>The set of individuals that is the subject of at least one triple using the <em>covers</em> property where the object of the triple is of type Party. Helps define the meaning of an insurance policy. It covers at least one party. InsurancePolicy :covers some :Party)</p>
+<ul>
+<li>(doe:cover some doe:Party)</li>
+</ul>
+</li>
+<li>
+<p>In protege, select the class, add SubclassOf relationship then add a class expression.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Anatomy of a Property Restriction</p>
+<ul>
+<li>
+<p>A restriction denotes a set of subjects of triples using a given predicate that satisfy certain conditions.</p>
+<ul>
+<li><em>necessary conditions</em> are conditions that must be true for every member of the class.</li>
+</ul>
+</li>
+<li>
+<p>The triples from which the subjects are taken are the ‘grounding triples’ for the restriction.</p>
+</li>
+<li>
+<p>There are three parts to a restriction:</p>
+<ul>
+<li><em>Property</em>: an object or datatype property</li>
+<li><em>Type</em>: the type of restriction (e.g. exact cardinality)</li>
+<li><em>Filter</em>: constrains what the types of the objects of the grounding triples are. E.g. Party in (<em>covers some Party</em>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Restrictions with Object and Datatype Properties</p>
+<ul>
+<li>
+<p>A restriction is defined in terms of ‘grounding triples’ depicted with thick black lines.</p>
+</li>
+<li>
+<p>Note the difference in filters</p>
+<ul>
+<li>Object - :firstName some :Name</li>
+<li>Datatype - :firstname somexsd:string</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Universal: The set of all things that have only physicians as members. (doe:hasMember only doe:Physician</p>
+</li>
+<li>
+<p>Minimum</p>
+</li>
+<li>
+<p>Maximum</p>
+</li>
+<li>
+<p>Only</p>
+</li>
+<li>
+<p>Inverse - most properties are directional</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Property Generalization/Specialization</p>
+<ul>
+<li>subPropertyOf - more specialized property relationship</li>
+</ul>
+</li>
+<li>
+<p>Properties vs Classes</p>
+<ul>
+<li>
+<p>Properties</p>
+<ul>
+<li>Comments</li>
+<li>Hierarchies</li>
+<li>Characteristics</li>
+<li>Domain and Range</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Classes</strong> - a class corresponds to a set of objects of a particular kind. All the members of a class share certain things in common. Classes are arranged in hierarchies.</p>
+<ul>
+<li>
+<p>A class may be defined as a class expression.</p>
+</li>
+<li>
+<p>A class expression results in a new class that can be used anywhere a class is expected. For example:</p>
+<ul>
+<li>As a domain or range</li>
+<li>In any Boolean class expression</li>
+</ul>
+</li>
+<li>
+<p>A class expression is an anonymous class.</p>
+</li>
+<li>
+<p>A class expression appears in a triple as a blank node.</p>
+</li>
+<li>
+<p>Arbitrary nesting is possible, but it is best to keep things simple.</p>
+</li>
+<li>
+<p>Hierarchies</p>
+<ul>
+<li>
+<p>The subClassOf relationship is used to indicate that one class is a specialization of another class. A set of linked subClassOf relationships forms a class hierarchy.</p>
+<ul>
+<li>
+<p>Inferencing: To say that C1 is a subClassOf C2 is precisely to say that for any individual x:</p>
+<ul>
+<li>IF: x rdf:type C1.</li>
+<li>THEN: x rdf:type C2.</li>
+<li><img src="/training/attachments/2172321793/2215510021.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Enumerated Classes:</p>
+<ul>
+<li>
+<p>An enumerated class explicitly lists all the members. It is closed: no other individuals are members. e.g. The US States, and employee’s exempt status.</p>
+<ul>
+<li>
+<p>Construct: owl:oneOf</p>
+<p><img src="/training/attachments/2172321793/2215772163.png" alt=""></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sanctioned Inferences</p>
+<ul>
+<li>
+<p>If an individual is different from every enumerated member of a class, then it is in the complement of the class.</p>
+<ul>
+<li>
+<p>IF:</p>
+<ul>
+<li>C2 owl:equivalentClass {x1, x2, …, xn}. and</li>
+<li>C1 owl:complementOf C2. and</li>
+<li>for i=1, n x owl:differentFrom xi.</li>
+</ul>
+</li>
+<li>
+<p>THEN: x rdf:type C1.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If an individual is the same as any members of an enumerated class, then it is itself a member of the class.</p>
+<ul>
+<li>IF: for any i, y owl:sameAs xi.</li>
+<li>THEN: y rdf:type C2.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Class Expressions - we can use union, intersection and property restrictions to create expressions that refer to classes. Such expressions indirectly refer to specific classes just like arithmetic expressions indirectly refer to numbers. A property restriction always represents a class, what makes it different than a class is that it is it is a class that is defined by what properties its members have. It also does not need a name, it can be purely an expression (though it is a good idea to think of a name for this class). A data property can also be used in a property restriction.</p>
+<p>Examples of Class Expressions using Intersection</p>
+<ol>
+<li>doe:Organization or doe:Person</li>
+<li>doe:TwoWheeledVehicle and doe:MotorizedVehicle</li>
+<li>doe:Person and (doe:careRecipientOn some doe:PatientVisit)</li>
+<li>doe:C3 a C1 and a C2. C3 is Equivalent to doe:C1 and doe:C2</li>
+</ol>
+<div class="expressive-code"><link rel="stylesheet" href="/training/_astro/ec.w36nc.css"><script type="module" src="/training/_astro/ec.0vx5m.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Class: doe:PatientVisit</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#d6deeb;--1:#403f53">   </span></span><span style="--0:#d6deeb;--1:#403f53">SubClassOf:</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#d6deeb;--1:#403f53">      </span></span><span style="--0:#d6deeb;--1:#403f53">doe:Event,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#d6deeb;--1:#403f53">      </span></span><span style="--0:#d6deeb;--1:#403f53">doe:careProvider some doe:Person</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#d6deeb;--1:#403f53">      </span></span><span style="--0:#d6deeb;--1:#403f53">doe:careRecipient some doe:Person</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="Class: doe:PatientVisit   SubClassOf:      doe:Event,      doe:careProvider some doe:Person      doe:careRecipient some doe:Person"><div></div></button></div></figure></div>
+<ul>
+<li>
+<p><img src="/training/attachments/2172321793/2201419792.png" alt=""></p>
+</li>
+<li>
+<p>Boolean Expression use the following set of operations:</p>
+<ul>
+<li>
+<p>Union and Intersection</p>
+<ul>
+<li>We can use union, intersection and property restrictions to create expressions that refer to classes. Such expressions indirectly refer to specific classes just like arithmetic expressions indirectly refer to numbers.</li>
+<li>“or” clause (two wheeled vehicle class and motorized vehicle class - a motorcycle is a subclass of both but that doesn’t mean that those two classes are equivalent).</li>
+</ul>
+</li>
+<li>
+<p>Union: Sanctioned Inferencing</p>
+<ul>
+<li>
+<p>The union of two classes includes just those individuals that are members of <strong>either</strong> class.</p>
+<ul>
+<li>
+<p>IF: C1 owl:equivalentClass (C2 or C3)</p>
+</li>
+<li>
+<p>THEN:</p>
+<ul>
+<li>
+<ol>
+<li>C2 rdfs:subClassOf C1.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>C3 rdfs:subClassOf C1.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>From 1 and 2 above, and from the definition of rdfs:subClassOf</p>
+<ul>
+<li>
+<p>IF: <em>either or both</em> of the two following triples exist:</p>
+<ul>
+<li>
+<ol>
+<li>x rdf:type C2.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>x rdf:type C3.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>THEN:</p>
+<ul>
+<li>
+<ol start="3">
+<li>rdf:type C1.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>e.g. Party = Person or Organization. Org is a subclass of Party and Person is a subclass of Party</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Intersection: Sanctioned Inferencing</p>
+<ul>
+<li>
+<p>The intersection of two classes includes just those individuals that are members of <strong>both</strong> classes.</p>
+<ul>
+<li>
+<p>IF: C1 owl:equivalentClass (C2 and C3).</p>
+</li>
+<li>
+<p>THEN:</p>
+<ul>
+<li>C1 rdfs:subClassOf C2.</li>
+<li>C1 rdfs:subClassOf C3.</li>
+</ul>
+</li>
+<li>
+<p>From this, and from the definition of rdfs:subClassOf,</p>
+<ul>
+<li>
+<p>IF: x rdf:type C1.</p>
+</li>
+<li>
+<p>THEN:</p>
+<ul>
+<li>x rdf:type C2.</li>
+<li>x rdf:type C3.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Complement: Sanctioned Inferencing</p>
+<ul>
+<li>
+<p>The complement of a class includes just those individuals that are <strong>not</strong> in the class.</p>
+<ul>
+<li>
+<p>IF: C1 owl:complementOf C2.</p>
+</li>
+<li>
+<p>THEN: C1 owl:disjointWith C2.</p>
+</li>
+<li>
+<p>From the meaning of disjoint classes, we can further conclude that:</p>
+<ul>
+<li>IF: x rdf:type C2. and y rdf:type C1.</li>
+<li>THEN: ¬( x rdf:type C1) and ¬(y rdf:type C2). and x owl:differentFrom y. (This second expression is needed because there is no unique names assumption.)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Equivalent and Disjoint</p>
+<ul>
+<li>
+<p>The equivalentClass relationship indicates that two classes have the exact same instances. In other words: If an instance is in one class it’s also in the other. There are two main uses:</p>
+<ul>
+<li>
+<p>To add meaning to a class by making it equivalent to a class expression.</p>
+</li>
+<li>
+<p>To map classes from two independently developed ontologies.</p>
+</li>
+<li>
+<p>Be careful!</p>
+<ul>
+<li>This is a very strong statement, if the classes have different axioms, each will get the others. Be sure that is what you want.</li>
+<li>Alternative: make one a subclass of the other.</li>
+</ul>
+</li>
+<li>
+<p>Inferencing: To say that C1 rdfs:equivalentClass C2 is precisely to say the following two things for any individual x,</p>
+<ul>
+<li>IF: x rdf:type C1.</li>
+<li>THEN: x rdf:type C2. and.</li>
+<li>IF: x rdf:type C2.</li>
+<li>THEN: x rdf:type C1.</li>
+<li>Note: If/then statements above translate to C1 subClassOf C2 and C2 subClassOf C1. When subclass goes in both directions, it means equivalence.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>The disjointWith relationship indicates that two classes have no instances in common. In other words: If an instance is in one class, it’s not in the other. It’s used to communicate meaning and catch errors.</p>
+<ul>
+<li>
+<p>Inferencing: To say that C1 owl:disjointWith C2 is to say the following two things:</p>
+<ul>
+<li>IF: x rdf:type C1.</li>
+<li>THEN: ¬ (x rdf:type C2). [¬, means logical negation] and</li>
+<li>IF: x rdf:type C2.</li>
+<li>THEN: ¬ (x rdf:type C1).</li>
+</ul>
+</li>
+<li>
+<p>Disjoint Combined with Domain and Range</p>
+<ul>
+<li>
+<p>Catches mistakes when mixing up domain and range</p>
+<ul>
+<li>
+<p>Example:</p>
+<ul>
+<li>PatientVisit is a subclass of Event</li>
+<li>Person is a subclass of PhysicalObject</li>
+<li>Event is disjointWith PhysicalObject</li>
+<li>careRecipient → Domain: Person, Range: PatientVisit</li>
+<li>PatientVisit 123 careRecipient Person_Jane</li>
+<li>Jane is asserted to be a Person, but inferred to be a PatientVisit</li>
+<li>Cannot be both → logical inconsistency caught by inference engine</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Restrictions</p>
+</li>
+<li>
+<p>Comments</p>
+</li>
+<li>
+<p>Naming Conventions</p>
+<ul>
+<li>
+<p>Classes are uppercase</p>
+</li>
+<li>
+<p>Properties are camelcase</p>
+</li>
+<li>
+<p>Individuals start with “_”</p>
+</li>
+<li>
+<p>Property inverses</p>
+<ul>
+<li>hasX/xOf (e.g. hasParent vs parentOf)</li>
+<li>Xes/XdBy (e.g. identifies vs indentifiedBy)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Manchester vs. Turtle Syntax</p>
+<ul>
+<li>
+<p>AND corresponds to owl:intersectionOf</p>
+</li>
+<li>
+<p>OR corresponds to owl:unionOf</p>
+</li>
+<li>
+<p>SOME corresponds to owlLsomeValuesFrom</p>
+<ul>
+<li>
+<p>ex: The following expression defines a Motorcycle class → doe:TwoWheeledVehicle and doe:MotorizedVehicle</p>
+<p><img src="/training/attachments/2172321793/2215608325.png" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>OWL Overview</p>
+<ul>
+<li>
+<p>owl:Thing is used to create individual things</p>
+</li>
+<li>
+<p>owl:Class is used to create kinds of things</p>
+</li>
+<li>
+<p>rdf:type is used to connect an individual to a class</p>
+</li>
+<li>
+<p>rdfs:subClassOf is used to create more specific classes</p>
+</li>
+<li>
+<p>owl:ObjectProperty is used to create ways to relate two individuals</p>
+</li>
+<li>
+<p>owl:DatatypeProperty is used to create ways to relate individuals to literals</p>
+</li>
+<li>
+<p>Data results from creating individuals and connecting them to other individuals and to literals</p>
+</li>
+<li>
+<p>Metadata gives meaning to the data and supports inference.</p>
+</li>
+<li>
+<p>Open vs Closed world</p>
+<ul>
+<li>
+<p>Open → distinguishes between ‘no’ and ‘I don’t know’, no assumptions.</p>
+<ul>
+<li>Yes → Provably true</li>
+<li>No → Provably false</li>
+<li>Idk → Not provably true or false, need more information</li>
+</ul>
+</li>
+<li>
+<p>Closed → if no information is given then ‘no’ is automatically assumed</p>
+<ul>
+<li>Yes → provably true</li>
+<li>No → not provably true</li>
+<li>Idk → n/a</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Serialization ?</p>
+<ul>
+<li>“Turtle is a serialization of RDF”</li>
+</ul>
+</li>
+<li>
+<p>Node</p>
+<ul>
+<li>Represents an entity within the graph</li>
+<li>Has zero or more labels</li>
+<li>Has zero or more properties</li>
+<li>Synonym: vertex</li>
+<li>“Collapsing together different occurrences of the same node is called “node-folding”</li>
+</ul>
+</li>
+<li>
+<p>Anonymous Classes and Blank Nodes</p>
+<ul>
+<li>A class expression is a class with no IRI (it’s unnamed). Hence, it is called an ‘anonymous class’. It’s just a raw expression, analogous to: 4*(11-3).</li>
+<li>It’s also called a ‘blank node’ because it is a node in a knowledge graph.</li>
+<li>Evaluating a numerical expression results in a named number (e.g. 32).</li>
+<li>No such evaluation can take place for class expressions.</li>
+<li>To give a class expression a name (i.e. IRI), we need to use owl:equivalentClass.</li>
+</ul>
+</li>
+<li>
+<p>Limits of RDF(S)</p>
+<ul>
+<li>
+<p>Locality of global properties, i.e. ‘eats’ property that has a domain of Animal and range of Food (which has subclasses of Vegetables and Meat)</p>
+<ul>
+<li>Problem: Cows only eat vegetables, other animals also eat meat</li>
+</ul>
+</li>
+<li>
+<p>Disjunctive Classes, i.e. Human having subclasses of Woman and Man. Cannot express that two classes are exclusively disjunctive from each other.</p>
+<ul>
+<li>Problem: Subclass relation cannot express disjunctive class (subclass) membership.</li>
+</ul>
+</li>
+<li>
+<p>Class Combinations, i.e. Road User with subclasses of Motorist, Motorcyclist, Pedestrian and Cyclist.</p>
+<ul>
+<li>Problem: Combination of classes define a new class. New class contains only members from given class combinations.</li>
+</ul>
+</li>
+<li>
+<p>Cardinality Restrictions, i.e Human - hasParent → Parent</p>
+<ul>
+<li>Problem: Every human (usually) has two parents. Cannot restrict the hasParent to two in rdfs, this is where SHACL comes in.</li>
+</ul>
+</li>
+<li>
+<p>Special Property Constraints</p>
+<ul>
+<li>Transitivity (e.g. is greater than)</li>
+<li>Uniqueness (e.g. is mother of)</li>
+<li>Inverseness (e.g ‘is parent of’ and ‘is child of’)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>SPARQL Reference Material - Simple Protocol and Query Language</p>
+<ul>
+<li><a href="https://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf">https://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf</a></li>
+<li><a href="http://repositorio.cedia.org.ec/bitstream/123456789/931/3/02_SPARQL.pdf">http://repositorio.cedia.org.ec/bitstream/123456789/931/3/02_SPARQL.pdf</a></li>
+<li><a href="https://www.csd.uoc.gr/~hy561/Lectures13/CS561SPARQL13.pdf">https://www.csd.uoc.gr/~hy561/Lectures13/CS561SPARQL13.pdf</a></li>
+<li><a href="http://dig.csail.mit.edu/2010/Courses/6.898/resources/sparql-tutorial.pdf">http://dig.csail.mit.edu/2010/Courses/6.898/resources/sparql-tutorial.pdf</a></li>
+<li><a href="https://programminghistorian.org/en/lessons/retired/graph-databases-and-SPARQL">https://programminghistorian.org/en/lessons/retired/graph-databases-and-SPARQL</a></li>
+<li><a href="http://www.ontobee.org/tutorial/sparql">http://www.ontobee.org/tutorial/sparql</a></li>
+<li><a href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#neg-pattern">https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#neg-pattern</a></li>
+<li><a href="https://docs.data.world/tutorials/sparql/Your_First_Sparql_Query.html">https://docs.data.world/tutorials/sparql/Your_First_Sparql_Query.html</a></li>
+<li><a href="http://www.linkeddatatools.com/querying-semantic-data">http://www.linkeddatatools.com/querying-semantic-data</a></li>
+<li><a href="https://medium.com/wallscope/constructing-sparql-queries-ca63b8b9ac02">https://medium.com/wallscope/constructing-sparql-queries-ca63b8b9ac02</a></li>
+<li><a href="https://www.w3.org/2001/sw/DataAccess/rq23/examples.html">https://www.w3.org/2001/sw/DataAccess/rq23/examples.html</a></li>
+<li><a href="http://sparql-playground.sib.swiss/?query=SELECT%20*%20where%20%7B%0A%20%20%20VALUES%20%3Fsubj%20%7Bdbpedia:Harrison_Ford%7D%0A%20%20%20%3Fsubj%20tto:pet%20%3Fpet%20.%0A%20%20%20SERVICE%20%3Chttp:%2F%2Fdbpedia.org%2Fsparql%3E%20%7B%0A%20%20%20%20%20%20%20%3Fsubj%20dbp:birthDate%20%3Fbirthday%20.%0A%09%20%7D%0A%7D&#x26;output=html">http://sparql-playground.sib.swiss/?query=SELECT%20*%20where%20%7B%0A%20%20%20VALUES%20%3Fsubj%20%7Bdbpedia:Harrison_Ford%7D%0A%20%20%20%3Fsubj%20tto:pet%20%3Fpet%20.%0A%20%20%20SERVICE%20%3Chttp:%2F%2Fdbpedia.org%2Fsparql%3E%20%7B%0A%20%20%20%20%20%20%20%3Fsubj%20dbp:birthDate%20%3Fbirthday%20.%0A%09%20%7D%0A%7D&#x26;output=html</a></li>
+<li><a href="https://blog.cambridgesemantics.com/sparql-one-standard-to-rule-them-all">https://blog.cambridgesemantics.com/sparql-one-standard-to-rule-them-all</a></li>
+<li><a href="https://cambridgesemantics.com/blog/semantic-university/learn-sparql/">Learn SPARQL (cambridgesemantics.com)</a></li>
+<li><a href="https://sparql-playground.sib.swiss/">SPARQL playground (sib.swiss)</a></li>
+<li><a href="https://data.world/blog/sparql-tutorial/">SPARQL Tutorial | data.world</a></li>
+<li><a href="https://mindmajix.com/sparql-tutorial">▷ What is SPARQL? | An Introduction to SPARQL (mindmajix.com)</a></li>
+<li><a href="https://docs.stardog.com/tutorials/learn-sparql">Learn SPARQL | Stardog Documentation Late</a></li>
+</ul>
+<p>More advanced SPARQL</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=JaywGeqZkjA&#x26;list=PLDhh0lALedc5paY4N3NRZ3j_ui9foL7Qc&#x26;index=4">Knowledge Graph Seminar Session 4</a> - Partial Queries? Partitioned data? → For centralized data. We are working with federated data → SPARQL endpoints.</li>
+<li><a href="https://www.stardog.com/blog/how-to-read-stardog-query-plans/">https://www.stardog.com/blog/how-to-read-stardog-query-plans/</a></li>
+<li><a href="https://www.stardog.com/blog/7-steps-to-fast-sparql-queries/">https://www.stardog.com/blog/7-steps-to-fast-sparql-queries/</a></li>
+</ul>
+<p><img src="/training/attachments/2172321793/2201583624.png" alt=""><img src="/training/attachments/2172321793/2201681925.png" alt=""></p>
+<p>TARQL - allows the user to convert CSV files into RDF. Michael: “It’s the same as SPARQL but used to create triples.”</p>
+<p><a href="https://tarql.github.io/">https://tarql.github.io/</a></p>
+<p><a href="https://www.bobdc.com/blog/tarql/">Basic TARQL Walkthrough (featuring Semantic Arts)</a></p>
+<p><strong>Presentations</strong></p>
+<ul>
+<li>
+<p>DBBO Course → NJ-2017-10-All</p>
+</li>
+<li>
+<p>Intro to Data-Centric: <a href="https://www.semanticarts.com/intro-to-data-centric/">https://www.semanticarts.com/intro-to-data-centric/</a> (Password: IntrotoDC_2021)</p>
+</li>
+<li>
+<p>Breakdown Silos with Knowledge Graphs</p>
+</li>
+<li>
+<p>The Art of Semantics <a href="https://www.youtube.com/watch?v=TGaRuaPSX58&#x26;t=789s">https://www.youtube.com/watch?v=TGaRuaPSX58&#x26;t=789s</a></p>
+<ul>
+<li>“Graphs give you flexibility, semantics give you simplicity, and ontologies give you the model → which gives you production code.”</li>
+</ul>
+</li>
+<li>
+<p>Think Big, Start Small ppt</p>
+</li>
+<li>
+<p>Data Centric Transformation <a href="https://www.youtube.com/watch?v=eeodxx9a4z4&#x26;t=1403s">https://www.youtube.com/watch?v=eeodxx9a4z4&#x26;t=1403s</a></p>
+</li>
+<li>
+<p>The Business Case for Semantic Web Ontology &#x26; Knowledge Graphs <a href="https://www.youtube.com/watch?v=5VNtYqyzmMM&#x26;t=96s">https://www.youtube.com/watch?v=5VNtYqyzmMM&#x26;t=96s</a></p>
+<ul>
+<li>
+<p>About Semantic Arts</p>
+<ul>
+<li>We’re experts in Semantic technology and Ontology design</li>
+<li>We specialize in Semantic strategy and Ontology implementation, refining our best practices since 2000</li>
+<li>We’re thought leaders who speak at conferences, publish articles, and author books on Information Management innovation and enrichment across the enterprise</li>
+<li>Collectively, our team has over 200 years of experience</li>
+<li>We’re investing on the Ontology community and the pursuit of sharing ideas (Gist Council, Estes Park Group)</li>
+<li>We’re developing proprietary tools for faster adoption: Gist (Minimalist Upper Ontology)</li>
+<li>We observe international WC3 standards and guidelines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Amgen: <a href="https://www.semanticarts.com/amgens-enterprise-data-fabric/">https://www.semanticarts.com/amgens-enterprise-data-fabric/</a> (Password: Amgen_DCAF2021) - Real world example</p>
+</li>
+<li>
+<p>Intuit: <a href="https://www.semanticarts.com/weaving-data-centric-thinking-into-enterprise-architecture/">https://www.semanticarts.com/weaving-data-centric-thinking-into-enterprise-architecture/</a>(Password: DCThinking_2021) -Real world example</p>
+</li>
+<li>
+<p>DuPont Training Program:</p>
+<ul>
+<li>ClientsAndPartners\DuPont\2021 Projects\Recordings\data-centric-enablement\</li>
+<li>7 2h sessions</li>
+</ul>
+</li>
+</ul>
+<p>Gist Council Meetings</p>
+<p><strong>Blog Posts</strong></p>
+<ul>
+<li>Semantic Ontology: The Basics - <a href="https://www.semanticarts.com/semantic-ontology-the-basics/">https://www.semanticarts.com/semantic-ontology-the-basics/</a></li>
+<li>Semantic Silos and <a href="https://www.craigbailey.net/paving-the-cow-paths/">Cowpaths</a><a href="https://www.semanticarts.com/enterprise-ontology-semantic-silos-and-cowpaths/">https://www.semanticarts.com/enterprise-ontology-semantic-silos-and-cowpaths/</a></li>
+<li><a href="https://www.semanticarts.com/response-time-quanta/">https://www.semanticarts.com/response-time-quanta/</a> - How fast should your queries be?</li>
+</ul>
+<p>Tools</p>
+<ul>
+<li>
+<p>Stardog Studio (HOW TO INSTALL WITHOUT TEARING OUT YOUR HAIR <a href="https://semarts.atlassian.net/wiki/spaces/InternalSystems/pages/824770651/Stardog+License">Stardog License</a> )</p>
+<ul>
+<li><a href="https://www.stardog.com/blog/7-steps-to-fast-sparql-queries/">https://www.stardog.com/blog/7-steps-to-fast-sparql-queries/</a></li>
+<li><a href="https://docs.stardog.com/archive/7.5.1/virtual-graphs/mapping-data-sources.html#sms2-stardog-mapping-syntax-2">https://docs.stardog.com/archive/7.5.1/virtual-graphs/mapping-data-sources.html#sms2-stardog-mapping-syntax-2</a></li>
+</ul>
+</li>
+<li>
+<p>Notepad ++</p>
+</li>
+<li>
+<p>Visual Studio (VS Code)</p>
+</li>
+</ul>
+<p>Languages</p>
+<ul>
+<li>
+<p>RDF - is how to describe things</p>
+<ul>
+<li>RDFS - Lightweight schema, syntax specification</li>
+</ul>
+</li>
+<li>
+<p>OWL - describes what the thing is</p>
+<ul>
+<li>
+<p>Alternatives:</p>
+<ul>
+<li>Manchester Syntax: easiest to read, hides details</li>
+<li>Turtle: easy to read, focus on triples</li>
+<li>RDF/XML: horrible to read, first standard</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Turtle</p>
+</li>
+<li>
+<p>JSON (as needed with client)</p>
+</li>
+<li>
+<p>SPARQL/TARQL</p>
+</li>
+<li>
+<p>SHACL</p>
+</li>
+</ul>
+<p>Books</p>
+<ul>
+<li>Software Wasteland: How the Application-Centric Mindset is Hobbling our Enterprises - Dave McComb</li>
+<li>The Data-Centric Revolution: Restoring Sanity to Enterprise Information Systems - Dave McComb</li>
+<li><a href="https://zenodo.org/record/3898519?hsCtaTracking=870ee1df-0d7b-4e50-8767-b79d2a8295f0%7C40a224e4-9b70-4886-9520-95036d56f67e#.X_w3kS1Q10t">A data engineer’s guide to semantic modelling</a> - Ilaria Maresi</li>
+<li><a href="https://media.oiipdf.com/pdf/f59ad891-ba1d-406f-9b59-6c76ead6aa79.pdf">Learning SPARQL</a> - Bob DuCharme</li>
+<li>Demystifying OWL for the Enterprise - Michael Ushold</li>
+</ul>
+<p>Questions</p>
+<ul>
+<li>
+<p>Out of all of this information what are the key takeaways that new hires should have?</p>
+<ul>
+<li>Want to avoid semantic silos - how does Semantic Arts avoid semantic silos?</li>
+</ul>
+</li>
+<li>
+<p>What is the role of an entry level ontologist in a typical project? What should one expect?</p>
+</li>
+<li>
+<p>Training Questions</p>
+<ul>
+<li>What is a serializer?</li>
+<li>How can we get better at optimizing SPARQL queries? Does someone “red ink” them or do we just learn with time and practice?</li>
+<li>How is our work evaluated?</li>
+<li>Soft skills, things to keep in mind for any given project. Big picture.</li>
+<li>What is our role as entry level ontologists?</li>
+<li>Optimizing queries (less than a second)</li>
+<li>Core vs Upper Level Ontology</li>
+</ul>
+</li>
+</ul>
+<p>What to Expect in a Project (From Michael Uschold’s 2021 DuPont Training)</p>
+<ul>
+<li>
+<p>Phase 1</p>
+<ul>
+<li>
+<p>Identify questions the client wants answers to as initial requirements.</p>
+<ul>
+<li>Answer those questions using SPARQL queries.</li>
+</ul>
+</li>
+<li>
+<p>Build the ontology and triple store to meet those requirements.</p>
+</li>
+<li>
+<p>Build out applications that use the data.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Phase 2: a second iteration</p>
+<ul>
+<li>Broaden scope by identifying another set of questions as requirements.</li>
+<li>Extend the ontology to meet the requirements.</li>
+<li>Coordinate with other ontology authors in the enterprise.</li>
+<li>Make data and ontology available as triples.</li>
+<li>Extend existing and/or build out additional applications.</li>
+</ul>
+</li>
+<li>
+<p>Keep on iterating</p>
+</li>
+</ul></div><footer class="sl-flex astro-xhxjzfa7"><div class="meta sl-flex astro-xhxjzfa7"><p>Last updated: <time datetime="2026-07-31T19:18:44.000Z">Jul 31, 2026</time></p></div><div class="pagination-links print:hidden astro-jgq3vlii" dir="ltr"><a href="/training/new-ontologist-orientation/learning-owl-reasoning/" rel="prev" class="astro-jgq3vlii"><svg aria-hidden="true" class="astro-jgq3vlii astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg><span class="astro-jgq3vlii">Previous<br class="astro-jgq3vlii"><span class="link-title astro-jgq3vlii">Learning OWL Reasoning</span></span></a><a href="/training/new-ontologist-orientation/proposed-improvements-to-ontologist-onboarding/" rel="next" class="astro-jgq3vlii"><svg aria-hidden="true" class="astro-jgq3vlii astro-n5k4ipy7" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg><span class="astro-jgq3vlii">Next<br class="astro-jgq3vlii"><span class="link-title astro-jgq3vlii">Proposed Improvements to Ontologist Onboarding</span></span></a></div></footer><script type="module">(function(){let e=e=>`sat:done:`+e;function t(){document.querySelectorAll(`.mark-done`).forEach(t=>{let n=localStorage.getItem(e(t.dataset.route))===`1`;t.classList.toggle(`is-done`,n),t.textContent=n?`Completed ✓`:`Mark complete`}),document.querySelectorAll(`.sidebar a[href]`).forEach(t=>{let n=t.getAttribute(`href`);n&&localStorage.getItem(e(n))===`1`&&t.classList.add(`sat-done`)})}document.addEventListener(`click`,n=>{let r=n.target.closest?.(`.mark-done`);if(!r)return;let i=e(r.dataset.route);localStorage.setItem(i,localStorage.getItem(i)===`1`?`0`:`1`),t(),document.dispatchEvent(new Event(`sat:progress`))});let n=document.querySelector(`.lesson-tools`);n?.dataset.route&&localStorage.setItem(`sat:last`,JSON.stringify({route:n.dataset.route,title:n.dataset.title})),t()})();</script></div></div></main></div></div></div></div></body></html>
