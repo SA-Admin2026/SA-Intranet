@@ -83,6 +83,18 @@
   .tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .tl{border:1px solid var(--rule);border-radius:5px;padding:10px;min-height:56px}
 
+  /* readable "coming soon" previews — show what's next, clearly not live */
+  .preview{position:relative;background:var(--panel);border:1px dashed var(--rule);border-radius:var(--r);box-shadow:var(--shadow);padding:14px 16px;margin-bottom:14px;pointer-events:none}
+  .preview .soon{position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#7a5a10;background:rgba(212,168,58,.20);border:1px solid rgba(212,168,58,.5);border-radius:20px;padding:3px 9px}
+  @media (prefers-color-scheme:dark){.preview .soon{color:var(--gold)}}
+  .preview .ph{font-size:12px;font-weight:800;color:var(--ink);margin:0 0 4px;text-transform:uppercase;letter-spacing:.05em}
+  .preview .note{font-size:11px;color:var(--muted);font-style:italic;margin:10px 0 0}
+  .feed{display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--rule);opacity:.82}
+  .feed:first-of-type{border-top:0}
+  .feed .ic{font-size:16px;flex:none;width:22px;text-align:center}
+  .feed .ft{font-size:11px;font-weight:700;color:var(--muted);font-family:var(--mono)}
+  .feed .fh{font-size:13.5px;color:var(--ink);margin:1px 0 0}
+  .newpill{font-family:var(--mono);font-size:9px;color:#3f5016;background:rgba(140,158,56,.16);border-radius:3px;padding:0 5px;margin-left:6px}
   .foot{background:var(--blue-deep);color:#9fc0cc;text-align:center;padding:14px;font-family:var(--mono);font-size:10.5px;margin-top:26px}
   .foot .o{color:var(--olive)}
   .legend{max-width:1200px;margin:0 auto;padding:2px 20px 0;font-size:11.5px;color:var(--muted)}
@@ -149,23 +161,31 @@
       </a>
     </div>
 
-    <h2 class="sec" style="margin-top:26px">Coming soon</h2>
-    <div class="previewwrap">
-      <div class="lock"><span>🔒 In build — coming soon</span></div>
-      <div class="blur">
-        <div class="panel">
-          <div class="phead">📣 Company news</div>
-          <div class="miniart"><div class="thumb"></div><div style="flex:1"><div class="line m"></div><div class="line s"></div></div></div>
-          <div class="miniart"><div class="thumb"></div><div style="flex:1"><div class="line m"></div><div class="line s"></div></div></div>
-          <div class="miniart"><div class="thumb"></div><div style="flex:1"><div class="line m"></div><div class="line s"></div></div></div>
-        </div>
-        <div class="ph-mini">
-          <div class="panel"><div class="phead">📖 Handbook &amp; HR</div><div class="line m"></div><div class="line s"></div><div class="line m"></div></div>
-          <div class="panel"><div class="phead">⚙️ Team &amp; project spaces</div><div class="line m"></div><div class="line s"></div><div class="line m"></div></div>
-        </div>
-      </div>
+    <h2 class="sec" style="margin-top:26px">Coming soon — a preview of what's next</h2>
+
+    <div class="preview">
+      <span class="soon">Preview · not live yet</span>
+      <div class="ph">📣 Company news &amp; announcements</div>
+      <div class="feed"><div class="ic">📢</div><div><div class="ft">Announcement · Amanda R.</div><div class="fh">We're moving payroll to Paylocity — what's changing and when</div></div></div>
+      <div class="feed"><div class="ic">👋</div><div><div class="ft">People · HR</div><div class="fh">Welcome — two new colleagues joining this month</div></div></div>
+      <div class="feed"><div class="ic">🗓️</div><div><div class="ft">Firm · Exec team</div><div class="fh">Strategic planning offsite — Oct 12–13</div></div></div>
+      <p class="note">Example content. Firm announcements and news will post here.</p>
     </div>
-    <p class="legend">Company news, handbook &amp; HR, role/project-gated team spaces, and the app launcher (COO OS, hiring, analytics) are next as the migration continues.</p>
+
+    <div class="preview">
+      <span class="soon">Preview · not live yet</span>
+      <div class="ph">🧠 Weekly intelligence briefs</div>
+      <div class="feed"><div class="ic">🛡️</div><div><div class="ft">IT Security</div><div class="fh">“Consent is the new perimeter” — spotting OAuth-consent phishing<span class="newpill">new</span></div></div></div>
+      <div class="feed"><div class="ic">🤖</div><div><div class="ft">AI &amp; Data Trends</div><div class="fh">Semantic layers converge on MCP as the agent interface</div></div></div>
+      <div class="feed"><div class="ic">📣</div><div><div class="ft">Marketing</div><div class="fh">Competitors adopt our “explainable, governed AI” language</div></div></div>
+      <div class="feed"><div class="ic">⚖️</div><div><div class="ft">HR Compliance</div><div class="fh">Virginia expands its non-compete limits</div></div></div>
+      <div class="feed"><div class="ic">📈</div><div><div class="ft">General Business</div><div class="fh">Fed holds — the market now prices a September hike</div></div></div>
+      <div class="feed"><div class="ic">📅</div><div><div class="ft">Conferences &amp; Events</div><div class="fh">KMWorld &amp; DGIQ East land the same week — pick one</div></div></div>
+      <div class="feed"><div class="ic">🏆</div><div><div class="ft">Awards</div><div class="fh">KMWorld “100 Companies That Matter in KM” — free, on-brand</div></div></div>
+      <p class="note">A preview of the weekly COO intelligence briefs (IT, AI/data, marketing, HR, business, conferences, awards). These will surface here each week.</p>
+    </div>
+
+    <p class="legend">Handbook &amp; HR, role/project-gated team spaces, and the app launcher (COO OS, hiring, analytics) are also on the way.</p>
   </main>
 
   <!-- RIGHT RAIL (future shape, blurred) -->
