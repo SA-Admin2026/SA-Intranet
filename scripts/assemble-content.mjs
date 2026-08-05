@@ -29,6 +29,57 @@ const EXCLUDE = new Set(['MIGRATION-FLAGS.md', 'MEDIA-DEFERRED.md']);
 // The default Confluence "empty space" home page — carries no real content.
 const isBoilerplate = (md) => md.includes('Welcome to your new space!');
 
+// --- Media policy ----------------------------------------------------------
+// Cloudflare Pages rejects any file > 25 MiB and we don't want large binaries in
+// git. Per spaces/MEDIA-DEFERRED.md: small media (images, PDFs, docs) ships in-repo;
+// large media (the big PowerPoint decks) is held back and its links are stubbed to a
+// clear note rather than a broken download. 10 MB cleanly captures the five large
+// decks while keeping everything else — all 300+ images included.
+const MEDIA_MAX_BYTES = 10 * 1024 * 1024;
+const skippedMedia = []; // { section, href, name }
+
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// Copy an attachments tree into public/, skipping files over the size cap. `hrefBase`
+// is how links to these files appear in the section's Markdown: `/attachments` for the
+// already-Astro sections (rehype prefixes the section at build) and
+// `/<section>/attachments` for the migrated spaces (rewritten absolute at assembly).
+function copyAttachmentsFiltered(srcDir, destDir, section, hrefBase) {
+  for (const e of fs.readdirSync(srcDir, { withFileTypes: true })) {
+    const s = path.join(srcDir, e.name);
+    const d = path.join(destDir, e.name);
+    const href = `${hrefBase}/${e.name}`;
+    if (e.isDirectory()) {
+      fs.mkdirSync(d, { recursive: true });
+      copyAttachmentsFiltered(s, d, section, href);
+    } else if (fs.statSync(s).size > MEDIA_MAX_BYTES) {
+      skippedMedia.push({ section, href, name: e.name });
+    } else {
+      fs.copyFileSync(s, d);
+    }
+  }
+}
+
+// Rewrite links to held-back files so the page shows a clear note instead of a link
+// that 404s. Handles both forms the Confluence export produced:
+//   1. Thumbnail download: `[![](atlassian-thumb-url)](href)`  (image is the label)
+//   2. Plain text link:    `[label](href)`
+const STUB_NOTE = '_(large file — hosted separately; ask Operations for access)_';
+function stubSkippedMedia() {
+  for (const { section, href } of skippedMedia) {
+    const h = escapeRe(href);
+    const thumb = new RegExp(`\\[!\\[[^\\]]*\\]\\([^)]*\\)\\]\\(${h}(?:\\s+"[^"]*")?\\)`, 'g');
+    const plain = new RegExp(`\\[([^\\]]*)\\]\\(${h}(?:\\s+"[^"]*")?\\)`, 'g');
+    for (const file of walkMd(path.join(DOCS, section))) {
+      const md = fs.readFileSync(file, 'utf8');
+      const out = md
+        .replace(thumb, `📎 ${STUB_NOTE}`)
+        .replace(plain, `$1 ${STUB_NOTE}`);
+      if (out !== md) fs.writeFileSync(file, out);
+    }
+  }
+}
+
 const titleize = (slug) =>
   slug
     .replace(/-+/g, ' ')
@@ -171,13 +222,13 @@ function assembleSpaces() {
     }
     ensureIndex(dest, `/${section}/`, meta.label, meta.blurb);
 
-    // Attachments → public/ for local preview. Git-ignored; deploy media strategy
-    // is an open decision (see spaces/MEDIA-DEFERRED.md).
+    // Attachments → public/ (committed), minus files over the media cap (stubbed).
     const att = path.join(src, 'attachments');
     if (fs.existsSync(att)) {
       const outAtt = path.join(PUBLIC, section, 'attachments');
       rmrf(outAtt);
-      fs.cpSync(att, outAtt, { recursive: true });
+      fs.mkdirSync(outAtt, { recursive: true });
+      copyAttachmentsFiltered(att, outAtt, section, `/${section}/attachments`);
     }
 
     console.log(`[assemble] ${section}: ${count} pages + landing`);
@@ -261,7 +312,10 @@ function assembleAstroSections() {
     if (fs.existsSync(att)) {
       const outAtt = path.join(PUBLIC, sec.section, 'attachments');
       rmrf(outAtt);
-      fs.cpSync(att, outAtt, { recursive: true });
+      fs.mkdirSync(outAtt, { recursive: true });
+      // These sections' Markdown links attachments as `/attachments/…`; rehype adds
+      // the section prefix at build.
+      copyAttachmentsFiltered(att, outAtt, sec.section, `/attachments`);
     }
     console.log(`[assemble] ${sec.section}: ${count} pages (from ${sec.repo})`);
   }
@@ -270,4 +324,11 @@ function assembleAstroSections() {
 fs.mkdirSync(DOCS, { recursive: true });
 assembleSpaces();
 assembleAstroSections();
+stubSkippedMedia();
+if (skippedMedia.length) {
+  console.log(
+    `[assemble] held back ${skippedMedia.length} large file(s) (> ${MEDIA_MAX_BYTES / 1024 / 1024} MB), links stubbed:`
+  );
+  for (const m of skippedMedia) console.log(`  - ${m.section}: ${m.name}`);
+}
 console.log('[assemble] done.');

@@ -10,7 +10,7 @@ source: 2864087120.html
 
 **Session 1: Productized Offering**
 
-[![](https://semarts.atlassian.net/wiki/download/thumbnails/2864087120/Positioning,%20Marketing,%20and%20Branding.pptx?version=1&modificationDate=1745956985103&cacheVersion=1&api=v2&viewType=fileMacro)](/administrative/attachments/2864087120/2975203337.pptx)
+📎 _(large file — hosted separately; ask Operations for access)_
 
 Action Item: Develop an outline for two of these items that identifies the problem it solves and a work plan (cost and schedule)
 
@@ -39,13 +39,13 @@ The goal of this session was to introduce IKG to the team. Each person has been 
 
 **Session 1: State of the Union**
 
-[![](https://semarts.atlassian.net/wiki/download/thumbnails/2864087120/state%20of%20the%20union.pptx?version=1&modificationDate=1746026467995&cacheVersion=1&api=v2&viewType=fileMacro)](/administrative/attachments/2864087120/2975924230.pptx)
+📎 _(large file — hosted separately; ask Operations for access)_
 
 ![IMG_5951.jpg](/administrative/attachments/2864087120/2976645121.jpg)
 
 **Session 2: Farm to Fork (Supply Chain)**
 
-[![](https://semarts.atlassian.net/wiki/download/thumbnails/2864087120/Farm-to-Fork%20Summit%20Slide%20Deck.pptx?version=1&modificationDate=1745957019573&cacheVersion=1&api=v2&viewType=fileMacro)](/administrative/attachments/2864087120/2975465481.pptx)
+📎 _(large file — hosted separately; ask Operations for access)_
 
 ![IMG_5952.jpg](/administrative/attachments/2864087120/2976088069.jpg)![IMG_5953.jpg](/administrative/attachments/2864087120/2976186395.jpg)![IMG_5955.jpg](/administrative/attachments/2864087120/2976645127.jpg)
 

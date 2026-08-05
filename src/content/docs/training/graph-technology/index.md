@@ -19,7 +19,7 @@ This page and its subpages will serve as a resource for Semantic Arts consultant
 **An introductory presentation and comparison of the two flavors:**  
 by [Mark Wallace](https://semarts.atlassian.net/wiki/people/5a147f88cba5b30325a6e9c1?ref=confluence)
 
-[![](https://semarts.atlassian.net/wiki/download/thumbnails/3013279749/Understanding%20Knowledge%20Graphs2%20-talk-MarkWallace.pptx?version=4&modificationDate=1752602100048&cacheVersion=1&api=v2&viewType=fileMacro)](/attachments/3013279749/3044835329.pptx)
+📎 _(large file — hosted separately; ask Operations for access)_
 
 **RDF graph databases comparison criteria:**
 

@@ -4,9 +4,9 @@ __pycache__/
 node_modules/
 dist/
 .astro/
-# Attachments are assembled into public/ from spaces/*/attachments (git-ignored source).
-# Media hosting (small-in-repo vs SharePoint/Stream for large files) is an open Phase-4
-# decision — see spaces/MEDIA-DEFERRED.md — so keep the assembled media out of git for now.
-public/
+# public/ IS committed: assemble-content.mjs curates the media there (all files <= 10 MB —
+# every image, PDF, doc — ship in-repo; the few large PowerPoint decks are held back and
+# their links stubbed). See scripts/assemble-content.mjs + spaces/MEDIA-DEFERRED.md.
+# The raw source attachments (full-size, all files) stay git-ignored:
 spaces/*/attachments/
 .claude/
