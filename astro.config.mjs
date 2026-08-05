@@ -206,6 +206,8 @@ export default defineConfig({
       customCss: ['./src/styles/brand.css'],
       components: {
         SiteTitle: './src/components/SiteTitle.astro',
+        // Consistent cross-section nav in the header on every page (keeps native search + theme).
+        Header: './src/components/Header.astro',
         // Adds the per-lesson "mark complete" + related-lessons tools on Training
         // pages; a no-op passthrough everywhere else.
         Footer: './src/components/Footer.astro',

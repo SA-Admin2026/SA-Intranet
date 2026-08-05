@@ -11,6 +11,10 @@
   --sl-color-accent-high: #cfe4ec;
 }
 
+/* Access-gated header/nav links start hidden; identity-nav.js reveals them when the user's
+   Entra groups allow (or when not behind Access, e.g. local dev). Prevents a flash. */
+[data-gate] { display: none; }
+
 /* Cross-section nav in the header (SiteTitle override) — jump to home / other sections. */
 .sa-sitenav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; }
 .sa-sitenav .sa-home { font-weight: 800; color: var(--sl-color-white); margin-right: 8px; text-decoration: none; letter-spacing: -0.01em; }
