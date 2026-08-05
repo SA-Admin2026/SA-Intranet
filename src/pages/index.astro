@@ -74,8 +74,12 @@ const identityNavScript = fs.readFileSync(
   @media (max-width:640px){.hero .vm{grid-template-columns:1fr}}
   .vm-label{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:3px}
   .vm-item p{font-size:15px;font-weight:400;color:#fff;line-height:1.5;max-width:none}
-  .hero-link{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:700;color:#fff;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:1px;position:relative}
-  .hero-link:hover{border-color:var(--olive)}
+  .values{margin-top:16px;position:relative}
+  .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 22px;margin-top:6px}
+  @media (max-width:820px){.values-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.values-grid{grid-template-columns:1fr}}
+  .val b{display:block;color:#fff;font-size:13px;font-weight:700}
+  .val span{display:block;color:rgba(255,255,255,.72);font-size:11.5px;line-height:1.4;margin-top:1px}
 
   /* live section cards */
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -175,7 +179,17 @@ const identityNavScript = fs.readFileSync(
         <p>To lead as many firms as possible on their journey to a data-centric future.</p>
       </div>
     </div>
-    <a class="hero-link" href="/reference/employee-handbook/welcome-and-company/">From the Employee Handbook →</a>
+    <div class="values">
+      <span class="vm-label">Our Values</span>
+      <div class="values-grid">
+        <div class="val"><b>Create Value</b><span>Every project should create real value for our clients.</span></div>
+        <div class="val"><b>One Voice</b><span>Disagree freely inside; present our best consensus to the client.</span></div>
+        <div class="val"><b>Share Equitably</b><span>Share results with clients, partners, and employees, based on contribution.</span></div>
+        <div class="val"><b>Lifetime Learning</b><span>Keep studying and researching for better ways, staying current.</span></div>
+        <div class="val"><b>Show Respect</b><span>Stay mindful of others' contributions, opinions, and rights — and humble.</span></div>
+        <div class="val"><b>Have Fun</b><span>Do great work, stay true to our values, and enjoy life outside the firm.</span></div>
+      </div>
+    </div>
   </div>
 
   <!-- MAIN COLUMN -->
