@@ -1,0 +1,353 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+// Interactive SPARQL lab. A real SPARQL 1.1 engine (Oxigraph, compiled to WASM) runs
+// entirely in the browser over a small in-memory dataset — no server — so learners write
+// queries and get live, checkable results. Exercises build the skill progressively; each
+// is auto-checked by running the learner's query and a reference solution and comparing
+// result sets. See src/pages/training/languages/sparql/lab.astro.
+
+const PREFIXES = `PREFIX ex: <https://example.org/firm#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+`;
+
+const DATASET = `${PREFIXES}
+ex:ada     a ex:Person ; rdfs:label "Ada Lovelace"    ; ex:role "Ontologist" ; ex:joined 2019 ; ex:skill "SPARQL", "OWL"   ; ex:worksOn ex:atlas, ex:beacon .
+ex:grace   a ex:Person ; rdfs:label "Grace Hopper"    ; ex:role "Developer"  ; ex:joined 2021 ; ex:skill "Python", "SPARQL"; ex:worksOn ex:beacon .
+ex:alan    a ex:Person ; rdfs:label "Alan Turing"     ; ex:role "Consultant" ; ex:joined 2020 ; ex:skill "OWL", "SHACL"    ; ex:worksOn ex:atlas, ex:cobalt .
+ex:barbara a ex:Person ; rdfs:label "Barbara Liskov"  ; ex:role "Developer"  ; ex:joined 2022 ; ex:skill "Python"          ; ex:worksOn ex:cobalt .
+ex:edsger  a ex:Person ; rdfs:label "Edsger Dijkstra" ; ex:role "Partner"    ; ex:joined 2015 .
+
+ex:atlas   a ex:Project ; rdfs:label "Atlas"  ; ex:client "Northwind" .
+ex:beacon  a ex:Project ; rdfs:label "Beacon" ; ex:client "Contoso" .
+ex:cobalt  a ex:Project ; rdfs:label "Cobalt" ; ex:client "Northwind" .
+`;
+
+const starter = (body) => `${PREFIXES}\nSELECT ?name WHERE {\n${body}\n}`;
+
+// Each exercise: the task, a starter query, an optional hint, and a reference solution
+// used only to check the learner's answer (result-set equality, order-independent).
+const EXERCISES = [
+  {
+    id: 'select-all',
+    title: 'Select every person',
+    prompt: 'Return the name of every <code>ex:Person</code>. One column: <code>?name</code>.',
+    concept: 'Basic triple patterns',
+    hint: 'Match `?p a ex:Person` and `?p rdfs:label ?name`.',
+    starter: starter('  # every ?p that is an ex:Person, bind its rdfs:label to ?name\n  \n'),
+    solution: `${PREFIXES} SELECT ?name WHERE { ?p a ex:Person ; rdfs:label ?name }`,
+  },
+  {
+    id: 'developers',
+    title: 'Filter by role',
+    prompt: 'Return the <code>?name</code> of every person whose <code>ex:role</code> is <code>"Developer"</code>.',
+    concept: 'Matching a literal value',
+    hint: 'Add a second predicate on the same subject: `?p ex:role "Developer"`.',
+    starter: starter('  \n'),
+    solution: `${PREFIXES} SELECT ?name WHERE { ?p ex:role "Developer" ; rdfs:label ?name }`,
+  },
+  {
+    id: 'joined-after',
+    title: 'FILTER on a number',
+    prompt: 'Return the <code>?name</code> of everyone who joined <strong>after 2020</strong> (<code>ex:joined</code> &gt; 2020).',
+    concept: 'FILTER with a numeric comparison',
+    hint: 'Bind the year to a variable, then `FILTER(?y > 2020)`.',
+    starter: starter('  \n'),
+    solution: `${PREFIXES} SELECT ?name WHERE { ?p rdfs:label ?name ; ex:joined ?y FILTER(?y > 2020) }`,
+  },
+  {
+    id: 'person-skill',
+    title: 'One row per value',
+    prompt: 'Return every person&rsquo;s <code>?name</code> and each of their <code>?skill</code>s. People with multiple skills appear on multiple rows.',
+    concept: 'Multi-valued properties',
+    hint: 'A person with two `ex:skill` values yields two rows automatically.',
+    starter: `${PREFIXES}\nSELECT ?name ?skill WHERE {\n  \n}`,
+    solution: `${PREFIXES} SELECT ?name ?skill WHERE { ?p rdfs:label ?name ; ex:skill ?skill }`,
+  },
+  {
+    id: 'distinct-skills',
+    title: 'DISTINCT values',
+    prompt: 'Return the <strong>distinct</strong> set of <code>?skill</code>s that appear anywhere in the firm.',
+    concept: 'SELECT DISTINCT',
+    hint: 'Without DISTINCT, "Python" and "SPARQL" repeat. Add `DISTINCT`.',
+    starter: `${PREFIXES}\nSELECT ?skill WHERE {\n  \n}`,
+    solution: `${PREFIXES} SELECT DISTINCT ?skill WHERE { ?p ex:skill ?skill }`,
+  },
+  {
+    id: 'optional-skill',
+    title: 'OPTIONAL — keep the unmatched',
+    prompt: 'Return every person&rsquo;s <code>?name</code> and their <code>?skill</code> <strong>if they have one</strong> — but include people with no skills too (there is one).',
+    concept: 'OPTIONAL',
+    hint: 'Wrap the skill pattern in `OPTIONAL { ... }` so Edsger still appears.',
+    starter: `${PREFIXES}\nSELECT ?name ?skill WHERE {\n  ?p a ex:Person ; rdfs:label ?name\n  \n}`,
+    solution: `${PREFIXES} SELECT ?name ?skill WHERE { ?p a ex:Person ; rdfs:label ?name OPTIONAL { ?p ex:skill ?skill } }`,
+  },
+  {
+    id: 'count-projects',
+    title: 'GROUP BY and COUNT',
+    prompt: 'For each person who works on at least one project, return their <code>?name</code> and the number of projects as <code>?n</code>.',
+    concept: 'Aggregation',
+    hint: 'Bind projects with `ex:worksOn`, `GROUP BY ?name`, and `(COUNT(?proj) AS ?n)`.',
+    starter: `${PREFIXES}\nSELECT ?name (COUNT(?proj) AS ?n) WHERE {\n  \n}\nGROUP BY ?name`,
+    solution: `${PREFIXES} SELECT ?name (COUNT(?proj) AS ?n) WHERE { ?p rdfs:label ?name ; ex:worksOn ?proj } GROUP BY ?name`,
+  },
+  {
+    id: 'northwind',
+    title: 'Join across the graph',
+    prompt: 'Return the distinct <code>?name</code> of everyone who works on a project whose <code>ex:client</code> is <code>"Northwind"</code>.',
+    concept: 'Joining two entity types',
+    hint: 'Go person → `ex:worksOn` → project, then project → `ex:client` "Northwind".',
+    starter: `${PREFIXES}\nSELECT DISTINCT ?name WHERE {\n  \n}`,
+    solution: `${PREFIXES} SELECT DISTINCT ?name WHERE { ?p rdfs:label ?name ; ex:worksOn ?proj . ?proj ex:client "Northwind" }`,
+  },
+];
+
+const payload = { dataset: DATASET, exercises: EXERCISES };
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'SPARQL — interactive lab',
+    description:
+      'Learn SPARQL by writing real queries against a live in-browser knowledge graph, with auto-checked exercises.',
+    tableOfContents: false,
+  }}
+>
+  <p>
+    This is a working SPARQL engine running <strong>entirely in your browser</strong> — no server, nothing
+    to install. You&rsquo;re querying a tiny knowledge graph about a fictional firm: its people, their roles
+    and skills, and the projects they work on. Write a query, hit <strong>Run</strong> to see results, and
+    <strong>Check</strong> to test your answer against each exercise.
+  </p>
+
+  <details class="sl-dataset">
+    <summary>The dataset — <span class="mono">firm.ttl</span> (Turtle)</summary>
+    <p>Everything below is loaded into the graph. Skim it, then use it as your reference while you query.</p>
+    <pre class="ttl"><code set:html={payload.dataset}></code></pre>
+  </details>
+
+  <div id="sparql-lab" data-loading>
+    <p class="lab-status" id="lab-status">Loading the SPARQL engine…</p>
+    <div id="lab-exercises"></div>
+
+    <h2>Scratch pad</h2>
+    <p>A free query box — experiment with anything against the dataset above.</p>
+    <div class="ex-card">
+      <textarea class="q" id="scratch" spellcheck="false" rows="6">{payload.exercises[0].starter}</textarea>
+      <div class="ex-actions"><button class="btn run" data-scratch>Run</button></div>
+      <div class="ex-out" data-scratch-out></div>
+    </div>
+
+    <p class="lab-reset"><button class="btn ghost" id="reset-progress">Reset my progress</button></p>
+  </div>
+
+  <script type="application/json" id="lab-data" set:html={JSON.stringify(payload)}></script>
+
+  <script>
+    import init, { Store } from 'oxigraph/web.js';
+    import wasmUrl from 'oxigraph/web_bg.wasm?url';
+
+    const { dataset, exercises } = JSON.parse(document.getElementById('lab-data')!.textContent!);
+    const DONE_KEY = (id: string) => 'sat:sparql:' + id;
+
+    // Normalize a SELECT result into a sorted array of rows (each row = sorted "var=value"),
+    // so two result sets can be compared regardless of row or column order.
+    function normalize(bindings: any[]): string {
+      return JSON.stringify(
+        bindings
+          .map((b) =>
+            [...b.entries()]
+              .map(([k, v]: [string, any]) => `${k}=${v ? v.value : ''}`)
+              .sort()
+              .join(' | ')
+          )
+          .sort()
+      );
+    }
+
+    function runQuery(store: any, sparql: string) {
+      const r = store.query(sparql);
+      if (typeof r === 'boolean') return { kind: 'ask', value: r };
+      const arr = [...r];
+      if (arr.length && arr[0] && 'subject' in arr[0]) return { kind: 'graph', quads: arr };
+      return { kind: 'select', bindings: arr };
+    }
+
+    function renderResult(res: any): string {
+      if (res.kind === 'ask') return `<p class="r-ask">ASK → <strong>${res.value}</strong></p>`;
+      if (res.kind === 'graph')
+        return `<p class="r-note">${res.quads.length} triple(s) constructed.</p>`;
+      const rows = res.bindings;
+      if (!rows.length) return `<p class="r-note">No results (0 rows).</p>`;
+      const cols = [...new Set(rows.flatMap((b: any) => [...b.keys()]))];
+      const head = cols.map((c) => `<th>${c}</th>`).join('');
+      const body = rows
+        .map(
+          (b: any) =>
+            '<tr>' +
+            cols.map((c) => `<td>${b.get(c) ? escapeHtml(b.get(c).value) : ''}</td>`).join('') +
+            '</tr>'
+        )
+        .join('');
+      return `<div class="r-wrap"><table class="r-table"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div><p class="r-count">${rows.length} row(s)</p>`;
+    }
+
+    function escapeHtml(s: string) {
+      return s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
+    }
+
+    (async () => {
+      const statusEl = document.getElementById('lab-status')!;
+      let store: any;
+      try {
+        await init(wasmUrl);
+        store = new Store();
+        store.load(dataset, { format: 'text/turtle' });
+      } catch (e: any) {
+        statusEl.textContent = 'Could not load the SPARQL engine: ' + (e?.message || e);
+        return;
+      }
+      document.getElementById('sparql-lab')!.removeAttribute('data-loading');
+      statusEl.remove();
+
+      const wrap = document.getElementById('lab-exercises')!;
+      exercises.forEach((ex: any, i: number) => {
+        const done = localStorage.getItem(DONE_KEY(ex.id)) === '1';
+        const card = document.createElement('div');
+        card.className = 'ex-card' + (done ? ' is-done' : '');
+        card.innerHTML = `
+          <div class="ex-head">
+            <span class="ex-n">${i + 1}</span>
+            <div>
+              <h3 class="ex-title">${ex.title} <span class="ex-tick">✓</span></h3>
+              <span class="ex-concept">${ex.concept}</span>
+            </div>
+          </div>
+          <p class="ex-prompt">${ex.prompt}</p>
+          <textarea class="q" spellcheck="false" rows="7">${ex.starter}</textarea>
+          <div class="ex-actions">
+            <button class="btn run">Run</button>
+            <button class="btn check">Check</button>
+            <button class="btn ghost hint-btn">Hint</button>
+            <span class="ex-verdict"></span>
+          </div>
+          <p class="ex-hint" hidden>${ex.hint}</p>
+          <div class="ex-out"></div>`;
+        wrap.appendChild(card);
+
+        const ta = card.querySelector('textarea') as HTMLTextAreaElement;
+        const out = card.querySelector('.ex-out') as HTMLElement;
+        const verdict = card.querySelector('.ex-verdict') as HTMLElement;
+
+        const show = (html: string) => (out.innerHTML = html);
+        const safeRun = (sparql: string) => {
+          try {
+            return { ok: true, res: runQuery(store, sparql) };
+          } catch (e: any) {
+            return { ok: false, err: e?.message || String(e) };
+          }
+        };
+
+        card.querySelector('.run')!.addEventListener('click', () => {
+          verdict.textContent = '';
+          const r = safeRun(ta.value);
+          show(r.ok ? renderResult(r.res) : `<pre class="r-err">${escapeHtml(r.err)}</pre>`);
+        });
+
+        card.querySelector('.check')!.addEventListener('click', () => {
+          const mine = safeRun(ta.value);
+          if (!mine.ok) {
+            show(`<pre class="r-err">${escapeHtml(mine.err)}</pre>`);
+            verdict.className = 'ex-verdict bad';
+            verdict.textContent = '✗ query error';
+            return;
+          }
+          show(renderResult(mine.res));
+          if (mine.res.kind !== 'select') {
+            verdict.className = 'ex-verdict bad';
+            verdict.textContent = '✗ expected a SELECT query';
+            return;
+          }
+          const want = runQuery(store, ex.solution) as any;
+          const pass = normalize(mine.res.bindings) === normalize(want.bindings);
+          if (pass) {
+            verdict.className = 'ex-verdict good';
+            verdict.textContent = '✓ correct';
+            card.classList.add('is-done');
+            localStorage.setItem(DONE_KEY(ex.id), '1');
+          } else {
+            verdict.className = 'ex-verdict bad';
+            verdict.textContent = `✗ not quite — expected ${want.bindings.length} row(s)`;
+          }
+        });
+
+        card.querySelector('.hint-btn')!.addEventListener('click', () => {
+          const h = card.querySelector('.ex-hint') as HTMLElement;
+          h.hidden = !h.hidden;
+        });
+      });
+
+      // Scratch pad
+      const scratch = document.getElementById('scratch') as HTMLTextAreaElement;
+      const scratchOut = document.querySelector('[data-scratch-out]') as HTMLElement;
+      document.querySelector('[data-scratch]')!.addEventListener('click', () => {
+        try {
+          scratchOut.innerHTML = renderResult(runQuery(store, scratch.value));
+        } catch (e: any) {
+          scratchOut.innerHTML = `<pre class="r-err">${escapeHtml(e?.message || String(e))}</pre>`;
+        }
+      });
+
+      document.getElementById('reset-progress')!.addEventListener('click', () => {
+        exercises.forEach((ex: any) => localStorage.removeItem(DONE_KEY(ex.id)));
+        document.querySelectorAll('.ex-card.is-done').forEach((c) => c.classList.remove('is-done'));
+        document.querySelectorAll('.ex-verdict').forEach((v) => ((v as HTMLElement).textContent = ''));
+      });
+    })();
+  </script>
+</StarlightPage>
+
+<style>
+  .sl-dataset { margin: 1.25rem 0; border: 1px solid var(--sl-color-hairline); border-radius: 10px; padding: 0.5rem 1rem; }
+  .sl-dataset summary { font-weight: 600; cursor: pointer; }
+  .sl-dataset .ttl { max-height: 320px; overflow: auto; font-size: 0.82rem; }
+
+  .lab-status { color: var(--sl-color-gray-2); font-style: italic; }
+
+  .ex-card { border: 1px solid var(--sl-color-hairline); border-left: 4px solid var(--sl-color-gray-5);
+    border-radius: 10px; padding: 1rem 1.15rem; margin: 1rem 0; background: var(--sl-color-bg-nav); }
+  .ex-card.is-done { border-left-color: var(--sa-olive, #8C9E38); }
+  .ex-head { display: flex; align-items: flex-start; gap: 0.7rem; }
+  .ex-n { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--sl-color-accent-low); color: var(--sl-color-text-accent); font-weight: 700; font-size: 0.85rem; }
+  .ex-title { margin: 0; font-size: 1.05rem; }
+  .ex-tick { color: var(--sa-olive, #8C9E38); opacity: 0; margin-left: 0.25rem; }
+  .ex-card.is-done .ex-tick { opacity: 1; }
+  .ex-concept { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sl-color-gray-3); font-weight: 600; }
+  .ex-prompt { margin: 0.6rem 0; }
+  .ex-prompt code, .ttl code { font-size: 0.9em; }
+
+  textarea.q { width: 100%; font-family: var(--sl-font-mono, ui-monospace, monospace); font-size: 0.85rem;
+    line-height: 1.5; padding: 0.7rem 0.8rem; border: 1px solid var(--sl-color-hairline); border-radius: 8px;
+    background: var(--sl-color-bg); color: var(--sl-color-white); resize: vertical; tab-size: 2; }
+  .ex-actions { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+  .btn { font: inherit; font-size: 0.85rem; font-weight: 600; padding: 5px 14px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--sl-color-accent); background: var(--sl-color-accent); color: var(--sl-color-white); }
+  .btn.check { background: var(--sa-olive, #8C9E38); border-color: var(--sa-olive, #8C9E38); color: #04303f; }
+  .btn.ghost { background: transparent; color: var(--sl-color-gray-1); border-color: var(--sl-color-hairline); }
+  .btn:hover { filter: brightness(1.05); }
+  .ex-verdict { font-weight: 700; font-size: 0.9rem; }
+  .ex-verdict.good { color: var(--sa-olive, #6b7a2a); }
+  .ex-verdict.bad { color: #b5482e; }
+  .ex-hint { font-size: 0.9rem; color: var(--sl-color-gray-2); background: var(--sl-color-bg); border-left: 3px solid var(--sa-gold, #D4A83A);
+    padding: 0.5rem 0.8rem; border-radius: 0 6px 6px 0; }
+
+  .ex-out { margin-top: 0.7rem; }
+  .r-wrap { overflow-x: auto; }
+  .r-table { border-collapse: collapse; font-size: 0.85rem; min-width: 40%; }
+  .r-table th, .r-table td { border: 1px solid var(--sl-color-hairline); padding: 4px 10px; text-align: left; }
+  .r-table th { background: var(--sl-color-accent-low); color: var(--sl-color-text-accent); }
+  .r-count, .r-note { font-size: 0.8rem; color: var(--sl-color-gray-3); margin: 0.3rem 0 0; }
+  .r-err { color: #b5482e; font-size: 0.82rem; white-space: pre-wrap; background: var(--sl-color-bg); padding: 0.5rem 0.7rem; border-radius: 6px; }
+  .lab-reset { margin-top: 2rem; }
+</style>

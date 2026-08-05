@@ -106,6 +106,7 @@ function trainingSidebarItems() {
   const leftover = topicDirs.filter((d) => !categorized.has(d));
   return [
     { label: 'Knowledge map', link: '/training/map/', badge: { text: 'new', variant: 'success' } },
+    { label: 'SPARQL lab', link: '/training/languages/sparql/lab/', badge: { text: 'interactive', variant: 'tip' } },
     ...TRAINING_CATEGORIES.map((c) => ({
       label: c.label,
       items: c.dirs.filter(has).map(topicGroup),
