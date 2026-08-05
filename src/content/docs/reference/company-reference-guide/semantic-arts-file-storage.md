@@ -20,7 +20,7 @@ For browser access, navigate to <https://www.office.com/> , click on the small s
 
 Follow the instructions here to map SharePoint to your computer’s file explorer:
 
-[![](https://semarts.atlassian.net/wiki/download/thumbnails/2329083905/Map%20Shared%20Library%20to%20File%20Explorer.docx?version=1&modificationDate=1720193388906&cacheVersion=1&api=v2&viewType=fileMacro)](/administrative/attachments/2329083905/2627272722.docx)
+[![](https://semarts.atlassian.net/wiki/download/thumbnails/2329083905/Map%20Shared%20Library%20to%20File%20Explorer.docx?version=1&modificationDate=1720193388906&cacheVersion=1&api=v2&viewType=fileMacro)](/reference/attachments/2329083905/2627272722.docx)
 
 Generally, OneDrive is automatically installed when you set up Office 365. If you are having issues, one solution is to log out and log back in on OneDrive. You may also try to uninstall and reinstall, but you should always download the app direct from Microsoft and not via 3rd party (such as the Apple app store).
 
@@ -30,4 +30,4 @@ Limit Local Storage to save space:
 
 [Save disk space with OneDrive Files On-Demand for Mac - Microsoft Support](https://support.microsoft.com/en-us/office/save-disk-space-with-onedrive-files-on-demand-for-mac-529f6d53-e572-4922-a585-e7a318c135f0#:~:text=For%20new%20OneDrive%20accounts%20on%20Mac%20OS%20Mojave%2C,File%20System%20%28APFS%29%20formatted%20volume%20for%20syncing%20files.)
 
-![](/administrative/attachments/2329083905/2328657931.png)
+![](/reference/attachments/2329083905/2328657931.png)

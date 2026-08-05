@@ -160,6 +160,10 @@ function ensureIndex(dir, urlPrefix, label, blurb) {
 
 // --- Section: migrated Confluence spaces -----------------------------------
 const SPACE_META = {
+  reference: {
+    label: 'Reference',
+    blurb: 'Employee handbook, employment agreement, and the company reference guide.',
+  },
   administrative: {
     label: 'Administrative',
     blurb: 'HR, marketing & sales, company reference, and firm summits.',

@@ -93,13 +93,13 @@ The first matrix shows in row 8 for instance, if you worked 20 hours in a week o
 
 Several years ago, write offs were more common. They happen occasionally now. We want all our consultants to be aware of their potential, their impact, and the consultant’s role in helping to predict and prevent them.
 
-![image-20240408-184211.png](/administrative/attachments/2250801198/2560819202.png)
+![image-20240408-184211.png](/reference/attachments/2250801198/2560819202.png)
 
 The next matrix shows pay rates by billing rates and chargeability. A lot of our work is in the inner red box: 60-80% chargeable. We do have more senior consultants in some of the higher billing rates and people do occasionally hit 100% or more in chargeability.
 
 The matrix below that shows the an example using billing rates which went into effect starting July 1, 2022. Current rates are here: <https://semarts.atlassian.net/wiki/spaces/AD/pages/3145859075/Current+Billing+Rates?atlOrigin=eyJpIjoiYzA0ZjdjYWRlMTI5NDdhNWE0ZjcxYTZkYjdkOTc2YzkiLCJwIjoiYyJ9>
 
-![image-20240408-184228.png](/administrative/attachments/2250801198/2561048578.png)
+![image-20240408-184228.png](/reference/attachments/2250801198/2561048578.png)
 
 ### Bonus Rate
 

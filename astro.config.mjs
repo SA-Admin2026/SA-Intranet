@@ -23,11 +23,17 @@ const topicProgressScript = fs.readFileSync(
   fileURLToPath(new URL('./src/scripts/topic-progress.js', import.meta.url)),
   'utf8'
 );
+// <section-search> — a section-scoped search box (used on the Reference landing).
+const sectionSearchScript = fs.readFileSync(
+  fileURLToPath(new URL('./src/scripts/section-search.js', import.meta.url)),
+  'utf8'
+);
 
 // Sections in display order. `label` is the sidebar group heading; the folder
 // name (key) is both the content directory and the URL prefix.
 const SECTIONS = [
   { dir: 'operations-manual', label: 'Operations Manual' },
+  { dir: 'reference', label: 'Reference' },
   { dir: 'training', label: 'Training' },
   { dir: 'administrative', label: 'Administrative' },
   { dir: 'offerings', label: 'Offerings' },
@@ -199,8 +205,11 @@ export default defineConfig({
         'The Semantic Arts intranet — operations, training, and reference, in one place.',
       // Pagefind client-side full-text search is built in and indexes the whole build.
       sidebar,
-      // Defines the <topic-progress> element used on Training topic landings.
-      head: [{ tag: 'script', content: topicProgressScript }],
+      // Defines the <topic-progress> and <section-search> custom elements.
+      head: [
+        { tag: 'script', content: topicProgressScript },
+        { tag: 'script', content: sectionSearchScript },
+      ],
       // "Edit page" → repo edit URL when EDIT_BASE_URL is set (Cloudflare env). Harmless when unset.
       ...(process.env.EDIT_BASE_URL
         ? { editLink: { baseUrl: process.env.EDIT_BASE_URL } }

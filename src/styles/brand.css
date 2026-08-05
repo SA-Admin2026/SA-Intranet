@@ -100,3 +100,16 @@
 .tp-list li { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.15rem 0; }
 .tp-list li.is-done a { color: var(--sl-color-gray-3); }
 .tp-mark { color: var(--sa-olive); font-weight: 700; width: 1em; flex: none; }
+
+/* ---- Section-scoped search (<section-search> on a section landing) ---- */
+.ss-box { margin: 1.25rem 0 1.75rem; }
+.ss-input { width: 100%; font: inherit; padding: 0.7rem 0.9rem; border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px; background: var(--sl-color-bg); color: var(--sl-color-white); }
+.ss-input:focus { outline: 2px solid var(--sl-color-accent); border-color: var(--sl-color-accent); }
+.ss-results { margin-top: 0.5rem; border: 1px solid var(--sl-color-hairline); border-radius: 10px; overflow: hidden; }
+.ss-hit { display: block; padding: 0.6rem 0.9rem; border-top: 1px solid var(--sl-color-hairline); text-decoration: none; }
+.ss-hit:first-child { border-top: 0; }
+.ss-hit:hover { background: var(--sl-color-bg-nav); }
+.ss-t { display: block; font-weight: 600; color: var(--sl-color-text-accent); }
+.ss-x { display: block; font-size: 0.85rem; color: var(--sl-color-gray-2); margin-top: 0.15rem; }
+.ss-note { padding: 0.6rem 0.9rem; margin: 0; font-size: 0.85rem; color: var(--sl-color-gray-2); }
