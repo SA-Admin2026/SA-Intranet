@@ -87,3 +87,16 @@
 .pp-cat-count { color: var(--sl-color-gray-2); font-variant-numeric: tabular-nums; }
 .pp-cat-bar { height: 5px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
 .pp-cat-fill { height: 100%; background: var(--sa-blue); border-radius: 999px; transition: width 0.3s ease; }
+
+/* ---- Per-topic progress rollup (<topic-progress> on topic landings) ---- */
+.tp-box { margin: 1.5rem 0 2rem; padding: 1rem 1.2rem; border: 1px solid var(--sl-color-hairline); border-radius: 12px; background: var(--sl-color-bg-nav); }
+.tp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem; }
+.tp-count { color: var(--sl-color-gray-2); font-size: 0.9rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tp-bar { height: 8px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
+.tp-fill { height: 100%; background: var(--sa-olive); border-radius: 999px; transition: width 0.3s ease; }
+.tp-list { margin-top: 0.7rem; font-size: 0.9rem; }
+.tp-list summary { cursor: pointer; color: var(--sl-color-gray-1); font-weight: 600; }
+.tp-list ul { list-style: none; padding-left: 0; margin: 0.6rem 0 0; }
+.tp-list li { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.15rem 0; }
+.tp-list li.is-done a { color: var(--sl-color-gray-3); }
+.tp-mark { color: var(--sa-olive); font-weight: 700; width: 1em; flex: none; }

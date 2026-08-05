@@ -35,3 +35,7 @@ by [Mark Wallace](https://semarts.atlassian.net/wiki/people/5a147f88cba5b30325a6
 - [Labeled Property Graph Databases (LPG)](/graph-technology/labeled-property-graph-databases-lpg/)
 - [RDF Graph Databases (Triple stores/Quad stores)](/graph-technology/rdf-graph-databases-triple-storesquad-stores/)
 - [Triple Store Key Features](/graph-technology/triple-store-key-features/)
+
+
+<topic-progress data-topic="Graph technology" data-lessons="[{&quot;route&quot;:&quot;/training/graph-technology/graph-technology-analysis-reports/&quot;,&quot;title&quot;:&quot;Graph technology analysis reports&quot;},{&quot;route&quot;:&quot;/training/graph-technology/labeled-property-graph-databases-lpg/&quot;,&quot;title&quot;:&quot;Labeled Property Graph Databases (LPG)&quot;},{&quot;route&quot;:&quot;/training/graph-technology/rdf-graph-databases-triple-storesquad-stores/&quot;,&quot;title&quot;:&quot;RDF Graph Databases (Triple stores/Quad stores)&quot;},{&quot;route&quot;:&quot;/training/graph-technology/triple-store-key-features/&quot;,&quot;title&quot;:&quot;Triple Store Key Features&quot;}]">
+</topic-progress>

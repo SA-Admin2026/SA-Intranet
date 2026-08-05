@@ -16,3 +16,7 @@ What is the difference between an **Ontology**, a **Knowledge Base**, and a **Kn
 
 - [GraphQL](/knowlege-graphs-knowledge-bases/graphql/)
 - [Neo4j](/knowlege-graphs-knowledge-bases/neo4j/)
+
+
+<topic-progress data-topic="Knowlege Graphs, Knowledge Bases" data-lessons="[{&quot;route&quot;:&quot;/training/knowlege-graphs-knowledge-bases/graphql/&quot;,&quot;title&quot;:&quot;GraphQL&quot;},{&quot;route&quot;:&quot;/training/knowlege-graphs-knowledge-bases/neo4j/&quot;,&quot;title&quot;:&quot;Neo4j&quot;}]">
+</topic-progress>

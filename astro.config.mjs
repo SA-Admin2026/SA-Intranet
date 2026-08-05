@@ -16,6 +16,14 @@ import { fileURLToPath } from 'node:url';
 
 const DOCS = fileURLToPath(new URL('./src/content/docs', import.meta.url));
 
+// Inline script that defines the <topic-progress> custom element (per-topic progress
+// rollup injected into Training topic landings). Read at config load and injected into
+// every page's <head> via Starlight's `head` option.
+const topicProgressScript = fs.readFileSync(
+  fileURLToPath(new URL('./src/scripts/topic-progress.js', import.meta.url)),
+  'utf8'
+);
+
 // Sections in display order. `label` is the sidebar group heading; the folder
 // name (key) is both the content directory and the URL prefix.
 const SECTIONS = [
@@ -191,6 +199,8 @@ export default defineConfig({
         'The Semantic Arts intranet — operations, training, and reference, in one place.',
       // Pagefind client-side full-text search is built in and indexes the whole build.
       sidebar,
+      // Defines the <topic-progress> element used on Training topic landings.
+      head: [{ tag: 'script', content: topicProgressScript }],
       // "Edit page" → repo edit URL when EDIT_BASE_URL is set (Cloudflare env). Harmless when unset.
       ...(process.env.EDIT_BASE_URL
         ? { editLink: { baseUrl: process.env.EDIT_BASE_URL } }
