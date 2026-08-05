@@ -1,6 +1,8 @@
 ---
 title: "Vacation Policy Revision — March 2026"
 description: "The March 2026 revision to the vacation / PTO policy."
+sidebar:
+  order: 11
 ---
 
 > 📄 **Authoritative version:** [Download the original PDF](attachments/handbook/Vacation-Policy-Revision-March-2026.pdf). This page is a searchable text rendering; if anything differs, the PDF governs.

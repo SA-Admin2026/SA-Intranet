@@ -1,6 +1,8 @@
 ---
 title: "State Addenda"
 description: "State-specific handbook addenda — choose the state where you work."
+sidebar:
+  order: 12
 ---
 
 ## Select your state
