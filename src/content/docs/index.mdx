@@ -1,0 +1,34 @@
+---
+title: Semantic Arts Intranet
+description: Operations, training, and reference — one place, one login.
+template: splash
+hero:
+  tagline: One front door for the firm — operations, training, and reference.
+  actions:
+    - text: Operations Manual
+      link: /operations-manual/
+      icon: right-arrow
+      variant: primary
+    - text: Training
+      link: /training/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Explore the intranet
+
+<CardGrid>
+  <LinkCard title="Operations Manual" href="/operations-manual/" description="How the firm runs — management, accounting, HR procedures." />
+  <LinkCard title="Training" href="/training/" description="Onboarding, ontology foundations, tools, and the knowledge map." />
+  <LinkCard title="Administrative" href="/administrative/" description="HR, marketing & sales, company reference, summits." />
+  <LinkCard title="Offerings" href="/offerings/" description="What we offer clients — services and engagement models." />
+  <LinkCard title="Internal Systems" href="/internal-systems/" description="The tools and systems that run the business." />
+  <LinkCard title="Data-Centric Architecture" href="/data-centric-architecture/" description="The ideas at the core of our practice." />
+</CardGrid>
+
+<Card title="Access" icon="approve-check">
+  You're signed in through the firm's single sign-on. You see every section your
+  groups allow; the rest stay hidden. Questions about access go to Operations.
+</Card>

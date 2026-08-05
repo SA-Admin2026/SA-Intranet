@@ -1,0 +1,89 @@
+/* Semantic Arts brand accents + the cross-section intranet nav bar (Starlight banner). */
+:root {
+  --sl-color-accent-low: #cfe0e7;
+  --sl-color-accent: #005A7D;   /* Semantic Blue */
+  --sl-color-accent-high: #032C3D;
+  --sl-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #032C3D;
+  --sl-color-accent: #2bb3c4;
+  --sl-color-accent-high: #cfe4ec;
+}
+
+/* Cross-section nav in the header (SiteTitle override) — jump to home / other sections. */
+.sa-sitenav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; }
+.sa-sitenav .sa-home { font-weight: 800; color: var(--sl-color-white); margin-right: 8px; text-decoration: none; letter-spacing: -0.01em; }
+.sa-sitenav .sa-home b { color: #8C9E38; }
+.sa-sitenav a.sec { font-size: 13px; font-weight: 600; color: var(--sl-color-gray-2); text-decoration: none; padding: 4px 9px; border-radius: 5px; }
+.sa-sitenav a.sec:hover { color: var(--sl-color-white); background: var(--sl-color-gray-6); }
+.sa-sitenav a.sec.on { color: var(--sl-color-text-accent); background: var(--sl-color-accent-low); }
+.sa-sitenav .sa-sub { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--sl-color-gray-3); margin-left: 2px; }
+@media (max-width: 50rem) { .sa-sitenav a.sec { display: none; } } /* keep just the home wordmark on mobile */
+
+/* =========================================================================
+   Brand palette + shared components (splash hero, link cards, and the Training
+   LMS tools). Carried over from the standalone Training/Ops-Manual sites so the
+   unified build looks identical to what shipped before.
+   ========================================================================= */
+:root {
+  --sa-blue: #005A7D;
+  --sa-blue-deep: #032C3D;
+  --sa-olive: #8C9E38;
+  --sa-gold: #D4A83A;
+  --sa-teal: #E0EEF2;
+  --sa-link: #1E70B0;
+}
+:root[data-theme='dark'] { --sa-teal: #12313d; }
+
+/* ---- Splash hero: a branded gradient band (home + section splash pages) ---- */
+.hero { gap: 1.5rem; }
+.hero > .stack {
+  background: linear-gradient(120deg, var(--sa-blue-deep), var(--sa-blue) 78%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2.2rem 2.4rem;
+  border-bottom: 3px solid var(--sa-olive);
+  box-shadow: 0 6px 24px rgba(3, 44, 61, 0.14);
+}
+.hero h1 { font-size: clamp(2rem, 5vw, 2.9rem); color: #fff; }
+.hero .tagline { max-width: 42rem; color: rgba(255, 255, 255, 0.85); font-weight: 300; }
+.hero > .hero-html, .hero img { display: none; } /* placeholder logos read poorly on the band */
+.hero .action.primary { background: var(--sa-olive); border-color: var(--sa-olive); color: #04303f; }
+.hero .action.primary:hover { background: #9bad45; }
+.hero .action.minimal { color: #fff; border-color: rgba(255, 255, 255, 0.5); }
+.hero .action.minimal:hover { background: rgba(255, 255, 255, 0.1); }
+
+/* ---- Catalog headings ---- */
+.sl-markdown-content h2 { margin-top: 2.75rem; padding-bottom: 0.35rem; border-bottom: 2px solid var(--sa-teal); font-weight: 600; }
+.sl-markdown-content h2:first-of-type { margin-top: 1.5rem; }
+
+/* ---- Link cards: brand top accent (color set per grid via --cat) ---- */
+.sl-link-card { border-radius: 8px; border-top: 3px solid var(--cat, var(--sa-blue)); transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease; }
+.sl-link-card:hover { border-color: var(--sa-blue); transform: translateY(-3px); box-shadow: 0 8px 22px rgba(3, 44, 61, 0.10); }
+.sl-link-card .title { font-weight: 600; color: var(--sl-color-white); }
+.sl-markdown-content .sl-card { border-left: 4px solid var(--sa-olive); border-radius: 8px; }
+
+/* ---- Training: per-lesson tools (mark-complete + related) ---- */
+.lesson-tools { margin-top: 2rem; padding-top: 1rem; border-top: 2px solid var(--sa-teal); }
+.mark-done { font: inherit; font-size: 0.9rem; padding: 6px 16px; cursor: pointer; border: 1px solid var(--sa-blue); color: var(--sa-blue); background: transparent; border-radius: 999px; }
+.mark-done.is-done { background: var(--sa-olive); border-color: var(--sa-olive); color: #04303f; }
+.related { margin-top: 1.25rem; }
+.related-h { font-weight: 600; margin: 0 0 0.4rem; font-size: 0.95rem; color: var(--sa-blue); }
+.related ul { margin: 0; padding-left: 1.1rem; }
+.related li { margin: 0.15rem 0; }
+.sidebar a.sat-done::after { content: '✓'; color: var(--sa-olive); font-size: 0.8em; margin-left: 0.4em; }
+
+/* ---- Training: progress panel (on the Training landing) ---- */
+.progress-panel { margin: 1.5rem 0 2rem; padding: 1.1rem 1.25rem; border: 1px solid var(--sl-color-hairline); border-radius: 12px; background: var(--sl-color-bg-nav); }
+.pp-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; }
+.pp-title { font-weight: 600; }
+.pp-count { color: var(--sl-color-gray-2); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.pp-bar { height: 8px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
+.pp-fill { height: 100%; background: var(--sa-olive); border-radius: 999px; transition: width 0.3s ease; }
+.pp-continue { display: inline-block; margin-top: 0.6rem; font-size: 0.9rem; color: var(--sa-link); }
+.pp-cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.5rem 1.25rem; margin-top: 1rem; }
+.pp-cat-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--sl-color-gray-1); margin-bottom: 0.2rem; }
+.pp-cat-count { color: var(--sl-color-gray-2); font-variant-numeric: tabular-nums; }
+.pp-cat-bar { height: 5px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
+.pp-cat-fill { height: 100%; background: var(--sa-blue); border-radius: 999px; transition: width 0.3s ease; }

@@ -1,0 +1,95 @@
+---
+title: Semantic Arts training
+description: Technical & research training — ontologies, RDF/SPARQL, tooling, and methodology.
+template: splash
+hero:
+  tagline: Technical & research training — ontologies, RDF/SPARQL, tooling, and methodology. Pick a path, track your progress, and see how the topics connect.
+  actions:
+    - text: Start — new ontologist orientation
+      link: /training/new-ontologist-orientation/
+      icon: right-arrow
+      variant: primary
+    - text: Explore the knowledge map
+      link: /training/map/
+      variant: minimal
+---
+
+import { CardGrid, LinkCard, Card } from '@astrojs/starlight/components';
+import ProgressOverview from '@components/ProgressOverview.astro';
+
+This portal is the firm's *Technical & Research Resources* — 240+ lessons migrated out of Confluence into open Markdown we own. Because the content is now structured data, it does more than a wiki: it's **searchable**, **editable in place**, **navigable by learning path**, tracks **your progress**, and surfaces the **connections between topics** as a live map.
+
+<ProgressOverview />
+
+<Card title="See how it all connects">
+  The lessons carry 340+ cross-references from Confluence. The [knowledge map](/map/) renders them as an interactive graph — the kind of connected view that was impossible when everything lived on flat wiki pages.
+</Card>
+
+## How to use this
+
+- **Pick a learning path** below or from the sidebar — start with *New ontologist orientation*.
+- **Mark lessons complete** as you go; the progress bars above and the sidebar checkmarks update automatically (saved in your browser).
+- **Follow the "related lessons"** at the bottom of each page, or open the [knowledge map](/map/) to explore visually.
+- **Search** anything with the search box up top.
+
+## Start here
+
+<div class="cat-cards" style="--cat:#8C9E38">
+<CardGrid>
+  <LinkCard title="New ontologist orientation" href="/new-ontologist-orientation/" description="Onboarding for new ontologists — the recommended first path." />
+</CardGrid>
+</div>
+
+## Foundations
+
+<div class="cat-cards" style="--cat:#005A7D">
+<CardGrid>
+  <LinkCard title="Data-centricity" href="/data-centricity/" description="The data-centric approach and why it matters." />
+  <LinkCard title="Data-centric methodology" href="/data-centric-methodology---documenting-our-approach/" description="Documenting how we work." />
+  <LinkCard title="Knowledge graphs & knowledge bases" href="/knowlege-graphs-knowledge-bases/" description="Core KG / KB concepts." />
+  <LinkCard title="URIs" href="/uris-uniform-resource-identifiers/" description="Naming and resolving identifiers." />
+  <LinkCard title="Semantic slums" href="/semantic-slums/" description="Anti-patterns to avoid." />
+</CardGrid>
+</div>
+
+## Modeling & ontologies
+
+<div class="cat-cards" style="--cat:#1E70B0">
+<CardGrid>
+  <LinkCard title="Ontology" href="/ontology/" description="Core ontology modeling and design." />
+  <LinkCard title="Ontology quality metrics" href="/ontology-quality-metrics/" description="Measuring and improving quality." />
+  <LinkCard title="Languages" href="/languages/" description="RDF, OWL, SHACL, SPARQL, and related standards." />
+</CardGrid>
+</div>
+
+## Tools & technology
+
+<div class="cat-cards" style="--cat:#D4A83A">
+<CardGrid>
+  <LinkCard title="Ontology tools" href="/ontology-tools/" description="Protégé, TopBraid, serializers, and editors." />
+  <LinkCard title="Graph technology" href="/graph-technology/" description="Graph databases and technology analysis." />
+  <LinkCard title="Triple stores" href="/triple-stores---maintenance-and-evolution/" description="Running and evolving triple stores." />
+  <LinkCard title="Software & dev tools" href="/software/" description="Docker, GitHub, environments." />
+  <LinkCard title="Data sources" href="/data-sources/" description="Working with external data." />
+</CardGrid>
+</div>
+
+## Practice & team
+
+<div class="cat-cards" style="--cat:#2a8f9c">
+<CardGrid>
+  <LinkCard title="Squads" href="/squads/" description="Team squads and collaboration." />
+  <LinkCard title="Dialog mapping" href="/dialog-mapping/" description="The dialog-mapping technique." />
+  <LinkCard title="AI usage" href="/ai-usage/" description="Using AI tools in our work." />
+  <LinkCard title="Encryption & security" href="/encryption-security/" description="Security topics." />
+  <LinkCard title="Conferences & workshops" href="/conferences-and-workshops/" description="Talks, events, and workshops." />
+</CardGrid>
+</div>
+
+## Reference
+
+<div class="cat-cards" style="--cat:#045B7B">
+<CardGrid>
+  <LinkCard title="Reference how-tos" href="/reference/" description="SSH, shell, utilities, NLP, RDF 1.2, and more." />
+</CardGrid>
+</div>

@@ -3,4 +3,10 @@ __pycache__/
 .DS_Store
 node_modules/
 dist/
+.astro/
+# Attachments are assembled into public/ from spaces/*/attachments (git-ignored source).
+# Media hosting (small-in-repo vs SharePoint/Stream for large files) is an open Phase-4
+# decision — see spaces/MEDIA-DEFERRED.md — so keep the assembled media out of git for now.
+public/
 spaces/*/attachments/
+.claude/

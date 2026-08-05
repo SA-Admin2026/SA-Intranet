@@ -1,0 +1,21 @@
+{
+  "name": "sa-intranet",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The single, unified Semantic Arts intranet — one composed Astro/Starlight build over all sections (home, Operations Manual, Training, and the migrated Confluence spaces).",
+  "scripts": {
+    "assemble": "node scripts/assemble-content.mjs",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "cms": "npx @sveltia/cms-proxy-server"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.41.5",
+    "astro": "^7.1.6",
+    "force-graph": "^1.51.4"
+  }
+}
