@@ -1,0 +1,47 @@
+Using the SPARQL endpoint at https://dbpedia.org/sparql, answer the following questions:
+
+1. List US states and their capitals, ordered by the population of capital, largest to smallest. States will have a dbo:country property of dbr:United_States, and a dbo:capital property which is an instance of a dbo:City.
+
+2. NBA players who played for the "Los Angeles Lakers", but never played for the "Miami Heat". Players are connected to the team via dbp:team and are of type dbo:Person. Teams can be found by their English language label.
+
+3. Number of non-Led Zeppelin albums written by at least 2 former members of Led Zeppelin.
+
+
+
+1. States and their capitals, from largest to smallest population.
+
+List US states and their capitals, ordered by the population of capital, largest to smallest. States will have a dbo:country property of dbr:United_States, and a dbo:capital property which is an instance of a dbo:City.
+
+Provide sample state URI: http://dbpedia.org/resource/Alaska (dbr:Alaska) - or see if they can find one.
+
+select distinct ?state ?capital ?population where {
+  ?state dbo:country dbr:United_States;
+  dbo:capital ?capital .
+  ?capital dbo:populationTotal ?population
+} order by desc(?population)
+
+There's an interesting wrinkle on this: some of the "states" are returned more than once, e.g., http://dbpedia.org/resource/The_Californias. This is because members of the class Region also have countries and capitals, and The Californias is a region belonging to both the US and Mexico, with multiple capitals. Oddly, there seems to be no class in the repository that consists of all and only US states. However, this provides an interesting opportunity for debugging.
+
+2. NBA Players
+
+NBA players who played for the "Los Angeles Lakers", but never played for the "Miami Heat". Players are connected to the team via dbp:team and are of type dbo:Person. Teams can be found by their English language label.
+
+select ?player where {
+   ?player dbp:team/rdfs:label "Los Angeles Lakers"@en ; a dbo:Person .
+   filter not exists { ?player dbp:team/rdfs:label "Miami Heat"@en }
+}
+
+3. Number of non-Led Zeppelin albums written by at least 2 former members of Led Zeppelin.
+
+select (count(?album) as ?total) where {
+  {
+    select ?album where {
+      dbr:Led_Zeppelin dbo:formerBandMember ?lz_member .
+      ?album a dbo:Album;
+             dbp:writer ?lz_member .
+      filter not exists {
+        ?album dbo:artist dbr:Led_Zeppelin
+      }
+    } group by ?album having(count(distinct(?lz_member)) > 1)
+  }
+}
