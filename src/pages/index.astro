@@ -75,11 +75,10 @@ const identityNavScript = fs.readFileSync(
   .vm-label{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--olive);margin-bottom:3px}
   .vm-item p{font-size:15px;font-weight:400;color:#fff;line-height:1.5;max-width:none}
   .values{margin-top:16px;position:relative}
-  .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 22px;margin-top:6px}
-  @media (max-width:820px){.values-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:520px){.values-grid{grid-template-columns:1fr}}
-  .val b{display:block;color:#fff;font-size:13px;font-weight:700}
-  .val span{display:block;color:rgba(255,255,255,.72);font-size:11.5px;line-height:1.4;margin-top:1px}
+  .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;margin-top:8px}
+  @media (max-width:640px){.values-grid{grid-template-columns:1fr}}
+  .val b{display:block;color:#fff;font-size:13.5px;font-weight:700;margin-bottom:2px}
+  .val span{display:block;color:rgba(255,255,255,.75);font-size:12px;line-height:1.45}
 
   /* live section cards */
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -182,12 +181,12 @@ const identityNavScript = fs.readFileSync(
     <div class="values">
       <span class="vm-label">Our Values</span>
       <div class="values-grid">
-        <div class="val"><b>Create Value</b><span>Every project should create real value for our clients.</span></div>
-        <div class="val"><b>One Voice</b><span>Disagree freely inside; present our best consensus to the client.</span></div>
-        <div class="val"><b>Share Equitably</b><span>Share results with clients, partners, and employees, based on contribution.</span></div>
-        <div class="val"><b>Lifetime Learning</b><span>Keep studying and researching for better ways, staying current.</span></div>
-        <div class="val"><b>Show Respect</b><span>Stay mindful of others' contributions, opinions, and rights — and humble.</span></div>
-        <div class="val"><b>Have Fun</b><span>Do great work, stay true to our values, and enjoy life outside the firm.</span></div>
+        <div class="val"><b>Create Value</b><span>All our projects should be creating value for our clients. We are not trying to set up situations where our clients pay us because we have coerced them or made them dependent on us.</span></div>
+        <div class="val"><b>One Voice</b><span>We can disagree violently in the office but will present our best consensus when we are with the client.</span></div>
+        <div class="val"><b>Share Equitably</b><span>We focus on ways to share the results of our efforts with our clients, our partners, and our employees. Equitable sharing is based on contribution.</span></div>
+        <div class="val"><b>Lifetime Learning</b><span>We value continual study and research to look for better ways, and to stay current in our discipline, rather than milking whatever expertise we have.</span></div>
+        <div class="val"><b>Show Respect</b><span>While focusing on results we need to remain mindful of the contribution, options, and rights of others. In all our dealings we need to be humble.</span></div>
+        <div class="val"><b>Have Fun</b><span>We are not here to suffer for the sake of the firm. We can accomplish all we set out to, stay true to our values, still have a good time, and take time off to enjoy our outside lives.</span></div>
       </div>
     </div>
   </div>
