@@ -3,6 +3,15 @@
 // bespoke dark "console" header, status strip, and coming-soon previews. The section
 // pages carry the Starlight chrome; this is the front door. Kept deliberately close to
 // the original hand-built home, updated so the four migrated spaces show as live.
+import fs from 'node:fs';
+import path from 'node:path';
+// Standalone page → not covered by Starlight's head; include the identity-aware nav here
+// too so gated cards/links hide for users whose Entra groups don't allow them. Read from
+// the project root (cwd) — a page module's import.meta.url points into the build output.
+const identityNavScript = fs.readFileSync(
+  path.resolve(process.cwd(), 'src/scripts/identity-nav.js'),
+  'utf8'
+);
 ---
 <!doctype html>
 <html lang="en">
@@ -21,6 +30,9 @@
   }
   @media (prefers-color-scheme:dark){:root{--page:#10151b;--panel:#182029;--ink:#e6edf3;--body:#aebcc7;--muted:#8ba0ad;--rule:#26303b;--teal:#12313d;}}
   *{box-sizing:border-box}
+  /* Access-gated launcher links/cards start hidden; identity-nav reveals them when the
+     user's Entra groups allow (or when not behind Access, e.g. local dev). No flash. */
+  [data-gate]{display:none}
   body{margin:0;font-family:var(--sans);color:var(--body);background:var(--page);line-height:1.55}
   a{text-decoration:none;color:inherit}
   .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
@@ -128,6 +140,7 @@
     <a class="live" href="/offerings/">Offerings</a>
     <a class="live" href="/internal-systems/">Internal Systems</a>
     <a class="live" href="/data-centric-architecture/">Data-Centric</a>
+    <a class="live" href="/operations/" data-gate="/operations/">Operations</a>
     <span class="soon">News</span>
     <span class="soon">Apps</span>
   </nav>
@@ -202,6 +215,13 @@
         <p>The ideas at the core of our practice — the layers of the DCA and the thinking behind them.</p>
         <span class="go">Open Data-Centric Architecture</span>
       </a>
+      <a class="card live" href="/operations/" data-gate="/operations/">
+        <span class="badge b-live">Ops team</span>
+        <span class="em">⚙️</span>
+        <h3>Operations</h3>
+        <p>The operations team's workspace. Access-controlled — visible to the operations team (pilot for role-based gating).</p>
+        <span class="go">Open Operations</span>
+      </a>
     </div>
 
     <h2 class="sec" style="margin-top:26px">Coming soon — a preview of what's next</h2>
@@ -250,5 +270,6 @@
 </div>
 
 <div class="foot">© Semantic Arts, Inc. &nbsp;|&nbsp; semanticarts<span class="o">.</span>com &nbsp;|&nbsp; internal intranet · preview · logo placeholder pending official asset</div>
+<script is:inline set:html={identityNavScript}></script>
 </body>
 </html>

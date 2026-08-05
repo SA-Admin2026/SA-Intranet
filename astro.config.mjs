@@ -28,6 +28,11 @@ const sectionSearchScript = fs.readFileSync(
   fileURLToPath(new URL('./src/scripts/section-search.js', import.meta.url)),
   'utf8'
 );
+// Identity-aware nav — hides links to sections the signed-in user's Entra groups can't open.
+const identityNavScript = fs.readFileSync(
+  fileURLToPath(new URL('./src/scripts/identity-nav.js', import.meta.url)),
+  'utf8'
+);
 
 // Sections in display order. `label` is the sidebar group heading; the folder
 // name (key) is both the content directory and the URL prefix.
@@ -39,6 +44,10 @@ const SECTIONS = [
   { dir: 'offerings', label: 'Offerings' },
   { dir: 'internal-systems', label: 'Internal Systems' },
   { dir: 'data-centric-architecture', label: 'Data-Centric Architecture' },
+  // Access-gated pilot (roadmap Phase 3): operations-team workspace, distinct from the
+  // all-staff Operations Manual. Hidden from non-members by identity-nav; enforced at the
+  // edge by a Cloudflare Access policy (operations-team + executive-team) once Entra is wired.
+  { dir: 'operations', label: 'Operations' },
 ];
 
 // Training keeps the learning-category structure it had as its own site: a
@@ -209,6 +218,7 @@ export default defineConfig({
       head: [
         { tag: 'script', content: topicProgressScript },
         { tag: 'script', content: sectionSearchScript },
+        { tag: 'script', content: identityNavScript },
       ],
       // "Edit page" → repo edit URL when EDIT_BASE_URL is set (Cloudflare env). Harmless when unset.
       ...(process.env.EDIT_BASE_URL
