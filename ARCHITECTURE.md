@@ -82,10 +82,14 @@ Default-deny: you must be in an allowed group to reach a path. Cloudflare logs e
 The intranet is a **launcher**; apps live behind the *same* Cloudflare Access (shared login), each gated to
 a group — the intranet doesn't have to contain them:
 
+The apps intended to fold in (as of 2026-08-06):
+
 - **COO operating system (sa-cos)** — today a *local* Python dashboard; must be **hosted** to join, then a
   leadership-gated tile.
 - **Applicant tracking (ATS)** — third-party SaaS; link or embed behind SSO, HR/hiring-gated.
-- **Web-visitor analytics** — link or embed, marketing/executive-gated.
+- **WebVisitors** — web-visitor identification / analytics; link or embed, marketing/executive-gated.
+- **Evaluation dashboard** — the Financial Evaluation Dashboard (weekly-updated); host and embed as a
+  leadership/finance-gated tile.
 - **New in-house apps** — build as intranet sections (Cloudflare Pages Functions + D1) so they share identity
   from day one (the training-LMS progress engine is a mini-example).
 
@@ -119,7 +123,8 @@ a group — the intranet doesn't have to contain them:
 3. **First role-gated section** (Operations team) — prove the path → group model on one before scaling.
 4. **Identity-aware nav** (the edge function).
 5. **Project spaces** — a repeatable `/projects/<name>/` pattern with a per-project group.
-6. **Apps** — bring in the COO OS (once hosted), ATS, and analytics as gated tiles.
+6. **Apps** — bring in the COO OS (once hosted), the ATS, WebVisitors (web-visitor analytics), and the
+   Evaluation dashboard as gated tiles.
 
 ## Open decisions
 
