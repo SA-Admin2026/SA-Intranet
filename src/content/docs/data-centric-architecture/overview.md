@@ -1,7 +1,5 @@
 ---
-title: "Data Centric Architecture"
-confluence_id: 676823279
-source: Data-Centric-Architecture_676823279.html
+title: "About the Data-Centric Architecture"
 ---
 A place for information and discussion about the Data Centric Architecture. I am thinking this is more about the concept than about our implementation. However, if our implementation is a **Reference Implentation** them maybe descriptions about it fit here as well.
 
@@ -105,12 +103,3 @@ Download All
 - **Manage permissions** - Click "Space Settings" in the left sidebar and select "Permissions" to manage what team members can see and do.
 
 <!-- section-nav:start -->
-
-## In this section
-
-- [DCC 2019 - Data Centric Architecture Forum](dcc-2019---data-centric-architecture-forum/)
-- [Getting started](getting-started/)
-- [DCA Implementation Documentation](dca-implementation-documentation/)
-- [DCAF 2020 - Data Centric Architecture forum](dcaf-2020---data-centric-architecture-forum/)
-
-<!-- section-nav:end -->

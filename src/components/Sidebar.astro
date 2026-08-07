@@ -1,0 +1,24 @@
+---
+// Scope the sidebar to the CURRENT space only. Starlight's sidebar lists every
+// top-level section; here we narrow it to the one the reader is in (derived from
+// the first URL segment), so entering "Offerings" shows only the Offerings tree.
+// Falls back to the full sidebar when no section matches (e.g. stray routes).
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+
+const route = Astro.locals.starlightRoute;
+const seg = Astro.url.pathname.replace(/^\//, '').split('/')[0];
+const prefix = `/${seg}/`;
+
+const inSection = (entry) =>
+  entry.type === 'link'
+    ? (entry.href || '').startsWith(prefix)
+    : (entry.entries || []).some(inSection);
+
+if (seg && Array.isArray(route.sidebar)) {
+  const current = route.sidebar.find(inSection);
+  // Unwrap the matched top-level group so the space's contents show directly
+  // (the top nav already tells the reader which space they're in).
+  if (current) route.sidebar = current.type === 'group' ? current.entries : [current];
+}
+---
+<Default />

@@ -279,6 +279,10 @@ export default defineConfig({
         SiteTitle: './src/components/SiteTitle.astro',
         // Consistent cross-section nav in the header on every page (keeps native search + theme).
         Header: './src/components/Header.astro',
+        // Scope the left sidebar to the current space only.
+        Sidebar: './src/components/Sidebar.astro',
+        // Remove the prev/next pager (clutter).
+        Pagination: './src/components/Pagination.astro',
       },
       description:
         'The Semantic Arts intranet — operations, training, and reference, in one place.',
