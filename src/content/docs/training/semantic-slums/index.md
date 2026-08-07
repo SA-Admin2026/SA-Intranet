@@ -31,7 +31,3 @@ Graphical query interface may not actually be worth it – probably too much of
 - [Protege Fact++](/semantic-slums/protege-fact/)
 - [Smart Logic](/semantic-slums/smart-logic/)
 - [So you want to deploy your first knowledge graph?](/semantic-slums/so-you-want-to-deploy-your-first-knowledge-graph/)
-
-
-<topic-progress data-topic="Semantic Slums" data-lessons="[{&quot;route&quot;:&quot;/training/semantic-slums/protege-fact/&quot;,&quot;title&quot;:&quot;Protege Fact++&quot;},{&quot;route&quot;:&quot;/training/semantic-slums/smart-logic/&quot;,&quot;title&quot;:&quot;Smart Logic&quot;},{&quot;route&quot;:&quot;/training/semantic-slums/so-you-want-to-deploy-your-first-knowledge-graph/&quot;,&quot;title&quot;:&quot;So you want to deploy your first knowledge graph?&quot;}]">
-</topic-progress>

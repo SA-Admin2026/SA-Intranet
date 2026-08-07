@@ -80,6 +80,25 @@ const identityNavScript = fs.readFileSync(
   .val b{display:block;color:#fff;font-size:13.5px;font-weight:700;margin-bottom:2px}
   .val span{display:block;color:rgba(255,255,255,.75);font-size:12px;line-height:1.45}
 
+  /* homepage search — the "front door" find box */
+  .find{grid-column:1/-1;background:var(--panel);border:1px solid var(--rule);border-radius:10px;box-shadow:var(--shadow);padding:20px 22px;position:relative}
+  .find-label{display:block;font-size:18px;font-weight:800;color:var(--ink);margin:0 0 12px}
+  .find-box{display:flex;align-items:center;gap:10px;border:1.5px solid var(--rule);border-radius:8px;background:var(--page);padding:0 14px;height:52px;transition:.14s}
+  .find-box:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,90,125,.15)}
+  .find-ic{font-size:18px;opacity:.7;flex:none}
+  .find-input{flex:1;min-width:0;border:0;background:transparent;font-family:var(--sans);font-size:16px;color:var(--ink);outline:none;height:100%}
+  .find-input::placeholder{color:var(--muted)}
+  .find-results{margin-top:10px;border:1px solid var(--rule);border-radius:8px;overflow:hidden;max-height:60vh;overflow-y:auto}
+  .find-hit{display:block;padding:11px 14px;border-top:1px solid var(--rule);cursor:pointer}
+  .find-hit:first-child{border-top:0}
+  .find-hit:hover,.find-hit.active{background:var(--teal)}
+  .find-hit .ht{display:block;font-size:14px;font-weight:700;color:var(--ink)}
+  .find-hit .hx{display:block;font-size:12.5px;color:var(--body);margin-top:2px}
+  .find-hit .hx mark{background:rgba(212,168,58,.35);color:inherit;border-radius:2px;padding:0 1px}
+  .find-hit .hs{display:block;font-size:10px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:4px}
+  .find-note{padding:11px 14px;margin:0;font-size:13px;color:var(--muted)}
+  .find-hint{margin:10px 2px 0;font-size:12px;color:var(--muted)}
+
   /* live section cards */
   .cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media (max-width:640px){.cards{grid-template-columns:1fr}}
@@ -153,7 +172,7 @@ const identityNavScript = fs.readFileSync(
     <span class="soon">News</span>
     <span class="soon">Apps</span>
   </nav>
-  <div class="cmd">🔎 <span>search…</span></div>
+  <a class="cmd" href="#find">🔎 <span>search…</span></a>
   <div class="me"><span class="avatar">SA</span><span class="role">GATED · PREVIEW</span></div>
 </header>
 
@@ -191,6 +210,19 @@ const identityNavScript = fs.readFileSync(
     </div>
   </div>
 
+  <!-- FRONT-DOOR SEARCH -->
+  <section class="find" id="find">
+    <label class="find-label" for="q">What can I help you find?</label>
+    <div class="find-box">
+      <span class="find-ic" aria-hidden="true">🔎</span>
+      <input id="q" class="find-input" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Search the intranet — handbook, procedures, training, offerings…"
+             aria-label="Search the intranet" />
+    </div>
+    <div class="find-results" id="find-results" hidden></div>
+    <p class="find-hint">Searches every section. Try “expense reimbursement”, “SPARQL”, or “PTO policy”.</p>
+  </section>
+
   <!-- MAIN COLUMN -->
   <main>
     <h2 class="sec">📣 Company news</h2>
@@ -221,8 +253,8 @@ const identityNavScript = fs.readFileSync(
       <a class="card live" href="/training/">
         <span class="badge b-live">Live</span>
         <span class="em">🎓</span>
-        <h3>Training / LMS</h3>
-        <p>Onboarding and ontology / knowledge-graph training, organized by learning path, with an interactive knowledge map.</p>
+        <h3>Training</h3>
+        <p>Onboarding and ontology / knowledge-graph training — 240+ lessons migrated from Confluence, organized by learning path and fully searchable.</p>
         <span class="go">Open Training</span>
       </a>
       <a class="card live" href="/administrative/">
@@ -300,5 +332,78 @@ const identityNavScript = fs.readFileSync(
 
 <div class="foot">© Semantic Arts, Inc. &nbsp;|&nbsp; semanticarts<span class="o">.</span>com &nbsp;|&nbsp; internal intranet · preview · logo placeholder pending official asset</div>
 <script is:inline set:html={identityNavScript}></script>
+<script is:inline>
+  // Front-door search: queries the site's Pagefind index (built at deploy) across every
+  // section. Degrades to a clear note under `astro dev`, where the index isn't built.
+  (function () {
+    var input = document.getElementById('q');
+    var out = document.getElementById('find-results');
+    if (!input || !out) return;
+    var pf; // undefined = not tried, null = unavailable
+    var timer, hits = [], active = -1;
+    var esc = function (s) {
+      return String(s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    };
+    var sectionOf = function (url) {
+      var seg = (url || '').replace(/^\//, '').split('/')[0] || '';
+      return seg.replace(/-/g, ' ');
+    };
+    async function getPf() {
+      if (pf !== undefined) return pf;
+      try {
+        pf = await import(/* @vite-ignore */ '/pagefind/pagefind.js');
+        if (pf && pf.options) { try { await pf.options({}); } catch (e) {} }
+      } catch (e) { pf = null; }
+      return pf;
+    }
+    function close() { out.hidden = true; out.innerHTML = ''; hits = []; active = -1; }
+    function paint() {
+      Array.prototype.forEach.call(out.querySelectorAll('.find-hit'), function (el, i) {
+        el.classList.toggle('active', i === active);
+      });
+    }
+    function go(i) { if (hits[i]) window.location.href = hits[i].url; }
+    async function run(q) {
+      if (q.length < 2) { close(); return; }
+      var p = await getPf();
+      out.hidden = false;
+      if (!p) {
+        out.innerHTML = '<p class="find-note">Search runs on the deployed intranet — it isn’t built into the local dev preview.</p>';
+        return;
+      }
+      var res = await p.search(q);
+      var data = await Promise.all(res.results.slice(0, 8).map(function (r) { return r.data(); }));
+      hits = data; active = -1;
+      out.innerHTML = data.length
+        ? data.map(function (d) {
+            return '<a class="find-hit" href="' + esc(d.url) + '">' +
+              '<span class="ht">' + esc((d.meta && d.meta.title) || d.url) + '</span>' +
+              '<span class="hx">' + (d.excerpt || '') + '</span>' +
+              '<span class="hs">' + esc(sectionOf(d.url)) + '</span></a>';
+          }).join('')
+        : '<p class="find-note">No matches. Try fewer or different words.</p>';
+    }
+    input.addEventListener('input', function () {
+      clearTimeout(timer);
+      var q = input.value.trim();
+      timer = setTimeout(function () { run(q); }, 180);
+    });
+    input.addEventListener('keydown', function (e) {
+      if (out.hidden || !hits.length) { if (e.key === 'Escape') input.blur(); return; }
+      if (e.key === 'ArrowDown') { e.preventDefault(); active = (active + 1) % hits.length; paint(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); active = (active - 1 + hits.length) % hits.length; paint(); }
+      else if (e.key === 'Enter') { e.preventDefault(); go(active < 0 ? 0 : active); }
+      else if (e.key === 'Escape') { close(); }
+    });
+    document.addEventListener('click', function (e) {
+      if (!out.contains(e.target) && e.target !== input) close();
+    });
+    // The small top-bar chip focuses the big box.
+    var chip = document.querySelector('a.cmd');
+    if (chip) chip.addEventListener('click', function () { setTimeout(function () { input.focus(); }, 60); });
+  })();
+</script>
 </body>
 </html>

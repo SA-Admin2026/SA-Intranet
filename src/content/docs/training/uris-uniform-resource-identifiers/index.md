@@ -15,7 +15,3 @@ This page contains information about URIs in general.
 
 - [Ideas for a URI Generation Pre- or Post-Processor](/uris-uniform-resource-identifiers/ideas-for-a-uri-generation-pre--or-post-processor/)
 - [URIs: Hashes v Slashes](/uris-uniform-resource-identifiers/uris-hashes-v-slashes/)
-
-
-<topic-progress data-topic="URIs (Uniform Resource Identifiers)" data-lessons="[{&quot;route&quot;:&quot;/training/uris-uniform-resource-identifiers/ideas-for-a-uri-generation-pre--or-post-processor/&quot;,&quot;title&quot;:&quot;Ideas for a URI Generation Pre- or Post-Processor&quot;},{&quot;route&quot;:&quot;/training/uris-uniform-resource-identifiers/uris-hashes-v-slashes/&quot;,&quot;title&quot;:&quot;URIs: Hashes v Slashes&quot;}]">
-</topic-progress>

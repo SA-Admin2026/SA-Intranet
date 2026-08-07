@@ -248,18 +248,18 @@ function assembleSpaces() {
 const SIBLINGS = path.resolve(ROOT, '..');
 
 // Training's one MDX landing page moves one directory deeper (docs/index.mdx →
-// docs/training/index.mdx), so its relative component import breaks; rewrite it to the
-// path alias. Also drop the hero logo image (the CSS hides it, and the relative asset
-// path would break) — leaves the branded splash text intact.
+// docs/training/index.mdx). Drop the hero logo image (CSS hid it; the relative asset
+// path would break) and strip the interactive features we removed for the clean 1:1
+// port — the progress panel and the knowledge map — so a re-assemble stays clean.
 function fixTrainingIndex(dest) {
   const idx = path.join(dest, 'index.mdx');
   if (!fs.existsSync(idx)) return;
   let md = fs.readFileSync(idx, 'utf8');
-  md = md.replace(
-    /from ['"](?:\.\.\/)+components\/ProgressOverview\.astro['"]/,
-    `from '@components/ProgressOverview.astro'`
-  );
   md = md.replace(/\n[ \t]*image:\n[ \t]*file:[^\n]*/, '');
+  // Removed enhancements: progress panel (ProgressOverview) + interactive knowledge map.
+  md = md.replace(/^[ \t]*import ProgressOverview from [^\n]*\n/m, '');
+  md = md.replace(/^[ \t]*<ProgressOverview\s*\/>[ \t]*\n?/m, '');
+  md = md.replace(/\n[ \t]*- text: Explore the knowledge map[\s\S]*?variant: minimal/, '');
   fs.writeFileSync(idx, md);
 }
 
@@ -278,55 +278,6 @@ const ASTRO_SECTIONS = [
     fixup: fixTrainingIndex,
   },
 ];
-
-// Full site route for a content file, e.g. …/training/languages/sparql/subqueries.md
-// → /training/languages/sparql/subqueries/  (index files collapse to the dir route).
-function routeForFile(file) {
-  let rel = path.relative(DOCS, file).replace(/\\/g, '/').replace(/\.(md|mdx)$/, '');
-  rel = rel.replace(/\/index$/, '');
-  return '/' + rel + '/';
-}
-
-const htmlAttr = (s) =>
-  String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-
-// Append a <topic-progress> rollup to each Training topic's landing page. The element
-// (defined site-wide via Starlight head) reads the injected lesson list and reflects the
-// reader's per-lesson completion. Idempotent: skips a landing that already has one.
-function injectTopicProgress(trainingDir) {
-  let n = 0;
-  for (const e of fs.readdirSync(trainingDir, { withFileTypes: true })) {
-    if (!e.isDirectory()) continue;
-    const topicDir = path.join(trainingDir, e.name);
-    const topicRoute = `/training/${e.name}/`;
-    const idx = ['index.md', 'index.mdx']
-      .map((f) => path.join(topicDir, f))
-      .find((p) => fs.existsSync(p));
-    if (!idx) continue;
-
-    const lessons = walkMd(topicDir)
-      .map((f) => ({ route: routeForFile(f), file: f }))
-      .filter((x) => x.route !== topicRoute)
-      .map((x) => ({
-        route: x.route,
-        title:
-          frontmatterTitle(fs.readFileSync(x.file, 'utf8')) ||
-          titleize(x.route.replace(/\/$/, '').split('/').pop()),
-      }))
-      .sort((a, b) => a.title.localeCompare(b.title));
-    if (!lessons.length) continue;
-
-    let md = fs.readFileSync(idx, 'utf8');
-    if (md.includes('<topic-progress')) continue;
-    const label = frontmatterTitle(md) || titleize(e.name);
-    const block = `\n\n<topic-progress data-topic="${htmlAttr(label)}" data-lessons="${htmlAttr(
-      JSON.stringify(lessons)
-    )}">\n</topic-progress>\n`;
-    fs.writeFileSync(idx, md + block);
-    n++;
-  }
-  console.log(`[assemble] injected topic-progress into ${n} training topic landing(s)`);
-}
 
 function copyMd(srcDir, destDir) {
   let count = 0;
@@ -360,7 +311,6 @@ function assembleAstroSections() {
     fs.mkdirSync(dest, { recursive: true });
     const count = copyMd(src, dest);
     if (sec.fixup) sec.fixup(dest);
-    if (sec.section === 'training') injectTopicProgress(dest);
 
     const att = path.join(repoRoot, sec.attachmentsDir);
     if (fs.existsSync(att)) {

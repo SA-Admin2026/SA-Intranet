@@ -50,7 +50,3 @@ We may need data to populate databases or semantic stores for various projects, 
 ## In this section
 
 - [Google BigQuery](/data-sources/google-bigquery/)
-
-
-<topic-progress data-topic="Data Sources" data-lessons="[{&quot;route&quot;:&quot;/training/data-sources/google-bigquery/&quot;,&quot;title&quot;:&quot;Google BigQuery&quot;}]">
-</topic-progress>

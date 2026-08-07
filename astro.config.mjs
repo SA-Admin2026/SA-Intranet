@@ -16,13 +16,6 @@ import { fileURLToPath } from 'node:url';
 
 const DOCS = fileURLToPath(new URL('./src/content/docs', import.meta.url));
 
-// Inline script that defines the <topic-progress> custom element (per-topic progress
-// rollup injected into Training topic landings). Read at config load and injected into
-// every page's <head> via Starlight's `head` option.
-const topicProgressScript = fs.readFileSync(
-  fileURLToPath(new URL('./src/scripts/topic-progress.js', import.meta.url)),
-  'utf8'
-);
 // <section-search> — a section-scoped search box (used on the Reference landing).
 const sectionSearchScript = fs.readFileSync(
   fileURLToPath(new URL('./src/scripts/section-search.js', import.meta.url)),
@@ -50,9 +43,9 @@ const SECTIONS = [
   { dir: 'operations', label: 'Operations' },
 ];
 
-// Training keeps the learning-category structure it had as its own site: a
-// "Knowledge map" link plus topics grouped into a handful of categories, all nested
-// under the one Training section. (Everything else is a flat autogenerate.)
+// Training keeps the learning-category structure it had as its own site: topics
+// grouped into a handful of categories, all nested under the one Training section.
+// (Everything else is a flat autogenerate.)
 const pretty = (name) =>
   name
     .replace(/-{2,}/g, ' ')
@@ -120,7 +113,7 @@ function trainingSidebarItems() {
   const topicGroup = (dir) => ({
     label: TRAINING_LABELS[dir] || pretty(dir),
     collapsed: true,
-    items: [{ autogenerate: { directory: `training/${dir}` } }],
+    items: [{ autogenerate: { directory: `training/${dir}`, collapsed: true } }],
   });
   const topicDirs = fs.existsSync(trainingDir)
     ? fs.readdirSync(trainingDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)
@@ -128,13 +121,12 @@ function trainingSidebarItems() {
   const categorized = new Set(TRAINING_CATEGORIES.flatMap((c) => c.dirs));
   const leftover = topicDirs.filter((d) => !categorized.has(d));
   return [
-    { label: 'Knowledge map', link: '/training/map/', badge: { text: 'new', variant: 'success' } },
-    { label: 'SPARQL lab', link: '/training/languages/sparql/lab/', badge: { text: 'interactive', variant: 'tip' } },
     ...TRAINING_CATEGORIES.map((c) => ({
       label: c.label,
+      collapsed: true,
       items: c.dirs.filter(has).map(topicGroup),
     })).filter((c) => c.items.length),
-    ...(leftover.length ? [{ label: 'More', items: leftover.map(topicGroup) }] : []),
+    ...(leftover.length ? [{ label: 'More', collapsed: true, items: leftover.map(topicGroup) }] : []),
   ];
 }
 
@@ -143,7 +135,7 @@ function trainingSidebarItems() {
 const sidebar = SECTIONS.filter((s) => fs.existsSync(path.join(DOCS, s.dir))).map((s) =>
   s.dir === 'training'
     ? { label: s.label, collapsed: true, items: trainingSidebarItems() }
-    : { label: s.label, collapsed: true, items: [{ autogenerate: { directory: s.dir } }] }
+    : { label: s.label, collapsed: true, items: [{ autogenerate: { directory: s.dir, collapsed: true } }] }
 );
 
 // Migrated content links with section-root-absolute hrefs (e.g. the Operations
@@ -208,17 +200,13 @@ export default defineConfig({
         SiteTitle: './src/components/SiteTitle.astro',
         // Consistent cross-section nav in the header on every page (keeps native search + theme).
         Header: './src/components/Header.astro',
-        // Adds the per-lesson "mark complete" + related-lessons tools on Training
-        // pages; a no-op passthrough everywhere else.
-        Footer: './src/components/Footer.astro',
       },
       description:
         'The Semantic Arts intranet — operations, training, and reference, in one place.',
       // Pagefind client-side full-text search is built in and indexes the whole build.
       sidebar,
-      // Defines the <topic-progress> and <section-search> custom elements.
+      // Defines the <section-search> custom element + identity-aware nav.
       head: [
-        { tag: 'script', content: topicProgressScript },
         { tag: 'script', content: sectionSearchScript },
         { tag: 'script', content: identityNavScript },
       ],

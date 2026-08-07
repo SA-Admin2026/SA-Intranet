@@ -68,43 +68,6 @@
 .sl-link-card .title { font-weight: 600; color: var(--sl-color-white); }
 .sl-markdown-content .sl-card { border-left: 4px solid var(--sa-olive); border-radius: 8px; }
 
-/* ---- Training: per-lesson tools (mark-complete + related) ---- */
-.lesson-tools { margin-top: 2rem; padding-top: 1rem; border-top: 2px solid var(--sa-teal); }
-.mark-done { font: inherit; font-size: 0.9rem; padding: 6px 16px; cursor: pointer; border: 1px solid var(--sa-blue); color: var(--sa-blue); background: transparent; border-radius: 999px; }
-.mark-done.is-done { background: var(--sa-olive); border-color: var(--sa-olive); color: #04303f; }
-.related { margin-top: 1.25rem; }
-.related-h { font-weight: 600; margin: 0 0 0.4rem; font-size: 0.95rem; color: var(--sa-blue); }
-.related ul { margin: 0; padding-left: 1.1rem; }
-.related li { margin: 0.15rem 0; }
-.sidebar a.sat-done::after { content: '✓'; color: var(--sa-olive); font-size: 0.8em; margin-left: 0.4em; }
-
-/* ---- Training: progress panel (on the Training landing) ---- */
-.progress-panel { margin: 1.5rem 0 2rem; padding: 1.1rem 1.25rem; border: 1px solid var(--sl-color-hairline); border-radius: 12px; background: var(--sl-color-bg-nav); }
-.pp-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; }
-.pp-title { font-weight: 600; }
-.pp-count { color: var(--sl-color-gray-2); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
-.pp-bar { height: 8px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
-.pp-fill { height: 100%; background: var(--sa-olive); border-radius: 999px; transition: width 0.3s ease; }
-.pp-continue { display: inline-block; margin-top: 0.6rem; font-size: 0.9rem; color: var(--sa-link); }
-.pp-cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.5rem 1.25rem; margin-top: 1rem; }
-.pp-cat-row { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--sl-color-gray-1); margin-bottom: 0.2rem; }
-.pp-cat-count { color: var(--sl-color-gray-2); font-variant-numeric: tabular-nums; }
-.pp-cat-bar { height: 5px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
-.pp-cat-fill { height: 100%; background: var(--sa-blue); border-radius: 999px; transition: width 0.3s ease; }
-
-/* ---- Per-topic progress rollup (<topic-progress> on topic landings) ---- */
-.tp-box { margin: 1.5rem 0 2rem; padding: 1rem 1.2rem; border: 1px solid var(--sl-color-hairline); border-radius: 12px; background: var(--sl-color-bg-nav); }
-.tp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem; }
-.tp-count { color: var(--sl-color-gray-2); font-size: 0.9rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.tp-bar { height: 8px; border-radius: 999px; background: var(--sa-teal); overflow: hidden; }
-.tp-fill { height: 100%; background: var(--sa-olive); border-radius: 999px; transition: width 0.3s ease; }
-.tp-list { margin-top: 0.7rem; font-size: 0.9rem; }
-.tp-list summary { cursor: pointer; color: var(--sl-color-gray-1); font-weight: 600; }
-.tp-list ul { list-style: none; padding-left: 0; margin: 0.6rem 0 0; }
-.tp-list li { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.15rem 0; }
-.tp-list li.is-done a { color: var(--sl-color-gray-3); }
-.tp-mark { color: var(--sa-olive); font-weight: 700; width: 1em; flex: none; }
-
 /* ---- Section-scoped search (<section-search> on a section landing) ---- */
 .ss-box { margin: 1.25rem 0 1.75rem; }
 .ss-input { width: 100%; font: inherit; padding: 0.7rem 0.9rem; border: 1px solid var(--sl-color-hairline);
@@ -117,3 +80,20 @@
 .ss-t { display: block; font-weight: 600; color: var(--sl-color-text-accent); }
 .ss-x { display: block; font-size: 0.85rem; color: var(--sl-color-gray-2); margin-top: 0.15rem; }
 .ss-note { padding: 0.6rem 0.9rem; margin: 0; font-size: 0.85rem; color: var(--sl-color-gray-2); }
+
+/* ---- Sidebar: cleaner, Confluence-like page tree (look & feel) ---- */
+/* Indent guide lines down each nested level, so the hierarchy reads like a tree. */
+.sidebar ul ul {
+  margin-inline-start: 0.55rem;
+  padding-inline-start: 0.65rem;
+  border-inline-start: 1px solid var(--sl-color-hairline);
+}
+/* Tighter vertical rhythm — more of the tree fits without scrolling. */
+.sidebar a,
+.sidebar summary { padding-block: 0.26rem; border-radius: 6px; }
+/* Quieter group/category headings; the caret carries the expand/collapse cue. */
+.sidebar summary { font-weight: 600; color: var(--sl-color-gray-1); }
+.sidebar summary:hover { color: var(--sl-color-white); }
+/* Row hover + current-page emphasis, closer to a wiki page tree. */
+.sidebar a:hover { background: var(--sl-color-bg-nav); }
+.sidebar a[aria-current='page'] { font-weight: 700; }

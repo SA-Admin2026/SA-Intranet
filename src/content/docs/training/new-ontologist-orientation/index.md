@@ -96,7 +96,3 @@ You can get a jump start on learning our core technologies (all open source stan
 - [Learning OWL Reasoning](/new-ontologist-orientation/learning-owl-reasoning/)
 - [Ontologist Onboarding Documentation](/new-ontologist-orientation/ontologist-onboarding-documentation/)
 - [Proposed Improvements to Ontologist Onboarding](/new-ontologist-orientation/proposed-improvements-to-ontologist-onboarding/)
-
-
-<topic-progress data-topic="New Ontologist Orientation" data-lessons="[{&quot;route&quot;:&quot;/training/new-ontologist-orientation/knowledge-graph---training-materials/&quot;,&quot;title&quot;:&quot;Knowledge Graph - Training Materials&quot;},{&quot;route&quot;:&quot;/training/new-ontologist-orientation/learning-owl-reasoning/&quot;,&quot;title&quot;:&quot;Learning OWL Reasoning&quot;},{&quot;route&quot;:&quot;/training/new-ontologist-orientation/ontologist-onboarding-documentation/&quot;,&quot;title&quot;:&quot;Ontologist Onboarding Documentation&quot;},{&quot;route&quot;:&quot;/training/new-ontologist-orientation/proposed-improvements-to-ontologist-onboarding/&quot;,&quot;title&quot;:&quot;Proposed Improvements to Ontologist Onboarding&quot;}]">
-</topic-progress>

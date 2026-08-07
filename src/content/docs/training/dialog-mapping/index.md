@@ -33,7 +33,3 @@ source: "Dialog-Mapping_2400354310.html"
 - [Dialog Mapping Prompts for ChatGPT](/dialog-mapping/dialog-mapping-prompts-for-chatgpt/)
 - [Dialog Mapping Tool - Command Language](/dialog-mapping/dialog-mapping-tool---command-language/)
 - [Dialog Mapping Tool Ideas](/dialog-mapping/dialog-mapping-tool-ideas/)
-
-
-<topic-progress data-topic="Dialog Mapping" data-lessons="[{&quot;route&quot;:&quot;/training/dialog-mapping/dialog-mapping-prompts-for-chatgpt/&quot;,&quot;title&quot;:&quot;Dialog Mapping Prompts for ChatGPT&quot;},{&quot;route&quot;:&quot;/training/dialog-mapping/dialog-mapping-tool---command-language/&quot;,&quot;title&quot;:&quot;Dialog Mapping Tool - Command Language&quot;},{&quot;route&quot;:&quot;/training/dialog-mapping/dialog-mapping-tool-ideas/&quot;,&quot;title&quot;:&quot;Dialog Mapping Tool Ideas&quot;}]">
-</topic-progress>

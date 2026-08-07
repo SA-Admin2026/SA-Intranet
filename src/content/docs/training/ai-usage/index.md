@@ -15,7 +15,3 @@ The [Semantic Arts AI Usage Policy](https://datacentric.sharepoint.com/:b:/s/sta
 
 - [LLMs and Knowledge Graphs](/ai-usage/llms-and-knowledge-graphs/)
 - [SA Claude Container Quick Start](/ai-usage/sa-claude-container-quick-start/)
-
-
-<topic-progress data-topic="AI Usage" data-lessons="[{&quot;route&quot;:&quot;/training/ai-usage/llms-and-knowledge-graphs/&quot;,&quot;title&quot;:&quot;LLMs and Knowledge Graphs&quot;},{&quot;route&quot;:&quot;/training/ai-usage/sa-claude-container-quick-start/&quot;,&quot;title&quot;:&quot;SA Claude Container Quick Start&quot;},{&quot;route&quot;:&quot;/training/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22/&quot;,&quot;title&quot;:&quot;Untitled whiteboard 2026-05-22&quot;},{&quot;route&quot;:&quot;/training/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22-2/&quot;,&quot;title&quot;:&quot;Untitled whiteboard 2026-05-22 (2)&quot;},{&quot;route&quot;:&quot;/training/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22-3/&quot;,&quot;title&quot;:&quot;Untitled whiteboard 2026-05-22 (3)&quot;}]">
-</topic-progress>

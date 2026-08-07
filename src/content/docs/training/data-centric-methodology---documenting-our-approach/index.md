@@ -34,7 +34,3 @@ In the top level folder is a powershell script to create a spreadsheet of all it
 ## In this section
 
 - [Extract-Load-Transform](/data-centric-methodology---documenting-our-approach/extract-load-transform/)
-
-
-<topic-progress data-topic="Data-centric Methodology - documenting our approach" data-lessons="[{&quot;route&quot;:&quot;/training/data-centric-methodology---documenting-our-approach/extract-load-transform/&quot;,&quot;title&quot;:&quot;Extract-Load-Transform&quot;}]">
-</topic-progress>
