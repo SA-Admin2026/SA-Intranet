@@ -98,6 +98,11 @@ const folderIndex = (dirAbs) =>
 // A folder/leaf's label: trust an existing page title (acronym-corrected), else prettify the slug.
 const labelFor = (name, title) => (title ? fixAcronyms(title) : prettyLabel(name));
 
+// Routes hidden from navigation (still reachable by URL, just not shown in the sidebar
+// or landing cards). The Administrative "Company Reference Guide" is a duplicate of the
+// one in Reference, so we hide the Administrative copy.
+const HIDDEN_NAV = new Set(['/administrative/company-reference-guide/']);
+
 // Build Starlight sidebar items for the CHILDREN of dirAbs (excludes dirAbs's own index).
 // Folders → collapsible groups (with the folder's landing as the first entry); pages → links.
 function buildItems(dirAbs, urlPrefix) {
@@ -107,10 +112,13 @@ function buildItems(dirAbs, urlPrefix) {
   const items = [];
   for (const e of entries) {
     if (e.isDirectory()) {
-      const g = groupFor(e.name, path.join(dirAbs, e.name), `${urlPrefix}${e.name}/`);
+      const childUrl = `${urlPrefix}${e.name}/`;
+      if (HIDDEN_NAV.has(childUrl)) continue;
+      const g = groupFor(e.name, path.join(dirAbs, e.name), childUrl);
       if (g.items.length) items.push(g);
     } else if (/\.mdx?$/.test(e.name) && !/^index\.mdx?$/.test(e.name)) {
       const slug = e.name.replace(/\.mdx?$/, '');
+      if (HIDDEN_NAV.has(`${urlPrefix}${slug}/`)) continue;
       items.push({ label: labelFor(slug, readTitle(path.join(dirAbs, e.name))), link: `${urlPrefix}${slug}/` });
     }
   }

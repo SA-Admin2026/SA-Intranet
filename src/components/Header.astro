@@ -1,18 +1,18 @@
 ---
-// Custom Starlight header: keeps the native (theme-aware) header chrome — wordmark, search,
-// theme toggle — but adds a consistent cross-section nav so navigation is the same on every
-// page (the home launcher carries the same links). Reuses Starlight's own Search + ThemeSelect
-// so nothing is lost. The mobile sidebar toggle is rendered elsewhere by Starlight, untouched.
+// Branded dark header on EVERY page — the same console-style bar the home launcher
+// uses (SA wordmark + cross-section nav + search), so the top of the site is identical
+// throughout. Reuses Starlight's own Search + ThemeSelect (nothing lost); those controls
+// are flipped to light-on-dark by scoping Starlight's colour variables to the header bar.
 import Search from 'virtual:starlight/components/Search';
 import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
-import SiteTitle from 'virtual:starlight/components/SiteTitle';
 import config from 'virtual:starlight/user-config';
 
 const p = Astro.url.pathname;
-const on = (x) => (p === x || p.startsWith(x) ? 'on' : '');
+const on = (x) => (x === '/' ? p === '/' : p === x || p.startsWith(x)) ? 'on' : '';
 const showSearch = config.pagefind;
 
 const SECTIONS = [
+  ['/', 'Home'],
   ['/operations-manual/', 'Ops Manual'],
   ['/reference/', 'Reference'],
   ['/training/', 'Training'],
@@ -24,7 +24,18 @@ const SECTIONS = [
 ---
 
 <div class="sa-hdr">
-  <div class="sa-hdr-title"><SiteTitle /></div>
+  <a class="sa-logo" href="/" aria-label="Semantic Arts — home">
+    <svg viewBox="0 0 226 34" role="img" aria-label="semantic arts.">
+      <g fill="none" stroke="#fff" stroke-width="1.1" opacity=".55">
+        <circle cx="5" cy="9" r="2.1"/><circle cx="12" cy="9" r="2.1"/><circle cx="19" cy="9" r="2.1"/><circle cx="26" cy="9" r="2.1"/><circle cx="40" cy="9" r="2.1"/>
+        <circle cx="5" cy="17" r="2.1"/><circle cx="12" cy="17" r="2.1"/><circle cx="19" cy="17" r="2.1"/><circle cx="26" cy="17" r="2.1"/><circle cx="33" cy="17" r="2.1"/><circle cx="40" cy="17" r="2.1"/>
+        <circle cx="5" cy="25" r="2.1"/><circle cx="12" cy="25" r="2.1"/><circle cx="19" cy="25" r="2.1"/><circle cx="26" cy="25" r="2.1"/><circle cx="33" cy="25" r="2.1"/><circle cx="40" cy="25" r="2.1"/>
+      </g>
+      <g stroke="#8C9E38" stroke-width="2.4" stroke-linecap="round"><line x1="33" y1="9" x2="40" y2="9"/><line x1="33" y1="9" x2="30" y2="17"/><line x1="30" y1="17" x2="36" y2="25"/></g>
+      <g fill="#8C9E38"><circle cx="33" cy="9" r="2.9"/><circle cx="40" cy="9" r="2.9"/><circle cx="30" cy="17" r="2.9"/><circle cx="36" cy="25" r="2.9"/></g>
+      <text x="54" y="23" font-family="Open Sans,Segoe UI,Helvetica,Arial,sans-serif" font-size="19" font-weight="800" letter-spacing="-.3" fill="#fff">semantic arts<tspan fill="#8C9E38">.</tspan></text>
+    </svg>
+  </a>
   <nav class="sa-hdr-nav" aria-label="Sections">
     {SECTIONS.map(([href, label]) => (
       <a class={on(href)} href={href}>{label}</a>
@@ -38,6 +49,27 @@ const SECTIONS = [
   </div>
 </div>
 
+<style is:global>
+  /* The header BAR itself → the branded dark gradient, on every page. */
+  header.header {
+    background: linear-gradient(90deg, #032C3D, #005A7D 58%, #045B7B);
+    border-bottom: 2px solid #8C9E38;
+    /* Flip Starlight's own header controls (search button, theme select, mobile
+       menu icon) to light-on-dark by re-pointing the colour variables they read. */
+    --sl-color-text: rgba(255, 255, 255, 0.9);
+    --sl-color-text-accent: #fff;
+    --sl-color-white: #fff;
+    --sl-color-gray-1: #fff;
+    --sl-color-gray-2: rgba(255, 255, 255, 0.82);
+    --sl-color-gray-3: rgba(255, 255, 255, 0.72);
+    --sl-color-gray-5: rgba(255, 255, 255, 0.18);
+    --sl-color-gray-6: rgba(255, 255, 255, 0.10);
+    --sl-color-bg: rgba(255, 255, 255, 0.08);
+    --sl-color-bg-nav: transparent;
+    --sl-icon-color: #fff;
+  }
+</style>
+
 <style>
   .sa-hdr {
     display: flex;
@@ -46,12 +78,12 @@ const SECTIONS = [
     height: 100%;
     min-width: 0;
   }
-  .sa-hdr-title {
+  .sa-logo {
     flex: none;
-    overflow: clip;
-    padding: 0.25rem;
-    margin: -0.25rem;
+    display: flex;
+    align-items: center;
   }
+  .sa-logo svg { height: 30px; width: auto; display: block; }
   /* Section nav — takes the middle, scrolls horizontally rather than wrapping. */
   .sa-hdr-nav {
     display: flex;
@@ -67,14 +99,14 @@ const SECTIONS = [
     white-space: nowrap;
     font-size: 0.8125rem;
     font-weight: 600;
-    color: var(--sl-color-gray-2);
+    color: rgba(255, 255, 255, 0.62);
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 6px;
     line-height: 1.2;
   }
-  .sa-hdr-nav a:hover { color: var(--sl-color-white); background: var(--sl-color-gray-6); }
-  .sa-hdr-nav a.on { color: var(--sl-color-text-accent); background: var(--sl-color-accent-low); }
+  .sa-hdr-nav a:hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .sa-hdr-nav a.on { color: #fff; background: rgba(255, 255, 255, 0.12); }
   .sa-hdr-tools {
     flex: none;
     display: flex;
@@ -82,7 +114,7 @@ const SECTIONS = [
     gap: 0.75rem;
   }
   /* On narrow viewports the section nav would crowd search + theme — hide it there and let
-     the sidebar / mobile menu carry section navigation. */
+     the sidebar / mobile menu carry section navigation (the logo still links home). */
   @media (max-width: 72rem) {
     .sa-hdr-nav { display: none; }
   }

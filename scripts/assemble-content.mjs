@@ -263,6 +263,9 @@ function fixTrainingIndex(dest) {
   md = md.replace(/^[ \t]*import ProgressOverview from [^\n]*\n/m, '');
   md = md.replace(/^[ \t]*<ProgressOverview\s*\/>[ \t]*\n?/m, '');
   md = md.replace(/\n[ \t]*- text: Explore the knowledge map[\s\S]*?variant: minimal/, '');
+  // Drop the big splash orientation header so Training reads like the other spaces.
+  md = md.replace(/^template:\s*splash[ \t]*\n/m, '');
+  md = md.replace(/\nhero:\n(?:[ \t]+.*\n)+/, '\n');
   fs.writeFileSync(idx, md);
 }
 
