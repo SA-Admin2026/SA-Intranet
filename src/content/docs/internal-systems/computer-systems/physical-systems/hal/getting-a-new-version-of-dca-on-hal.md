@@ -3,9 +3,6 @@ title: "Getting a new version of DCA on HAL"
 confluence_id: 532938756
 source: Getting-a-new-version-of-DCA-on-HAL_532938756.html
 ---
-
-# Getting a new version of DCA on HAL
-
 Easiest way (for Dave) is to get the files to Mac where I have a certificate that allows me to write to HAL.  You may have to do something more involved.
 
 1. Copy the new server files to the Mac

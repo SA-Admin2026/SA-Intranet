@@ -3,7 +3,6 @@ title: "The Lookup Table Pattern"
 confluence_id: 2975432705
 source: "The-Lookup-Table-Pattern_2975432705.html"
 ---
-
 This pattern is useful in a SPARQL CONSTRUCT when generating RDF from other data sources, e.g. a CSV file transformed by tarql/Sparql.Anything, or a relational table converted by R2RML.
 
 Use this pattern when at least one column of the input data contains a limited set of values that should trigger the binding of one or more output variables. It is most useful when the “shape” of the input data does not lend itself well to creating an output value (IRI or literal) directly from the input value.

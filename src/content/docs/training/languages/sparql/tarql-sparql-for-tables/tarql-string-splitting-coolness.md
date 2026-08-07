@@ -3,7 +3,6 @@ title: "Tarql String Splitting Coolness"
 confluence_id: 2222096385
 source: "Tarql-String-Splitting-Coolness_2222096385.html"
 ---
-
 What if you have multiple values in a column that you need to split up?
 
 E.g. a CSV like this:

@@ -3,7 +3,6 @@ title: "Metric: Consistency - Previous Work"
 confluence_id: 1230340104
 source: "1230340104.html"
 ---
-
 - [Denny’s Ph.D. Thesis](#Metric:Consistency-PreviousWork-Denny’sPh.D.Thesis)
   - [Some comments:](#Metric:Consistency-PreviousWork-Somecomments:)
 - [Others cited by Denny](#Metric:Consistency-PreviousWork-OtherscitedbyDenny)

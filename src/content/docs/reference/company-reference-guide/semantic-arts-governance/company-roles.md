@@ -3,9 +3,6 @@ title: "Company Roles"
 confluence_id: 2866610214
 source: Company-Roles_2866610214.html
 ---
-
-# Company Roles
-
 This page is for documenting the roles of administrative personnel and some of the best places to direct questions or concerns.
 
 # Company Roles

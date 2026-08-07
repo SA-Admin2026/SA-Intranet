@@ -3,9 +3,6 @@ title: "Change Management & Deprecation (2016) - DEPRECATED"
 confluence_id: 5767203
 source: 5767203.html
 ---
-
-# Change Management & Deprecation (2016) - DEPRECATED
-
 ## **This document is out-of-date. The current process is documented in the gist GitHub repository: see [ChangeAndReleaseManagement](https://github.com/semanticarts/gist/blob/develop/docs/ChangeAndReleaseManagement.md)****and [Contributing](https://github.com/semanticarts/gist/blob/develop/docs/Contributing.md)****.**
 
 FIBO folk just had a flurry of emails about deprecation, so I started a wiki page there to share what we did at Semantic Arts. So I'm putting it here on our own Wiki. This was the description we gave out with gist on 6.7.1, the last version before we split things into modules.  I'm not sure what we are doing now for deprecation.

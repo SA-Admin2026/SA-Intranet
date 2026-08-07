@@ -3,7 +3,6 @@ title: "File Structure Decisions"
 confluence_id: 2870214659
 source: "File-Structure-Decisions_2870214659.html"
 ---
-
 These are existing file structures at the folder level that we currently use, and the question is, “On the assumption that we have a small set of templated folder structures, what should that structure patterns be, and what tools should each be pre-loaded with?”. Please make comments and suggestions.
 
 **gist**/  

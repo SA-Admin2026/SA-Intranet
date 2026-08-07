@@ -3,7 +3,6 @@ title: "Notes on Disease Target Identification"
 confluence_id: 3008233473
 source: "Notes-on-Disease-Target-Identification_3008233473.html"
 ---
-
 SOURCE: <https://www.ontotext.com/solutions/ontotexts-target-discovery/?utm_campaign=Target%20Discovery&utm_source=youtube&utm_medium=social&utm_content=ls-hc-video>
 
 ![image-20250605-181757.png](/attachments/3008233473/3010494471.png)

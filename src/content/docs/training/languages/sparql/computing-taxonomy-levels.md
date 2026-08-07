@@ -3,7 +3,6 @@ title: "Computing Taxonomy Levels"
 confluence_id: 2360082433
 source: "Computing-Taxonomy-Levels_2360082433.html"
 ---
-
 IMPORTANT assumes clean hierarchy
 
 Use Case: you need to compute levels of things in a taxonomy.

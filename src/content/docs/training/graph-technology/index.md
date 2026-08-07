@@ -3,7 +3,6 @@ title: "Graph technology"
 confluence_id: 3013279749
 source: "Graph-technology_3013279749.html"
 ---
-
 This page and its subpages will serve as a resource for Semantic Arts consultants to advise clients on the choice of graph technology.
 
 ![(blue star)](https://semarts.atlassian.net/wiki/s/-1952328697/6452/6bb60197f21c6a3e3b014db69710f82b49bad821/_/images/icons/emoticons/72/2757.png)Any findings about specific graph technology solutions that can change over time need to be dated.

@@ -4,7 +4,6 @@ description: "The March 2026 revision to the vacation / PTO policy."
 sidebar:
   order: 11
 ---
-
 > 📄 **Authoritative version:** [Download the original PDF](/reference/attachments/handbook/Vacation-Policy-Revision-March-2026.pdf). This page is a searchable text rendering; if anything differs, the PDF governs.
 
 Paid Time Off Policy Philosophy & Purpose Paid time off is not considered a form of additional wages, but rather part of the Company’s commitment to employee health, sustainability, and long-term performance. We believe that employees who rest and recharge are more creative, more engaged, and more effective in their work. This is a true unlimited paid time off policy. There is no accrual, no cap, no carryover balance, and no target number of days. We trust you to take the time you need. We mean it. Because this policy does not create an accrual or determinable balance of PTO, no vacation pay will be owed or paid out upon separation from the Company, consistent with Colorado law governing unlimited PTO arrangements. Eligibility This policy applies to all full-time, exempt employees. Part-time and non-exempt employees should refer to their individual employment agreements for applicable leave terms. This policy supersedes and replaces any prior vacation or PTO policy previously in effect. Taking Time Off We encourage you to take time off. Here is how to do it well:

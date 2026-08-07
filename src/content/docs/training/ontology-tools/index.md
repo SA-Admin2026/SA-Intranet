@@ -3,7 +3,6 @@ title: "Ontology Tools"
 confluence_id: 2434170881
 source: "Ontology-Tools_2434170881.html"
 ---
-
 - [In-House Tools](#OntologyTools-In-HouseTools)
   - [In-House Tool Wish List](#OntologyTools-In-HouseToolWishList)
 - [Third-Party Tools](#OntologyTools-Third-PartyTools)
@@ -137,7 +136,7 @@ source: "Ontology-Tools_2434170881.html"
 
 ## Proprietary Ontology Conversion
 
-- Palantir Foundry to OWL <https://github.com/cloudbadal007/foundry-ontology-open/blob/master/README.md>
+- Palantir Foundry to OWL <https://github.com/cloudbadal007/foundry-ontology-open/blob/master/>
 
 ## [Robot](http://robot.obolibrary.org/)
 

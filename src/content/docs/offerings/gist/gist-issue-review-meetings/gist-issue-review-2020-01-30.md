@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-01-30"
 confluence_id: 835256371
 source: gist-Issue-Review-2020-01-30_835256371.html
 ---
-
-# gist Issue Review 2020-01-30
-
 **Attending:**
 
 Michael, MarkW, Dan, Rebecca, Jamie, Steve

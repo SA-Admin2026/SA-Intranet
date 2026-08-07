@@ -3,7 +3,6 @@ title: "Onboarding Checklist"
 confluence_id: 2269904897
 source: "Onboarding-Checklist_2269904897.html"
 ---
-
 # Semantic Arts Onboarding & Separation Procedures
 
 ## Compliance & Administrative

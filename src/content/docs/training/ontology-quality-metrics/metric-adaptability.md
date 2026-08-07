@@ -3,7 +3,6 @@ title: "Metric: Adaptability"
 confluence_id: 868745301
 source: "868745301.html"
 ---
-
 Steve Steward and Dalia Dahleh, May 2020
 
 ## What it means

@@ -3,9 +3,6 @@ title: "Employee Coaching"
 confluence_id: 2799599626
 source: Employee-Coaching_2799599626.html
 ---
-
-# Employee Coaching
-
 ## Current Coaching Teams
 
 |  |  |  |  |  |

@@ -3,9 +3,6 @@ title: "Upgrading AllegroGraph0"
 confluence_id: 1474646
 source: Upgrading-AllegroGraph0_1474646.html
 ---
-
-# Upgrading AllegroGraph0
-
 **Upgrading AllegroGraph**
 
 1. Back up repositories you want to keep by exporting to nquads

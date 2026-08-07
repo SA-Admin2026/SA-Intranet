@@ -3,7 +3,6 @@ title: "Redundancy and Maximal Inference"
 confluence_id: 11075597
 source: "Redundancy-and-Maximal-Inference_11075597.html"
 ---
-
 The figure on the left is what we currently have in the Schneider units ontology. The definitions to the right are designed to
 
 1. have less redundancy

@@ -3,9 +3,6 @@ title: "Moving Files from Mac to HAL"
 confluence_id: 544342017
 source: Moving-Files-from-Mac-to-HAL_544342017.html
 ---
-
-# Moving Files from Mac to HAL
-
 To get files to HAL
 
 1. try scp

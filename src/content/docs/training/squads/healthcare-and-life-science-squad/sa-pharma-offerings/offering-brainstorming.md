@@ -3,7 +3,6 @@ title: "Offering brainstorming"
 confluence_id: 2992078877
 source: "Offering-brainstorming_2992078877.html"
 ---
-
 There is synergy between clinical trials offering and eCTD offering - regardless of who’s running the clinical trials (a drug development company or a CRO), the drug development company needs to submit the clinical trials results as part of the eCTD for the NDA (New Drug Application), hence our eCTD offering can be specifically extended to package clinical trials reports (Module 5 of eCTD) and become an extension to the clinical trials offering.
 
 The only pending requirement is to come up with 1-2 competency questions for each of the 2 identified use cases. I used chatGPT to brainstorm some questions I would have if I were to decide to proceed with developing a drug:

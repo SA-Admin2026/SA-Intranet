@@ -3,9 +3,6 @@ title: "Security Discussion from DCA 2018"
 confluence_id: 679084081
 source: Security-Discussion-from-DCA-2018_679084081.html
 ---
-
-# Security Discussion from DCA 2018
-
 The security panel generated the most discussion and the most gnarly problems to unravel. Also note additional thoughts from Jamie after the panel. This page provides the contextual and background discussion that leads to Jamie's concrete findings [here](../dca-implementation-documentation/security-in-a-dca.md).
 
 - Attendees strongly suggested pulling in some experts for 2019.

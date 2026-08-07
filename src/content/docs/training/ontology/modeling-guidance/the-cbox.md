@@ -3,7 +3,6 @@ title: "The CBox"
 confluence_id: 118063105
 source: "The-CBox_118063105.html"
 ---
-
 A question arises about where to have the CBox categories.  There was a recent email discussion on this. Below I throw out a straw man policy for discussion.
 
 ## Proposed CBox Policy

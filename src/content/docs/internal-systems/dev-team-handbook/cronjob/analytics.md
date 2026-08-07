@@ -3,9 +3,6 @@ title: "Analytics"
 confluence_id: 38273030
 source: Analytics_38273030.html
 ---
-
-# Analytics
-
 > ```
 > Order should be maintained when executing these scripts
 > ```

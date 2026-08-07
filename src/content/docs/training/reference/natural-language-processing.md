@@ -3,7 +3,6 @@ title: "Natural Language Processing"
 confluence_id: 23953416
 source: "Natural-Language-Processing_23953416.html"
 ---
-
 This is a collection of technologies and capabilities that are important for NLP.  Most of this is baby stuff for experts in the field, but we are just getting started. This is inspired by the slow, manual semantic mappings I'm doing from Morgan Stanley categories to FIBO-V terms. First some examples of the challenge of disambiguation:
 
 “Fund”

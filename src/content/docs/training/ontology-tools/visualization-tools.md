@@ -3,7 +3,6 @@ title: "Visualization Tools"
 confluence_id: 1234337793
 source: "Visualization-Tools_1234337793.html"
 ---
-
 <http://semantechs.co.uk/turtle-editor-viewer/> is that viewer thingy that I showed earlier
 
 <http://semantechs.co.uk/mermaid/> is the mermaid

@@ -3,7 +3,6 @@ title: "SA Claude Container Quick Start"
 confluence_id: 3321102346
 source: "SA-Claude-Container-Quick-Start_3321102346.html"
 ---
-
 - Install Docker Desktop and run it
 
   - If you are installing Docker Desktop for the first time, note that you can skip the email-verification step

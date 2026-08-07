@@ -3,7 +3,6 @@ title: "Modeling Time in Gist"
 confluence_id: 671219713
 source: "Modeling-Time-in-Gist_671219713.html"
 ---
-
 Minting URIs for TimeInstants
 
 - Default: fold the standard xsd format into the URI.e g.:

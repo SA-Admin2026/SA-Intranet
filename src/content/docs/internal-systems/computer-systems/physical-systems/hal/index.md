@@ -3,9 +3,6 @@ title: "HAL"
 confluence_id: 25460740
 source: HAL_25460740.html
 ---
-
-# HAL
-
 ## 74.93.230.113 (from outside)
 
 192.168.2.38 (from inside)
@@ -39,7 +36,7 @@ Connect to the **semartsdev** account either with an sftp client to drag and dro
 - [SSH Access into HAL-9000](ssh-access-into-hal-9000.md)
 - [DCA & Slow Reveal deployment](dca-slow-reveal-deployment.md)
 - [Starting AllegroGraph and iBeam](starting-allegrograph-and-ibeam.md)
-- [Old (out-of-date) Stuff](old-out-of-date-stuff/README.md)
-- [Updating AllegroGraph](updating-allegrograph/README.md)
+- [Old (out-of-date) Stuff](old-out-of-date-stuff/)
+- [Updating AllegroGraph](updating-allegrograph/)
 
 <!-- section-nav:end -->

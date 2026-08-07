@@ -3,7 +3,6 @@ title: "When OWL-DL is too restrictive"
 confluence_id: 2421424129
 source: "When-OWL-DL-is-too-restrictive_2421424129.html"
 ---
-
 OWL-DL allows us to say a lot, but sometimes we want to say things that are not allowed. This page pulls out a few highlights from Chapter 7 in my book on OWL limitations on this topic - go there for details. The main limitations are:
 
 1. Metaclasses are not allowed.

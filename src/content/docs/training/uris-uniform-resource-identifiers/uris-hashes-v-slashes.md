@@ -3,7 +3,6 @@ title: "URIs: Hashes v Slashes"
 confluence_id: 146374657
 source: "146374657.html"
 ---
-
 I’m doing an experiment to try to render uris.
 
 I’ve seen all sorts of hacky ways to do it, but I’d really like to do it the most elegant way possible.

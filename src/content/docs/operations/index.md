@@ -2,9 +2,6 @@
 title: "Operations"
 description: "The operations team's workspace — access-controlled to the operations team."
 ---
-
-# Operations
-
 :::caution[Access-controlled — pilot]
 This is the **operations team's** private workspace, and the **pilot for role-based access**
 on the intranet. It is separate from the company-wide **[Operations Manual](/operations-manual/)**

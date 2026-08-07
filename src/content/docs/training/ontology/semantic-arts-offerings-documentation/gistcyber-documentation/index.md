@@ -3,7 +3,6 @@ title: "gistCyber Documentation"
 confluence_id: 2822307843
 source: "gistCyber-Documentation_2822307843.html"
 ---
-
 # Introduction
 
 The gistCyber ontology is meant to address the domain of discourse specific to Cyberspace concepts. Typically, the Cyber Domain is taken to mean the more specific domain of security in cyberspace, or simply cybersecurity. There are many sub-domains that can be implemented by extension of gistCyber. For example, to mention a few:

@@ -3,7 +3,6 @@ title: "Staff Planning Instructions"
 confluence_id: 2253488195
 source: "Staff-Planning-Instructions_2253488195.html"
 ---
-
 Video Tutorial Part 1: <https://youtu.be/7JmzktnZVSk>
 
 Video Tutorial Part 2: <https://youtu.be/1h1msP6B-48>

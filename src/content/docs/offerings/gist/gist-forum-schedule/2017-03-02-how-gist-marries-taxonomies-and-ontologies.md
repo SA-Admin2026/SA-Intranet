@@ -3,9 +3,6 @@ title: "2017-03-02 How gist marries taxonomies and ontologies"
 confluence_id: 51707913
 source: 2017-03-02-How-gist-marries-taxonomies-and-ontologies_51707913.html
 ---
-
-# 2017-03-02 How gist marries taxonomies and ontologies
-
 # People:
 
 1. Bill McCrea: Broadridge, looking to move an internal ontology, make available to clients, will use gist as upper ontology.

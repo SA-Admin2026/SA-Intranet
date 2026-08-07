@@ -3,7 +3,6 @@ title: "Ontology"
 confluence_id: 5767174
 source: "Ontology_5767174.html"
 ---
-
 - [Distinctionary](/ontology/distinctionary/)
 - [Evaluating Ontologies](/ontology/evaluating-ontologies/)
 - [External (non-Semantic-Arts) Ontologies](/ontology/external-non-semantic-arts-ontologies/)

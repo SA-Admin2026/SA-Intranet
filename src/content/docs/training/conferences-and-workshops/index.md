@@ -3,7 +3,6 @@ title: "Conferences and Workshops"
 confluence_id: 2455207937
 source: "Conferences-and-Workshops_2455207937.html"
 ---
-
 A place to add notes about conferences and workshops that we have attended either as contributors or simply as conference/workshop participants
 
 - [2023-10-01 Dagstuhl Research Meeting 23403

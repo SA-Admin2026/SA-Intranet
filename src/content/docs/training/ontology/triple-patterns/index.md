@@ -3,7 +3,6 @@ title: "Triple Patterns"
 confluence_id: 2353725444
 source: "Triple-Patterns_2353725444.html"
 ---
-
 Triple patterns are a convenient way to express the way an ontology is intended to be used.
 
 Triple patterns can be used early in a project to organize thoughts about what needs to be in the ontology.

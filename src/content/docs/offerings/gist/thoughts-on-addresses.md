@@ -3,9 +3,6 @@ title: "Thoughts on Addresses"
 confluence_id: 2225995791
 source: Thoughts-on-Addresses_2225995791.html
 ---
-
-# Thoughts on Addresses
-
 ## Background
 
 In March 2022, we got a note from someone via our Contact Us web page. The note said:

@@ -3,11 +3,6 @@ title: "Consultant Pay Policy"
 confluence_id: 2250801198
 source: Consultant-Pay-Policy_2250801198.html
 ---
-
-# Consultant Pay Policy
-
-# Consultant Pay Policy
-
 ## Consultant Pay at Semantic Arts
 
 This document describes the mechanics and the rationale for consultant pay at Semantic Arts.

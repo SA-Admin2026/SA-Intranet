@@ -3,7 +3,6 @@ title: "2025 Ontology Tooling Development Project"
 confluence_id: 2860417039
 source: "2025-Ontology-Tooling-Development-Project_2860417039.html"
 ---
-
 ## **Requirements and general thoughts about what to include**
 
 | **Requirement Category** | **Description** | **Priority** | **Notes** |

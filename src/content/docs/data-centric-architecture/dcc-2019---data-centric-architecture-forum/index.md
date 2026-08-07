@@ -3,9 +3,6 @@ title: "DCC 2019 - Data Centric Architecture Forum"
 confluence_id: 678395911
 source: DCC-2019---Data-Centric-Architecture-Forum_678395911.html
 ---
-
-# DCC 2019 - Data Centric Architecture Forum
-
 Held February 3-5, 2019 in Fort Collins, Colorado.
 
 - [Straw Man Presentation](#DCC2019-DataCentricArchitectureForum-StrawManPresentation)

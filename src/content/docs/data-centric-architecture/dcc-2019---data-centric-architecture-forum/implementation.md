@@ -3,9 +3,6 @@ title: "Implementation"
 confluence_id: 679116835
 source: Implementation_679116835.html
 ---
-
-# Implementation
-
 Dave's graphic
 
 |  |  |  |  |  |  |  |  |  |  |  |

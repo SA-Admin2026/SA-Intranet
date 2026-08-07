@@ -3,7 +3,6 @@ title: "Dialog Mapping Prompts for ChatGPT"
 confluence_id: 2412806156
 source: "Dialog-Mapping-Prompts-for-ChatGPT_2412806156.html"
 ---
-
 # Table of Contents
 
 - [Table of Contents](#DialogMappingPromptsforChatGPT-TableofContents)

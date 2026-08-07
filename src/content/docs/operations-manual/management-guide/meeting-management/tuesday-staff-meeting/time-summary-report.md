@@ -3,7 +3,6 @@ title: "Time Summary Report"
 confluence_id: 2253488175
 source: "Time-Summary-Report_2253488175.html"
 ---
-
 Video Tutorial: <https://youtu.be/QbY9l7f-Sqo>
 
 1. Download the csv for the burn charts directly from Spark (HR Section, “Burnchart Details” view. Use the down arrow in the upper right corner to download.

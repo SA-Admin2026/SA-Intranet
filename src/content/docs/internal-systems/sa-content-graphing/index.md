@@ -3,9 +3,6 @@ title: "SA Content Graphing"
 confluence_id: 2420342785
 source: SA-Content-Graphing_2420342785.html
 ---
-
-# SA Content Graphing
-
 This page is for discussion of adding information about Semantic Arts content to Semantic Arts' knowledge graph using congr.py.
 
 Discussion of congr.py itself is at <https://github.com/semanticarts/congr>

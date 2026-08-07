@@ -3,9 +3,6 @@ title: "Updating Gruff (on an Agraph server)"
 confluence_id: 2133491713
 source: 2133491713.html
 ---
-
-# Updating Gruff (on an Agraph server)
-
 Gruff is release independently of the Allegrograph database, on it’s own schedule. We deploy/deliver gruff as a web app through the AG Webview front end. To update the latest version you have to download it to the server, install it, and activate the new version, before Webview will use it.
 
 - On HAL, log in as `semartsdev` and `cd ~/Programs`

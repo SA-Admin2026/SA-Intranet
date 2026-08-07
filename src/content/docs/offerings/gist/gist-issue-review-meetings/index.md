@@ -3,9 +3,6 @@ title: "gist Issue Review Meetings"
 confluence_id: 2374402095
 source: gist-Issue-Review-Meetings_2374402095.html
 ---
-
-# gist Issue Review Meetings
-
 Notes on gist development meetings have moved to the [GitHub repository](https://github.com/semanticarts/gist). These pages are kept for historical purposes.
 
 - [gist Issue Review 2021-02-11](gist-issue-review-2021-02-11.md)

@@ -3,7 +3,6 @@ title: "VALUES Keyword sometimes better than UNIONs"
 confluence_id: 61210679
 source: "VALUES-Keyword-sometimes-better-than-UNIONs_61210679.html"
 ---
-
 The following query is one way to find various organizations.
 
 ```

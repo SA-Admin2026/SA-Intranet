@@ -3,9 +3,6 @@ title: "Transitioning to GitHub-Based Version Management"
 confluence_id: 233242743
 source: Transitioning-to-GitHub-Based-Version-Management_233242743.html
 ---
-
-# Transitioning to GitHub-Based Version Management
-
 The current way we manage [deprecated - gist on GitHub](deprecated---gist-change-management/deprecated---gist-on-github.md) is out of sync with standard industry practice for versioning software. This page lists the changes that must be made to  fix that.
 
 # Current Version Control Scheme
@@ -51,7 +48,7 @@ When releasing gist:
 
 # Proposed Version Control Scheme
 
-A full guide to the proposed scheme is at [deprecated - gist Change Management](deprecated---gist-change-management/README.md).
+A full guide to the proposed scheme is at [deprecated - gist Change Management](deprecated---gist-change-management/).
 
 There will be no copies on the internal file server. The github repository will be the only master. We will keep the version-specific subfolders under `Y:\_SemanticArts\Offerings\gist\_externallyReleasedGists` only for historical releases.
 
@@ -79,7 +76,7 @@ We got into a mess with multiple versions of gist 8.0.0, which was released inte
 
 STILL DO DO:
 
-1. Use a test repo to test and debug the process documented in [deprecated - gist Change Management](deprecated---gist-change-management/README.md) to debug the documentation and test whether things work as expected
+1. Use a test repo to test and debug the process documented in [deprecated - gist Change Management](deprecated---gist-change-management/) to debug the documentation and test whether things work as expected
    1. Copy the files from the X.x release that spawned 8.0.0 into the test repo
    2. Follow the process, playing with different options and pulls and tags etc.
    3. If it worked, go to step 2, other wise keep trying

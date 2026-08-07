@@ -3,7 +3,6 @@ title: "Exploration of Semantic Arts ETL Tool"
 confluence_id: 3190915073
 source: "Exploration-of-Semantic-Arts-ETL-Tool_3190915073.html"
 ---
-
 # Why?
 
 - Performance problems with TARQL, SPARQL Anything

@@ -3,9 +3,6 @@ title: "Travel & Expense Policy"
 confluence_id: 2250997793
 source: 2250997793.html
 ---
-
-# Travel & Expense Policy
-
 - [Background](#Travel&ExpensePolicy-Background)
 - [Our Policy](#Travel&ExpensePolicy-OurPolicy)
 - [Expenses](#Travel&ExpensePolicy-Expenses)

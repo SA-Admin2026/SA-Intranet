@@ -3,7 +3,6 @@ title: "Protege 5.x Nested Turtle Import Bug"
 confluence_id: 775389187
 source: "Protege-5.x-Nested-Turtle-Import-Bug_775389187.html"
 ---
-
 Confirmed in Protege 5.2.0, and 5.5.0
 
 # TL;DR

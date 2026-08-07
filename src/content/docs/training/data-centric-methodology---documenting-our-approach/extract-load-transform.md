@@ -3,7 +3,6 @@ title: "Extract-Load-Transform"
 confluence_id: 2357952513
 source: "Extract-Load-Transform_2357952513.html"
 ---
-
 A common scenario is that multiple data sets need to be combined just to correctly form URIs. The extract-load-transform concept is to bring multiple data sets into a knowledge graph in a “naive” form and then use SPARQL to transform them.
 
 The general concept is described in a powerpoint presentation at the link below, along with some tools.

@@ -3,7 +3,6 @@ title: "Prior client work"
 confluence_id: 2992537601
 source: "Prior-client-work_2992537601.html"
 ---
-
 Existing SA work in Amgen uses the following public resources:
 
 - GENCODE database - <https://www.gencodegenes.org/> - FTP with database releases (latest release directory): <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_47/> - review file we parse: gencode.v47.chr\_patch\_hapl\_scaff.annotation.gff3.gz

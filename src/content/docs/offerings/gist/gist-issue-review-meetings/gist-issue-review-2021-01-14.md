@@ -3,9 +3,6 @@ title: "gist Issue Review 2021-01-14"
 confluence_id: 1479999493
 source: gist-Issue-Review-2021-01-14_1479999493.html
 ---
-
-# gist Issue Review 2021-01-14
-
 **Attending:** Rebecca, Michael, Dave, Dan, Peter, Jamie, Dalia, Meika, Mark
 
 # Agenda and Notes

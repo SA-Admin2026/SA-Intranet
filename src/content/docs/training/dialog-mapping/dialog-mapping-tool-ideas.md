@@ -3,7 +3,6 @@ title: "Dialog Mapping Tool Ideas"
 confluence_id: 2400845825
 source: "Dialog-Mapping-Tool-Ideas_2400845825.html"
 ---
-
 Ideas for a tool that could be used to implement dialog mapping. Issues, etc. could be added and changed through a text interface (GUI? chat window? command line). A graphical representation like <https://semarts.atlassian.net/wiki/spaces/TRR/pages/2400354310/Dialog+Mapping#Attempt-at-an-IBIS-Example-(Ethics-of-Midjourney)> would be generated and re-generated in a web browser.
 
 # TOC

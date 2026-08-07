@@ -3,7 +3,6 @@ title: "PoolParty Semantic Suite"
 confluence_id: 69206017
 source: "PoolParty-Semantic-Suite_69206017.html"
 ---
-
 Primarily a taxonomy and thesaurus management tool. Includes some RDFS ontology management and can pull in "Linked Data" sets like DBPedia and GeoNames. Does some text mining and concept extraction on corpuses. Has some form of ETL tool for converting data to RDF. For governance has some level of workflow management - history, audit trail and rollback features.
 
 PDF overview of basic features: <https://www.poolparty.biz/wp-content/uploads/2016/04/PoolParty-Product-Features.pdf>

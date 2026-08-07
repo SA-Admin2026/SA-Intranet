@@ -3,9 +3,6 @@ title: "Allegrograph on WALL-E"
 confluence_id: 777060382
 source: Allegrograph-on-WALL-E_777060382.html
 ---
-
-# Allegrograph on WALL-E
-
 Installed as a RPM package.
 
 This is different than how it was installed on HAL. Do not use the HAL instructions on WALL-E. A problem with this method is that it does not allow us to have 2 versions running so we can’t install a new version to test while keeping the old version running.

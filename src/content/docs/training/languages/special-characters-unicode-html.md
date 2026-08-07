@@ -3,7 +3,6 @@ title: "Special Characters, Unicode & HTML"
 confluence_id: 26574857
 source: "26574857.html"
 ---
-
 Special characters are often a nuisance. Here are a few tips and resources.
 
 **Unicode**. There is no one technique that seems to work in all applications.  The following works in Outlook and Word but not Powerpoint, Visio or Notepad++, nor in this Wiki.

@@ -3,7 +3,6 @@ title: "TARQL: SPARQL for Tables"
 confluence_id: 518717457
 source: "518717457.html"
 ---
-
 Tarql is a command-line tool for converting CSV files to RDF using SPARQL.
 
 GitHub Site: <https://tarql.github.io/>

@@ -3,9 +3,6 @@ title: "System Updates/Access"
 confluence_id: 950370
 source: 950370.html
 ---
-
-# System Updates/Access
-
 Sunburst Access: <http://sunburst.semanticarts.com/sunburst?repo=http://agraph.semanticarts.com/catalogs/ibeam-catalog/repositories/timecard>
 
 username: consultants

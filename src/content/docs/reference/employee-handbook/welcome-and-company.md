@@ -3,7 +3,6 @@ title: "Welcome & Company"
 sidebar:
   order: 1
 ---
-
 > Part of the **[Employee Handbook](../)**. Authoritative version: [download the full PDF](/reference/attachments/handbook/SA-Employee-Handbook-2026.pdf).
 
 Welcome to Semantic Arts! We are pleased to have you on the team. It is our hope that this handbook provides a fairly comprehensive look at who we are as a company, and some basic guidelines to follow. We strive to create and maintain a work environment that is both productive and enjoyable. This is a living document, so please refer back often and feel free to share any ideas you might have to make it better. Should you have any questions or concerns, reach out to the office team at office@semanticarts.com. 

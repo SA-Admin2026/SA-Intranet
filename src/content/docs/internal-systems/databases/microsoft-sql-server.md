@@ -3,9 +3,6 @@ title: "Microsoft SQL Server"
 confluence_id: 1474596
 source: Microsoft-SQL-Server_1474596.html
 ---
-
-# Microsoft SQL Server
-
 ### System Info
 
 Windows Server 2012

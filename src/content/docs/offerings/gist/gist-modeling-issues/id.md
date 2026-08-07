@@ -3,9 +3,6 @@ title: "ID"
 confluence_id: 4685894
 source: ID_4685894.html
 ---
-
-# ID
-
 **identifiedBy/identifies:**
 
 I thought we used to have an “identifies min 1” restriction on gist:ID.

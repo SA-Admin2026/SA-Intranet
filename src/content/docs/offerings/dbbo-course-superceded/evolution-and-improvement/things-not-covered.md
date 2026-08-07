@@ -3,9 +3,6 @@ title: "Things not covered"
 confluence_id: 15040538
 source: 15040538.html
 ---
-
-# "Things not covered"
-
 I think a slide for the final day that briefly lists some topics that we didn't cover, but which the student will likely encounter as they begin doing any work in semantics.  For example:
 
 - Blank nodes

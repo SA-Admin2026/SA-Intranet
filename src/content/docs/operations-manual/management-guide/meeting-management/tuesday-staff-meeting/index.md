@@ -3,7 +3,6 @@ title: "Tuesday Staff Meeting"
 confluence_id: 2312765441
 source: "Tuesday-Staff-Meeting_2312765441.html"
 ---
-
 A few notes
 
 * Announcements

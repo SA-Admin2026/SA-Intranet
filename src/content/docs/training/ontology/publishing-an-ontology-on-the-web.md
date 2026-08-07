@@ -3,7 +3,6 @@ title: "Publishing an Ontology on the Web"
 confluence_id: 2326691841
 source: "Publishing-an-Ontology-on-the-Web_2326691841.html"
 ---
-
 This page is to provide experiences, options and advice on good ways to publish ontologies in HTML.
 
 Factors to consider

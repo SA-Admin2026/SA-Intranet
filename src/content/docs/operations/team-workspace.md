@@ -2,9 +2,6 @@
 title: "Team workspace"
 description: "Placeholder page for the operations-team workspace pilot."
 ---
-
-# Team workspace
-
 _Placeholder._ This page exists so the Operations section has real content to gate. When the
 Cloudflare Access policy for `/operations/*` is live, only members of **operations-team** (and
 **executive-team**) will be able to reach this page; everyone else is denied at the edge and

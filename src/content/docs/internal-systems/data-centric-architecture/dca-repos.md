@@ -3,9 +3,6 @@ title: "DCA repos"
 confluence_id: 52101169
 source: DCA-repos_52101169.html
 ---
-
-# DCA repos
-
 Two main repos:
 
 - Backend – data-centric-architecture

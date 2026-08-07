@@ -3,7 +3,6 @@ title: "Vendor/Tool security overview"
 confluence_id: 12812290
 source: "12812290.html"
 ---
-
 <http://answers.semanticweb.com/questions/12808/which-triple-stores-include-security-and-encryption>  (Nov 2011)
 
 - **TopBraid** Live has role-based access control on a per-graph basis. The data can come from Jena TDB, Sesame, Oracle, Allegro, etc., and J2EE RBAC is applied to all of them.

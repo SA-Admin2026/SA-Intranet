@@ -3,9 +3,6 @@ title: "Semantic Arts Intellectual Property"
 confluence_id: 44007428
 source: Semantic-Arts-Intellectual-Property_44007428.html
 ---
-
-# Semantic Arts Intellectual Property
-
 Semantic Arts Intellectual Property
 
 Semantic Arts have been specializing in semantic technology for 15 years.  Throughout that time, we have been investing time and money in building methods, approaches, blueprints, templates, software and the like.  These are collectively our intellectual property.

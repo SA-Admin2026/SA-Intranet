@@ -3,9 +3,6 @@ title: "Gist git 2"
 confluence_id: 762413075
 source: Gist-git-2_762413075.html
 ---
-
-# Gist git 2
-
 This is the procedure I used for the upgrade from gist 8 to gist 9
 
 I love the sentiment of making this simpler, but this was as simple as I could get it ( I know there are many pages here that purport to be simpler, but a) I couldn't get them to work and b) they left out a lot of the stuff that has to occur here.

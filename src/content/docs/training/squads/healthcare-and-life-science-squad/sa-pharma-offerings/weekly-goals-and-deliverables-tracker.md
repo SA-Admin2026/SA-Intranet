@@ -3,7 +3,6 @@ title: "Weekly goals and deliverables tracker"
 confluence_id: 2992734211
 source: "Weekly-goals-and-deliverables-tracker_2992734211.html"
 ---
-
 ### Goals for 23 Jul 2025
 
 1. Document Gene Index use case

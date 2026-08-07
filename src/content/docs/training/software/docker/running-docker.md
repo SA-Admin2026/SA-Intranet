@@ -3,7 +3,6 @@ title: "Running Docker"
 confluence_id: 53608506
 source: "Running-Docker_53608506.html"
 ---
-
 ### Start the Docker Machine
 
 Either:

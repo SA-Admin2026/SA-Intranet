@@ -3,7 +3,6 @@ title: "Notes"
 confluence_id: 3210772484
 source: "Notes_3210772484.html"
 ---
-
 Process Validation v/s Quality Control and Testing:
 
 1. QC/Testing is done every single time we manufacture a material, its mandatory to release the material for next phase of its use (i.e. as starting material for next phase of manufacturing or commercial distribution)

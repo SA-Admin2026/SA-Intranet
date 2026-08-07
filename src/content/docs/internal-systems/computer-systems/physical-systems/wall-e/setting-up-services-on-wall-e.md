@@ -3,9 +3,6 @@ title: "Setting up Services on WALL-E"
 confluence_id: 779452436
 source: Setting-up-Services-on-WALL-E_779452436.html
 ---
-
-# Setting up Services on WALL-E
-
 ## NGINX
 
 ### Config file access permissions => SELinux

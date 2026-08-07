@@ -3,9 +3,6 @@ title: "SA Content Graphing - Work Log"
 confluence_id: 2420342798
 source: SA-Content-Graphing---Work-Log_2420342798.html
 ---
-
-# SA Content Graphing - Work Log
-
 # 2023-07-21 - Drive Scanning and File Preparation
 
 [Office Manager](https://semarts.atlassian.net/wiki/people/61df1756e7637900686f43c4?ref=confluence) ran congr.py v0.6.4 for us against the "shared drive". The following screenshot shows the Turtle files created. [Steven Chalem](https://semarts.atlassian.net/wiki/people/62bef196de439ce00ee5800d?ref=confluence) broke two of the large files into three parts each. The following screenshot shows the resulting Turtle files:

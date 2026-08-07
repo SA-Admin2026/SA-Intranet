@@ -3,7 +3,6 @@ title: "RDF Serializer"
 confluence_id: 669548608
 source: "RDF-Serializer_669548608.html"
 ---
-
 There is a serializer that will convert any owl/rdf file into a standard serialized format in a variety of output syntaxes (e.g. turtle, nt, rdf/xml). This makes comparing differences between files dramatically easier.
 
 NOTE:  **RDF Serializer tool** for use with **git-bash** is here:  [https://github.com/semanticarts/serializer](https://github.com/semanticarts/serializer "https://github.com/semanticarts/serializer").  1 simple script with **no options**, so we all do it the same way. ![](https://statics.teams.microsoft.com/evergreen-assets/skype/v2/smile/20.png?v=4)

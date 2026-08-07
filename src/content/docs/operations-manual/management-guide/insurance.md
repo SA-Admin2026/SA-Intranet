@@ -3,7 +3,6 @@ title: "Insurance"
 confluence_id: 2253455410
 source: "Insurance_2253455410.html"
 ---
-
 Our insurance agent is:
 
 Jack Katzman (Katzman Insurance Services)

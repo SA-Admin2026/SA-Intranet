@@ -3,7 +3,6 @@ title: "2023-10-01 Dagstuhl Research Meeting 23403"
 confluence_id: 2455273474
 source: "2455273474.html"
 ---
-
 Defining a core metadata framework for cross-domain data sharing and reuse
 
 [Research Meeting 23403](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23403) is one of a series of meetings organised by [CODATA](https://codata.org/) and the [DDI Alliance](https://ddialliance.org/)

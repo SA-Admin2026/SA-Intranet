@@ -3,9 +3,6 @@ title: "2017-02-03 Introducing gist Council"
 confluence_id: 51904527
 source: 2017-02-03-Introducing-gist-Council_51904527.html
 ---
-
-# 2017-02-03 Introducing gist Council
-
 A big hit, lot of people showing up. Gives credence and confidence that this is a good idea.
 
 # People

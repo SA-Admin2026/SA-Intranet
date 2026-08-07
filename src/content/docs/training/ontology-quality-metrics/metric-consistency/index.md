@@ -3,7 +3,6 @@ title: "Metric: Consistency"
 confluence_id: 868679690
 source: "868679690.html"
 ---
-
 *Michael Uschold and Rebecca Younes*
 
 ***Child Pages***

@@ -3,9 +3,6 @@ title: "Stardog License"
 confluence_id: 824770651
 source: Stardog-License_824770651.html
 ---
-
-# Stardog License
-
 Semantic Arts has a partner license to the Stardog cloud hosted database service. Our license is somewhat limited but it does allow us to get familiar with their service and test there database.
 
 We seem to be limited to 5 users, but I am not sure what this limit applies to (it might only be the front end UI tools). This means we have to limit the number of individual accounts available for use.

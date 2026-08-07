@@ -3,9 +3,6 @@ title: "Allegrograph - bulk load from command line"
 confluence_id: 760414229
 source: Allegrograph---bulk-load-from-command-line_760414229.html
 ---
-
-# Allegrograph - bulk load from command line
-
 Do this:
 
 `~/Programs/AG-6.4.6/bin/agtool load --catalog platts --bulk flat ~/temp-data/*.ttl`

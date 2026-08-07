@@ -3,7 +3,6 @@ title: "Dialog Mapping Tool - Command Language"
 confluence_id: 2404122625
 source: "Dialog-Mapping-Tool---Command-Language_2404122625.html"
 ---
-
 # Contents
 
 - [Contents](#DialogMappingTool-CommandLanguage-Contents)

@@ -3,7 +3,6 @@ title: "PROV-O & TriG"
 confluence_id: 524058626
 source: "524058626.html"
 ---
-
 ## W3C Standards Information
 
 - [PROV Overview](https://www.w3.org/TR/prov-overview/) (adds provenance info)

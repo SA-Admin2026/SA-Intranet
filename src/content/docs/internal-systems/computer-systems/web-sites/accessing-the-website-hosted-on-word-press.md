@@ -3,9 +3,6 @@ title: "Accessing the Website hosted on Word Press"
 confluence_id: 514621480
 source: Accessing-the-Website-hosted-on-Word-Press_514621480.html
 ---
-
-# Accessing the Website hosted on Word Press
-
 Contact [office.manager@semanticarts.com](mailto:office.manager@semanticarts.com) for login credentials.
 
 Access website content for editing here: <https://www.semanticarts.com/wp-admin/>.

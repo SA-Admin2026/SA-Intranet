@@ -3,7 +3,6 @@ title: "Ontology Knowledge Exchange Meeting: gist:Content"
 confluence_id: 2393931777
 source: "2393931777.html"
 ---
-
 #### 2023-05-16
 
 About [Ontology Knowledge Exchange Meetings](/ontology/ontology-knowledge-exchange-oke/)

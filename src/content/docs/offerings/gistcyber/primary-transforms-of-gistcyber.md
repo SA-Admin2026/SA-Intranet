@@ -3,9 +3,6 @@ title: "Primary Transforms of gistCyber"
 confluence_id: 3267821569
 source: Primary-Transforms-of-gistCyber_3267821569.html
 ---
-
-# Primary Transforms of gistCyber
-
 # An ETL Pipeline Overview
 
 Knowledge Engineering is much more than authoring ontologies. Knowing how to design, create, and maintain a knowledge graph is part of the skillset.

@@ -3,7 +3,6 @@ title: "Healthcare and Life Science Squad"
 confluence_id: 2991915022
 source: "Healthcare-and-Life-Science-Squad_2991915022.html"
 ---
-
 Projects of this squad:
 
 - [SA Pharma Offerings](/squads/healthcare-and-life-science-squad/sa-pharma-offerings/)

@@ -3,7 +3,6 @@ title: "Protégé vs. Tobpraid Composer (TBC)"
 confluence_id: 4194333
 source: "4194333.html"
 ---
-
 **Email trail** between [Michael Uschold](https://semarts.atlassian.net/wiki/people/557058:b8f72a51-4d00-4afe-b646-b27876ce3a19?ref=confluence) and Dean Allemang on 2016-01-13  (somewhat uglily formatted)
 
 **From:** [deanallemang@gmail.com](mailto:deanallemang@gmail.com) [mailto:deanallemang@[gmail.com](http://gmail.com)] **On Behalf Of** Dean Allemang  

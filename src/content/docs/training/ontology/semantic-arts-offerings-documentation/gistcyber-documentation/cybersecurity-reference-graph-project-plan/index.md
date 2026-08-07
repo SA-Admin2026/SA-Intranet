@@ -3,7 +3,6 @@ title: "Cybersecurity Reference Graph Project Plan"
 confluence_id: 3173679105
 source: "Cybersecurity-Reference-Graph-Project-Plan_3173679105.html"
 ---
-
 # Objective
 
 The objective of the project is to deliver an online Cybersecurity Knowledge Graph that can be accessed by enterprises wanting to understand the context around the status of their business. The ontologies that will govern the Cybersecurity Knowledge Graph are gist and gistCyber.

@@ -3,9 +3,6 @@ title: "DBBO Course Preparation Checklist"
 confluence_id: 55083022
 source: DBBO-Course-Preparation-Checklist_55083022.html
 ---
-
-# DBBO Course Preparation Checklist
-
 This page contains information that helps ensure instructors provide a consistent and repeatable experience for students.
 
 - [Important Info](#DBBOCoursePreparationChecklist-ImportantInfo)

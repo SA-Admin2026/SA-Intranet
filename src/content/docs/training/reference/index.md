@@ -2,7 +2,6 @@
 title: Reference
 description: Handy technical how-tos and quick references.
 ---
-
 Handy technical how-tos and quick references that don't belong to a single learning path.
 
 ## In this section

@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-05-14"
 confluence_id: 984481793
 source: gist-Issue-Review-2020-05-14_984481793.html
 ---
-
-# gist Issue Review 2020-05-14
-
 **Attending:** Rebecca, Michael, Dalia, Boris, Dan, …?
 
 # Agenda and Notes

@@ -3,9 +3,6 @@ title: "Public (ssh) keys"
 confluence_id: 46170115
 source: 46170115.html
 ---
-
-# Public (ssh) keys
-
 # Dave
 
 | ``` ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCc1X1eoo+sbLGHXE8CFQCWbqq13f0nLc9ChpLkIYchTPg3dgzBO6wl8n46jdzyB4H3pF3ixX5TRobZoJ7GWJz94JVzefx+2TtTse+UwCYcH67+T0iLzfdo12Gz1bXVYBMFkXh3XvjFFcm+0yRGVzZ9loFgmkV6DHXRG8i3HEu9uVqxbb3+iTDk89iP/2BJ/Ujoxhu63P9JF7UOfev/tuJxeQ5ozYpzGDnTvnnTcQUK4UlfmLRpnSSa08v6hyWa4n0otcK8kCd4jIo1EG2hQVFpt2j2MBojeG5jwnrxlg0//uVAOa30MolqULJJRWsXGrJ14ZCGsH3tFnfUp895Gskz davemccomb@Daves-MacBook-Air.local ``` |

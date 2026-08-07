@@ -3,9 +3,6 @@ title: "Major Action Items"
 confluence_id: 2526674947
 source: Major-Action-Items_2526674947.html
 ---
-
-# Major Action Items
-
 Wednesday
 
 - Dave: Governance Follow Through

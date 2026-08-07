@@ -3,7 +3,6 @@ title: "All about SSH"
 confluence_id: 2391834625
 source: "All-about-SSH_2391834625.html"
 ---
-
 `ssh`, `scp`, `sshfs` (and related commands) are very useful tools to be familiar with when working with remote computers, whether it is another computer in the same room, or a server on the other side of the planet.
 
 This page is a combination of human generated text and AI generated text (compliments of Google Bard and ChatGPT) and some editing. In many cases I have included the output from both AI sources, just in case it helps to clarify anything. It still needs some editing but the information should be there.

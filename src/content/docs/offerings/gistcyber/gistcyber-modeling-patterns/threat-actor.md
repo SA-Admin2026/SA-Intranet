@@ -3,9 +3,6 @@ title: "Threat Actor"
 confluence_id: 3297935361
 source: Threat-Actor_3297935361.html
 ---
-
-# Threat Actor
-
 ## Current Model:
 
 This is the current parti so far based on the research listed below and discussions at the OKE:

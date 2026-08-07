@@ -3,7 +3,6 @@ title: "Semaphore"
 confluence_id: 61079553
 source: "Semaphore_61079553.html"
 ---
-
 # Conversations with SmartLogic
 
 Semaphore version 4 is purported to be using RDF, triple stores, SPARQL etc.  This seems to have given the impression to the likes of Michele and Stephanie at Dovcot that the ontology editor it is a viable alternative to Protégé or TopBraid Composer, and the Semaphore environment is a viable alternative to whatever architectures one might use in conjunction with an OWL ontology and triples store.  This keeps coming up, so I decide to put it to bed.  I sent a note to Semaphore on their online form and got an interesting response. The long and the short of it is summarized in the document called [SKOS vs OWL.pdf](/attachments/61079553/61112333.pdf). The punch line is that they chose to use SKOS over OWL because it is simpler and easier for business people to understand and use. They acknowledge that if the use case requires inference or machine understanding, then OWL is a good choice.

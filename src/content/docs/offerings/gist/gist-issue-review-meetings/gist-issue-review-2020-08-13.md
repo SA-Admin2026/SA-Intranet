@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-08-13"
 confluence_id: 1160151041
 source: gist-Issue-Review-2020-08-13_1160151041.html
 ---
-
-# gist Issue Review 2020-08-13
-
 **Attending:** Rebecca, Marc, Mark, Boris, Michael, Jamie, Dalia, Scott, Meika, Dan
 
 # Agenda and Notes

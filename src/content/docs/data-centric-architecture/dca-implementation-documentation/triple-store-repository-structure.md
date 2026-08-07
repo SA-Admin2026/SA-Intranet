@@ -3,9 +3,6 @@ title: "Triple Store / Repository Structure"
 confluence_id: 738689117
 source: 738689117.html
 ---
-
-# Triple Store / Repository Structure
-
 We are initially building the system with Allegrograph as the base TripleStore so some of their terminology may get used below. Such as the Allegrograph term “repository” which is a term for a separate Triple Store.
 
 ## Core Triple Store

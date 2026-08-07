@@ -3,7 +3,6 @@ title: "Dialog Mapping"
 confluence_id: 2400354310
 source: "Dialog-Mapping_2400354310.html"
 ---
-
 # IBIS Classes and Relationships
 
 ![](/attachments/2400354310/2400583696.png)

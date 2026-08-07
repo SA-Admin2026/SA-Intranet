@@ -3,7 +3,6 @@ title: "Metric:Consistency - Automated Tests"
 confluence_id: 1225654295
 source: "1225654295.html"
 ---
-
 This page provides automated tests for [Metric: Consistency](/ontology-quality-metrics/metric-consistency/) . See [Metric: Consistency - Assessment Checklist](/ontology-quality-metrics/metric-consistency/metric-consistency---assessment-checklist/) for overall approach to evaluation. Note that most consistency tests, and certainly the more interesting ones, require manual inspection.
 
 Note also that these are *example* tests. Given the breadth of the consistency metric, it is not practical to provide a complete set of tests.

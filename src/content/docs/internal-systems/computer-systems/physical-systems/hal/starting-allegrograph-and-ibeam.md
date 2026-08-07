@@ -3,9 +3,6 @@ title: "Starting AllegroGraph and iBeam"
 confluence_id: 234061839
 source: Starting-AllegroGraph-and-iBeam_234061839.html
 ---
-
-# Starting AllegroGraph and iBeam
-
 **Computer**: HAL-9000
 
 **Users**: semartsdev, monolith

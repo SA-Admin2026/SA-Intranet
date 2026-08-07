@@ -3,7 +3,6 @@ title: "StarDog"
 confluence_id: 8126467
 source: "StarDog_8126467.html"
 ---
-
 ## 2016-03-2 Telecon with Kendal Clark & Steve Bastini
 
 Had telecon with Kendal Clark, went through short 11 slide deck,much Q&A..

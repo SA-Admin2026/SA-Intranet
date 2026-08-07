@@ -3,9 +3,6 @@ title: "An OWL Editor by Semantic Arts"
 confluence_id: 2371452929
 source: An-OWL-Editor-by-Semantic-Arts_2371452929.html
 ---
-
-# An OWL Editor by Semantic Arts
-
 Protégé is one of only a few OWL editors and ontology design tools available. Most of us use Protégé not because we love it, but because the alternatives are generally worse. TopBraid EDG does not support OWL inferencing, and is far from free. Others are in various states of decay. See for yourself: <https://www.w3.org/wiki/Ontology_editors>
 
 We (Doug and Peter) would like to propose a Semantic Arts project to create an OWL editor and ontology development environment. We are soliciting your input on features. Here is our starter list:

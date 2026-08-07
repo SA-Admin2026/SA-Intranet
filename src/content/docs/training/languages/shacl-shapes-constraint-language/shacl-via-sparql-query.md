@@ -3,7 +3,6 @@ title: "SHACL via SPARQL Query"
 confluence_id: 754483201
 source: "SHACL-via-SPARQL-Query_754483201.html"
 ---
-
 From Boris:
 
 Since someone (Dan?) requested that I capture the material I presented this morning regarding SHACL validation, here are the steps:

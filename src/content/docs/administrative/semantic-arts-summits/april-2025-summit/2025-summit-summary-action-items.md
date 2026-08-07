@@ -3,9 +3,6 @@ title: "2025 Summit Summary & Action Items"
 confluence_id: 2864087120
 source: 2864087120.html
 ---
-
-# 2025 Summit Summary & Action Items
-
 ## Monday (Optional Day)
 
 **Session 1: Productized Offering**

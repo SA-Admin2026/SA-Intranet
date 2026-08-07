@@ -3,7 +3,6 @@ title: "Spark Instructions & Best Practices"
 confluence_id: 2503868420
 source: "2503868420.html"
 ---
-
 Many of these tasks are going to require administrative visibility from the developers, so contact them if you can’t see certain options listed below. This is also changing rapidly right now during development so instructions may not be exact.
 
 Another important Spark reminder is that you never want to mess with something that affects a “closed” pay period. This means most changes to rates, positions, projects, etc should only affect dates moving forward and not into the past.

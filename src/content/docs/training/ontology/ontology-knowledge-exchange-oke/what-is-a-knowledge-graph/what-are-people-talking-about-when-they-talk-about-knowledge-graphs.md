@@ -3,7 +3,6 @@ title: "What are People Talking About When They Talk About Knowledge Graphs?"
 confluence_id: 2385838088
 source: "2385838088.html"
 ---
-
 Blog post
 
 Suggestions in red by JT.

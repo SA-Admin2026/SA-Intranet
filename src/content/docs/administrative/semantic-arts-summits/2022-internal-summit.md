@@ -3,9 +3,6 @@ title: "2022 Internal Summit"
 confluence_id: 2237267976
 source: 2022-Internal-Summit_2237267976.html
 ---
-
-# 2022 Internal Summit
-
 **You can reach JT at (970) 218-2250 if you have any questions that need a quick response!!**
 
 # Agenda

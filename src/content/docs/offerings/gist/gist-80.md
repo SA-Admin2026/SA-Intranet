@@ -3,9 +3,6 @@ title: "gist 8.0"
 confluence_id: 127860737
 source: gist-8.0_127860737.html
 ---
-
-# gist 8.0
-
 This page is a place to collect ideas for what we should do for a next major release.
 
 1. be consistent in all property naming.

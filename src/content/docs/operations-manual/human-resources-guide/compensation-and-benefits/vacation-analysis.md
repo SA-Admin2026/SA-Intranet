@@ -3,7 +3,6 @@ title: "Vacation Analysis"
 confluence_id: 2254176257
 source: "Vacation-Analysis_2254176257.html"
 ---
-
 Frequency: Monthly
 
 Box\Semantic Arts Files\Human Resources\PayAndBenefits\TimeOff

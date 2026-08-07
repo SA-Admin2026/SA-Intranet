@@ -3,7 +3,6 @@ title: "Ontologist Onboarding Documentation"
 confluence_id: 2172321793
 source: "Ontologist-Onboarding-Documentation_2172321793.html"
 ---
-
 **Terms to Know**:
 
 - *Ontology* - Some debate on precise definition but it is a means to describe not only what something is but how it relates to something else. It is machine and human readable. “A model built in OWL.” “A branch in metaphysics dealing with the state of being.” “a model that represents some subject matter that you care about. It communicates what kinds of things there are and how they are related to each other in a way that supports automated reasoning.” “Triples representing the subject matter.”

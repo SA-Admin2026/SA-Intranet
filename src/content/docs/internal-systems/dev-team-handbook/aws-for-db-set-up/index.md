@@ -3,10 +3,7 @@ title: "AWS for D&B Set up"
 confluence_id: 195592193
 source: 195592193.html
 ---
-
-# AWS for D&B Set up
-
-This is Set up for running go here [AWS running lambdas for D&B](aws-running-lambdas-for-db/README.md)
+This is Set up for running go here [AWS running lambdas for D&B](aws-running-lambdas-for-db/)
 
 I have now started over, as can't get anything to work
 
@@ -231,6 +228,6 @@ To get to buckets
 
 ## In this section
 
-- [AWS running lambdas for D&B](aws-running-lambdas-for-db/README.md)
+- [AWS running lambdas for D&B](aws-running-lambdas-for-db/)
 
 <!-- section-nav:end -->

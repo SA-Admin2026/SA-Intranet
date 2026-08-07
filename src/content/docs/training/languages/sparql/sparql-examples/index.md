@@ -3,7 +3,6 @@ title: "SPARQL Examples"
 confluence_id: 1474695
 source: "SPARQL-Examples_1474695.html"
 ---
-
 # Split an arbitrary IRI into its namespace and local name.
 
 ```

@@ -3,9 +3,6 @@ title: "gist Extension Management and Development"
 confluence_id: 2397274126
 source: gist-Extension-Management-and-Development_2397274126.html
 ---
-
-# gist Extension Management and Development
-
 This page provides documentation on how to set up and maintain a gist extension (“sub-gist”) GitHub repository. Many of these instructions also apply to other Semantic Arts-owned ontologies that are not gist extensions, such as the [versioning](https://github.com/semanticarts/versioning-ontology) and [operators](https://github.com/semanticarts/operators-ontology) ontologies.
 
 - [Sub-gist Inventory](#gistExtensionManagementandDevelopment-Sub-gistInventory)
@@ -394,9 +391,9 @@ actions:
 - action: "copy"
   message: "Copying readme."
   source: "README.md"
-  target: "{output}/README.md"
+  target: "{output}/"
 - action: "markdown"
   message: "Formatting readme."
-  source: "{output}/README.md"
+  source: "{output}/"
   target: "{output}/README.html"
 ```

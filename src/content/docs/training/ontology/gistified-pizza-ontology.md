@@ -3,7 +3,6 @@ title: "gistified Pizza Ontology"
 confluence_id: 2636185604
 source: "gistified-Pizza-Ontology_2636185604.html"
 ---
-
 I [Dave] doodled around with this a bit over breakfast.
 
 a) it can be pretty simple

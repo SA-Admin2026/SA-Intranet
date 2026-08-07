@@ -3,9 +3,6 @@ title: "DCAO & Related Ontologies"
 confluence_id: 745799681
 source: 745799681.html
 ---
-
-# DCAO & Related Ontologies
-
 Discussion & Development of Ontology requirements of a/our Data Centric Architecture
 
 ## Categories of Information

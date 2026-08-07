@@ -3,7 +3,6 @@ title: "Knowledge Graph - Training Materials"
 confluence_id: 2197225473
 source: "Knowledge-Graph---Training-Materials_2197225473.html"
 ---
-
 | **Resource** | **Description** |
 | --- | --- |
 | <https://www.youtube.com/playlist?list=PLDhh0lALedc5paY4N3NRZ3j_ui9foL7Qc> | Playlist of videos from a 2021 Stanford seminar on knowledge graphs. Course details/schedule included here: <https://web.stanford.edu/class/cs520/>  Days 3 and 4 are the most interesting. |

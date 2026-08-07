@@ -3,7 +3,6 @@ title: "Data-Centric Architecture for 2022 Internally"
 confluence_id: 2215182341
 source: "Data-Centric-Architecture-for-2022-Internally_2215182341.html"
 ---
-
 We are planning on acquiring an architecture to finish our the “eating our own dog food” build of our internal system, and possible offer it to other professional services firms.
 
 This page is a working paper to narrow down the options.
@@ -109,7 +108,7 @@ Seems like a bit of a do-it-yourself set of tools, but a lot of power.
 
 Clone and deploy
 
-<https://github.com/wikimedia/wikidata-query-gui/blob/master/README.md>
+<https://github.com/wikimedia/wikidata-query-gui/blob/master/>
 
 Uche Ogbuji’s take
 

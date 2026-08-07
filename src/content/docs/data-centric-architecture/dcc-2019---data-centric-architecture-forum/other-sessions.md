@@ -3,9 +3,6 @@ title: "Other Sessions"
 confluence_id: 679116841
 source: Other-Sessions_679116841.html
 ---
-
-# Other Sessions
-
 Some sessions did not have as many notes, so combined here on same page. Also note Mark Ouska's notes are embedded, and he took notes on the sessions where we didn't have the Lacibus meeting room up yet.
 
 ## Notes

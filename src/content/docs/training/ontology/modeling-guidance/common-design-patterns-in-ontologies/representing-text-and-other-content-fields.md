@@ -3,7 +3,6 @@ title: "Representing Text and Other Content Fields"
 confluence_id: 10321949
 source: "Representing-Text-and-Other-Content-Fields_10321949.html"
 ---
-
 The question often arises: should a text field be represented:
 
 1. as a string valued data property

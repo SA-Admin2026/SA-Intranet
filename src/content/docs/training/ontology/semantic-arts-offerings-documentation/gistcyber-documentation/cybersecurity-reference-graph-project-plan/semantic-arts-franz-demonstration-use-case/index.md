@@ -3,7 +3,6 @@ title: "Semantic Arts & Franz Demonstration Use Case"
 confluence_id: 2885582852
 source: "2885582852.html"
 ---
-
 # Why?
 
 Business value is manifested when business processes are improved. The value is that things get done more accurately and efficiently. That value is not evidenced until decision makers can see it happen.  

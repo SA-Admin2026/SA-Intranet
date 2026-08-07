@@ -3,9 +3,6 @@ title: "Semantic Arts File Storage"
 confluence_id: 2329083905
 source: Semantic-Arts-File-Storage_2329083905.html
 ---
-
-# Semantic Arts File Storage
-
 Document and file storage for internal Semantic Arts work is divided into two areas: Confluence and SharePoint.
 
 **Confluence** is where you are! Before creating anything new, look around to see if an existing page already matches what you are looking for. We are working on organizing this, but in the meantime you can always use the search feature to try and look for something specific.

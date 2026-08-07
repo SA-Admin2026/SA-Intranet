@@ -3,9 +3,6 @@ title: "Sample Interview Questions"
 confluence_id: 2621505540
 source: Sample-Interview-Questions_2621505540.html
 ---
-
-# Sample Interview Questions
-
 ## Background Questions
 
 - Tell me about how you understand this role, why it interests you, and how your background qualifies you for it.

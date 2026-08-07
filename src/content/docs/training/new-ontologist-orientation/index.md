@@ -3,7 +3,6 @@ title: "New Ontologist Orientation"
 confluence_id: 109838343
 source: "New-Ontologist-Orientation_109838343.html"
 ---
-
 If you are joining the team as an ontologist, there are a few specific resources you should know about.
 
 - [Download and Install](#NewOntologistOrientation-DownloadandInstall)

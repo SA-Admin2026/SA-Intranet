@@ -3,7 +3,6 @@ title: "Labeled Property Graph Databases (LPG)"
 confluence_id: 3013410820
 source: "3013410820.html"
 ---
-
 ### Vendors (examples)
 
 - Neo4J

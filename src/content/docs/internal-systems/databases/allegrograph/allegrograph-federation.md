@@ -3,9 +3,6 @@ title: "Allegrograph Federation"
 confluence_id: 49381540
 source: Allegrograph-Federation_49381540.html
 ---
-
-# Allegrograph Federation
-
 - [AllegroGraph Federation:](#AllegrographFederation-AllegroGraphFederation:)
   - [Defining an AllegroGraph Federation:](#AllegrographFederation-DefininganAllegroGraphFederation:)
   - [How AllegroGraph Federation processes queries:](#AllegrographFederation-HowAllegroGraphFederationprocessesqueries:)

@@ -3,7 +3,6 @@ title: "Weekly Operations Report"
 confluence_id: 2546991107
 source: "Weekly-Operations-Report_2546991107.html"
 ---
-
 Location: C:\Users\jmetc\Box\Semantic Arts Files\InternalSystems\Practice Management
 
 Each week, I prepare a report for Dave regarding business operations. A few notes below

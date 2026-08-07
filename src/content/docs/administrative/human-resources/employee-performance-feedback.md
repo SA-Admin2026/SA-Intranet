@@ -3,9 +3,6 @@ title: "Employee Performance Feedback"
 confluence_id: 2996207617
 source: Employee-Performance-Feedback_2996207617.html
 ---
-
-# Employee Performance Feedback
-
 At Semantic Arts, we want to build a culture where feedback—both positive and constructive—is shared openly and with good intent. That means developing the skills to receive feedback without defensiveness, and to give feedback in a way that’s respectful, direct, and genuinely helpful.
 
 To support that, we’ve put in place some processes for sharing feedback within project teams.

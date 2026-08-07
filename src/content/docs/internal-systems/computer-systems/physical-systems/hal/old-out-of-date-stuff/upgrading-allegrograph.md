@@ -3,9 +3,6 @@ title: "Upgrading AllegroGraph"
 confluence_id: 950365
 source: Upgrading-AllegroGraph_950365.html
 ---
-
-# Upgrading AllegroGraph
-
 1. Login to semartsdev
 2. Backup by copying:
    1. ```

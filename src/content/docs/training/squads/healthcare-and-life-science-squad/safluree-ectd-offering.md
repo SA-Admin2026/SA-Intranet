@@ -3,7 +3,6 @@ title: "SA+Fluree eCTD offering"
 confluence_id: 2992078864
 source: "2992078864.html"
 ---
-
 gistPharma repo: <https://github.com/semanticarts/gistPharma>
 
 gistPharmaLink repo: <https://github.com/semanticarts/gistPharmaLink> - bridge ontologies between gistPharma and Allotrope and IDMP-O

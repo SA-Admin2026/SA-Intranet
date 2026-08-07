@@ -3,7 +3,6 @@ title: "Graph technology analysis reports"
 confluence_id: 3013541910
 source: "Graph-technology-analysis-reports_3013541910.html"
 ---
-
 On this page and its subpages we can accumulate specific graph technology solutions analysis reports for everyone’s reference.
 
 ![(blue star)](https://semarts.atlassian.net/wiki/s/-1952328697/6452/6bb60197f21c6a3e3b014db69710f82b49bad821/_/images/icons/emoticons/72/2757.png)As technology solutions evolve all the time, these findings must be dated.

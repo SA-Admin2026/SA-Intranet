@@ -3,7 +3,6 @@ title: "Protege User Mailing List"
 confluence_id: 3112973
 source: "Protege-User-Mailing-List_3112973.html"
 ---
-
 In case any one else forgets like I did, the way to post to the Protege list is
 
 [protege-user@lists.stanford.edu](mailto:protege-user@lists.stanford.edu)

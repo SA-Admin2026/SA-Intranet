@@ -3,7 +3,6 @@ title: "What is a Knowledge Graph?"
 confluence_id: 2381348868
 source: "2381348868.html"
 ---
-
 Followup Teams discussion from Ontology Knowledge Exchange meeting 2023-04-11.
 
 > Mark W:

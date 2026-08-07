@@ -3,9 +3,6 @@ title: "Semantic Arts Vision / Mission Notes"
 confluence_id: 2248736772
 source: 2248736772.html
 ---
-
-# Semantic Arts Vision / Mission Notes
-
 ### Original
 
 Most companies solve their information systems problems by implementing application systems (payroll, inventory, customer relations etc).  By the time firms get very large they have thousands of these application systems.  Each is its own data silo.  Putting Humpty Dumpty back together consumes most of the IT resources of most medium to large firms.  Semantic Arts helps clients reverse this process, by focusing first on designing a single simple core data model.  Then we help clients migrate data and functionality to this core model.

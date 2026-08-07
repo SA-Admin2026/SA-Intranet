@@ -3,7 +3,6 @@ title: "How To Write Mo-Better Case Studies"
 confluence_id: 2395242508
 source: 2395242508.html
 ---
-
 # How To Write "Mo-Better" Case Studies
 
 ## Why?

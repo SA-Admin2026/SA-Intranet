@@ -3,9 +3,6 @@ title: "Dev Team Handbook"
 confluence_id: 24739851
 source: Dev-Team-Handbook_24739851.html
 ---
-
-# Dev Team Handbook
-
 ## **Basic Basics**
 
 **WiFi –** Our network is Semantic Arts Internal. The password is MtKXVH2+  
@@ -183,9 +180,9 @@ Eventually we will rewrite this as a flask app either hooked up to a database li
 
 ## In this section
 
-- [AWS for D&B Set up](aws-for-db-set-up/README.md)
-- [Cronjob](cronjob/README.md)
+- [AWS for D&B Set up](aws-for-db-set-up/)
+- [Cronjob](cronjob/)
 - [Deployment](deployment.md)
-- [Fabric Install](fabric-install/README.md)
+- [Fabric Install](fabric-install/)
 
 <!-- section-nav:end -->

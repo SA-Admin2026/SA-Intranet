@@ -3,7 +3,6 @@ title: "GraphQL"
 confluence_id: 738623592
 source: "GraphQL_738623592.html"
 ---
-
 If you prefer to consume your introduction as video as opposed to reading a spec, [Introduction to GraphQL](https://www.youtube.com/watch?v=v-JC7TAr4mQ) does a pretty good job.
 
 NOTE: There is a lot of junk, start watching at 17:00. The whole video is 2h 14 min long. It's hands-on, getting you to follow along and use the tooling.

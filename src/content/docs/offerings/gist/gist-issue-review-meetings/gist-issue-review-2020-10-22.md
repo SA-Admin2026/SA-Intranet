@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-10-22"
 confluence_id: 1298956302
 source: gist-Issue-Review-2020-10-22_1298956302.html
 ---
-
-# gist Issue Review 2020-10-22
-
 **Attending:** Rebecca, Michael, Boris, MarkW, Dalia, Scott
 
 # Agenda and Notes

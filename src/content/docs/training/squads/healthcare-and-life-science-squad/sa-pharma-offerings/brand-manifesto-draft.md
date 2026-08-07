@@ -3,7 +3,6 @@ title: "Brand Manifesto [Draft]"
 confluence_id: 2992898050
 source: "2992898050.html"
 ---
-
 Just for transparency, the development of this document leveraged Generative AI.
 
 **Our Brand Manifesto: Accelerating Target Identification with Knowledge Graphs**

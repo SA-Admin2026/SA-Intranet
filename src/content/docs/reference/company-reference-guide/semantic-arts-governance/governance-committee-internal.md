@@ -3,9 +3,6 @@ title: "Governance Committee (Internal)"
 confluence_id: 2967339010
 source: 2967339010.html
 ---
-
-# Governance Committee (Internal)
-
 This page is open only to current members of the governance committee for use in internal communications and notes.
 
 **Question from JT - should I include Mark and Dave as those with visibility here?**

@@ -3,9 +3,6 @@ title: "GistCyber Competitive Analysis"
 confluence_id: 3263201281
 source: GistCyber-Competitive-Analysis_3263201281.html
 ---
-
-# GistCyber Competitive Analysis
-
 Direct Competitor Identification (similar targets/products):
 
 - An ontology of information security ([Almut Herzog](https://go.gale.com/ps/advancedSearch.do?method=doSearch&searchType=AdvancedSearchForm&searchMethod=subject+click&userGroupName=anon%7E43a1b615&inputFieldNames[0]=AU&prodId=AONE&inputFieldValues[0]=%22Almut+Herzog%22), [Nahid Shahmehri](https://go.gale.com/ps/advancedSearch.do?method=doSearch&searchType=AdvancedSearchForm&searchMethod=subject+click&userGroupName=anon%7E43a1b615&inputFieldNames[0]=AU&prodId=AONE&inputFieldValues[0]=%22Nahid+Shahmehri%22) and [Claudiu Duma](https://go.gale.com/ps/advancedSearch.do?method=doSearch&searchType=AdvancedSearchForm&searchMethod=subject+click&userGroupName=anon%7E43a1b615&inputFieldNames[0]=AU&prodId=AONE&inputFieldValues[0]=%22Claudiu+Duma%22), 2007): [https://go.gale.com/ps/i.do?id=GALE|A172249415&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=19301650&p=AONE&sw=w&userGroupName=anon~43a1b615&aty=open-web-entry](https://go.gale.com/ps/i.do?id=GALE%7CA172249415&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=19301650&p=AONE&sw=w&userGroupName=anon%7E43a1b615&aty=open-web-entry)

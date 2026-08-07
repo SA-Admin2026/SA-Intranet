@@ -3,7 +3,6 @@ title: "Knowlege Graphs, Knowledge Bases"
 confluence_id: 669843497
 source: "Knowlege-Graphs%2C-Knowledge-Bases_669843497.html"
 ---
-
 What is the difference between an **Ontology**, a **Knowledge Base**, and a **Knowledge Graph**?
 
 - An ontology is the definition of the domain.  It can be compared to a database schema.

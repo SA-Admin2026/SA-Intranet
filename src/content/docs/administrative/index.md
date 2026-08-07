@@ -1,7 +1,6 @@
 ---
 title: Administrative
 ---
-
 HR, marketing & sales, company reference, and firm summits.
 
 - [Company Reference Guide](/administrative/company-reference-guide/)

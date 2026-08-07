@@ -3,9 +3,6 @@ title: "Firewall on WALL-E"
 confluence_id: 777027683
 source: Firewall-on-WALL-E_777027683.html
 ---
-
-# Firewall on WALL-E
-
 The system has a firewall installed on it called “firewalld”. Here are some resources:
 
 - [How to configure firewall | DigitalOcean](https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-centos-7-servers)

@@ -3,9 +3,6 @@ title: "Web Sites"
 confluence_id: 1474659
 source: Web-Sites_1474659.html
 ---
-
-# Web Sites
-
 ## SubPages
 
 ## Websites Hosted by Semantic Arts

@@ -3,9 +3,6 @@ title: "March 2023 Summit Agenda"
 confluence_id: 2351824900
 source: March-2023-Summit-Agenda_2351824900.html
 ---
-
-# March 2023 Summit Agenda
-
 All sessions to be held in the Marriott meeting rooms on the 1st floor.
 
 **No food will be served** - coffee/tea/water will be available with gaps mid-day to go get lunch at a location of your choosing. Eat breakfast before arriving at 9:00 for the day

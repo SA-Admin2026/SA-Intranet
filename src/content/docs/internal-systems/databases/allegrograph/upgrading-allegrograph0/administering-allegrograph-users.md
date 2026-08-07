@@ -3,9 +3,6 @@ title: "Administering Allegrograph users"
 confluence_id: 103448598
 source: Administering-Allegrograph-users_103448598.html
 ---
-
-# Administering Allegrograph users
-
 (you likely have to be a super user to do this)
 
 Go into admin users

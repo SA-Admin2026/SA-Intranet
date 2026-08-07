@@ -3,7 +3,6 @@ title: "Payroll"
 confluence_id: 2254077953
 source: "Payroll_2254077953.html"
 ---
-
 [![](https://semarts.atlassian.net/wiki/download/thumbnails/2254077953/2022_Tracking_Spreadsheet.xlsx?version=1&modificationDate=1657834869887&cacheVersion=1&api=v2&viewType=fileMacro)](/attachments/2254077953/2261549070.xlsx)[![](https://semarts.atlassian.net/wiki/download/thumbnails/2254077953/Payroll%20Mapping%20(1).pdf?version=1&modificationDate=1656448437473&cacheVersion=1&api=v2&viewType=fileMacro)](/attachments/2254077953/2256470017.pdf)
 
 Frequency: Every 4 Weeks

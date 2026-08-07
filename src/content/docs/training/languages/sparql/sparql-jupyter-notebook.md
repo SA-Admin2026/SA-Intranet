@@ -3,7 +3,6 @@ title: "SPARQL Jupyter Notebook"
 confluence_id: 762740742
 source: "SPARQL-Jupyter-Notebook_762740742.html"
 ---
-
 This page explains how to get set up to use a SPARQL Jupyter Notebook.
 
 # Introduction

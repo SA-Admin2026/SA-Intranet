@@ -3,9 +3,6 @@ title: "SA Norms"
 confluence_id: 3029303298
 source: SA-Norms_3029303298.html
 ---
-
-# SA Norms
-
 The goal of this page is to document some things that aren’t quite policies, but norms around how we work at Semantic Arts. Suggestions to include here should be routed to [office@semanticarts.com](mailto:office@semanticarts.com).
 
 ## Conflict Resolution

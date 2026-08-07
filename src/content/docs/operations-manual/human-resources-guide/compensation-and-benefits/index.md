@@ -3,7 +3,6 @@ title: "Compensation and Benefits"
 confluence_id: 2253946881
 source: "Compensation-and-Benefits_2253946881.html"
 ---
-
 ## In this section
 
 - [Benefits](/human-resources-guide/compensation-and-benefits/benefits/)

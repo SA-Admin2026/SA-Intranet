@@ -3,9 +3,6 @@ title: "gistCyber"
 confluence_id: 3256975361
 source: gistCyber_3256975361.html
 ---
-
-# gistCyber
-
 - [Introduction](#gistCyber-Introduction)
 - [Key Concepts](#gistCyber-KeyConcepts)
 - [Repository Links](#gistCyber-RepositoryLinks)
@@ -43,11 +40,11 @@ A competitor analysis can be found [here](gistcyber-competitive-analysis.md).
 
 ## In this section
 
-- [gistCyber Modeling Patterns](gistcyber-modeling-patterns/README.md)
+- [gistCyber Modeling Patterns](gistcyber-modeling-patterns/)
 - [GistCyber Competitive Analysis](gistcyber-competitive-analysis.md)
 - [Related GitHub Repositories](related-github-repositories.md)
 - [Primary Transforms of gistCyber](primary-transforms-of-gistcyber.md)
 - [Shortcomings of gistCyber](shortcomings-of-gistcyber.md)
-- [Vocabulary Mapping](vocabulary-mapping/README.md)
+- [Vocabulary Mapping](vocabulary-mapping/)
 
 <!-- section-nav:end -->

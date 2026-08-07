@@ -3,7 +3,6 @@ title: "Class-Instance Mirror pattern - to avoid punning"
 confluence_id: 2455273550
 source: "2455273550.html"
 ---
-
 **issue**: The double use of identifiers as both datatypes and class identifiers is not allowed by OWL2-DL, and there are problems in using the same identifier for individuals and class identifiers in other description logics. This double use is called “punning”.
 
 Original references:

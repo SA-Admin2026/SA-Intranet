@@ -3,9 +3,6 @@ title: "Allegrograph - Copy Repository"
 confluence_id: 759595041
 source: Allegrograph---Copy-Repository_759595041.html
 ---
-
-# Allegrograph - Copy Repository
-
 Use the agtool like this:
 
 `/home/semartsdev/Programs/AG-6.4.6/bin/agtool archive backup demo-catalog:bpelakh-regions - | /home/semartsdev/Programs/AG-6.4.6/bin/agtool archive --newuuid restore platts:platts-demo1 -`

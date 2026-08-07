@@ -3,9 +3,6 @@ title: "Shortcomings of gistCyber"
 confluence_id: 3277619202
 source: Shortcomings-of-gistCyber_3277619202.html
 ---
-
-# Shortcomings of gistCyber
-
 # Past Wisdom
 
 Peter Neorr is a project manager at PNNL today. He told me yesterday he was leaning into LLM technologies. That’s cool, but not why I’m bringing him up … when he was a developer at DarkLight he said something profound that has stuck with me:  

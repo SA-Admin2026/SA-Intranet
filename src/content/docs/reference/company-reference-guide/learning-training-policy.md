@@ -3,9 +3,6 @@ title: "Learning & Training Policy"
 confluence_id: 2250833938
 source: 2250833938.html
 ---
-
-# Learning & Training Policy
-
 ## Semantic Arts Learning/Training Policy
 
 We are committed to the idea of bringing lifelong learning to bear on our engagements.  Also, we recognize speaking and presenting at conferences and webinars is a key part of our getting our thought leadership out there.

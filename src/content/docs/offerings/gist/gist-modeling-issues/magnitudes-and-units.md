@@ -3,9 +3,6 @@ title: "Magnitudes and Units"
 confluence_id: 4194369
 source: Magnitudes-and-Units_4194369.html
 ---
-
-# Magnitudes and Units
-
 ## Do we need lots of subclasses of Magnitude?
 
 **Reply by DMc**:

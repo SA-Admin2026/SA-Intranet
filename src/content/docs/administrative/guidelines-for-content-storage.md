@@ -3,9 +3,6 @@ title: "Guidelines for Content Storage"
 confluence_id: 772735137
 source: Guidelines-for-Content-Storage_772735137.html
 ---
-
-# Guidelines for Content Storage
-
 Alt Labels: Draft guidelines/suggestions for adding/modifying content on the SA Wiki,
 
 We generate, harvest and receive a great deal of content. This page is about where we should put it, by type to maximize the odds that someone can find it when needed and minimize the risk of disclosing it.

@@ -3,7 +3,6 @@ title: "Tom Sawyer Software"
 confluence_id: 2289664001
 source: "Tom-Sawyer-Software_2289664001.html"
 ---
-
 *Recording of the demo is saved here: Z:\_SemanticArts\InternalSystems\Practice Management\Staff Meeting Recordings\2022*
 
 # General Impressions

@@ -3,7 +3,6 @@ title: "ETL - Loading / Accessing RDF"
 confluence_id: 2208890885
 source: "2208890885.html"
 ---
-
 ## Tools:
 
 - TARQL - [TARQL](/languages/sparql/tarql-sparql-for-tables/):

@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-12-10"
 confluence_id: 1457422345
 source: gist-Issue-Review-2020-12-10_1457422345.html
 ---
-
-# gist Issue Review 2020-12-10
-
 **Attending:** MarkW, Meika, Boris, Dan, Dalia, Michael, Scott, Jamie
 
 **Absent:** Rebecca

@@ -3,7 +3,6 @@ title: "Friday Speakers"
 confluence_id: 2278686758
 source: "Friday-Speakers_2278686758.html"
 ---
-
 Often, companies or individuals will be brought up for presenting to the team. This is best done on a Friday right after the sales staff meeting. In order to be considered, staff is supposed to:
 
 1. Send JT an email describing the talk and why you think the staff would be interested

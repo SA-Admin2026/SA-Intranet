@@ -3,7 +3,6 @@ title: "Modeling Guidance"
 confluence_id: 550043657
 source: "Modeling-Guidance_550043657.html"
 ---
-
 This parent page is designed to capture general modeling guidance. Note there are child pages specific to Semantic Arts-Specific topics, such as the [C-Box](https://semarts.atlassian.net/wiki/spaces/TRR/pages/118063105/The+CBox), "[dictionary patterns](https://semarts.atlassian.net/wiki/spaces/TRR/pages/10321947/Common+Design+Patterns+in+Ontologies)", etc.
 
 - [Reification / N-ary Relations](#ModelingGuidance-Reification/N-aryRelations)

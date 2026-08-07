@@ -3,9 +3,6 @@ title: "AllegroGraph"
 confluence_id: 1474638
 source: AllegroGraph_1474638.html
 ---
-
-# AllegroGraph
-
 **[agraph.semanticarts.com](http://agraph.semanticarts.com)**
 
 ### Documentation
@@ -34,6 +31,6 @@ I was at Broadridge in mid October 2018 for Jans Aasmans presentation.  Several
 ## In this section
 
 - [Allegrograph Federation](allegrograph-federation.md)
-- [Upgrading AllegroGraph0](upgrading-allegrograph0/README.md)
+- [Upgrading AllegroGraph0](upgrading-allegrograph0/)
 
 <!-- section-nav:end -->

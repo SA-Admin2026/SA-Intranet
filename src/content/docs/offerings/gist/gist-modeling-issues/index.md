@@ -3,9 +3,6 @@ title: "gist Modeling Issues"
 confluence_id: 5767201
 source: gist-Modeling-Issues_5767201.html
 ---
-
-# gist Modeling Issues
-
 - [Addresses](addresses.md)
 - [Category](category.md)
 - [ID](id.md)

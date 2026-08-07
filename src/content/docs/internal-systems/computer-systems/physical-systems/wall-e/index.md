@@ -3,9 +3,6 @@ title: "WALL-E"
 confluence_id: 777060365
 source: WALL-E_777060365.html
 ---
-
-# WALL-E
-
 External IP address: none yet, it will be taking over for HAL at: 74.93.230.113
 
 Internal IP address: 192.168.2.39

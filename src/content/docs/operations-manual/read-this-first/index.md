@@ -3,7 +3,6 @@ title: "READ THIS FIRST"
 confluence_id: 2279243783
 source: "READ-THIS-FIRST_2279243783.html"
 ---
-
 ## Introduction
 
 Welcome to the operations & management manual for Semantic Arts. While this guide cannot be all-encompassing, the goal is to distill processes and procedures into one central repository to enable efficiency and accuracy in each jurisdiction.

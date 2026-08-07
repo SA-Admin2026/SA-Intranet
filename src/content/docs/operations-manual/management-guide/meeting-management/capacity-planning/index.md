@@ -3,7 +3,6 @@ title: "Capacity Planning"
 confluence_id: 2426929153
 source: "Capacity-Planning_2426929153.html"
 ---
-
 How the Semantic Arts Staff Plan Works, and How We Plan to Enhance it in the DCA
 
 # Intro

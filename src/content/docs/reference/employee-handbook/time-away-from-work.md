@@ -3,7 +3,6 @@ title: "Time Away From Work"
 sidebar:
   order: 6
 ---
-
 > Part of the **[Employee Handbook](../)**. Authoritative version: [download the full PDF](/reference/attachments/handbook/SA-Employee-Handbook-2026.pdf).
 
 ## Time Away From Work

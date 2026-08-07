@@ -3,7 +3,6 @@ title: "Business Operations Manual"
 confluence_id: 2251849755
 source: "Business-Operations-Manual_2251849755.html"
 ---
-
 ## In this section
 
 - [Accounting Guide](/accounting-guide/)

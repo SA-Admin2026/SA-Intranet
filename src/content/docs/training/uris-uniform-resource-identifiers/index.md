@@ -3,7 +3,6 @@ title: "URIs (Uniform Resource Identifiers)"
 confluence_id: 523272193
 source: "523272193.html"
 ---
-
 This page contains information about URIs in general.
 
 ## Best Practices & General Recommendations

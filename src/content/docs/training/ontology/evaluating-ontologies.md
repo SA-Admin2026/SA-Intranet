@@ -3,7 +3,6 @@ title: "Evaluating Ontologies"
 confluence_id: 669712446
 source: "Evaluating-Ontologies_669712446.html"
 ---
-
 ## From [*Ontology Evaluation*](https://link.springer.com/chapter/10.1007/978-3-540-92673-3_13) by Denny Vrandecic
 
 - Accuracy (p. 38)

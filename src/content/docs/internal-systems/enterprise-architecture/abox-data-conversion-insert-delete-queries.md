@@ -3,9 +3,6 @@ title: "ABox data conversion Insert-Delete queries"
 confluence_id: 950394
 source: ABox-data-conversion-Insert-Delete-queries_950394.html
 ---
-
-# ABox data conversion Insert-Delete queries
-
 # TBox-ectomy Query
 
 Removes all the Tboxes.  

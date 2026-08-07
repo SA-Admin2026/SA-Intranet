@@ -3,7 +3,6 @@ title: "Policies and Procedures"
 confluence_id: 2254110724
 source: "Policies-and-Procedures_2254110724.html"
 ---
-
 Frequency: At least annual
 
 An HR manager should work to stay on top of local, state, and national laws that change and therefore affect the policies and procedures of Semantic Arts. There may also be internal changes that necessitate revision.

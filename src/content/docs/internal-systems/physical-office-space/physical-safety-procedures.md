@@ -3,9 +3,6 @@ title: "Physical Safety Procedures"
 confluence_id: 2351923213
 source: Physical-Safety-Procedures_2351923213.html
 ---
-
-# Physical Safety Procedures
-
 In order to maintain safety and security onsite within the Opera Galleria, there are some guidelines related to who to call, and when.
 
 The 2nd floor of the Opera Galleria, including staircases, are private property. Individuals not engaged in business on that floor or moving to the parking garage are trespassing.

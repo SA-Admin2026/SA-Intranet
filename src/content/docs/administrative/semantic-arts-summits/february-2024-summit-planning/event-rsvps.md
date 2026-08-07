@@ -3,9 +3,6 @@ title: "Event RSVPs"
 confluence_id: 2505310217
 source: Event-RSVPs_2505310217.html
 ---
-
-# Event RSVPs
-
 I need to gather a list of those planning to attend Axe Throwing, as well as dinner/drinks at the Rio. If you are local, you are welcome to bring spouse/significant other for either of these events. Please indicate below to confirm your attendance
 
 Wednesday, February 21st - Axe Throwing & Food at Chipper’s Lanes

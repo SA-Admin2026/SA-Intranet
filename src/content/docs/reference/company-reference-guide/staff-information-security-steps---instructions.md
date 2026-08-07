@@ -3,9 +3,6 @@ title: "Staff Information Security Steps - Instructions"
 confluence_id: 2368208897
 source: Staff-Information-Security-Steps---Instructions_2368208897.html
 ---
-
-# Staff Information Security Steps - Instructions
-
 - [Encrypting Your Hard Drive](#StaffInformationSecuritySteps-Instructions-EncryptingYourHardDrive)
   - [PC](#StaffInformationSecuritySteps-Instructions-PC)
   - [Mac](#StaffInformationSecuritySteps-Instructions-Mac)

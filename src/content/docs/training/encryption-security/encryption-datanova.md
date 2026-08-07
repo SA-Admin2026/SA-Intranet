@@ -3,7 +3,6 @@ title: "Encryption: Datanova"
 confluence_id: 12451844
 source: "12451844.html"
 ---
-
 From some emails w/ Dr. Sameer Joshi:
 
 *Granular encryption is already implemented [*in their tool suite*].*

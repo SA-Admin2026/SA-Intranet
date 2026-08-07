@@ -3,7 +3,6 @@ title: "gistPharma general development"
 confluence_id: 2991882261
 source: "gistPharma-general-development_2991882261.html"
 ---
-
 gistPharma repo: <https://github.com/semanticarts/gistPharma>
 
 One drive directory: [Pharma](https://datacentric.sharepoint.com/:f:/s/staff/EkjH50P-8eRJhY2odv15824BXOn7bq7T5gMAj_L78tXGNg?e=ncGr83)

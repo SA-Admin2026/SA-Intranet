@@ -3,9 +3,6 @@ title: "DCAF 2021 - Data Centric Architecture forum"
 confluence_id: 1297711109
 source: DCAF-2021---Data-Centric-Architecture-forum_1297711109.html
 ---
-
-# DCAF 2021 - Data Centric Architecture forum
-
 # Panels
 
 ## Panel 1: Getting started with DCA?

@@ -3,7 +3,6 @@ title: "Handling Complaints & Accusations"
 confluence_id: 2254307339
 source: "2254307339.html"
 ---
-
 Frequency: As needed
 
 One role of HR is to provide an open door for employees to come with questions, concerns and complaints. It is essential you provide a non-biased, safe place for a person to share. While no two situations are exactly alike, here are a few guidelines.

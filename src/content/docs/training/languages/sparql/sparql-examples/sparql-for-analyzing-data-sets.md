@@ -3,7 +3,6 @@ title: "SPARQL for Analyzing Data Sets"
 confluence_id: 521437189
 source: "SPARQL-for-Analyzing-Data-Sets_521437189.html"
 ---
-
 Useful SPARQL queries for analyzing data sets.  You can vary the limit to taste.
 
 - 1 [Count type instances in a sample (for large TS)](#SPARQLforAnalyzingDataSets-Counttypeinstancesinasample(forlargeTS))

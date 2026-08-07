@@ -3,7 +3,6 @@ title: "BEWARE: removing dupes across all graphs"
 confluence_id: 223707178
 source: "223707178.html"
 ---
-
 **PUNCH LINE**: removing dupes across all graphs has serious negative consequences. Namely, if you have no idea what duplicate triples are removed from which graphs, then I don’t know of a way to safely swap in a new version of a graph.
 
 **REQUEST:** does anyone have a solution? It is a serious issue for DnB.

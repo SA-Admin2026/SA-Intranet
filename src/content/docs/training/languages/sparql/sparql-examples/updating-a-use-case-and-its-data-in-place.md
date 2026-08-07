@@ -3,7 +3,6 @@ title: "Updating a Use Case and its Data in Place"
 confluence_id: 27688965
 source: "Updating-a-Use-Case-and-its-Data-in-Place_27688965.html"
 ---
-
 Situation: a use case changes by either adding new fields or removing existing fields.
 
 Goal: update the existing data that was created using the old use case so that it matches the current use case.

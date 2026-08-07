@@ -3,7 +3,6 @@ title: "Management Guide"
 confluence_id: 2253127954
 source: "Management-Guide_2253127954.html"
 ---
-
 ## In this section
 
 - [Business Continuity](/management-guide/business-continuity/)

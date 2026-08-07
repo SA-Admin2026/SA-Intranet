@@ -3,7 +3,6 @@ title: "General Accounting - Read First"
 confluence_id: 2282356749
 source: "General-Accounting---Read-First_2282356749.html"
 ---
-
 ## General Notes
 
 This document intends to capture all our accounting procedures, conventions and the like, for the following purposes:

@@ -3,9 +3,6 @@ title: "RDF Shapes for SemArts Enterprise Ontology"
 confluence_id: 950393
 source: RDF-Shapes-for-SemArts-Enterprise-Ontology_950393.html
 ---
-
-# RDF Shapes for SemArts Enterprise Ontology
-
 ## RDF Shapes for SemArts Enterprise Ontology
 
 <TimeCharge> { rdf:type (sa:TimeCharge), sa:consumptionOf ( @<SAEmployee> | @ <SASubContractor> ), sa:consumedToward @<ProjectTask>, gist:actualStart @<TimeInstant>, gist:actualEnd @<TimeInstant>, gist:hasMagnitude @<HourDuration>, gist:occurredAt @<StateRegion>, gist:describedIn @<Text>, gist:recordedOn @<TimeInstant>, gist:directPartOf @<WorkWeek> # this triple added via cron job }

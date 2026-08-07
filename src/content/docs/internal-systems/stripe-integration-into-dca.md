@@ -3,9 +3,6 @@ title: "Stripe Integration Into DCA"
 confluence_id: 1029898245
 source: Stripe-Integration-Into-DCA_1029898245.html
 ---
-
-# Stripe Integration Into DCA
-
 Stripe supports a variety of use cases for payment processing.
 
 Their **Checkout** API is a pre-built, Stripe hosted checkout page. Probably not what we want.

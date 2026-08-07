@@ -97,3 +97,24 @@
 /* Row hover + current-page emphasis, closer to a wiki page tree. */
 .sidebar a:hover { background: var(--sl-color-bg-nav); }
 .sidebar a[aria-current='page'] { font-weight: 700; }
+
+/* ---- Readability: a tighter, denser type scale ----
+   The migrated content read large and spread-out at Starlight's defaults. These
+   trim the body text and heading sizes (via Starlight's theming vars) for a more
+   reference-doc density without touching layout. */
+:root {
+  --sl-text-body: 0.9375rem;   /* ~15px content (was ~16px) */
+  --sl-line-height: 1.6;
+  --sl-text-h1: 1.95rem;
+  --sl-text-h2: 1.45rem;
+  --sl-text-h3: 1.2rem;
+  --sl-text-h4: 1.05rem;
+  --sl-text-h5: 0.95rem;
+  --sl-content-width: 48rem;   /* a touch wider for dense ops tables/text */
+}
+/* Tighten the generous top margin on catalog H2s (set earlier) to match. */
+.sl-markdown-content h2 { margin-top: 2rem; }
+.sl-markdown-content h2:first-of-type { margin-top: 1.25rem; }
+
+/* ---- Wide tables scroll instead of breaking the layout ---- */
+.sl-markdown-content table { display: block; width: max-content; max-width: 100%; overflow-x: auto; }

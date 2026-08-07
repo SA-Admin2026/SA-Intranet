@@ -3,7 +3,6 @@ title: "Favourite Editor and Packages"
 confluence_id: 2873262084
 source: "Favourite-Editor-and-Packages_2873262084.html"
 ---
-
 In the table below please add information about your favourite text editor/s and packages that you might use with that editor (syntax highlighters, SPARQL query tools, etc). If you are reporting on VS Code please right click over the extension in the extensions list and copy the “extension ID” to identify the extension.
 
 | **What is your name?** | **What text editor are you using (separate row for each editor please)?** | **What packages specific to RDF, SHACL, SPARQL, etc do you use with that editor?** | **What is good about this combination?** |

@@ -3,9 +3,6 @@ title: "Comments and Feedback"
 confluence_id: 60456961
 source: Comments-and-Feedback_60456961.html
 ---
-
-# Comments and Feedback
-
 1. The definition of FinancialInstrumentTrade uses the property tradeOf, but that property is not on the class Trade.
 2. AccountPosition defined as: "The balance of a particular asset within a given account, with its history"
    1. According to Investopedia, a position is "the amount of a security, commodity or currency that is owned ... The practice of restating the value of a position based on its current value is called mark-to-market." So a position would be say, "12 shares of APL", but there is currently no property for indicating the count of such things. All there is is Monetary.   But Monetary is about the value of the position, which changes all the time, where as the position itself does not.

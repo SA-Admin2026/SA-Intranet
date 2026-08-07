@@ -3,9 +3,6 @@ title: "Office Supply Purchase Policy"
 confluence_id: 3249373186
 source: Office-Supply-Purchase-Policy_3249373186.html
 ---
-
-# Office Supply Purchase Policy
-
 Given the company’s commitment to remote-first employment, we want to support employees in maintaining a productive work environment and to effectively perform job duties outside of a corporate office.
 
 To that end, we are going to pilot the idea of providing funds towards some home office expenses going forward, with some specific guidelines outlined below:

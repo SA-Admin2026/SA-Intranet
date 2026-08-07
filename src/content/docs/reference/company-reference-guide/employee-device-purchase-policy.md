@@ -3,9 +3,6 @@ title: "Employee Device Purchase Policy"
 confluence_id: 2251227145
 source: Employee-Device-Purchase-Policy_2251227145.html
 ---
-
-# Employee Device Purchase Policy
-
 Semantic Arts, Inc. wants to make it easier for our employees to have the necessary devices to excel in their positions.  As such, the company will purchase a device on the employee’s behalf with the following provisions:
 
 **Policy Provisions**

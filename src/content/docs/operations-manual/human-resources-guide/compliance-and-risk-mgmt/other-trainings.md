@@ -3,7 +3,6 @@ title: "Other Trainings"
 confluence_id: 2254405633
 source: "Other-Trainings_2254405633.html"
 ---
-
 Frequency: As needed
 
 Occasionally, HR should look for ways to offer trainings to employees.

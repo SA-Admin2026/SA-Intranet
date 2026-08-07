@@ -3,7 +3,6 @@ title: "Materializing Triples"
 confluence_id: 60325928
 source: "Materializing-Triples_60325928.html"
 ---
-
 When saving out materialized triples from Protégé, there are some choice points.
 
 1. which inference engine to use

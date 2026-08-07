@@ -3,9 +3,6 @@ title: "Making a template"
 confluence_id: 676823284
 source: Making-a-template_676823284.html
 ---
-
-# Making a template
-
 Give your authors a helping hand by using templates in your documentation space. You will need Space Administrator permissions to create templates.
 
 To create a template:
@@ -22,10 +19,10 @@ Your template will become available in the Create dialog for this space.
 
 - Page:
 
-  [Getting started](/wiki/spaces/dca/pages/676823281/Getting+started)
+  Getting started
 - Page:
 
-  [Making a template](/wiki/spaces/dca/pages/676823284/Making+a+template)
+  Making a template
 
 Useful hint
 

@@ -3,7 +3,6 @@ title: "Getting Started with Stardog"
 confluence_id: 199229441
 source: "Getting-Started-with-Stardog_199229441.html"
 ---
-
 Here's a quick start to using [Stardog](https://www.stardog.com/), a commercial triple store (and more) with a community edition (free).
 
 It comes with a web interface and a command line interface (CLI).  I will describe just using the CLI for now.

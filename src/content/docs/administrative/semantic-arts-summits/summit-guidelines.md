@@ -3,9 +3,6 @@ title: "Summit Guidelines"
 confluence_id: 2324955140
 source: Summit-Guidelines_2324955140.html
 ---
-
-# Summit Guidelines
-
 Please refer to the guidelines below on Semantic Arts Summits. These will help to ensure two things:
 
 1. We can control costs in such a way that it remains feasible for everyone to gather twice a year in Fort Collins as we grow

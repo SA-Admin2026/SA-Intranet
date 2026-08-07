@@ -3,7 +3,6 @@ title: "Verification of Employment Requests"
 confluence_id: 2254077989
 source: "Verification-of-Employment-Requests_2254077989.html"
 ---
-
 Frequency: As needed
 
 Z:\_SemanticArts\HRRecruitingAndSubcontractors\Compliance\Verification of Employment

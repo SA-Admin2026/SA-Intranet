@@ -43,16 +43,89 @@ const SECTIONS = [
   { dir: 'operations', label: 'Operations' },
 ];
 
-// Training keeps the learning-category structure it had as its own site: topics
-// grouped into a handful of categories, all nested under the one Training section.
-// (Everything else is a flat autogenerate.)
-const pretty = (name) =>
-  name
-    .replace(/-{2,}/g, ' ')
-    .replace(/-/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+// ---------------------------------------------------------------------------
+// Sidebar labels. Folder/group labels are derived from the folder's own page
+// title when it has one, else prettified from the slug; leaf links use the
+// page title. We build the tree from the filesystem (rather than Starlight's
+// `autogenerate`) purely so GROUP headings read cleanly — same hierarchy, same
+// pages, just "Human Resources" instead of "human-resources". No structure change.
+// ---------------------------------------------------------------------------
+
+// Domain initialisms to upper-case in any derived label (case-insensitive, plural-aware).
+const ACRONYMS = new Set([
+  'rdf', 'owl', 'shacl', 'sparql', 'sparlq', 'uri', 'url', 'iri', 'aws', 'gcp', 'gdpr', 'api', 'etl',
+  'oke', 'cmc', 'dca', 'dcaf', 'dcc', 'hal', 'db', 'llm', 'ai', 'hr', 'it', 'qb', 'ip', 'sa', 'pdf',
+  'ui', 'ux', 'crm', 'erp', 'sql', 'json', 'yaml', 'html', 'css', 'ssh', 'vpn', 'mfa', 'sso', 'kg',
+  'lpg', 'ci', 'cd', 'nlp', 'ectd', 'bfo', 'oke',
+]);
+// Short words kept lowercase mid-title (never the first word).
+const SMALL = new Set(['a', 'an', 'and', 'as', 'at', 'but', 'by', 'for', 'in', 'of', 'on', 'or', 'the', 'to', 'vs', 'via', 'with']);
+
+// Upper-case any token that is a known acronym (handles a trailing plural 's': uris → URIs).
+const fixAcronyms = (label) =>
+  label.replace(/[A-Za-z]+/g, (w) => {
+    const lw = w.toLowerCase();
+    if (ACRONYMS.has(lw)) return w.toUpperCase();
+    if (lw.endsWith('s') && ACRONYMS.has(lw.slice(0, -1))) return lw.slice(0, -1).toUpperCase() + 's';
+    return w;
+  });
+
+// slug → "Title Case With Small Words Lowercased", then acronym-corrected.
+const prettyLabel = (slug) => {
+  const words = slug.replace(/-{2,}/g, ' ').replace(/-/g, ' ').replace(/\s+/g, ' ').trim().split(' ');
+  const cased = words
+    .map((w, i) => (i > 0 && SMALL.has(w.toLowerCase()) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1)))
+    .join(' ');
+  return fixAcronyms(cased);
+};
+// Back-compat alias (TRAINING_LABELS fallback).
+const pretty = prettyLabel;
+
+// Pull `title:` from a markdown file's frontmatter (best-effort).
+const readTitle = (fileAbs) => {
+  try {
+    const md = fs.readFileSync(fileAbs, 'utf8');
+    const fm = md.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (!fm) return null;
+    const t = fm[1].match(/^title:\s*(.+)$/m);
+    return t ? t[1].trim().replace(/^["']|["']$/g, '') : null;
+  } catch {
+    return null;
+  }
+};
+const folderIndex = (dirAbs) =>
+  ['index.md', 'index.mdx'].map((f) => path.join(dirAbs, f)).find((p) => fs.existsSync(p)) || null;
+// A folder/leaf's label: trust an existing page title (acronym-corrected), else prettify the slug.
+const labelFor = (name, title) => (title ? fixAcronyms(title) : prettyLabel(name));
+
+// Build Starlight sidebar items for the CHILDREN of dirAbs (excludes dirAbs's own index).
+// Folders → collapsible groups (with the folder's landing as the first entry); pages → links.
+function buildItems(dirAbs, urlPrefix) {
+  const entries = fs
+    .readdirSync(dirAbs, { withFileTypes: true })
+    .filter((e) => e.name !== 'attachments' && !e.name.startsWith('.'));
+  const items = [];
+  for (const e of entries) {
+    if (e.isDirectory()) {
+      const g = groupFor(e.name, path.join(dirAbs, e.name), `${urlPrefix}${e.name}/`);
+      if (g.items.length) items.push(g);
+    } else if (/\.mdx?$/.test(e.name) && !/^index\.mdx?$/.test(e.name)) {
+      const slug = e.name.replace(/\.mdx?$/, '');
+      items.push({ label: labelFor(slug, readTitle(path.join(dirAbs, e.name))), link: `${urlPrefix}${slug}/` });
+    }
+  }
+  items.sort((a, b) => a.label.localeCompare(b.label, undefined, { numeric: true }));
+  return items;
+}
+// A collapsible group for one folder: its landing (if any) first, then its children.
+function groupFor(name, dirAbs, urlPrefix) {
+  const idx = folderIndex(dirAbs);
+  const label = labelFor(name, idx ? readTitle(idx) : null);
+  const items = [];
+  if (idx) items.push({ label, link: urlPrefix });
+  items.push(...buildItems(dirAbs, urlPrefix));
+  return { label, collapsed: true, items };
+}
 
 const TRAINING_LABELS = {
   'new-ontologist-orientation': 'New ontologist orientation',
@@ -110,13 +183,15 @@ const TRAINING_CATEGORIES = [
 function trainingSidebarItems() {
   const trainingDir = path.join(DOCS, 'training');
   const has = (dir) => fs.existsSync(path.join(trainingDir, dir));
-  const topicGroup = (dir) => ({
-    label: TRAINING_LABELS[dir] || pretty(dir),
-    collapsed: true,
-    items: [{ autogenerate: { directory: `training/${dir}`, collapsed: true } }],
-  });
+  // Curated category labels stay; the topic's tree is walked for clean group labels.
+  const topicGroup = (dir) => {
+    const g = groupFor(dir, path.join(trainingDir, dir), `/training/${dir}/`);
+    return { ...g, label: TRAINING_LABELS[dir] || g.label };
+  };
   const topicDirs = fs.existsSync(trainingDir)
-    ? fs.readdirSync(trainingDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)
+    ? fs.readdirSync(trainingDir, { withFileTypes: true })
+        .filter((d) => d.isDirectory() && !d.name.startsWith('.'))
+        .map((d) => d.name)
     : [];
   const categorized = new Set(TRAINING_CATEGORIES.flatMap((c) => c.dirs));
   const leftover = topicDirs.filter((d) => !categorized.has(d));
@@ -132,11 +207,15 @@ function trainingSidebarItems() {
 
 // Only surface a sidebar group once its content directory actually exists, so
 // the build stays green while sections are folded in one stage at a time.
-const sidebar = SECTIONS.filter((s) => fs.existsSync(path.join(DOCS, s.dir))).map((s) =>
-  s.dir === 'training'
-    ? { label: s.label, collapsed: true, items: trainingSidebarItems() }
-    : { label: s.label, collapsed: true, items: [{ autogenerate: { directory: s.dir, collapsed: true } }] }
-);
+const sidebar = SECTIONS.filter((s) => fs.existsSync(path.join(DOCS, s.dir))).map((s) => {
+  if (s.dir === 'training') return { label: s.label, collapsed: true, items: trainingSidebarItems() };
+  const dirAbs = path.join(DOCS, s.dir);
+  const idx = folderIndex(dirAbs);
+  const items = [];
+  if (idx) items.push({ label: labelFor(s.label, readTitle(idx)), link: `/${s.dir}/` });
+  items.push(...buildItems(dirAbs, `/${s.dir}/`));
+  return { label: s.label, collapsed: true, items };
+});
 
 // Migrated content links with section-root-absolute hrefs (e.g. the Operations
 // Manual links to `/accounting-guide/…`, written when it was its own site with a

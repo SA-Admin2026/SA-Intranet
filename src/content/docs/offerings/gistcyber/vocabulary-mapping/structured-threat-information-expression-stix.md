@@ -3,9 +3,6 @@ title: "Structured Threat Information Expression (STIX)"
 confluence_id: 3289382914
 source: 3289382914.html
 ---
-
-# Structured Threat Information Expression (STIX)
-
 - [Intro](#StructuredThreatInformationExpression(STIX)-Intro)
 - [Current gistCyber State (updated as of 3/27/2026)](#StructuredThreatInformationExpression(STIX)-CurrentgistCyberState(updatedasof3/27/2026))
   - [gist:StixObject](#StructuredThreatInformationExpression(STIX)-gist:StixObject)

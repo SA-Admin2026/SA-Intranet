@@ -3,7 +3,6 @@ title: "gistBFO Mapping Notes"
 confluence_id: 2830237699
 source: "gistBFO-Mapping-Notes_2830237699.html"
 ---
-
 # Purpose
 
 This page is to capture some of the thought process behind mapping Cyber Threat Intelligence Ontology (CTIO) concepts to gistBFO. A potential end goal is to map the CTIO ontology to CCO, not just BFO. The choice here is to create in gistCyber the equivalent or superclasses to the concept needed in a general/generic cybersecurity domain ontology. Once we have a representation of gistCyber we can extend it with a CTIO.

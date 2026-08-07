@@ -3,7 +3,6 @@ title: "Accounting Guide"
 confluence_id: 2253422603
 source: "Accounting-Guide_2253422603.html"
 ---
-
 ## In this section
 
 - [Conference & Event Accounting](/accounting-guide/conference-and-event-accounting/)

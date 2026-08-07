@@ -3,9 +3,6 @@ title: "Federal Government Sales"
 confluence_id: 2494660609
 source: Federal-Government-Sales_2494660609.html
 ---
-
-# Federal Government Sales
-
 [SAM.gov | Entity Workspace](https://sam.gov/workspace/em/entities/non-federal)
 
 ![image-20240116-183712.png](/administrative/attachments/2494660609/2494234645.png)

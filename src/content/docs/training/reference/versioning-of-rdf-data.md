@@ -3,7 +3,6 @@ title: "Versioning of RDF data"
 confluence_id: 752877575
 source: "Versioning-of-RDF-data_752877575.html"
 ---
-
 ## What others are doing or have proposed:
 
 - R43ples - [paper](https://pdfs.semanticscholar.org/187e/60acfcc687b21c2a8887626b1e28d19f03aa.pdf) - [github](https://github.com/plt-tud/r43ples)

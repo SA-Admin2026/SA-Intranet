@@ -3,7 +3,6 @@ title: "Basic Shell Usage"
 confluence_id: 2330558470
 source: "Basic-Shell-Usage_2330558470.html"
 ---
-
 - [Introduction](#BasicShellUsage-Introduction)
 - [Shell Access](#BasicShellUsage-ShellAccess)
   - [MacOS](#BasicShellUsage-MacOS)

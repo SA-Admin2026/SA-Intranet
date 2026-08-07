@@ -3,7 +3,6 @@ title: "Notes on Competitive Analysis"
 confluence_id: 3000500225
 source: "Notes-on-Competitive-Analysis_3000500225.html"
 ---
-
 There are a few organizations that are going to be evaluated around the pharmaceutical / life science offering we are seeking to develop. Both products and services will be covered to get a richer perspective on the kinds of promises and language is being shared throughout the ecosystem of KG based organizations.
 
 ## Details of the Competitive Analysis

@@ -3,7 +3,6 @@ title: "gistComputing / gistBFO Mapping"
 confluence_id: 2841903108
 source: "2841903108.html"
 ---
-
 # Important Note:
 
 There is a question regarding the ontology import relationships between gistBFO, gistComputing, and gistCyber. We have not decided the criteria for requiring a sub-gist to import gistBFO rather than gist. The thought has been considered that if it is a “domain specific ontology” it should import gistBFO.  

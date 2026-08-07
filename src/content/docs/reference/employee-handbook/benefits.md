@@ -3,7 +3,6 @@ title: "Benefits"
 sidebar:
   order: 5
 ---
-
 > Part of the **[Employee Handbook](../)**. Authoritative version: [download the full PDF](/reference/attachments/handbook/SA-Employee-Handbook-2026.pdf).
 
 ## Benefits

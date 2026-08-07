@@ -3,11 +3,6 @@ title: "MarkLogic"
 confluence_id: 1474645
 source: MarkLogic_1474645.html
 ---
-
-# MarkLogic
-
-
-
 <!-- section-nav:start -->
 
 ## In this section

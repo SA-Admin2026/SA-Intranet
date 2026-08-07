@@ -3,7 +3,6 @@ title: "Subqueries"
 confluence_id: 26214402
 source: "Subqueries_26214402.html"
 ---
-
 Different reasons to use a sub-query:
 
 1. For ease of understanding and modularity

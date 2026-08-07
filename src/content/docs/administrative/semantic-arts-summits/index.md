@@ -3,12 +3,9 @@ title: "Semantic Arts Summits"
 confluence_id: 768671756
 source: Semantic-Arts-Summits_768671756.html
 ---
-
-# Semantic Arts Summits
-
 ## [Summit 2026 Planning](summit-2026-planning.md)
 
-## [April 2025 Summit](april-2025-summit/README.md)
+## [April 2025 Summit](april-2025-summit/)
 
 - [2025 Summit Summary & Action Items](april-2025-summit/2025-summit-summary-action-items.md)
 - [2025 Summit Event RSVPs](april-2025-summit/2025-summit-event-rsvps.md)
@@ -16,7 +13,7 @@ source: Semantic-Arts-Summits_768671756.html
 - [2025 Summit Optional Day](april-2025-summit/2025-summit-optional-day.md)
 - [2025 Summit Transportation Logistics](april-2025-summit/2025-summit-transportation-logistics.md)
 
-## [February 2024 Summit Planning](february-2024-summit-planning/README.md)
+## [February 2024 Summit Planning](february-2024-summit-planning/)
 
 - [Major Action Items](february-2024-summit-planning/major-action-items.md)
 - [Event RSVPs](february-2024-summit-planning/event-rsvps.md)
@@ -26,7 +23,7 @@ source: Semantic-Arts-Summits_768671756.html
 
 ## [Summit Guidelines](summit-guidelines.md)
 
-## [March 2023 Summit](march-2023-summit/README.md)
+## [March 2023 Summit](march-2023-summit/)
 
 - [March 2023 Summit Photos](march-2023-summit/march-2023-summit-photos.md)
 - [Saturday Escape Room](march-2023-summit/saturday-escape-room.md)
@@ -43,9 +40,9 @@ source: Semantic-Arts-Summits_768671756.html
 
 - [Summit Guidelines](summit-guidelines.md)
 - [Summit 2026 Planning](summit-2026-planning.md)
-- [April 2025 Summit](april-2025-summit/README.md)
-- [February 2024 Summit Planning](february-2024-summit-planning/README.md)
-- [March 2023 Summit](march-2023-summit/README.md)
+- [April 2025 Summit](april-2025-summit/)
+- [February 2024 Summit Planning](february-2024-summit-planning/)
+- [March 2023 Summit](march-2023-summit/)
 - [2022 Internal Summit](2022-internal-summit.md)
 
 <!-- section-nav:end -->

@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-04-09"
 confluence_id: 957710419
 source: gist-Issue-Review-2020-04-09_957710419.html
 ---
-
-# gist Issue Review 2020-04-09
-
 **Attending:** Rebecca, Dave, Michael, Peter, Boris, Dalia, Dan
 
 # Agenda and Notes

@@ -3,9 +3,6 @@ title: "Current Default Billing Rates"
 confluence_id: 3145859075
 source: Current-Default-Billing-Rates_3145859075.html
 ---
-
-# Current Default Billing Rates
-
 *Updated: 2025-11-08*
 
 Billing rates are subject to the official COLA (cost-of-living adjustment) increase annually on January 1.

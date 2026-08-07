@@ -3,7 +3,6 @@ title: "SPARQL string functions"
 confluence_id: 23461893
 source: "SPARQL-string-functions_23461893.html"
 ---
-
 SPARQL has very basic string functions, and some key ones are not in the DuCharme book. I wanted to split a URI into its namespace part and its fragment. After a lot of scrounging around on the web, found about STRAFTER and STRBEFORE which is perfect, so long as the URI uses '#' not '/'. Here is an example.
 
 ```

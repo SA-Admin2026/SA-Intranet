@@ -3,9 +3,6 @@ title: "Selling to Clients"
 confluence_id: 2199224325
 source: Selling-to-Clients_2199224325.html
 ---
-
-# Selling to Clients
-
 ## What to say to a client who is committed to SAP?
 
 **Dave said**:

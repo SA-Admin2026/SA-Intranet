@@ -3,7 +3,6 @@ title: "Google BigQuery"
 confluence_id: 45088778
 source: "Google-BigQuery_45088778.html"
 ---
-
 Google provides a collection of databases to users of BigQuery for experimentation.
 
 These include the following (project:dataset.table):

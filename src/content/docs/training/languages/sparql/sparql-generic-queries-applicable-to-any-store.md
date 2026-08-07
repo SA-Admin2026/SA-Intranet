@@ -3,7 +3,6 @@ title: "SPARQL: Generic queries applicable to any store"
 confluence_id: 200245252
 source: "200245252.html"
 ---
-
 ## NOTE: all of the following queries exist. Find them here:
 
 s:\ClientsAndPartners\Broadridge\2018September\MaterialWeHaveCreated\skos2owl\Queries\QualityChecks\

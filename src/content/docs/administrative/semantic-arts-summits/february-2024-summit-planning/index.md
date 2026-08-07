@@ -3,9 +3,6 @@ title: "February 2024 Summit Planning"
 confluence_id: 2468413458
 source: February-2024-Summit-Planning_2468413458.html
 ---
-
-# February 2024 Summit Planning
-
 Dates: Wednesday February 21 - Friday February 23
 
 - Please arrange to fly in by Tuesday night to have the whole day Wednesday

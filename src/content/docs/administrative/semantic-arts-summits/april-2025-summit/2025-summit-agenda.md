@@ -3,9 +3,6 @@ title: "2025 Summit Agenda"
 confluence_id: 2864087090
 source: 2025-Summit-Agenda_2864087090.html
 ---
-
-# 2025 Summit Agenda
-
 **Monday 28-April (Optional Day)**
 
 - Morning (Potential Ideas)

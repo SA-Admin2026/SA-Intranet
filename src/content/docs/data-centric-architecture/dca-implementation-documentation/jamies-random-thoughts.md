@@ -3,9 +3,6 @@ title: "Jamie's Random Thoughts"
 confluence_id: 679837717
 source: Jamie%27s-Random-Thoughts_679837717.html
 ---
-
-# Jamie's Random Thoughts
-
 As I think about, and work on implementing, the DCA I am having a lot of things pop into my head. I figured I would just create a page here for my own personal use.
 
 Comments are welcome but for now I would say please do not modify my content.

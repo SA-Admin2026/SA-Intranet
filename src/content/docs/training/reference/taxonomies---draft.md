@@ -3,7 +3,6 @@ title: "Taxonomies - DRAFT"
 confluence_id: 676200463
 source: "Taxonomies---DRAFT_676200463.html"
 ---
-
 These taxonomies are controlled vocabularies for internal Semantic Arts use. Ideally, these taxonomies will be integrated eventually into the Semantic Arts glossary. Note that this page only contains the hierarchy. Acronyms, alternate labels, definitions are contained in the SKOS/OWL/TBD glossary itself.
 
 Style notes:

@@ -3,9 +3,6 @@ title: "Data Centric Architecture"
 confluence_id: 30736398
 source: Data-Centric-Architecture_30736398.html
 ---
-
-# Data Centric Architecture
-
 This pages is to capture notes on the DCA as it evolves.
 
 August Design Notes

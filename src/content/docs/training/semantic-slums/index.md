@@ -3,7 +3,6 @@ title: "Semantic Slums"
 confluence_id: 5144627
 source: "Semantic-Slums_5144627.html"
 ---
-
 Thinking about areas of semantic technology and ontology that are either underdeveloped, poorly integrated or both (i.e., 'slums').  The more I think about it actually the more I think that the only part that's really good is storage.  Ultimately, we should come up with opportunities for how to improve these things (either by coming up with a better solution or making two things more integrated).
 
 ![](/attachments/5144627/5144626.png)

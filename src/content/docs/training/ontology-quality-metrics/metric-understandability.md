@@ -3,7 +3,6 @@ title: "Metric: Understandability"
 confluence_id: 1226309661
 source: "1226309661.html"
 ---
-
 # Things to consider
 
 **Demographics**: Your content will be interpreted differently by each individual based on the terminology in which that individual has become accustomed to. Abstract terminology is always a trade-off for who may be able to interpret your content, in some cases this may be intentional or necessary. Inevitably, it should be expected that measurements of clarity/understandability to vary greatly.

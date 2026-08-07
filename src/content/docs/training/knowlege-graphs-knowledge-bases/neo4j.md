@@ -3,7 +3,6 @@ title: "Neo4j"
 confluence_id: 2280554497
 source: "Neo4j_2280554497.html"
 ---
-
 ## A few brief talking points about Neo4j.
 
 Neo4j is very slick and great for creating siloed proprietary point solutions with no data semantics that are beautiful to look at. In particular,

@@ -3,9 +3,6 @@ title: "gistCyber Modeling Patterns"
 confluence_id: 3257204737
 source: gistCyber-Modeling-Patterns_3257204737.html
 ---
-
-# gistCyber Modeling Patterns
-
 - [Model Pattern 1](#gistCyberModelingPatterns-ModelPattern1)
 
 ## Model Pattern 1

@@ -26,8 +26,11 @@ const SPACES = path.join(ROOT, 'spaces');
 // at /section/folder/ instead of /section/folder/readme/.
 const EXCLUDE = new Set(['MIGRATION-FLAGS.md', 'MEDIA-DEFERRED.md']);
 
-// The default Confluence "empty space" home page — carries no real content.
-const isBoilerplate = (md) => md.includes('Welcome to your new space!');
+// Default Confluence "empty space" home pages — carry no real content. Covers both
+// the "new space" placeholder and the "team space within Confluence" welcome variant.
+const isBoilerplate = (md) =>
+  md.includes('Welcome to your new space!') ||
+  md.includes('This is the home page for your team space within Confluence');
 
 // --- Media policy ----------------------------------------------------------
 // Cloudflare Pages rejects any file > 25 MiB and we don't want large binaries in
@@ -325,9 +328,47 @@ function assembleAstroSections() {
   }
 }
 
+// Readability cleanup over the assembled tree (source-agnostic, idempotent):
+//   1. Drop a leading H1 that just repeats the page title — Starlight already renders
+//      the frontmatter title as the page heading, so the in-body copy is a redundant
+//      oversized duplicate.
+//   2. Strip Confluence space-landing cruft ("Space contributors" / "Recent space
+//      activity" lists) that carries no intranet value.
+function cleanupContent(dir) {
+  const norm = (s) => s.replace(/\s+/g, ' ').trim().replace(/^["']|["']$/g, '').replace(/\*/g, '').toLowerCase();
+  const contribRe = /\n#{1,6}[ \t]*(?:Space contributors|Recent space activity)\b[^\n]*\n(?:(?!\n#{1,6}[ \t]|\n<!--)[^\n]*\n?)*/gi;
+  let dupes = 0, blocks = 0, links = 0;
+  for (const file of walkMd(dir)) {
+    const t = fs.readFileSync(file, 'utf8');
+    const m = t.match(/^(---\r?\n[\s\S]*?\r?\n---\r?\n)/);
+    const head = m ? m[1] : '';
+    let body = t.slice(head.length);
+    const title = head && head.match(/^title:\s*(.+)$/m);
+    if (title) {
+      const h1 = body.match(/^[ \t\r\n]*#[ \t]+([^\r\n]+?)[ \t]*\r?\n/);
+      if (h1 && norm(h1[1]) === norm(title[1])) { body = body.slice(h1[0].length).replace(/^\n+/, ''); dupes++; }
+    }
+    let cleaned = body.replace(contribRe, '\n');
+    if (cleaned !== body) blocks++;
+    // Repair links the export left broken: README.md → the folder route (READMEs became
+    // index.md), and dead /wiki/… people/space links → plain text (keep the label).
+    const relinked = cleaned
+      .replace(/\]\(README\.md/g, '](./')
+      .replace(/\/README\.md/g, '/')
+      .replace(/\[([^\]]+)\]\(\/wiki\/[^)]*\)/g, '$1');
+    if (relinked !== cleaned) links++;
+    cleaned = relinked;
+    const out = head + cleaned.replace(/^\n+/, '');
+    const final = out.endsWith('\n') ? out : out + '\n';
+    if (final !== t) fs.writeFileSync(file, final);
+  }
+  console.log(`[assemble] cleanup: ${dupes} redundant H1(s), ${blocks} contributor block(s), ${links} link fix(es)`);
+}
+
 fs.mkdirSync(DOCS, { recursive: true });
 assembleSpaces();
 assembleAstroSections();
+cleanupContent(DOCS);
 stubSkippedMedia();
 if (skippedMedia.length) {
   console.log(

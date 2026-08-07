@@ -3,9 +3,6 @@ title: "April 2025 Summit"
 confluence_id: 2864087041
 source: April-2025-Summit_2864087041.html
 ---
-
-# April 2025 Summit
-
 Optional Day: Monday April 28th
 
 Main Summit: Tuesday April 29th - Thursday May 1st

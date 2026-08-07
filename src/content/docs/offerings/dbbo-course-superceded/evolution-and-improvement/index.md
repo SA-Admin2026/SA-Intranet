@@ -3,9 +3,6 @@ title: "Evolution and Improvement"
 confluence_id: 3407945
 source: Evolution-and-Improvement_3407945.html
 ---
-
-# Evolution and Improvement
-
 # Ideas for New Content
 
 ## DBpedia & SPARQL (suggested by DMc)

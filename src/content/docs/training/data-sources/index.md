@@ -3,7 +3,6 @@ title: "Data Sources"
 confluence_id: 45088772
 source: "Data-Sources_45088772.html"
 ---
-
 We may need data to populate databases or semantic stores for various projects, proposal, or examples. This section documents known sources of data.
 
 ## General Data Sets

@@ -3,7 +3,6 @@ title: "Internal Summit"
 confluence_id: 2253619238
 source: "Internal-Summit_2253619238.html"
 ---
-
 ***GENERAL NOTES***
 
 1. Need a venue that can accommodate the whole staff, as well as catering of meals for the length of the summit

@@ -3,7 +3,6 @@ title: "Data-centric Methodology - documenting our approach"
 confluence_id: 1824227329
 source: "Data-centric-Methodology---documenting-our-approach_1824227329.html"
 ---
-
 A new folder structure has been created on the shared drive at “\_SemanticArts\Offerings\Data-centric Methodology”. This is a place to store slide decks and documents or shortcuts to documents. The intention is that these will provide an organised set of curated assets that will describe our methodology.
 
 Link: [Methodology](https://datacentric.sharepoint.com/:f:/s/staff/El0_DaHmce9JlVq2LIID_rcBpMO5eqtxCkGFAdh3k1XeAQ?e=vuxkHM)

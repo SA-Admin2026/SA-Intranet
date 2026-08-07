@@ -3,7 +3,6 @@ title: "Meeting Management"
 confluence_id: 2253127975
 source: "Meeting-Management_2253127975.html"
 ---
-
 Company wide meetings are generally “owned” by [office@semanticarts.com](mailto:office@semanticarts.com). This includes staff meetings, knowledge exchange, sales team (Thurs), gist Development, and guest speakers. Use this account to manage changes/cancellations.
 
 1. Monday Resource Planning (Steve Case owns)

@@ -3,9 +3,6 @@ title: "Transportation Logistics"
 confluence_id: 2326397008
 source: Transportation-Logistics_2326397008.html
 ---
-
-# Transportation Logistics
-
 Add information below related to your arrival & departure date/time. This will facilitate getting everyone to and from Denver with minimal shuttle use.
 
 [See attendees and room bookings](https://semarts.atlassian.net/l/cp/64XhAd01)

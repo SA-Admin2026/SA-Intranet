@@ -3,7 +3,6 @@ title: "Notes on Webinar: CMC Process Ontology Community of Interest"
 confluence_id: 3007315969
 source: "3007315969.html"
 ---
-
 Referencing this Recording: <https://vimeo.com/1088407697/fc310e5cc1?share=copy&utm_campaign=Webinars&utm_medium=email&_hsenc=p2ANqtz-9E1AxAjag54prHAD3WLYxdF3KndgakwjN4V_DcZTFQaOLxcf0VK4JKssYars3FwoSSjIOGeNKUiWzsTKX_qB3jloxTnmesAa0wfRmQskda9ciW_NE&_hsmi=364021170&utm_content=364021170&utm_source=hs_email>
 
 Contact: [birth.nielsen@pistoiaalliance.org](mailto:birth.nielsen@pistoiaalliance.org)

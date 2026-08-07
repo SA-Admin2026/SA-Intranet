@@ -3,7 +3,6 @@ title: "Metric: Complexity Reduction"
 confluence_id: 868745294
 source: "868745294.html"
 ---
-
 Mark Wallace and Jamie Gulden, Feb 2020
 
 ## What it Means

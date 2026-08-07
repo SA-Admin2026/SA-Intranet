@@ -3,7 +3,6 @@ title: "SPARQL Anything"
 confluence_id: 2300215297
 source: "SPARQL-Anything_2300215297.html"
 ---
-
 # Useful Links
 
 **The SPARQL Anything GitHub repo with a helpful README**

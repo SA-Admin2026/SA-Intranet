@@ -3,7 +3,6 @@ title: "Offboarding Checklist"
 confluence_id: 2819063809
 source: "Offboarding-Checklist_2819063809.html"
 ---
-
 # Semantic Arts Offboarding/Separation Procedures
 
 ### Employee Folder

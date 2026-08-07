@@ -3,10 +3,7 @@ title: "AWS running lambdas for D&B"
 confluence_id: 228458534
 source: 228458534.html
 ---
-
-# AWS running lambdas for D&B
-
-Assuming you have everything set up as per [AWS for D&B Set up](../README.md)  you're ready to go
+Assuming you have everything set up as per [AWS for D&B Set up](../)  you're ready to go
 
 In the lambda management window, you can click the upper right hand corner and simulate an event, and test it.
 

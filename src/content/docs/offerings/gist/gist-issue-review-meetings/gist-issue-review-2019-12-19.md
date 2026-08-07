@@ -3,9 +3,6 @@ title: "gist Issue Review 2019-12-19"
 confluence_id: 784662554
 source: gist-Issue-Review-2019-12-19_784662554.html
 ---
-
-# gist Issue Review 2019-12-19
-
 Facilitator: Rebecca
 
 Attendees: Rebecca, Dave, Boris, Michael, Dan, Andrea, Jamie

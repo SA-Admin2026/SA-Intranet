@@ -3,7 +3,6 @@ title: "Using GitHub to template and supply projects"
 confluence_id: 2874540035
 source: "Using-GitHub-to-template-and-supply-projects_2874540035.html"
 ---
-
 This is an information and discussion page about using the GitHub Template and Sub-module tools to manage standardising the layout of folder hierarchies (through templates) and improving the provisioning of these with a range of tools (through sub-modules).
 
 [Semantic Operations Repository Template (SORT)](/ontology-tools/2025-ontology-tooling-development-project/using-github-to-template-and-supply-projects/semantic-operations-repository-template-sort/) describes some of this.

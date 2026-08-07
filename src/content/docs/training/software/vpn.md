@@ -3,7 +3,6 @@ title: "VPN"
 confluence_id: 19496968
 source: "VPN_19496968.html"
 ---
-
 We use Meraki for a VPN into SA office.
 
 Also see [New Ontologist Orientation](/new-ontologist-orientation/).

@@ -3,9 +3,6 @@ title: "SemArts EntOnt DCA NextGen Systems"
 confluence_id: 1660420101
 source: SemArts-EntOnt-DCA-NextGen-Systems_1660420101.html
 ---
-
-# SemArts EntOnt DCA NextGen Systems
-
 This is to keep track of the requirements and design for our next gen internal system
 
 # Ontologies

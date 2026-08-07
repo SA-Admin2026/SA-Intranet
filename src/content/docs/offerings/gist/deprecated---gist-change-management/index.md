@@ -3,9 +3,6 @@ title: "deprecated - gist Change Management"
 confluence_id: 233308167
 source: deprecated---gist-Change-Management_233308167.html
 ---
-
-# deprecated - gist Change Management
-
 IMPORTANT
 
 **This change management approach has been superceded.  See [deprecated - Git for gist](https://semarts.atlassian.net/wiki/spaces/OF/blog/2018/11/28/663191553/deprecated+-+Git+for+gist) for the new way.**

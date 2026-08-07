@@ -3,9 +3,6 @@ title: "Spark Time Entry"
 confluence_id: 2548793351
 source: Spark-Time-Entry_2548793351.html
 ---
-
-# Spark Time Entry
-
 ## Create Your Account
 
 New employees will need to create an account in the Spark system.

@@ -3,7 +3,6 @@ title: "Usage Patterns and Examples for gist"
 confluence_id: 2440986629
 source: "Usage-Patterns-and-Examples-for-gist_2440986629.html"
 ---
-
 [![](https://semarts.atlassian.net/wiki/download/thumbnails/2440986629/OntologyExamples.pptx?version=2&modificationDate=1695162544369&cacheVersion=1&api=v2&viewType=fileMacro)](/attachments/2440986629/2441117697.pptx)
 
 Michael presented an earlier versin of the above deck. Examples of examples are included in the new [operators-ontology](https://github.com/semanticarts/operators-ontology) git repo. Decisions to be made include:

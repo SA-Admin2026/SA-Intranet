@@ -3,7 +3,6 @@ title: "Metric: Consistency - Assessment Checklist"
 confluence_id: 1007157266
 source: "1007157266.html"
 ---
-
 ***Table of Contents***
 
 - [Assignment](#Metric:Consistency-AssessmentChecklist-Assignment)

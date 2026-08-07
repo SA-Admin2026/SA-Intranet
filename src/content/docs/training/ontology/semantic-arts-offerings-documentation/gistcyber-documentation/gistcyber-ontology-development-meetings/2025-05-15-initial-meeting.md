@@ -3,7 +3,6 @@ title: "2025-05-15 Initial Meeting"
 confluence_id: 2990505987
 source: "2025-05-15-Initial-Meeting_2990505987.html"
 ---
-
 ## Joaquin:
 
 Use Cases:

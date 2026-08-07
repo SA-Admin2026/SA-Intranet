@@ -3,9 +3,6 @@ title: "March 2023 Summit"
 confluence_id: 2317582337
 source: March-2023-Summit_2317582337.html
 ---
-
-# March 2023 Summit
-
 **Dates**: Wed-Fri, 15th-17th (Summit starts 9:00 AM Wed)
 
 - [March 2023 Summit Agenda](march-2023-summit-agenda.md)

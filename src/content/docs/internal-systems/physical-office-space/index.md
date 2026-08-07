@@ -3,9 +3,6 @@ title: "Physical Office Space"
 confluence_id: 2220687365
 source: Physical-Office-Space_2220687365.html
 ---
-
-# Physical Office Space
-
 ## Address
 
 Opera Galleria Building

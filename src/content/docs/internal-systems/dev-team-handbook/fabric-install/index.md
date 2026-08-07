@@ -3,9 +3,6 @@ title: "Fabric Install"
 confluence_id: 29556747
 source: Fabric-Install_29556747.html
 ---
-
-# Fabric Install
-
 ```
 sudo pip install fabric
 ```

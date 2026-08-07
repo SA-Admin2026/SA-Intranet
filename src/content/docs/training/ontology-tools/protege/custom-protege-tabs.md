@@ -3,7 +3,6 @@ title: "Custom Protege Tabs"
 confluence_id: 1148878857
 source: "Custom-Protege-Tabs_1148878857.html"
 ---
-
 Protege is based on the Eclipse Editor, and as such allows much customization of the user interface.
 
 I have customized the Entities tab. I find my version to be much more useful than the default one. My customization allows me to see Classes, Properties, and Individuals all in the same tab.
@@ -31,7 +30,7 @@ Note how
 | --- | --- | --- |
 |  |  |  |
 | --- | --- | --- |
-| Labels  - No labels - [Edit Labels](# "Edit Labels")    Preview [$itemLabel]($itemRenderedUrl) [$itemLabel]($itemRenderedUrl&isFromPageView=true) [$itemLabel]($itemRenderedUrl&isFromPageView=true) | XML File [Entities.layout-mw2020.xml](/attachments/1148878857/1148747789.xml) | Jul 22, 2020 by [Mark Wallace](/wiki/people/5a147f88cba5b30325a6e9c1) |
+| Labels  - No labels - [Edit Labels](# "Edit Labels")    Preview [$itemLabel]($itemRenderedUrl) [$itemLabel]($itemRenderedUrl&isFromPageView=true) [$itemLabel]($itemRenderedUrl&isFromPageView=true) | XML File [Entities.layout-mw2020.xml](/attachments/1148878857/1148747789.xml) | Jul 22, 2020 by Mark Wallace |
 
 - Drag and drop to upload or browse for files
   ![](/wiki/images/icons/wait.gif)

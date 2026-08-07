@@ -3,9 +3,6 @@ title: "gist Issue Review 2021-02-11"
 confluence_id: 1623490569
 source: gist-Issue-Review-2021-02-11_1623490569.html
 ---
-
-# gist Issue Review 2021-02-11
-
 # Please note: all subsequent meeting notes have moved to the [GitHub gist wiki](https://github.com/semanticarts/gist/wiki/gist-Issue-Review-2021-02-25).
 
 **Attending:** Rebecca, Peter, Michael, Dan, Boris, Jamie, Dalia

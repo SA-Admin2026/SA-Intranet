@@ -3,7 +3,6 @@ title: "Catalog File"
 confluence_id: 50987028
 source: "Catalog-File_50987028.html"
 ---
-
 # The Punch Line
 
 To get catalog xml files to be painless and portable:

@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-03-26"
 confluence_id: 913145879
 source: gist-Issue-Review-2020-03-26_913145879.html
 ---
-
-# gist Issue Review 2020-03-26
-
 **Attending:**
 
 # Agenda and Notes

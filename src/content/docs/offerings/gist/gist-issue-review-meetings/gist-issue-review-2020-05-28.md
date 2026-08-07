@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-05-28"
 confluence_id: 1046806529
 source: gist-Issue-Review-2020-05-28_1046806529.html
 ---
-
-# gist Issue Review 2020-05-28
-
 **Attending:** Rebecca, Mark, Boris, Dalia, Meika, Dan, Jamie, Michael, Peter
 
 # Agenda and Notes

@@ -3,7 +3,6 @@ title: "FinServices Ontology Discussion"
 confluence_id: 145096705
 source: "FinServices-Ontology-Discussion_145096705.html"
 ---
-
 ## Stock and Shares
 
 Here is an e6 model of stock, share, and related classes.

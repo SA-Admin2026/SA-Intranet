@@ -3,9 +3,6 @@ title: "Auditioning (Final Interview)"
 confluence_id: 2621472775
 source: 2621472775.html
 ---
-
-# Auditioning (Final Interview)
-
 We call the final interview the “audition”. Auditions contain 3 parts:
 
 1. General Questions to the candidate (roughly 45 min)

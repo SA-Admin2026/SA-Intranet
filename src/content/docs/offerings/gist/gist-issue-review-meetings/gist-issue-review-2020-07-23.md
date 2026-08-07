@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-07-23"
 confluence_id: 1126694924
 source: gist-Issue-Review-2020-07-23_1126694924.html
 ---
-
-# gist Issue Review 2020-07-23
-
 **Attending:** Boris (facilitator), Mark Wallace, Michael Uschold, Meika Ungricht
 
 # Agenda and Notes

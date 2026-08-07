@@ -3,7 +3,6 @@ title: "Python for rookies"
 confluence_id: 52133938
 source: "Python-for-rookies_52133938.html"
 ---
-
 ## Initial Set up (windows)
 
 I have pulled triples from the Euromonitor example Michael sent me. I can get the [instructions.md](http://instructions.md) file out in Git updated to remove the mystery so anyone can get it up and running. Briefly it is this:

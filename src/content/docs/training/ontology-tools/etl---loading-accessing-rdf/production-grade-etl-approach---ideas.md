@@ -3,7 +3,6 @@ title: "Production-grade ETL Approach - ideas"
 confluence_id: 3085697026
 source: "Production-grade-ETL-Approach---ideas_3085697026.html"
 ---
-
 ### SPARQL-based POC ETL approach - generalization
 
 ```

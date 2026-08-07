@@ -3,9 +3,6 @@ title: "Transportation Logistics - 2/2024"
 confluence_id: 2468708353
 source: 2468708353.html
 ---
-
-# Transportation Logistics - 2/2024
-
 Add information below related to your arrival & departure date/time. This will facilitate getting everyone to and from Denver with minimal shuttle use.
 
 Entries are sorted by **first** name.

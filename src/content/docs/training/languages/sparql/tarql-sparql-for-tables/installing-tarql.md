@@ -3,7 +3,6 @@ title: "Installing Tarql"
 confluence_id: 2104295425
 source: "Installing-Tarql_2104295425.html"
 ---
-
 See also: [TARQL: SPARQL for Tables](/languages/sparql/tarql-sparql-for-tables/)
 
 ## Windows:

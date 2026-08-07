@@ -3,7 +3,6 @@ title: "Retrieving order from gist:directlyPrecedes"
 confluence_id: 1022623775
 source: "1022623775.html"
 ---
-
 Here are handy queries to retrieve members of an ordered collection with their explicit order.
 
 Given an ordered collection:

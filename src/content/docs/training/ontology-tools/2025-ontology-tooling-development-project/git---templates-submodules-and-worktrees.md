@@ -3,7 +3,6 @@ title: "Git - Templates, Submodules and Worktrees"
 confluence_id: 2891972612
 source: "Git---Templates%2C-Submodules-and-Worktrees_2891972612.html"
 ---
-
 In addition to the branch structure of repositories there are other elements that will be useful in this project. This is a small narrative on templates, submodules and worktrees to help orientate everyone and to act as the basis for interpreting proposals for the outputs of this project.
 
 ### Templates

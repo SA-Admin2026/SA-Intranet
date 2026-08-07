@@ -3,7 +3,6 @@ title: "Java"
 confluence_id: 679379143
 source: "Java_679379143.html"
 ---
-
 How to install Open JDK (Java Development Kit) on Windows 8/9/10:
 
  1. Download latest Java from [https://jdk.java.net/.](https://jdk.java.net/)  As of this writing, that is Java 11.

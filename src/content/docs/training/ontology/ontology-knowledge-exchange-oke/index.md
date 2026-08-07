@@ -3,7 +3,6 @@ title: "Ontology Knowledge Exchange (OKE)"
 confluence_id: 2325839873
 source: "2325839873.html"
 ---
-
 We have instituted an ongoing series of ontology knowledge exchange meetings for us to share and get feedback and fresh perspectives on models, tools, ideas, conundrums, dilemmas, … whatever we’re working on or thinking about. The meetings occur weekly for 45 minutes after the Tuesday staff meeting.
 
 ## Scheduled Topics

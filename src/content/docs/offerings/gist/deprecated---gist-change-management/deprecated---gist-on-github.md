@@ -3,9 +3,6 @@ title: "deprecated - gist on GitHub"
 confluence_id: 57114626
 source: deprecated---gist-on-GitHub_57114626.html
 ---
-
-# deprecated - gist on GitHub
-
 Important!
 
 This process is now deprecated.  See [deprecated - git for gist](deprecated---git-for-gist.md).

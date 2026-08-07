@@ -3,9 +3,6 @@ title: "Honoraria, Stipends, Keynote Fees & Royalties Policy"
 confluence_id: 2251390981
 source: 2251390981.html
 ---
-
-# Honoraria, Stipends, Keynote Fees & Royalties Policy
-
 ## Honoraria, Stipends, Keynote Fees, Royalties Policy
 
 Occasionally in the course of work, our employees generate additional income in the form of honoraria, stipends, and the like.

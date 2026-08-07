@@ -3,7 +3,6 @@ title: "SPARQL useful info: Tips & Tricks"
 confluence_id: 2366636041
 source: "2366636041.html"
 ---
-
 I thought we had a page like this but I can’t find it. What I’m adding is not really worth a whole page, I just found it interesting and maybe useful to someone else.
 
 ## BIND in OPTIONAL

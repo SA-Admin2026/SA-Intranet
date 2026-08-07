@@ -3,7 +3,6 @@ title: "SPARQL Gotchas"
 confluence_id: 674758663
 source: "SPARQL-Gotchas_674758663.html"
 ---
-
 # Order Matters
 
 There are a couple of interesting cases where order matters in SPARQL. Mostly with OPTIONAL and MINUS, they can give you very different results than what you might think.

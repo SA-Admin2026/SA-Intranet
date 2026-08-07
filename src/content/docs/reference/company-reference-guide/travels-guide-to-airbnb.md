@@ -3,9 +3,6 @@ title: "Travels Guide to AirBnB"
 confluence_id: 34144258
 source: Travels-Guide-to-AirBnB_34144258.html
 ---
-
-# Travels Guide to AirBnB
-
 If you're contemplating using AirBnB for a business trip, here are a couple of pointers.
 
 First do a search on a normal web site like hotels.com and get an idea of what is available in the traditional market.  I don't want to have to explain why we paid more than the going rate for an airbnb.  If there is any question, save a screen shot of the most reasonable selection of hotels you could have gotten for that price.  Note that some sites are quoting per night costs and some for the whole stay.  Some (hotwire) don't show taxes and fees until you're ready to pay (adding about 20%).  Airbnb is also not showing cleaning and other fees until you get to checkout, often 15-20%

@@ -3,9 +3,6 @@ title: "Speaking Engagements"
 confluence_id: 5144654
 source: Speaking-Engagements_5144654.html
 ---
-
-# Speaking Engagements
-
 This space is for maintaining a record of past speaking events we've attended, planning for upcoming events to discuss the value of attendance, etc., and to track our work on current events.
 
 - [Current / In Progress Speaking Events](https://semarts.atlassian.net/wiki/spaces/AD/pages/3112980/Current+In+Progress+Speaking+Engagements)

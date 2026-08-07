@@ -3,7 +3,6 @@ title: "Use Case Reference Implementations"
 confluence_id: 3016916995
 source: "Use-Case-Reference-Implementations_3016916995.html"
 ---
-
 Based on the two use cases we have selected to pursue we are going to create two reference implementations that show value to prospective adopters of gistCyber.
 
 1. Vulnerability Assessment Reference Implementation

@@ -3,9 +3,6 @@ title: "Controls"
 confluence_id: 3257794561
 source: Controls_3257794561.html
 ---
-
-# Controls
-
 ## Current Model:
 
 This is the parti so far based on the research listed below and discussions with the team:

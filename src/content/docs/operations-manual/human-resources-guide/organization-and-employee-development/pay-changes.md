@@ -3,7 +3,6 @@ title: "Pay Changes"
 confluence_id: 2254143496
 source: "Pay-Changes_2254143496.html"
 ---
-
 Z:\_SemanticArts\HRRecruitingAndSubcontractors\Employee Development
 
 Frequency: As needed

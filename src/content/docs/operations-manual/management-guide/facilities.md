@@ -3,7 +3,6 @@ title: "Facilities"
 confluence_id: 2253357140
 source: "Facilities_2253357140.html"
 ---
-
 Physical Office Space Notes: [Physical Office Space](https://semarts.atlassian.net/wiki/spaces/InternalSystems/pages/2220687365/Physical+Office+Space)
 
 ## Weekly to do:

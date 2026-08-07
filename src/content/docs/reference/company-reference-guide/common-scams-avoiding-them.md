@@ -3,9 +3,6 @@ title: "Common Scams & Avoiding Them"
 confluence_id: 2375417857
 source: 2375417857.html
 ---
-
-# Common Scams & Avoiding Them
-
 More and more, various types of scams are hitting the company and it’s employees. While it is impossible to address them all, this is meant to be a guide to avoid falling into any traps. Often, these scammers attack new employees before they’ve had a chance to get their bearings.
 
 Here are a few general types we often see:

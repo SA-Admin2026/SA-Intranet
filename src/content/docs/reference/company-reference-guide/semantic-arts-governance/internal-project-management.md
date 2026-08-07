@@ -3,9 +3,6 @@ title: "Internal Project Management"
 confluence_id: 3027927043
 source: Internal-Project-Management_3027927043.html
 ---
-
-# Internal Project Management
-
 Below is a list of what is happening currently in terms of internal workstreams, including a brief description of each and the staff involved:
 
 **gist Development**

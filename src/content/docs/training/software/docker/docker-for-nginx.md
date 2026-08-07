@@ -3,7 +3,6 @@ title: "Docker for nginx"
 confluence_id: 52789267
 source: "Docker-for-nginx_52789267.html"
 ---
-
 To install docker on windows install the DockerToolbox
 
 have to fun the docker quickstart terminal (foudn by typicing docker in the start/search) have to run as an administrator (right mouse the icon)

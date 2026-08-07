@@ -3,9 +3,6 @@ title: "General Interviewing Pointers"
 confluence_id: 2279211035
 source: General-Interviewing-Pointers_2279211035.html
 ---
-
-# General Interviewing Pointers
-
 Some quick pointers on interviewing:
 
 ![](/administrative/attachments/2279211035/2279374866.png)

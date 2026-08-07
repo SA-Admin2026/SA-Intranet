@@ -4,7 +4,6 @@ description: "The Semantic Arts Employee Handbook (January 2026) — the essenti
 sidebar:
   order: 0
 ---
-
 > 📄 **Authoritative version:** [Download the original PDF](/reference/attachments/handbook/SA-Employee-Handbook-2026.pdf). These pages are a searchable text rendering; if anything differs, the PDF governs.
 
 The Employee Handbook sets out the essential policies and requirements of working at Semantic Arts. It's split into chapters below. When a policy applies to your state, the **[state addendum](state-addenda/)** governs.

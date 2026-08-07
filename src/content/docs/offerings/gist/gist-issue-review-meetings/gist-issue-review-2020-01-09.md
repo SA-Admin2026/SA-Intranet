@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-01-09"
 confluence_id: 787120171
 source: gist-Issue-Review-2020-01-09_787120171.html
 ---
-
-# gist Issue Review 2020-01-09
-
 **Attending:** Dave, Michael, MarkW, Dan, Boris, Rebecca
 
 ## Agenda and Notes

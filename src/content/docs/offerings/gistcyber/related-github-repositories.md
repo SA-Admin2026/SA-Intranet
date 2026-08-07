@@ -3,9 +3,6 @@ title: "Related GitHub Repositories"
 confluence_id: 3265888257
 source: Related-GitHub-Repositories_3265888257.html
 ---
-
-# Related GitHub Repositories
-
 - [Common Vulnerability Exposures](https://github.com/semanticarts/mitre-cve-reference-kg) (CVE)
 - [Common Weakness Enumeration](https://github.com/semanticarts/mitre-cwe-reference-kg) (CWE)
 - [Common Platform Enumeration](https://github.com/semanticarts/nist-cpe-reference-kg) (CPE)

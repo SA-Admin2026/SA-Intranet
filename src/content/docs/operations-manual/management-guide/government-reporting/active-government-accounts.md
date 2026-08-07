@@ -3,7 +3,6 @@ title: "Active Government Accounts"
 confluence_id: 2279604234
 source: "Active-Government-Accounts_2279604234.html"
 ---
-
 | **State** | **Account(s)** | **Account #** |
 | --- | --- | --- |
 | Alabama | Unemployment | 0822048565 |

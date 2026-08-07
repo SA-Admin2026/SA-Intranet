@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-10-08"
 confluence_id: 1272905733
 source: gist-Issue-Review-2020-10-08_1272905733.html
 ---
-
-# gist Issue Review 2020-10-08
-
 **Attending:** Rebecca, Peter, Boris, Michael, Dalia, Dan, Jamie
 
 # Agenda and Notes

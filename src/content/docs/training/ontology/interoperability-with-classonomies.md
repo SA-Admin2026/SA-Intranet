@@ -3,7 +3,6 @@ title: "Interoperability with Classonomies"
 confluence_id: 3271983109
 source: "Interoperability-with-Classonomies_3271983109.html"
 ---
-
 - [Forming approach at a glance](#InteroperabilitywithClassonomies-Formingapproachataglance)
 - [OKE topic presented on 19 Aug 2025](#InteroperabilitywithClassonomies-OKEtopicpresentedon)
 - [Reasons to keep classonomies in a separate repository from the main KG](#InteroperabilitywithClassonomies-ReasonstokeepclassonomiesinaseparaterepositoryfromthemainKG)

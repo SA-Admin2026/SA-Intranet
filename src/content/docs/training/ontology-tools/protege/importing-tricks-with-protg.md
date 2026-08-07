@@ -3,7 +3,6 @@ title: "Importing Tricks with Protégé"
 confluence_id: 3407960
 source: "3407960.html"
 ---
-
 Here is an easy way to find a large number of imported ontologies.
 
 Open Protégé

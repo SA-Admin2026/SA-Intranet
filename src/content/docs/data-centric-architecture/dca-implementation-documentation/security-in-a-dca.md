@@ -3,9 +3,6 @@ title: "Security in a DCA"
 confluence_id: 678100993
 source: Security-in-a-DCA_678100993.html
 ---
-
-# Security in a DCA
-
 There was a discussion/debate at the DCC conference (2/2019) about security for the DCA. While a lot of ideas were discussed, no consensus was reached about what was needed.
 
 Since we are in the process of developing a Data Centric Architecture implementation we need to come to some agreement about what we need to support and implement.

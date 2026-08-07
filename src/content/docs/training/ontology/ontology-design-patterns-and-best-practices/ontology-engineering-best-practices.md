@@ -3,7 +3,6 @@ title: "Ontology Engineering Best Practices"
 confluence_id: 2423914497
 source: "Ontology-Engineering-Best-Practices_2423914497.html"
 ---
-
 - [Baseline Assumptions](#OntologyEngineeringBestPractices-BaselineAssumptions)
 - [Cardinality](#OntologyEngineeringBestPractices-Cardinality)
 - [Imports](#OntologyEngineeringBestPractices-Imports)

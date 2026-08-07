@@ -3,9 +3,8 @@ title: "Squads"
 confluence_id: 2991915011
 source: "Squads_2991915011.html"
 ---
-
 1. [Technical and Research Resources](index.html)
-2. [Technical and Research Resources Home](../README.md)
+2. [Technical and Research Resources Home](../)
 
 # Technical and Research Resources : Squads
 

@@ -3,9 +3,6 @@ title: "github for Dummies"
 confluence_id: 512917507
 source: github-for-Dummies_512917507.html
 ---
-
-# github for Dummies
-
 See also: [Git for Humans](http://www.aquaboat.ch/forestryio/files/test.pdf), a very good book.
 
 How to do a simple change to a github file.

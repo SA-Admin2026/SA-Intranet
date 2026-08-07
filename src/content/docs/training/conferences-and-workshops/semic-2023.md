@@ -3,7 +3,6 @@ title: "SEMIC 2023"
 confluence_id: 2455273495
 source: "SEMIC-2023_2455273495.html"
 ---
-
 [SEMIC2023.eu](http://SEMIC2023.eu) - the conference of the EU semantic interoperability community that was in Madrid at the start of Spain’s Presidency of the EU focused on the use of AI in semantic interoperability. The key policy background to this includes the [Interoperable Europe Act 2022](https://www.consilium.europa.eu/en/press/press-releases/2023/10/06/interoperable-europe-act-member-states-agree-common-position-to-deliver-more-efficient-digital-public-services-across-the-eu) and from this stem the following:
 
 - policy alignment and a fixed scope for interoperability work

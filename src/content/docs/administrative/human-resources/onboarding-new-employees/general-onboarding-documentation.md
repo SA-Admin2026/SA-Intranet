@@ -3,9 +3,6 @@ title: "General Onboarding Documentation"
 confluence_id: 2270003201
 source: General-Onboarding-Documentation_2270003201.html
 ---
-
-# General Onboarding Documentation
-
 Welcome to Semantic Arts! The document below is meant to provide a bit of a road map for how things will look as you get up to speed.
 
 *As you review this information, if you come across anything that is unclear, incorrect (such as broken links or outdated information), or confusing - please send an email to HR so we can get it fixed!*

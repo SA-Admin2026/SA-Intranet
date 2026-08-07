@@ -3,9 +3,6 @@ title: "Email Inviting to Technical"
 confluence_id: 3064791041
 source: Email-Inviting-to-Technical_3064791041.html
 ---
-
-# Email Inviting to Technical
-
 The purpose of this email is to ask candidates to do some self rating before the technical interview. This will allow the interviewer to tailor the call to the skillset and come in with a good baseline estimation of where a candidate may fall.
 
 Hello,

@@ -3,7 +3,6 @@ title: "Client Instructions for Invoicing"
 confluence_id: 2252865587
 source: "Client-Instructions-for-Invoicing_2252865587.html"
 ---
-
 # General Information
 
 All projects require the following information

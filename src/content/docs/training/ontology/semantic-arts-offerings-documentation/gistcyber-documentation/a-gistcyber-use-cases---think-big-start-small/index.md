@@ -3,7 +3,6 @@ title: "A gistCyber Use Cases - Think Big, start Small"
 confluence_id: 2823225346
 source: "A-gistCyber-Use-Cases---Think-Big%2C-start-Small_2823225346.html"
 ---
-
 # Primary Purposes of gistCyber
 
 The main purpose of gistCyber is to provide a minimal, yet sufficient, model for representing things in cyberspace with a focus on the representation of cybersecurity. This in and of itself is a large scope. It is easy for the ontologist to lose footing on a slippery slope of scope creep and expansion.

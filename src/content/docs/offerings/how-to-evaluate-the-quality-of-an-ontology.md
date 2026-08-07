@@ -3,9 +3,6 @@ title: "How to evaluate the quality of an ontology"
 confluence_id: 71794716
 source: How-to-evaluate-the-quality-of-an-ontology_71794716.html
 ---
-
-# How to evaluate the quality of an ontology
-
 What should you be able to do with an ontology (in order of importance)
 
 1. Load representative data from the domain

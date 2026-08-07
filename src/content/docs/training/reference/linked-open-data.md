@@ -3,7 +3,6 @@ title: "Linked Open Data"
 confluence_id: 520159233
 source: "Linked-Open-Data_520159233.html"
 ---
-
 The term "Linked Data" refers to Tim Berners-Lee's set of best practices for publishing structured data on the Web. The principles are:
 
 1. Use URIs as names for things

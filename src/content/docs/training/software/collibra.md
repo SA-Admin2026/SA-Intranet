@@ -3,7 +3,6 @@ title: "Collibra"
 confluence_id: 68845573
 source: "Collibra_68845573.html"
 ---
-
 Collibra is primarily a Data Governance software suite. It seems that they differentiate themselves through features like the following:
 
 - "Easily automate governance and stewardship tasks, define ownership structures, and establish workflows to involve the right people in data decision making"

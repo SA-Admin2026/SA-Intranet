@@ -3,9 +3,6 @@ title: "Semantic Arts Governance"
 confluence_id: 2866511895
 source: Semantic-Arts-Governance_2866511895.html
 ---
-
-# Semantic Arts Governance
-
 ### CAUTION: This document is out-of-date and not fully aligned with more authoritative sources of truth. Details provided here on the precise duties of the governance committee should not be viewed as authoritative.
 
 # Background

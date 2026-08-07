@@ -3,7 +3,6 @@ title: "Benefits"
 confluence_id: 2254143489
 source: "Benefits_2254143489.html"
 ---
-
 **Contact Information**
 
 * The brokerage firm is [Sage Benefits Advisors](https://sageba.com/)

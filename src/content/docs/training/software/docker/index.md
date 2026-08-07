@@ -3,7 +3,6 @@ title: "Docker"
 confluence_id: 41811970
 source: "Docker_41811970.html"
 ---
-
 ### (one time)Install
 
 Got to docker.com
@@ -80,7 +79,6 @@ pwd: super
 
 ## In this section
 
-- [Docker compose](/software/docker/docker-compose/)
 - [Docker for nginx](/software/docker/docker-for-nginx/)
 - [Docker for Windows 10 Pro](/software/docker/docker-for-windows-10-pro/)
 - [Running Docker](/software/docker/running-docker/)

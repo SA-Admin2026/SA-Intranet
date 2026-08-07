@@ -3,7 +3,6 @@ title: "Development"
 confluence_id: 3097395202
 source: "Development_3097395202.html"
 ---
-
 GitHub Repository:
 
 [semanticarts/gistCyber: The gistCyber repository is a subgist repository](https://github.com/semanticarts/gistCyber)

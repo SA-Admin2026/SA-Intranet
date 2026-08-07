@@ -3,7 +3,6 @@ title: "Business Continuity"
 confluence_id: 2372763649
 source: "Business-Continuity_2372763649.html"
 ---
-
 **Notes from March 2024 Summit -**
 
 Dave is going to transition ownership of the company over the next few years.

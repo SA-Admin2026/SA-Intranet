@@ -3,7 +3,6 @@ title: "Misc. Accounting"
 confluence_id: 2285502467
 source: "Misc.-Accounting_2285502467.html"
 ---
-
 ## Unexpected Receipts
 
 There are a number of receipts that come in unexpectedly, such as refunds book sale royalty. It’s not worth creating an invoice and then receiving against it.

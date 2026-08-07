@@ -3,9 +3,6 @@ title: "Agenda"
 confluence_id: 2498396163
 source: Agenda_2498396163.html
 ---
-
-# Agenda
-
 ## ~~Monday 2/19 (3 in town + locals)~~
 
 ~~In town for the day (I think): Boris, Cheryl, Doug~~

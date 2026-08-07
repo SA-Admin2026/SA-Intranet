@@ -3,7 +3,6 @@ title: "Messaging Queue and Messaging Broker"
 confluence_id: 2908454914
 source: "Messaging-Queue-and-Messaging-Broker_2908454914.html"
 ---
-
 We are a service provider, that’s known and understood. However, I am of the opinion that in order to establish a service contract in the cybersecurity domian that we are going to have to show potential clients the value that using a semantic graph delivers. Actions (demos) speak loader than words.
 
 ## A Proof of Concept Cybersecurity Product for Demonstration

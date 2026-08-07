@@ -3,7 +3,6 @@ title: "Expense Accounting"
 confluence_id: 2282455053
 source: "Expense-Accounting_2282455053.html"
 ---
-
 /\*<![CDATA[\*/
 div.rbtoc1784849633449 {padding: 0px;}
 div.rbtoc1784849633449 ul {list-style: disc;margin-left: 0px;}

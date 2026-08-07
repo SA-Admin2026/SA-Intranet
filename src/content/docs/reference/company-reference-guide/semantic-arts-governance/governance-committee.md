@@ -3,10 +3,7 @@ title: "Governance Committee"
 confluence_id: 2866216975
 source: Governance-Committee_2866216975.html
 ---
-
-# Governance Committee
-
-Please see [Semantic Arts Governance](README.md) for a description of the duties of the governance committee.
+Please see [Semantic Arts Governance](./) for a description of the duties of the governance committee.
 
 If you have a question, comment, or concern you’d like to share with the governance committee, you can use the email address [governance@semanticarts.com](mailto:governance@semanticarts.com). This email list includes the governance committee members but not the president, CEO, or COO.
 

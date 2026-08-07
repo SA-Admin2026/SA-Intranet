@@ -3,7 +3,6 @@ title: "So you want to deploy your first knowledge graph?"
 confluence_id: 1494024193
 source: "1494024193.html"
 ---
-
 This is a cheat sheet I used for an informal interview on the KGC Knowledge Espresso series on December 17. 2020.
 
 ### **Advertised Summary**:

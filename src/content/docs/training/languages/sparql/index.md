@@ -3,7 +3,6 @@ title: "SPARQL"
 confluence_id: 5767170
 source: "SPARQL_5767170.html"
 ---
-
 ## Tutorials
 
 - <https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial>

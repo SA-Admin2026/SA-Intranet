@@ -3,7 +3,6 @@ title: "Metric: Conciseness"
 confluence_id: 868647004
 source: "868647004.html"
 ---
-
 Report on the Quality of Upper Level Ontologies
 
 @Date 2020-02-13

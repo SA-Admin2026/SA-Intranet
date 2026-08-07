@@ -3,7 +3,6 @@ title: "Earned Revenue & AR Accounting"
 confluence_id: 2282520577
 source: "2282520577.html"
 ---
-
 /\*<![CDATA[\*/
 div.rbtoc1784849633419 {padding: 0px;}
 div.rbtoc1784849633419 ul {list-style: disc;margin-left: 0px;}

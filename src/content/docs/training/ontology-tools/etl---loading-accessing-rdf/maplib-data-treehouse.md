@@ -3,7 +3,6 @@ title: "maplib (Data Treehouse)"
 confluence_id: 3217260545
 source: "3217260545.html"
 ---
-
 *Note: Initial research performed in December 2025 for Payzer as an alternative to tarql. For Payzer, tarql currently performs adequately, but it is not actively maintained and there is overhead that comes along with Java.*
 
 **Background Resources**

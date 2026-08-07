@@ -3,7 +3,6 @@ title: "Proposed Improvements to Ontologist Onboarding"
 confluence_id: 2333245449
 source: "Proposed-Improvements-to-Ontologist-Onboarding_2333245449.html"
 ---
-
 Here is the list of ideas for additions, subtractions or improvements to the ontologist onboarding. Please add your feedback and we can begin to compile and assign some tasks for individual contributions.
 
 Thanks!

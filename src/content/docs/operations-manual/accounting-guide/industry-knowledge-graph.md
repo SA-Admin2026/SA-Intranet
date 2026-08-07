@@ -3,7 +3,6 @@ title: "Industry Knowledge Graph"
 confluence_id: 2279211020
 source: "Industry-Knowledge-Graph_2279211020.html"
 ---
-
 * Sales Receipts
 * Year End Tasks
 

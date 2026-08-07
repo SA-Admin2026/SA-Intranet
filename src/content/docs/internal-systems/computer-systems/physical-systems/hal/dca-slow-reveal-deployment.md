@@ -3,9 +3,6 @@ title: "DCA & Slow Reveal deployment"
 confluence_id: 771751941
 source: 771751941.html
 ---
-
-# DCA & Slow Reveal deployment
-
 Here is (hopefully) the current information about deployment of the 2019 DCA and Slow Reveal.
 
 ## DCA & Slow Reveal

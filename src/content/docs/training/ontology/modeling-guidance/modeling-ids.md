@@ -3,7 +3,6 @@ title: "Modeling IDs"
 confluence_id: 2350284819
 source: "Modeling-IDs_2350284819.html"
 ---
-
 A collection of Semantic Arts resources for modeling IDs:
 
 - March 2021 gist Council [discussion](https://www.youtube.com/watch?v=Q3R3Z9QEJtY) of IDs (by Dan Carey)

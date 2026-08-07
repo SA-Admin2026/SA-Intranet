@@ -3,7 +3,6 @@ title: "Operational To Do Lists"
 confluence_id: 2278457418
 source: "Operational-To-Do-Lists_2278457418.html"
 ---
-
 Though this list cannot be comprehensive, here is a breakdown of some typical tasks that should be on a to do list, along with their frequency
 
 # Accounting

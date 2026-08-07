@@ -3,7 +3,6 @@ title: "External (non-Semantic-Arts) Ontologies"
 confluence_id: 578093057
 source: "578093057.html"
 ---
-
 This page is for information about existing ontologies that may be of interest for projects or as a place to start your research.
 
 ## Financial Ontologies

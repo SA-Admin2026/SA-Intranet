@@ -3,7 +3,6 @@ title: "RDF Reification vs. mscore:ComplexRelationship & gist:TemporalRelation"
 confluence_id: 1160216595
 source: "1160216595.html"
 ---
-
 At MorganStanley (MS) we created a superclass of TemporalRelation for instances of turning any relationship between two things into a separate thing. An instance of ComplexRelationship attaches an IRI to the fact of something being in a relationship with something else. An important example as MS the relationship that says a particular risk is a concern in a particular process. We created a class called ProcessRisk for this. There are two generic properties:
 
 - hasRelSubject points from the complex relationship instance to the subject of the reified property (e.g. a risk)

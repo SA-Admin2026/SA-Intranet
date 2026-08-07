@@ -3,7 +3,6 @@ title: "Display of Inferred Classes"
 confluence_id: 23101452
 source: "Display-of-Inferred-Classes_23101452.html"
 ---
-
 DMc E-mailed to the Protégé user group.
 
 **From:** Dave McComb   

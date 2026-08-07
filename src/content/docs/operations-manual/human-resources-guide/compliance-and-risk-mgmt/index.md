@@ -3,7 +3,6 @@ title: "Compliance & Risk Mgmt"
 confluence_id: 2254340111
 source: "2254340111.html"
 ---
-
 Legal Representation
 
 **Kevin Ward**

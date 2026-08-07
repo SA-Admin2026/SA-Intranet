@@ -3,7 +3,6 @@ title: "Metric: Accuracy"
 confluence_id: 1226244097
 source: "1226244097.html"
 ---
-
 ## Summary
 
 An Ontology is accurate to the degree that it’s concepts, terms and axioms align with the consensus view of industry and client experts within the domain.

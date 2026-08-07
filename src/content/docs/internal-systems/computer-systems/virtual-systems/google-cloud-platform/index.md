@@ -3,9 +3,6 @@ title: "Google Cloud Platform"
 confluence_id: 73564161
 source: Google-Cloud-Platform_73564161.html
 ---
-
-# Google Cloud Platform
-
 We are using the Google Cloud Platform to host our demonstrations. Each demonstration configuration will have setup and tear-down scripts.
 
 You will find the scripts in the GitHub repository: <https://github.com/semanticarts/development-tools>

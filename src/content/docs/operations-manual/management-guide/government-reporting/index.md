@@ -3,7 +3,6 @@ title: "Government Reporting"
 confluence_id: 2253226043
 source: "Government-Reporting_2253226043.html"
 ---
-
 Video Reference (Sales Reporting): <https://youtu.be/yxvp4jazz-w>
 
 There are two types of government reporting: payroll filings and misc taxes.

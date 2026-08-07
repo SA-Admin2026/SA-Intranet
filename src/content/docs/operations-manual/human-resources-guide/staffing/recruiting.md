@@ -3,7 +3,6 @@ title: "Recruiting"
 confluence_id: 2254274561
 source: "Recruiting_2254274561.html"
 ---
-
 Interviewing candidates must be as consistent as possible and comply with all applicable laws regarding discrimination, accommodations, etc.
 
 The process evolves frequently and should never be too rigid.

@@ -3,7 +3,6 @@ title: "International Accounting"
 confluence_id: 2263416833
 source: "International-Accounting_2263416833.html"
 ---
-
 * Reconciling bank statements
 * Payroll related tasks
 * Year End Tasks

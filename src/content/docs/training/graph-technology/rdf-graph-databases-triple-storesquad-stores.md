@@ -3,7 +3,6 @@ title: "RDF Graph Databases (Triple stores/Quad stores)"
 confluence_id: 3013541900
 source: "3013541900.html"
 ---
-
 ### Vendors (examples)
 
 - Allegrograph - Franz Inc

@@ -3,7 +3,6 @@ title: "Python Cookbook"
 confluence_id: 1474628
 source: "Python-Cookbook_1474628.html"
 ---
-
 ### Querying Allegrograph
 
 ```

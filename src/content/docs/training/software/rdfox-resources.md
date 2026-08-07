@@ -3,7 +3,6 @@ title: "RDFox Resources"
 confluence_id: 2196340737
 source: "RDFox-Resources_2196340737.html"
 ---
-
 <https://medium.com/oxford-semantic-technologies/getting-started-with-rdfox-79adbbfa86b1>
 
 <https://medium.com/oxford-semantic-technologies/datalog-basics-and-rdfox-942768327604>

@@ -3,9 +3,6 @@ title: "Ontotext GraphDB"
 confluence_id: 1474604
 source: Ontotext-GraphDB_1474604.html
 ---
-
-# Ontotext GraphDB
-
 As a partner of Ontotext, they have given us a partner development license for GraphDB SE & EE (Standard Edition vs Enterprise Edition).
 
 We have an instance running on our internal server. You will need an account to login and use it. I have created a shared account that can be used by anyone:

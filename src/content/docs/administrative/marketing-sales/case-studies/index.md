@@ -3,9 +3,6 @@ title: "Case Studies"
 confluence_id: 2346090508
 source: Case-Studies_2346090508.html
 ---
-
-# Case Studies
-
 Your assignment:
 
 - Write down all projects you’ve been involved with

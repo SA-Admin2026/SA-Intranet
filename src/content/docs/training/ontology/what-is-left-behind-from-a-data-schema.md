@@ -3,7 +3,6 @@ title: "What is left behind from a data schema?"
 confluence_id: 5767176
 source: "5767176.html"
 ---
-
 We create ontologies from data schema and often see an order of magnitude reduction. This page is meant to detail out what kind of stuff is left behind, with examples. We should have lots of examples from Schneider, and Broadridge.
 
 Kinds of stuff left behind:

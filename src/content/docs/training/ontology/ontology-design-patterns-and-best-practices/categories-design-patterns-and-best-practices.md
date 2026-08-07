@@ -3,7 +3,6 @@ title: "Categories: Design Patterns and Best Practices"
 confluence_id: 2370568231
 source: "2370568231.html"
 ---
-
 Notes from the [Ontology Knowledge Exchange](/ontology/ontology-knowledge-exchange-oke/) meeting on 2023-03-13 ([recording)](https://datacentric.sharepoint.com/:v:/s/staff/Eco1xJCbOMVJmq3nguBeWywBh2tGqQeGhxTEN1NZFmdWSg). Some of these were identified as best practices/design patterns, some as open questions.
 
 # Categories and Relationships

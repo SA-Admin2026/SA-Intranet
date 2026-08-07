@@ -3,7 +3,6 @@ title: "SA Pharma Offerings"
 confluence_id: 2992078853
 source: "SA-Pharma-Offerings_2992078853.html"
 ---
-
 gistPharma repo: <https://github.com/semanticarts/gistPharma>
 
 One drive directory: [Pharma](https://datacentric.sharepoint.com/:f:/s/staff/EkjH50P-8eRJhY2odv15824BXOn7bq7T5gMAj_L78tXGNg?e=ncGr83)

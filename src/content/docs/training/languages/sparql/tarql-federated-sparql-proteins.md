@@ -3,7 +3,6 @@ title: "tarql + Federated SPARQL (+ proteins!)"
 confluence_id: 2213969921
 source: "2213969921.html"
 ---
-
 This example emerged from the creation of instance data at Amgen based on denormalized database tables. It features a federated SPARQL call to a public protein database.
 
 The table below (vastly simplified) models a molecular target to which Amgen drugs attach when they’re doing their job properly.

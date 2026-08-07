@@ -4,7 +4,6 @@ description: "State-specific handbook addenda — choose the state where you wor
 sidebar:
   order: 12
 ---
-
 ## Select your state
 
 You are covered by the base **Employee Handbook** plus the addendum for the state where you work. Choose yours:

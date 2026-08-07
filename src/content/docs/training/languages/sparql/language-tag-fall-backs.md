@@ -3,7 +3,6 @@ title: "Language Tag Fall-backs"
 confluence_id: 1474623
 source: "Language-Tag-Fall-backs_1474623.html"
 ---
-
 Try to get preferred language version of a label, but if not, start falling back to less preferred options
 
 The data:

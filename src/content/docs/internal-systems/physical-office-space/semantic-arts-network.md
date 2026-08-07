@@ -3,9 +3,6 @@ title: "Semantic Arts Network"
 confluence_id: 950388
 source: Semantic-Arts-Network_950388.html
 ---
-
-# Semantic Arts Network
-
 ### Internal Wireless
 
 - SSID: Semantic Arts Internal

@@ -3,7 +3,6 @@ title: "Property Definitions"
 confluence_id: 2381185071
 source: "Property-Definitions_2381185071.html"
 ---
-
 # WIP Published by mistake - please do not comment yet.
 
 Follow-up to [Ontology Knowledge Exchange](#) meeting 2023-03-28 and proposal for discussion at a subsequent meeting.

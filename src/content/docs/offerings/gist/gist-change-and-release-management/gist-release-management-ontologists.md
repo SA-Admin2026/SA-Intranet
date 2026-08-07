@@ -3,9 +3,6 @@ title: "gist Release Management: Ontologists"
 confluence_id: 1126760539
 source: 1126760539.html
 ---
-
-# gist Release Management: Ontologists
-
 - [Introduction](#gistReleaseManagement:Ontologists-Introduction)
 - [Release Process](#gistReleaseManagement:Ontologists-ReleaseProcess)
   - [Leading up to the Release](#gistReleaseManagement:Ontologists-LeadinguptotheRelease)
@@ -122,7 +119,7 @@ Note: the official release date is the date the release is posted to GitHub, not
 2. Test internal links in all documentation files, both HTML and Markdown versions, in both the `/docs` and `/migration` folders and subfolders, to make sure the “patching” operation of the bundler has worked properly. Links in HTML files should link to other HTML files; links in Markdown files should link to other Markdown files. Examples:
 
    1. Links to `./MajorVersionMigration.md` and `../migration/v13.0` in the Release 13.0.0 section of `ReleaseNotes.md`. (The folder link will not work in the Markdown file.)
-   2. Links to `../../docs/MajorVersionMigration.md`, `./AddressMigration.md`, and `../../docs/models/AddressGuidance.md` in `migration/v13.0/README.md`.
+   2. Links to `../../docs/MajorVersionMigration.md`, `./AddressMigration.md`, and `../../docs/models/AddressGuidance.md` in `migration/v13.0/`.
 3. Review the HTML versions of the Markdown files for formatting problems, paying special attention to tables. Left-justification seems to work best. This can be achieved with the colon placement shown below:
 
 ```

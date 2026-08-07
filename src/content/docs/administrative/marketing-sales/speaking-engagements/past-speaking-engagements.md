@@ -3,9 +3,6 @@ title: "Past Speaking Engagements"
 confluence_id: 751730696
 source: Past-Speaking-Engagements_751730696.html
 ---
-
-# Past Speaking Engagements
-
 | Conference | Sponsor / Web Site | Year | Location | Start Date | Conference Description | Tracks | Semantic Arts Speaker | Name of Talk | Talk Type |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Enterprise Data World | Dataversity  <https://edw2018.dataversity.net/> | 2018 | San Diego, CA | 4/21/18 | Comprehensive educational conference on data management. | Artificial Intelligence; Big data; Blockchain; Data Quality; Data Architecture; Data Modeling; Data Science; Information Architecture; Ontologies; Graph data; Machine learning; Governance | 1. Mark Ouska 2. Dave McComb 3. Michael Uschold 4. Dan Carey | 1. Why I Ignored Ontology and Graph DB, and Why You Shouldn't 2. Data-Centric Architecture Data Architecture 3. Enterprise Ontology: A Hot Knife Through Complexity 4. Semantics for Metadata Management | 1. 1-hour talk 2. 1-hour talk 3. 1-hour talk 4. Workshop |

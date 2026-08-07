@@ -3,9 +3,6 @@ title: "Version Control for RDF Artifacts"
 confluence_id: 1573584901
 source: Version-Control-for-RDF-Artifacts_1573584901.html
 ---
-
-# Version Control for RDF Artifacts
-
 | **Architecture review date** | First pass by 22 Jan 2021 |
 | --- | --- |
 | **Audience** | [Developers](https://semarts.atlassian.net/people/team/8c45d811-8e56-42c8-b15b-0161a2e3fe57) ([Boris Pelakh](https://semarts.atlassian.net/wiki/people/5bc7646da994e83f6ee80aed?ref=confluence)) |

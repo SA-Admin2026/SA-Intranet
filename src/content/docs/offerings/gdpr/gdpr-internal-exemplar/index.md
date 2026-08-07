@@ -3,9 +3,6 @@ title: "GDPR Internal Exemplar"
 confluence_id: 71368724
 source: GDPR-Internal-Exemplar_71368724.html
 ---
-
-# GDPR Internal Exemplar
-
 Inventory all data stores
 
 - "n" triple stores
@@ -35,6 +32,6 @@ Create a strategy per type of data store
 
 ## In this section
 
-- [GDPR Ontology](gdpr-ontology/README.md)
+- [GDPR Ontology](gdpr-ontology/)
 
 <!-- section-nav:end -->

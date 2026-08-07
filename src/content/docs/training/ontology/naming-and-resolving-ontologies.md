@@ -3,7 +3,6 @@ title: "Naming and Resolving Ontologies"
 confluence_id: 7176194
 source: "Naming-and-Resolving-Ontologies_7176194.html"
 ---
-
 ## UPDATE on 2018-01-26
 
 We had a lively discussion on this today.

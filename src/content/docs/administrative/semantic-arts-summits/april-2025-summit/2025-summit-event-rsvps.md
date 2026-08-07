@@ -3,9 +3,6 @@ title: "2025 Summit Event RSVPs"
 confluence_id: 2864087105
 source: 2025-Summit-Event-RSVPs_2864087105.html
 ---
-
-# 2025 Summit Event RSVPs
-
 **Tuesday, April 29th**
 
 **Option 1:** [The Fort Collins Ghost Tour | Fort Collins Tours, Inc.](https://fareharbor.com/embeds/book/fortcollinstours/items/68824/calendar/2025/03/?full-items=yes&flow=368660)

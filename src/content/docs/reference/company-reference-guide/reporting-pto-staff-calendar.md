@@ -3,9 +3,6 @@ title: "Reporting PTO & Staff Calendar"
 confluence_id: 3248226305
 source: 3248226305.html
 ---
-
-# Reporting PTO & Staff Calendar
-
 As stated in our Employee Handbook, the company does not in the normal course of business require requests for and approval of time off. We do, however, require employees to make notification prior to any time away from work, and you must consult with your project manager to ensure that your time off schedule is consistent with project needs. For planning purposes, it is recommended that you add the time away and discuss with your project manager as soon as you know that you will be traveling.
 
 The best practice for this is to add your PTO directly to the SA Calendar. Please follow these steps in order to make your event visible but unobtrusive:

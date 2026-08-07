@@ -3,9 +3,6 @@ title: "Cooking Class Interest"
 confluence_id: 2339110925
 source: Cooking-Class-Interest_2339110925.html
 ---
-
-# Cooking Class Interest
-
 This page is to gauge interest in attending the cooking class. You can review potential menu options on the attached document, then add your name and some preferred menu options to the list below.
 
 Feel free to drop any questions or comments as well, and we can review them as we finalize a plan.

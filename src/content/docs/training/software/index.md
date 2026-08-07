@@ -3,7 +3,6 @@ title: "Software"
 confluence_id: 5767172
 source: "Software_5767172.html"
 ---
-
 ## In this section
 
 - [AllegroGraph](/software/allegrograph/)
@@ -15,5 +14,4 @@ source: "Software_5767172.html"
 - [RDFox Resources](/software/rdfox-resources/)
 - [Semaphore](/software/semaphore/)
 - [StarDog](/software/stardog/)
-- [TopBraid Products (Composer, EVN, EDG)](/software/topbraid-products-composer-evn-edg/)
 - [VPN](/software/vpn/)

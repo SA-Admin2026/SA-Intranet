@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-02-20"
 confluence_id: 835649777
 source: gist-Issue-Review-2020-02-20_835649777.html
 ---
-
-# gist Issue Review 2020-02-20
-
 **Attending:**
 
 Rebecca, Boris, Michael, Peter, Dan, MarkW, Jamie
@@ -17,7 +14,7 @@ Rebecca, Boris, Michael, Peter, Dan, MarkW, Jamie
 
    1. No January release - rolled into February
    2. Are we on track for the February release? - review issues in the project: <https://github.com/semanticarts/gist/projects/4>
-   3. Review and clarify the release process defined in [gist Issue Review](/wiki/pages/createpage.action?spaceKey=OF&title=gist%20Issue%20Review&linkCreation=true&fromPageId=835649777)
+   3. Review and clarify the release process defined in gist Issue Review
 3. **Old topics** (left over from previous meetings)
 
    1. [Boris Pelakh](https://semarts.atlassian.net/wiki/people/5bc7646da994e83f6ee80aed?ref=confluence) to fold functionality from versionizer, serializer, and bundler into ontology-toolkit. See [issue #150](https://github.com/semanticarts/gist/issues/150) and <https://github.com/semanticarts/ontology-toolkit/pull/2>

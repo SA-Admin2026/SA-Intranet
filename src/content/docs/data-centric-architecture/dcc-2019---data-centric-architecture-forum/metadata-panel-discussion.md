@@ -3,9 +3,6 @@ title: "Metadata Panel Discussion"
 confluence_id: 679182354
 source: Metadata-Panel-Discussion_679182354.html
 ---
-
-# Metadata Panel Discussion
-
 Cause metadata is where it's at.
 
 ---

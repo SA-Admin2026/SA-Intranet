@@ -3,7 +3,6 @@ title: "Semantic Operations Repository Template (SORT)"
 confluence_id: 2873294870
 source: "2873294870.html"
 ---
-
 What ontology tools would be convenient to have for developing a semantic project? My answer to this question comes in the form of a repository template, rather than a listing of tools.
 
 The is a sequence of actions that must be done to do the Extraction, Translation, and Load of a Knowledge Graph for any domain. At Amgen we had a GitLab/GitHub Repository Template that enabled the actions necessary to repeatedly do the actions of ETL. This template was domain agnostic, it was not specific to the pharma domain.

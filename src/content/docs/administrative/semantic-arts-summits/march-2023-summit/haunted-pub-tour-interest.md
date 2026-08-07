@@ -3,9 +3,6 @@ title: "Haunted Pub Tour Interest"
 confluence_id: 2342977551
 source: Haunted-Pub-Tour-Interest_2342977551.html
 ---
-
-# Haunted Pub Tour Interest
-
 Please add your name below if you are interested in attending. Will start at 5:30 on Thursday and last about an hour and a half.
 
 [Haunted Pub Tours - Downtown Fort Collins](https://downtownfortcollins.com/event/haunted-pub-tours/2023-01-19/)

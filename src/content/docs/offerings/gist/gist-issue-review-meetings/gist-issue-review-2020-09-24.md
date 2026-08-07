@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-09-24"
 confluence_id: 1247969281
 source: gist-Issue-Review-2020-09-24_1247969281.html
 ---
-
-# gist Issue Review 2020-09-24
-
 **Attending:** Rebecca, Boris, Jamie, Michael, Meika
 
 # Agenda and Notes

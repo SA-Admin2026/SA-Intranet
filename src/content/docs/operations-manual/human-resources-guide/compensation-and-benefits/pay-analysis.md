@@ -3,7 +3,6 @@ title: "Pay Analysis"
 confluence_id: 2254045185
 source: "Pay-Analysis_2254045185.html"
 ---
-
 Frequency: Occassional
 
 A few times a year or as Dave requests, you should attempt to find comparable salary offerings to those of Semantic Arts. This can be accomplished a few days

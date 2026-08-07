@@ -3,9 +3,6 @@ title: "Managing & Renewing SSL"
 confluence_id: 747077637
 source: 747077637.html
 ---
-
-# Managing & Renewing SSL
-
 Our setup is getting more complex over time. Last time around I missed a couple steps so I've started a script(or at least the steps needed) on HAL: /etc/letsencrypte/sa-renewal-script.bash
 
 On WALL-E, follow the instructions in the file /home/shrek/notes.txt.

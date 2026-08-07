@@ -3,7 +3,6 @@ title: "LLMs and Knowledge Graphs"
 confluence_id: 2428567557
 source: "LLMs-and-Knowledge-Graphs_2428567557.html"
 ---
-
 I’ve been in a few sales calls now (and I’m sure this is happening with clients) that bring up the idea of large language models and how what we do can intersect.
 
 I’m not sure if this is a good blog topic or just something for internal discussion, but my goal is to get feedback as to the intersections of our work, and what knowledge graphs can do to support, augment, limit, etc. large language models.
@@ -57,6 +56,3 @@ One other article from Kurt Cagle I couldn’t even get through: [ChatGPT (LLMs)
 
 ## In this section
 
-- [Untitled whiteboard 2026-05-22 (2)](/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22-2/)
-- [Untitled whiteboard 2026-05-22 (3)](/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22-3/)
-- [Untitled whiteboard 2026-05-22](/ai-usage/llms-and-knowledge-graphs/untitled-whiteboard-2026-05-22/)

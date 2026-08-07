@@ -3,7 +3,6 @@ title: "SPARQL FIBO Queries"
 confluence_id: 520912909
 source: "SPARQL-FIBO-Queries_520912909.html"
 ---
-
 # How to query for the most specific true statement
 
 <https://wiki.edmcouncil.org/display/FLT/How+to+query+for+the+most+specific+true+statement>

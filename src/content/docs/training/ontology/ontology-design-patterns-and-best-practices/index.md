@@ -3,7 +3,6 @@ title: "Ontology Design Patterns and Best Practices"
 confluence_id: 2370830352
 source: "Ontology-Design-Patterns-and-Best-Practices_2370830352.html"
 ---
-
 - [Categories: Design Patterns and Best Practices](/ontology/ontology-design-patterns-and-best-practices/categories-design-patterns-and-best-practices/)
 - [Property Definitions](/ontology/ontology-design-patterns-and-best-practices/property-definitions/)
 - [When OWL-DL is too restrictive](/ontology/ontology-design-patterns-and-best-practices/when-owl-dl-is-too-restrictive/)

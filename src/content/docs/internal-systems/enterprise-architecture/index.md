@@ -3,11 +3,6 @@ title: "Enterprise Architecture"
 confluence_id: 950391
 source: Enterprise-Architecture_950391.html
 ---
-
-# Enterprise Architecture
-
-
-
 <!-- section-nav:start -->
 
 ## In this section

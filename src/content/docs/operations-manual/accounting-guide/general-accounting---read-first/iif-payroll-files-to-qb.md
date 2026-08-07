@@ -3,7 +3,6 @@ title: "IIF Payroll Files to QB"
 confluence_id: 2957639688
 source: "IIF-Payroll-Files-to-QB_2957639688.html"
 ---
-
 Make sure you login to an account with required permissions. You must also be in “single user mode”
 
 Once there, go to File - Utilities - Import - IIF Files

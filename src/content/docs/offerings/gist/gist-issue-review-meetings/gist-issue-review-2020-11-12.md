@@ -3,9 +3,6 @@ title: "gist Issue Review 2020-11-12"
 confluence_id: 1381269505
 source: gist-Issue-Review-2020-11-12_1381269505.html
 ---
-
-# gist Issue Review 2020-11-12
-
 **Attending:** Rebecca, Boris, Meika, Mark Wallace, Michael, Jamie
 
 # Agenda and Notes

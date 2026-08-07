@@ -3,9 +3,6 @@ title: "DCA August Design Notes"
 confluence_id: 30736401
 source: DCA-August-Design-Notes_30736401.html
 ---
-
-# DCA August Design Notes
-
 ![](/internal-systems/attachments/30736401/30736400.png)
 
 This has just been refactored this way, and may still have some loose ends.

@@ -3,9 +3,6 @@ title: "Saturday Escape Room"
 confluence_id: 2369945603
 source: Saturday-Escape-Room_2369945603.html
 ---
-
-# Saturday Escape Room
-
 Time: 10:00 a.m. (lasts about 60 minutes)
 
 [Fort Collins Escape Room -](https://fortcollinsescaperoom.com/)

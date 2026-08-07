@@ -3,7 +3,6 @@ title: "ACH and BillPay Payments"
 confluence_id: 2546466836
 source: "ACH-and-BillPay-Payments_2546466836.html"
 ---
-
 We are attempting to move fully away from any type of payments where a provider can “pull” funds, and only allow those in which we “push” funds. This is to increase security around our banking information and ensure we are fully aware of our cash flow at all times.
 
 When sending money out via ACH, the current procedure is that Dave will initiate the ACH payments via Key Bank and leave the remittance information on my desk. This will usually be in the form of a paper check printed from QuickBooks.

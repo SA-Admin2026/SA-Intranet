@@ -3,9 +3,6 @@ title: "Parking Procedures"
 confluence_id: 2220523529
 source: Parking-Procedures_2220523529.html
 ---
-
-# Parking Procedures
-
 In order to park in the parking garage adjacent to the Opera Galleria, you will need to either pay the daily/hourly rate or have a parking permit. We pay for two permits as part of owning the units. Currently, Dave and JT are the permit holders.
 
 Robbie with WW Reynolds ([rsaunders@wwreynolds.com](mailto:rsaunders@wwreynolds.com)) can handle making permit modifications. If it is something she can’t do she will refer you to parking services:

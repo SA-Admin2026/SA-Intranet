@@ -3,7 +3,6 @@ title: "General Notes and Vocabulary"
 confluence_id: 2995879938
 source: "General-Notes-and-Vocabulary_2995879938.html"
 ---
-
 ## OPEN DEFINITIONS:
 
 - Biological: Relating to biology or living organisms.

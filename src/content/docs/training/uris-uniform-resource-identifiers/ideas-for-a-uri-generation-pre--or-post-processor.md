@@ -3,7 +3,6 @@ title: "Ideas for a URI Generation Pre- or Post-Processor"
 confluence_id: 2765750273
 source: "Ideas-for-a-URI-Generation-Pre--or-Post-Processor_2765750273.html"
 ---
-
 [Neil Graham](https://semarts.atlassian.net/wiki/people/5a904d0a6ac8fb5278d298ac?ref=confluence) and [Doug Beeson](https://semarts.atlassian.net/wiki/people/60fb10539f975e0069e7bcd1?ref=confluence) have been brainstorming how to reuse blocks of BIND statements in tarql/Sparql.Anything/SPARQL CONSTRUCTs in general.
 
 The need arises when trying to mint consistent IRIs in different scripts that align to different input data. For example, two different data sources may provide complementary information about a gist:Event. The Event instance IRI must be minted the same in both scripts (in order to “snap together” in the graph) but the names of the input data fields - and hence the BIND statements - may differ across scripts.

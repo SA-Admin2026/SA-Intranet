@@ -3,9 +3,6 @@ title: "License"
 confluence_id: 57212986
 source: License_57212986.html
 ---
-
-# License
-
 Priyank Developer License
 
 Host yank-mbp.local  

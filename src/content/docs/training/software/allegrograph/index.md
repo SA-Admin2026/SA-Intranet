@@ -3,7 +3,6 @@ title: "AllegroGraph"
 confluence_id: 9437238
 source: "AllegroGraph_9437238.html"
 ---
-
 ## Gruff
 
 ### Connecting to a triple store.

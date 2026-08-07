@@ -3,9 +3,6 @@ title: "Updating AllegroGraph"
 confluence_id: 676888586
 source: Updating-AllegroGraph_676888586.html
 ---
-
-# Updating AllegroGraph
-
 **Current Version**: 7.0.3
 
 **Server**: HAL-9000

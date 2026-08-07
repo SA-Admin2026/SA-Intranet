@@ -2,9 +2,6 @@
 title: "Reference"
 description: "The employee reference library — handbook, employment agreement, and the company reference guide, all in one searchable place."
 ---
-
-# Reference
-
 The firm's employee reference library. Everything here is the **verbatim, authoritative text** — read it, search it, and download the original document where you need the signed/formatted version.
 
 <section-search data-prefix="/reference/" data-label="the Reference section">

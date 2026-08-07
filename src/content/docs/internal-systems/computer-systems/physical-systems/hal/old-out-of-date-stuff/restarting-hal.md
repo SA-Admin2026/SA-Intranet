@@ -3,9 +3,6 @@ title: "Restarting HAL"
 confluence_id: 1474656
 source: Restarting-HAL_1474656.html
 ---
-
-# Restarting HAL
-
 ### Start AllegroGraph
 
 1. Log into the semartsdev account with the password Eva2001:

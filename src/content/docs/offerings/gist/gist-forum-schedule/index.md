@@ -3,9 +3,6 @@ title: "gist Forum Schedule"
 confluence_id: 51871760
 source: gist-Forum-Schedule_51871760.html
 ---
-
-# gist Forum Schedule
-
 The gist Forum is held on the third Tuesday of every other month at 11:30 AM MT, starting in January.
 
 | Month | Presenter | Topic/Title |

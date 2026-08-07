@@ -3,9 +3,6 @@ title: "How create a rest-api endpoint"
 confluence_id: 57049126
 source: How-create-a-rest-api-endpoint_57049126.html
 ---
-
-# How create a rest-api endpoint
-
 ## Step-by-step guide
 
 1. Start MarkLogic server if it isn't already started.

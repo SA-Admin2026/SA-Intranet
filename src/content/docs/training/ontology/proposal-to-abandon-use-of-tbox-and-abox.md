@@ -3,7 +3,6 @@ title: "Proposal to abandon use of 'TBox' and 'ABox'"
 confluence_id: 2330689675
 source: "Proposal-to-abandon-use-of-%27TBox%27-and-%27ABox%27_2330689675.html"
 ---
-
 If you want to say something, you **A**ssert it, for example, Dave is a Person and the CEO of Semantic Arts. You need some kind of language to make such assertions, and languages contain **T**erms. In the land of ontologies and triples, assertions comprise the **A**Box and terms comprise the **T**Box. This is the origin of the terms, ABox and TBox.
 
 The idea was that the ontology was the TBox and the data (often called the knowledge base) was the ABox. The problem with this is that you need to make assertions to create an ontology, e.g. Monkey is a subclass of Primate, so the idea of assertion does not distinguish ABox from TBox. But it gets worse, the idea of a term also does not distinguish ABox from TBox. Let's see why.

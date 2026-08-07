@@ -3,9 +3,6 @@ title: "Semantic Arts Publication Policy"
 confluence_id: 3306913793
 source: Semantic-Arts-Publication-Policy_3306913793.html
 ---
-
-# Semantic Arts Publication Policy
-
 The purpose of this policy is to ensure the protection of Semantic Arts intellectual property, the maintenance of our standards of quality, and uniformity of messaging.
 
 You must obtain approval from the President or CEO before making any Semantic Arts work products public. The President/CEO will enlist others in the review as appropriate.

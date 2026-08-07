@@ -3,9 +3,6 @@ title: "DCC 2019 - Mark Wallace raw notes"
 confluence_id: 678428678
 source: DCC-2019---Mark-Wallace-raw-notes_678428678.html
 ---
-
-# DCC 2019 - Mark Wallace raw notes
-
 # DCC Ft Collins
 
 --

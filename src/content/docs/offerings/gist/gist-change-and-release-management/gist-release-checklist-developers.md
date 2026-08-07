@@ -3,9 +3,6 @@ title: "gist Release Checklist: Developers"
 confluence_id: 49479787
 source: 49479787.html
 ---
-
-# gist Release Checklist: Developers
-
 This checklist applies to the developers' release task after being given the release package by the ontologists. The ontologists' release process is outlined in [gist Release Management: Ontologists](gist-release-management-ontologists.md).
 
 - The gist release manager will create a .zip file for the release

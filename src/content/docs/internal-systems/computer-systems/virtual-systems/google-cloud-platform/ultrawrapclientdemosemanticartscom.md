@@ -3,9 +3,6 @@ title: "ultrawrap.client.demo.semanticarts.com"
 confluence_id: 73334813
 source: ultrawrap.client.demo.semanticarts.com_73334813.html
 ---
-
-# ultrawrap.client.demo.semanticarts.com
-
 ## Purpose
 
 A Microsoft Server 2012 instance created to run the client side of the Ultrawrap demonstration.

@@ -3,9 +3,6 @@ title: "Ontologist Interviewing Process"
 confluence_id: 2248867841
 source: Ontologist-Interviewing-Process_2248867841.html
 ---
-
-# Ontologist Interviewing Process
-
 *NOTE: THIS DOCUMENT IS IN DRAFT FORM WITH A FEW CHANGES STILL HAPPENING - FEEL FREE TO SUBMIT SUGGESTIONS!*
 
 # Core Competencies

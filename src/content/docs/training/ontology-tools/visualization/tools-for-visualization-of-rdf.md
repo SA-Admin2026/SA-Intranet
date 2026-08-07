@@ -3,7 +3,6 @@ title: "Tools for Visualization of RDF"
 confluence_id: 2196963329
 source: "Tools-for-Visualization-of-RDF_2196963329.html"
 ---
-
 ## Tom Sawyer Software
 
 [Web page](https://www.tomsawyer.com/)

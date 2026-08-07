@@ -3,9 +3,6 @@ title: "Cronjob"
 confluence_id: 38273028
 source: Cronjob_38273028.html
 ---
-
-# Cronjob
-
 > To execute commands or scripts (groups of commands) automatically at a specified time/date.
 
 ## Step-by-step guide

@@ -3,7 +3,6 @@ title: "Reference data"
 confluence_id: 2385838081
 source: "Reference-data_2385838081.html"
 ---
-
 Units of Measure and Aspects are reference data; they are static and re-usable. As we work with different clients, we can grow a set of curated reference data for Units of Measure and Aspects that can be used on future projects.
 
 The reference data can be used to:

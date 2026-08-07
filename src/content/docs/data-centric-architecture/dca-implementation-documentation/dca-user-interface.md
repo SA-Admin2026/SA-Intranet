@@ -3,9 +3,6 @@ title: "DCA User Interface"
 confluence_id: 757760002
 source: DCA-User-Interface_757760002.html
 ---
-
-# DCA User Interface
-
 A place to think about our user interface. May eventually morph into specification and later documentation.
 
 Things to view & manipulate:

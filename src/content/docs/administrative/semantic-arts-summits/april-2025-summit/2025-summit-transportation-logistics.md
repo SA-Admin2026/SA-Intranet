@@ -3,9 +3,6 @@ title: "2025 Summit Transportation Logistics"
 confluence_id: 2864087058
 source: 2025-Summit-Transportation-Logistics_2864087058.html
 ---
-
-# 2025 Summit Transportation Logistics
-
 Add information below related to your arrival & departure date/time. This will facilitate getting everyone to and from Denver with minimal shuttle use.
 
 Danny can pick up and drop off up to 4 other people from/to hotel, cooking class, and Rio.

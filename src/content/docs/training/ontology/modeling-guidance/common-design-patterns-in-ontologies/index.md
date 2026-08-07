@@ -3,7 +3,6 @@ title: "Common Design Patterns in Ontologies"
 confluence_id: 10321947
 source: "Common-Design-Patterns-in-Ontologies_10321947.html"
 ---
-
 ## Resources
 
 - Workshop on Ontology Design and Patterns <http://ontologydesignpatterns.org/wiki/WOP:Main>

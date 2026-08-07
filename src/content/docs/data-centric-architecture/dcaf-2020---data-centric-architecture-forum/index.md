@@ -3,9 +3,6 @@ title: "DCAF 2020 - Data Centric Architecture forum"
 confluence_id: 772243506
 source: DCAF-2020---Data-Centric-Architecture-forum_772243506.html
 ---
-
-# DCAF 2020 - Data Centric Architecture forum
-
 29 Total Attendees (16 Non-SA Registered; 5 SA officially registered, 8 planned) | 2 Vendors | 4 Presenters
 
 ## Agenda

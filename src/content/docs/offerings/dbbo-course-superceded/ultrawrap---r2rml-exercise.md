@@ -3,9 +3,6 @@ title: "Ultrawrap - R2RML Exercise"
 confluence_id: 3407963
 source: Ultrawrap---R2RML-Exercise_3407963.html
 ---
-
-# Ultrawrap - R2RML Exercise
-
 **Email to Juan on 2016-01-8**
 
 1. Needs to be super-simple, to allow students to learn everything they need to know about the tool and the approach to complete the connect to the RDB and execute SPARQL queries, all in 90 minutes. We want the students to not just watch, but to do it themselves.  To help out the slower students, we recommend they work in pairs with mixed ability.

@@ -3,7 +3,6 @@ title: "Protege"
 confluence_id: 3407953
 source: "Protege_3407953.html"
 ---
-
 # Child pages
 
 - [Catalog File](/ontology-tools/protege/catalog-file/)

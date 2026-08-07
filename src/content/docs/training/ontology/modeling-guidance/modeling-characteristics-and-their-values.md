@@ -3,7 +3,6 @@ title: "Modeling Characteristics and Their Values"
 confluence_id: 1096777729
 source: "Modeling-Characteristics-and-Their-Values_1096777729.html"
 ---
-
 Here are a few thoughts about different ways to model characteristics and their values. I have done this a number of times over the years. For example:
 
 - Product specifications for Proctor & Gamble, and Schneider

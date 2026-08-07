@@ -3,7 +3,6 @@ title: "Notes on creating triples"
 confluence_id: 39583746
 source: "Notes-on-creating-triples_39583746.html"
 ---
-
 I got an odd error, when I generated triples from a script.  I had triples that used a gist property (gist:categorizedBy for one).  I imported gist, but didn't redeclare this to be an object property in my ontology.
 
 The behavior I got was it was declared to be a annotation in addition to being an object property.  For most views the annotation trumped.

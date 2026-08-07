@@ -3,9 +3,6 @@ title: "SSH Access into HAL-9000"
 confluence_id: 677183594
 source: SSH-Access-into-HAL-9000_677183594.html
 ---
-
-# SSH Access into HAL-9000
-
 - You will have to do this for each individual username on HAL
 - The same SSH key can be used for multiple usernames
 

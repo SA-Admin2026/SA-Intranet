@@ -3,7 +3,6 @@ title: "OWL 2 RL Reasoning"
 confluence_id: 2377908225
 source: "OWL-2-RL-Reasoning_2377908225.html"
 ---
-
 RDFox, which uses an OWL 2 RL reasoner, generates the warning in the attached text file when gist 11.1.0 is loaded.
 
 [![](https://semarts.atlassian.net/wiki/download/thumbnails/2377908225/gist11.1.0.txt?version=2&modificationDate=1680721705969&cacheVersion=1&api=v2&viewType=fileMacro)](/attachments/2377908225/2377908235.txt)

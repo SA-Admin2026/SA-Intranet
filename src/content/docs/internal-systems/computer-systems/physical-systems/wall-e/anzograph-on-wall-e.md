@@ -3,9 +3,6 @@ title: "Anzograph on WALL-E"
 confluence_id: 777617438
 source: Anzograph-on-WALL-E_777617438.html
 ---
-
-# Anzograph on WALL-E
-
 In order to get a web console I ended up installing it as a docker image. Here are some information links:
 
 <https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-centos-7>

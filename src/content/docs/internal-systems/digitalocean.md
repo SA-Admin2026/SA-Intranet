@@ -3,9 +3,6 @@ title: "DigitalOcean"
 confluence_id: 28049413
 source: DigitalOcean_28049413.html
 ---
-
-# DigitalOcean
-
 | Name | IP Address | Created | |
 | --- | --- | --- | --- |
 | ubuntu-status-server  512 MB / 20 GB Disk / SFO1 - Ubuntu LAMP on 14.04    Used to run <http://status.semanticarts.com> | 159.203.242.208 | Could not find that it was doing anything. Turned it off but didn't delete it yet.  Exists but some of the statuses say they have not been updated since 2016. Do we still need it? | |

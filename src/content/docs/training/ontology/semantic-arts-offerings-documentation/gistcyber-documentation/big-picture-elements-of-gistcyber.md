@@ -3,7 +3,6 @@ title: "Big Picture Elements of gistCyber"
 confluence_id: 2976874497
 source: "Big-Picture-Elements-of-gistCyber_2976874497.html"
 ---
-
 # The Big Picture
 
 This page captures some of big picture elements of gistCyber development so we can continue effectively with implementation. Basically, practicing our “think big, and start small” philosophy. Of course, we are well along this path with gistCyber.

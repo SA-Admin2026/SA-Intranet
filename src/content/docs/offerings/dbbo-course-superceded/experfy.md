@@ -3,9 +3,6 @@ title: "Experfy"
 confluence_id: 23953410
 source: Experfy_23953410.html
 ---
-
-# Experfy
-
 We are putting DBBO on the Experfy platform.
 
 - Web site: <https://www.experfy.com/>

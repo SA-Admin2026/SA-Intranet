@@ -3,9 +3,6 @@ title: "Communication & Presentation Training with On-Point"
 confluence_id: 2411954177
 source: 2411954177.html
 ---
-
-# Communication & Presentation Training with On-Point
-
 Below are a few notes I took. I thought maybe a collective notes area would help capture more information for quicker review in the future. I’ll continue to add and invite anyone else to contribute!
 
 \*Note: I included my notes about slide decks in the SA Presentation Template, so won’t duplicate them here

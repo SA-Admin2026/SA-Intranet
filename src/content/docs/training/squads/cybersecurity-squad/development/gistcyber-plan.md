@@ -3,7 +3,6 @@ title: "gistCyber Plan"
 confluence_id: 3097395211
 source: "gistCyber-Plan_3097395211.html"
 ---
-
 # Sounds Like a Plan
 
 It would be useful to have a Plan model for cybersecurity such as the P-Plan. The scope of a Plan is broader than cybersecurity but since it is not currently in gist we’ll have to develop it in gistCyber and propose that it be promoted to gist.

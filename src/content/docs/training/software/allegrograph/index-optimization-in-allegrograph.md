@@ -3,7 +3,6 @@ title: "Index Optimization in Allegrograph"
 confluence_id: 3153657857
 source: "Index-Optimization-in-Allegrograph_3153657857.html"
 ---
-
 ## About Indices
 
 To perform SPARQL queries efficiently, Allegrograph (like all triplestores) uses a set of indices on its data to quickly locate the parts of a triple being sought.

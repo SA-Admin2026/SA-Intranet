@@ -3,7 +3,6 @@ title: "Sampling of Concepts from Ontologies"
 confluence_id: 1301610497
 source: "Sampling-of-Concepts-from-Ontologies_1301610497.html"
 ---
-
 INSTRUCTIONS:
 
 1. Choose an ontology - the directory below is one place to look  

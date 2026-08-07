@@ -3,7 +3,6 @@ title: "gist & UFO"
 confluence_id: 3124494338
 source: "3124494338.html"
 ---
-
 | **Resource Name** | **Link(s)** | **Notes / Potential Use** |
 | --- | --- | --- |
 | OntoUML Specification | <https://ontouml.readthedocs.io/en/latest/index.html> |  |

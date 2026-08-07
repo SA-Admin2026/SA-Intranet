@@ -3,7 +3,6 @@ title: "gistPharma release steps"
 confluence_id: 3065217026
 source: "gistPharma-release-steps_3065217026.html"
 ---
-
 Based on steps outlined on: [gist Extension Management and Development](https://semarts.atlassian.net/wiki/spaces/OF/pages/2397274126/gist+Extension+Management+and+Development#Sub-gist-Release-of-Private-Repository-or-Pre-Production-Release)
 
 Until we clean up our develop branch from materials that shouldn’t be released, we create a release branch from main and selectively merge only the files that need to be released from develop one by one.

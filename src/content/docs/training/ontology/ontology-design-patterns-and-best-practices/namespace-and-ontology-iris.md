@@ -3,7 +3,6 @@ title: "Namespace and Ontology IRIs"
 confluence_id: 2428796963
 source: "Namespace-and-Ontology-IRIs_2428796963.html"
 ---
-
 - [General](#NamespaceandOntologyIRIs-General)
 - [gist](#NamespaceandOntologyIRIs-gist)
 - [Sub-gists](#NamespaceandOntologyIRIs-Sub-gists)

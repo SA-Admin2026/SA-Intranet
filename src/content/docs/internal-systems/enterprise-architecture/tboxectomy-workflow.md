@@ -3,9 +3,6 @@ title: "TBoxectomy Workflow"
 confluence_id: 950392
 source: TBoxectomy-Workflow_950392.html
 ---
-
-# TBoxectomy Workflow
-
 # TBox-ectomy Query
 
 - Save a backup copy of timecard (export triplstore as N-Quads).

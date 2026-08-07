@@ -3,9 +3,6 @@ title: "Getting started"
 confluence_id: 676823281
 source: Getting-started_676823281.html
 ---
-
-# Getting started
-
 Here are some tips to get you started. You can edit this page to see how it works!
 
 ## 1. Create a page
@@ -49,10 +46,10 @@ Standardise and speed up the page creation process with templates. You can creat
 
 - Page:
 
-  [Getting started](/wiki/spaces/dca/pages/676823281/Getting+started)
+  Getting started
 - Page:
 
-  [Making a template](/wiki/spaces/dca/pages/676823284/Making+a+template)
+  Making a template
 
 <!-- section-nav:start -->
 
